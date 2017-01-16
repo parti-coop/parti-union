@@ -1,0 +1,19 @@
+<%
+  branch = `git rev-parse --abbrev-ref HEAD`.strip rescue nil
+  local_env = YAML.load_file("#{Rails.root}/local_env.yml").dig(Rails.env) || {}
+%>
+
+default: &default
+  encoding: utf8mb4
+  collation: utf8mb4_bin
+  adapter:   mysql2
+  username:  <%= local_env.dig('database', 'username') %>
+  password:  <%= local_env.dig('database', 'password') %>
+
+development:
+  <<: *default
+  database:  union_development_<%= branch %>
+
+test:
+  <<: *default
+  database:  union_test_<%= branch %>
