@@ -1,2 +1,1536 @@
-@import “bootstrap-sprockets”;
-@import “bootstrap”;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//colors
+$color_gravel_approx: #484848;
+$black_20: rgba(0,0,0,.2);
+$black_10: rgba(0,0,0,.1);
+$black_5: rgba(0,0,0,.05);
+$black_8: rgba(0,0,0,.08);
+$black:  black;
+$black_80: rgba(0,0,0,.8);
+$white_60: rgba(255,255,255,.6);
+$white: #fff;
+$black_50: rgba(0,0,0,0.5);
+$white_70: rgba(255,255,255,.7);
+$white_90: rgba(255,255,255,.9);
+$white_20: rgba(255,255,255,.2);
+$white_100: rgba(255,255,255,1);
+$black_70: rgba(0,0,0,.7);
+$black_60: rgba(0,0,0,.6);
+$black_100: rgba(0,0,0,1);
+$black_30: rgba(0,0,0,.3);
+$black_0: rgba(0,0,0,0.0);
+$color_white_approx: #fffffe;
+$color_concrete_approx: #f3f3f3;
+$color_medium_purple_approx: #966fd6;
+$color_deluge_approx: #7859ab;
+
+//fonts
+$font_0: Open Sans;
+$font_1: Lato;
+$font_2: Helvetica;
+$font_3: Josefin Sans;
+
+//urls
+$url_0: url(img/pageload-spinner.gif);
+$url_1: url(img/Apple-iMac.png);
+$url_2: url(img/GettyImages-538362390.jpg);
+$url_3: url(img/온라인시민발언대%20bg%20흐림.png);
+$url_4: url(img/GettyImages-526833490.png);
+$url_5: url(img/lines-h-bg.png);
+$url_6: url(img/GettyImages-483184276.png);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $white;
+  overflow-x: hidden;
+}
+a {
+  outline: none!important;
+  font-family: $font_2;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+button {
+  outline: none!important;
+  outline: none!important;
+}
+#page-loading-blocs-notifaction {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: $white $url_0 no-repeat center center;
+}
+.bloc {
+  width: 100%;
+  clear: both;
+  background: 50% 50% no-repeat;
+  padding: 0 50px;
+  background-size: cover;
+  position: relative;
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.bloc-lg {
+  padding: 100px 50px;
+}
+.bloc-md {
+  padding: 50px;
+}
+.bloc-sm {
+  padding: 20px 50px;
+}
+.full-width-bloc {
+  padding-left: 0;
+  padding-right: 0;
+  .container {
+    width: 100%;
+    max-width: 100%!important;
+  }
+  .carousel {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.bg-center {
+  background-size: auto!important;
+}
+.bg-l-edge {
+  background-size: auto!important;
+}
+.bg-r-edge {
+  background-size: auto!important;
+}
+.bg-t-edge {
+  background-size: auto!important;
+}
+.bg-b-edge {
+  background-size: auto!important;
+}
+.bg-tl-edge {
+  background-size: auto!important;
+}
+.bg-bl-edge {
+  background-size: auto!important;
+}
+.bg-tr-edge {
+  background-size: auto!important;
+}
+.bg-br-edge {
+  background-size: auto!important;
+}
+.bg-repeat {
+  background-size: auto!important;
+  background: repeat;
+}
+.bloc-bg-texture::before {
+  content: "";
+  background-size: 2px 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.texture-darken::before {
+  background: $black_50;
+}
+.d-bloc {
+  color: $white_70;
+  .icon-round {
+    border-color: $white_90;
+  }
+  .icon-square {
+    border-color: $white_90;
+  }
+  .icon-rounded {
+    border-color: $white_90;
+  }
+  .icon-semi-rounded-a {
+    border-color: $white_90;
+  }
+  .icon-semi-rounded-b {
+    border-color: $white_90;
+  }
+  .a-btn {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  .navbar-brand {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  a {
+    .icon-sm {
+      color: $white_60;
+    }
+    .icon-md {
+      color: $white_60;
+    }
+    .icon-lg {
+      color: $white_60;
+    }
+    .icon-xl {
+      color: $white_60;
+    }
+    &:hover {
+      .icon-sm {
+        color: $white_100;
+      }
+      .icon-md {
+        color: $white_100;
+      }
+      .icon-lg {
+        color: $white_100;
+      }
+      .icon-xl {
+        color: $white_100;
+      }
+    }
+  }
+  .btn-wire {
+    color: $white_100;
+    border-color: $white_100;
+    &:hover {
+      color: $white_100;
+      border-color: $white_100;
+    }
+  }
+  .panel {
+    color: $black_50;
+    color: $black_50;
+    icon {
+      border-color: $black_70;
+    }
+    .a-btn {
+      color: $black_60;
+      color: $black_60;
+      &:hover {
+        color: $black_100;
+        color: $black_100;
+      }
+    }
+    .btn-wire {
+      color: $black_70;
+      border-color: $black_30;
+      color: $black_70;
+      border-color: $black_30;
+      &:hover {
+        color: $black_70;
+        border-color: $black_30;
+        color: $black_70;
+        border-color: $black_30;
+      }
+    }
+    button:hover {
+      color: $black_70;
+      color: $black_70;
+    }
+    .divider-h span {
+      border-color: $black_10;
+      border-color: $black_10;
+    }
+  }
+  button:hover {
+    color: $white_90;
+  }
+  .divider-h span {
+    border-color: $white_20;
+  }
+  .navbar a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h1 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h2 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h3 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h4 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h5 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  h6 a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  p a {
+    color: $white_60;
+    &:hover {
+      color: $white_100;
+    }
+  }
+  .navbar-toggle .icon-bar {
+    background: $white_100;
+  }
+}
+.l-bloc {
+  color: $black_50;
+  .icon-round {
+    border-color: $black_70;
+  }
+  .icon-square {
+    border-color: $black_70;
+  }
+  .icon-rounded {
+    border-color: $black_70;
+  }
+  .icon-semi-rounded-a {
+    border-color: $black_70;
+  }
+  .icon-semi-rounded-b {
+    border-color: $black_70;
+  }
+  .a-btn {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  .navbar-brand {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  a {
+    .icon-sm {
+      color: $black_60;
+    }
+    .icon-md {
+      color: $black_60;
+    }
+    .icon-lg {
+      color: $black_60;
+    }
+    .icon-xl {
+      color: $black_60;
+    }
+    &:hover {
+      .icon-sm {
+        color: $black_100;
+      }
+      .icon-md {
+        color: $black_100;
+      }
+      .icon-lg {
+        color: $black_100;
+      }
+      .icon-xl {
+        color: $black_100;
+      }
+    }
+  }
+  .btn-wire {
+    color: $black_70;
+    border-color: $black_30;
+    &:hover {
+      color: $black_70;
+      border-color: $black_30;
+    }
+  }
+  button:hover {
+    color: $black_70;
+  }
+  .divider-h span {
+    border-color: $black_10;
+  }
+  .navbar a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h1 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h2 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h3 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h4 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h5 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  h6 a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  p a {
+    color: $black_60;
+    &:hover {
+      color: $black_100;
+    }
+  }
+  .navbar-toggle .icon-bar {
+    color: $black_60;
+  }
+}
+.voffset {
+  margin-top: 30px;
+}
+.voffset-md {
+  margin-top: 50px;
+}
+#bloc-1 {
+  h1 {
+    font-size: 36px;
+    line-height: 27.142858505249023px;
+  }
+  p {
+    line-height: 28.571428298950195px;
+  }
+}
+#bloc-2 {
+  h2 {
+    font-family: $font_0;
+    font-weight: 600;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 600;
+  }
+}
+#bloc-3 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-5 {
+  h2 {
+    font-family: $font_0;
+    font-weight: 400;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+  }
+}
+#bloc-6 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+#bloc-9 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-11 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-13 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-15 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-21 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-23 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-29 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-31 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-33 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-36 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-41 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-43 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  p {
+    line-height: 24px;
+  }
+}
+#bloc-44 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+  }
+}
+#bloc-45 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+#bloc-47 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+#bloc-48 {
+  h2 {
+    font-family: $font_0;
+    font-weight: 800;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 600;
+  }
+}
+#bloc-50 {
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+#bloc-51 {
+  h2 {
+    font-family: $font_0;
+    font-weight: 800;
+    font-size: 24px;
+  }
+  h3 {
+    font-family: $font_0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  p {
+    font-family: $font_0;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.navbar {
+  margin-bottom: 0;
+  z-index: 1;
+  .nav {
+    padding-top: 2px;
+    margin-right: -16px;
+    float: right;
+    z-index: 1;
+  }
+}
+.navbar-brand {
+  height: auto;
+  font-size: 25px;
+  font-weight: normal;
+  font-weight: 600;
+  padding: 15px;
+  img {
+    max-height: 200px;
+    margin: 0 5px 0 0;
+    display: inline;
+  }
+}
+.navbar-toggle {
+  margin: 10px 10px 0 0;
+  border: 0;
+  &:hover {
+    background: transparent!important;
+  }
+  .icon-bar {
+    background-color: $black_50;
+    width: 26px;
+  }
+}
+.nav-invert {
+  .navbar-header {
+    float: right;
+  }
+  .navbar-brand {
+    float: right;
+  }
+  .navbar .nav {
+    float: left;
+  }
+}
+@media(min-width: 768px) {
+  .site-navigation {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate(0, -50%);
+  }
+  .nav-center {
+    text-align: center;
+    .navbar-header {
+      width: 100%;
+      float: none;
+      display: inline-block;
+    }
+    .navbar-brand {
+      float: none;
+      display: inline-block;
+    }
+    .site-navigation {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .nav > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  .nav > li .dropdown-menu a {
+    color: $color_gravel_approx;
+    &:hover {
+      color: $color_gravel_approx;
+    }
+  }
+  .nav-invert .site-navigation {
+    left: 20px;
+    right: 0;
+  }
+}
+.dropdown-menu {
+  .dropdown-menu {
+    top: -8px;
+    left: 100%;
+  }
+  .dropmenu-flow-right {
+    top: 100%;
+    left: 0;
+    margin-left: -1px;
+    //Instead of the line below you could use @include border-top-left-radius($radius)
+    border-top-left-radius: 0;
+    //Instead of the line below you could use @include border-top-right-radius($radius)
+    border-top-right-radius: 0;
+  }
+  .dropdown span {
+    border: 4px solid $black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin: 6px -5px 0 0!important;
+    float: right;
+  }
+}
+.mg-clear {
+  margin: 0;
+}
+.mg-sm {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.mg-md {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.mg-lg {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+img {
+  &.mg-sm {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &.mg-md {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &.mg-lg {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+.btn {
+  margin: 0 5px 5px 0;
+  font-family: $font_2;
+  &.pull-right {
+    margin: 0 0 5px 5px;
+  }
+  .caret {
+    margin: 0 0 0 5px;
+  }
+}
+.btn-d {
+  color: $white;
+  background: $black_30;
+  &:hover {
+    color: $white;
+    background: $black_30;
+  }
+  &:focus {
+    color: $white;
+    background: $black_30;
+  }
+}
+.btn-sq {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+}
+.btn-wire {
+  background: transparent!important;
+  border: 2px solid transparent;
+  &:hover {
+    background: transparent!important;
+    border: 2px solid transparent;
+  }
+}
+.icon-sm {
+  font-size: 18px!important;
+}
+.icon-md {
+  font-size: 30px!important;
+}
+.img-frame {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+.img-frame-md {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 6px;
+  padding: 8px;
+}
+.img-frame-lg {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 6px;
+  padding: 14px;
+}
+.img-frame-rd {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+}
+.img-frame-rd-md {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+  padding: 8px;
+}
+.img-frame-rd-lg {
+  background: $white;
+  border: 1px solid $black_10;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 2px $black_5;
+  padding: 4px;
+  padding: 14px;
+}
+.panel-sq {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  .panel-heading {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+  }
+  .panel-footer {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+  }
+}
+.panel-rd {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 30px;
+  .panel-heading {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 29px 29px 0 0;
+  }
+  .panel-footer {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0 0 29px 29px;
+  }
+}
+iframe {
+  border: 0;
+}
+.carousel {
+  display: inline-block;
+  vertical-align: bottom;
+  .item img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.carousel-control {
+  color: $white!important;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: none;
+  span {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+  }
+  &.left span {
+    margin-left: -15px;
+  }
+}
+.carousel-indicators {
+  li {
+    margin: 0 4px;
+  }
+  .active {
+    margin: 0 4px -1px;
+  }
+}
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: 500;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease-in-out;
+  span {
+    margin-top: 6px;
+  }
+}
+.showScrollTop {
+  font-size: 14px;
+  opacity: 1;
+}
+.blocsapp-device-imac {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 4% 8.5% 23.7%;
+  background-image: $url_1;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+h1 {
+  font-family: $font_2;
+}
+h2 {
+  font-family: $font_2;
+}
+h3 {
+  font-family: $font_2;
+}
+h4 {
+  font-family: $font_2;
+}
+h5 {
+  font-family: $font_2;
+}
+h6 {
+  font-family: $font_2;
+}
+p {
+  font-family: $font_2;
+}
+label {
+  font-family: $font_2;
+}
+.container {
+  max-width: 1170px;
+}
+.lake-hero-text-s {
+  font-size: 60px;
+}
+.lake-hero-text-sub-s {
+  font-size: 34px;
+}
+.blocs-hero-btn-dwn {
+  background-color: $black_0;
+}
+.statement-bloc-text {
+  line-height: 38px;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  font-weight: lighter;
+}
+.mountaindusk-hero-text {
+  font-family: $font_3;
+  font-size: 60px;
+  font-weight: bold;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: 0 3px 3px $black_30;
+}
+.mountaindusk-hero-text-sub {
+  font-family: $font_3;
+  font-size: 36px;
+}
+.lake-hero-bloc {
+}
+.lake-hero-text {
+  font-family: $font_3;
+  font-size: 60px;
+  font-weight: bold;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: 0 3px 3px $black_30;
+}
+.lake-hero-text-sub {
+  font-family: $font_0;
+  font-size: 36px;
+  font-weight: 400;
+  color: $color_white_approx!important;
+  text-align: left;
+  text-transform: none;
+  line-height: 36px;
+}
+.device-bloc-icon {
+  margin-top: 15%;
+  margin-bottom: 20px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.device-bloc-text {
+  width: 90%;
+  color: $white;
+  font-size: 65px;
+  font-family: $font_1;
+  font-weight: 300;
+}
+.device-bloc-text-p {
+  font-size: 45px;
+  font-family: $font_1;
+  font-weight: 300;
+}
+.device-bloc-button {
+}
+.bloc-mob-center-text {
+  text-align: justified;
+}
+.bgc-white {
+  background-color: $white;
+}
+.bgc-outer-space {
+  background-color: $color_gravel_approx;
+}
+.bgc-anti-flash-white {
+  background-color: $color_concrete_approx;
+}
+.tc-anti-flash-white {
+  color: $color_concrete_approx!important;
+}
+.tc-white {
+  color: $white!important;
+}
+.tc-black {
+  color: $black!important;
+}
+.tc-outer-space {
+  color: $color_gravel_approx!important;
+}
+.wire-btn-white {
+  color: $white!important;
+  border-color: $white!important;
+}
+.ltc-dark-pastel-purple {
+  color: $color_medium_purple_approx!important;
+  &:hover {
+    color: $color_deluge_approx!important;
+  }
+}
+.bg-GettyImages-538362390 {
+  background-image: $url_2;
+}
+.bg-온라인시민발언대-bg-흐림 {
+  background-image: $url_3;
+}
+.bg-GettyImages-526833490 {
+  background-image: $url_4;
+}
+.bg-lines-h-bg {
+  background-image: $url_5;
+}
+.bg-GettyImages-483184276 {
+  background-image: $url_6;
+}
+@media(max-width: 1024px) {
+  .bloc {
+    padding-left: 20px;
+    padding-right: 20px;
+    &.full-width-bloc {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .bloc-tile-2.full-width-bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bloc-tile-3.full-width-bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bloc-tile-4.full-width-bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media(max-width: 992px) and(min-width: 768px) {
+  .navbar .nav {
+    max-width: 80%;
+  }
+  .nav-center.navbar .nav {
+    max-width: 100%;
+  }
+}
+@media only screen and(min-device-width : 768px) and(max-device-width : 1024px) and(orientation : landscape) {
+  .b-parallax {
+    background-attachment: scroll;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .b-parallax {
+    background-attachment: scroll;
+  }
+  .page-container {
+    overflow-x: hidden;
+    position: relative;
+  }
+  #hero-bloc {
+    overflow-x: hidden;
+    position: relative;
+  }
+}
+@media(max-width: 767px) {
+  .page-container {
+    overflow-x: hidden;
+    position: relative;
+  }
+  h1 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  h2 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  h3 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  h4 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  h5 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  h6 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  p {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  #disqus_thread {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  #hero-bloc {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    .navbar .nav {
+      background: $black_80;
+      a {
+        color: $white_60;
+      }
+    }
+  }
+  .bloc {
+    padding-left: 0;
+    padding-right: 0;
+    background-size: auto 200%;
+  }
+  .b-parallax {
+    background-attachment: scroll;
+  }
+  .navbar {
+    .nav {
+      padding-top: 0;
+      border-top: 1px solid $black_20;
+      float: none!important;
+    }
+    &.row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .site-navigation {
+    position: inherit;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: none;
+  }
+  .hero {
+    padding: 50px 0;
+  }
+  .hero-nav {
+    left: -1px;
+    right: -1px;
+  }
+  .navbar-collapse {
+    padding: 0;
+    overflow-x: hidden;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none;
+  }
+  .nav-invert {
+    .navbar-header {
+      float: none;
+      width: 100%;
+    }
+    .navbar-toggle {
+      float: left;
+    }
+  }
+  .bloc-xxl {
+    padding: 40px 0;
+  }
+  .bloc-xl {
+    padding: 40px 0;
+  }
+  .bloc-lg {
+    padding: 40px 0;
+  }
+  .bloc-sm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bloc-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .a-block {
+    padding: 0 10px;
+  }
+  .btn-dwn {
+    display: none;
+  }
+  .voffset {
+    margin-top: 5px;
+  }
+  .voffset-md {
+    margin-top: 20px;
+  }
+  .voffset-lg {
+    margin-top: 30px;
+  }
+  form {
+    padding: 5px;
+  }
+  .close-lightbox {
+    display: inline-block;
+  }
+  .video-bg-container {
+    display: none;
+  }
+  .blocsapp-device-iphone5 {
+    background-size: 216px 425px;
+    padding-top: 60px;
+    width: 216px;
+    height: 425px;
+    img {
+      width: 180px;
+      height: 320px;
+    }
+  }
+  .nav > li {
+    margin-top: 0;
+    border-bottom: 1px solid $black_10;
+    background: $black_5;
+    text-align: left;
+    padding-left: 15px;
+    width: 100%;
+    &:hover {
+      background: $black_8;
+    }
+  }
+  .dropdown .dropdown a .caret {
+    float: none;
+    margin: 5px 0 0 10px!important;
+    border: 4px solid $black;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+    margin: -10px 10px 0 0;
+  }
+  .bloc-group .bloc {
+    display: block;
+    width: 100%;
+  }
+  .bloc-tile-2 .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bloc-tile-3 .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bloc-tile-4 .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media(max-width: 420px) {
+  .bloc-mob-center-text {
+    text-align: center;
+  }
+  .lake-hero-text {
+    font-size: 38px;
+  }
+  .lake-hero-text-sub {
+    font-size: 24px;
+  }
+  .lake-hero-bloc {
+    background-size: 1550px auto;
+  }
+  .blocs-team-avatar {
+    max-width: 280px;
+  }
+  .blocs-team-header {
+    text-align: center;
+  }
+  .blocs-team-details {
+    text-align: center;
+  }
+  .blocs-team-first-social {
+    margin-left: 41%;
+  }
+  .device-bloc-text {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+  .device-bloc-text-p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .device-bloc-icon {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .device-bloc-button {
+    width: 100%;
+  }
+  .mg-lg-xs {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  #bloc-1 {
+    h1 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    p {
+      line-height: 20px;
+    }
+  }
+  .text-left-xs {
+    text-align: left;
+  }
+}
+#bloc-8 p {
+  font-size: 40px;
+}
+#bloc-34 h2 {
+  font-family: $font_0;
+  font-weight: 800;
+  font-size: 24px;
+}
+#bloc-37 h2 {
+  font-family: $font_0;
+  font-weight: 800;
+  font-size: 24px;
+}
+#bloc-42 h2 {
+  font-family: $font_0;
+  font-weight: 800;
+  font-size: 24px;
+}
+#bloc-46 h3 {
+  font-family: $font_0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+#bloc-49 h3 {
+  font-family: $font_0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+#bloc-52 h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+#bloc-55 h2 {
+  font-family: $font_1;
+  font-weight: 300;
+}
+.nav > li {
+  float: left;
+  margin-top: 4px;
+  font-size: 16px;
+  a {
+    &:hover {
+      background: transparent;
+    }
+    &:focus {
+      background: transparent;
+    }
+  }
+  > .dropdown a {
+    background: none!important;
+    display: block;
+    padding: 14px 15px;
+  }
+}
+.navbar-nav .open .dropdown-menu > li > a {
+  text-align: inherit;
+}
+nav .caret {
+  margin: 0 5px;
+}
+.dropdown a .caret {
+  margin: 0 0 0 5px;
+}
+.btn-dropdown .dropdown-menu .dropdown {
+  padding: 3px 20px;
+}
+.no-shadows .carousel-control {
+  &.left {
+    background-image: none;
+  }
+  &.right {
+    background-image: none;
+  }
+}
