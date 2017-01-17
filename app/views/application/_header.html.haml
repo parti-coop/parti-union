@@ -2,8 +2,8 @@
   .container
     %nav.navbar.row
       .navbar-header
-        %a.navbar-brand{:href => "index.html"}
-          %img{:src => "img/partiunion.png"}/
+        = link_to root_path, class: 'navbar-brand' do
+          %img{:src => "img/partiunion.png"}
         %button#nav-toggle.ui-navbar-toggle.navbar-toggle{"data-target" => ".navbar-1", "data-toggle" => "collapse", :type => "button"}
           %span.sr-only Toggle navigation
           %span.icon-bar
