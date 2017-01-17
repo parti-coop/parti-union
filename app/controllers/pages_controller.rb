@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  def home
+    @slides = Slide.priority.recent
+  end
   def campaign_detail
     render "campaigns/#{params[:slug]}"
   end
