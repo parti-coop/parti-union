@@ -1,237 +1,59 @@
-/ Main container
 .page-container
-  / bloc-0
+
   #bloc-0.bloc.bgc-white.l-bloc
     .container
-      %nav.navbar.row
-        .navbar-header
-          %a.navbar-brand{:href => "index.html"}
-            %img{:src => "img/partiunion.png"}/
-          %button#nav-toggle.ui-navbar-toggle.navbar-toggle{"data-target" => ".navbar-1", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-        .navbar-collapse.navbar-1.collapse
-          %ul.site-navigation.nav.navbar-nav
-            %li
-              %a{:href => "index.html"} about
-            %li
-              %a{:href => "index.html"} collaboration
-            %li
-              %a{:href => "index.html"} platform
-            %li
-              %a{:href => "index.html"} team
-            %li
-              %a{:href => "index.html"} contact
-            %li
-              %a{:href => "index.html"} New Link
-  / bloc-0 END
-  / bloc-1
+      = render 'header'
+
   #bloc-1.bloc.full-width-bloc.bgc-white.l-bloc
     .container
-      .row
-        .col-sm-12
-          #carousel-1.carousel.no-shadows.slide{"data-ride" => "carousel"}
-            %ol.carousel-indicators
-              %li.active{"data-slide-to" => "0", "data-target" => "#carousel-1"}
-              %li{"data-slide-to" => "1", "data-target" => "#carousel-1"}
-              %li{"data-slide-to" => "2", "data-target" => "#carousel-1"}
-            .carousel-inner
-              .item.active
-                %img{:src => "img/placeholder-image-wide.png"}/
-                .carousel-caption
-                  %h1.mg-md 제목
-                  %p.text-center 서브 문구
-              .item
-                %img{:src => "img/placeholder-image-wide.png"}/
-                .carousel-caption
-              .item
-                %img{:src => "img/placeholder-image-wide.png"}/
-                .carousel-caption
-            %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-1", :role => "button"}
-              %span.fa.fa-chevron-left
-              %span.sr-only Previous
-            %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-1", :role => "button"}
-              %span.fa.fa-chevron-right
-              %span.sr-only Next
-  / bloc-1 END
-  / bloc-2
+      = render 'main_slider'
+
   #bloc-2.bloc.bloc-bg-texture.texture-darken.bg-GettyImages-538362390.tc-anti-flash-white.bgc-white
     .container.bloc-lg
       .row
         .col-sm-12
-          %h2.mg-md.device-bloc-text.text-center 빠띠 Parti
-          %p.mg-lg.device-bloc-text-p.text-center 누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
-  / bloc-2 END
-  / bloc-3
+          %h2.mg-md.device-bloc-text.text-center
+            빠띠 Parti
+          %p.mg-lg.device-bloc-text-p.text-center
+            누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
+
   #bloc-3.bloc.bgc-outer-space.d-bloc
     .container.bloc-md
       .row
         .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear 캠페인
+          %h3.text-center.text-left-xs.mg-clear
+            캠페인
           %p.text-center.text-left-xs
             시민들이 쉽고 재미있게
-            = succeed "\u{c815}\u{ce58}\u{c5d0}" do
-              %br/
+            %br
+            정치에 참여하는 캠페인을 진행합니다.
         .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear 플랫폼
+          %h3.text-center.text-left-xs.mg-clear
+            플랫폼
           %p.text-center.text-left-xs
             기술을 활용해
-            = succeed "\u{b354}" do
-              %br/
+            %br
+            더 나은 민주주의를 위한 플랫폼을 만듭니다.
         .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear 협업
+          %h3.text-center.text-left-xs.mg-clear
+            협업
           %p.text-center.text-left-xs
-            여
-            = succeed "\u{d611}\u{c5c5}\u{d558}\u{c5ec}" do
-              %br/
-            %br/
-  / bloc-3 END
+            다양한 이해당사자들과
+            %br
+            협업하여 문제를 해결합니다
+
   / ScrollToTop Button
   %a.bloc-button.btn.btn-d.scrollToTop{:onclick => "scrollToTarget('1')"}
     %span.fa.fa-chevron-up
   / ScrollToTop Button END
-  / Footer - bloc-43
+
   #bloc-43.bloc.bgc-white.l-bloc
     .container.bloc-sm
-      .row
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-md.tc-black
-            %span
-              캠페인
-              %br/
-          %p.mg-sm.text-center
-            시민들의 목소리를 모으고 발화하게 하는
-            = succeed "," do
-              %strong Voice
-            = succeed "," do
-              %strong Deliberation
-            = succeed "," do
-              %strong Action
-            %strong Lab,
-            이 4가지 성격의 캠페인을 제안하고 시도하고 있습니다.
-  / Footer - bloc-43 END
-  / Footer - bloc-44
-  #bloc-44.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row
-        .col-sm-4
-          %img.img-responsive{:src => "img/캠페인_세월호.png"}/
-          %h3.mg-sm.tc-outer-space 대한민국인양프로젝트
-          %p.mg-lg (coming soon) 세월호 참사의 기록에 시민과 연구자가 자유롭게 접근하고, 기록과 기억의 공유로 한국 사회의 변화 방향을 제안하는 프로젝트
-        .col-sm-4
-          %img.img-responsive{:src => "img/캠페인_혁신의편.png"}/
-          %h3.mg-sm.tc-outer-space 당신은 혁신의 편입니까?
-          %p.mg-lg (coming soon) 혁신가들의 제안으로 만드는 혁신정책 프로젝트
-        .col-sm-4
-          %a{:href => "votefuture.html"}
-            %img.img-responsive{:src => "img/캠페인_미래투표.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "votefuture.html"}
-              %u 미래에서 온 투표
-            %br/
-          %p.mg-lg 아동의 제안을 모아 아동정책을 제 19대 대선 후보에게 전달하는 정책 제안 프로젝트
-  / Footer - bloc-44 END
-  / Footer - bloc-45
-  #bloc-45.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row
-        .col-sm-4
-          %a{:href => "hayago.html"}
-            %img.img-responsive.image-resize-mode{:src => "img/캠페인_하야고.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "hayago.html"}
-              %u 우주당: 하야GO
-            %br/
-          %p.mg-lg 박근혜 대통령 탄핵 집회 참여 인증사진과 메시지를 공유하여 집회에 같이 참여한 참가자를 찾거나 장소에 구애받지 않고 온라인에서 함께할 수 있는 프로젝트
-        .col-sm-4
-          %a{:href => "toktok.html"}
-            %img.img-responsive{:src => "img/캠페인_국회톡톡.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "toktok.html"}
-              %u 국회톡톡
-            %br/
-          %p.mg-lg 시민이 직접 입법 제안하고, 천명의 지지를 받으면 입법안을 의원에게 전달하는 시민입법플랫폼
-        .col-sm-4
-          %a{:href => "nongmo.html"}
-            %img.img-responsive{:src => "img/캠페인_바꿈2.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "nongmo.html"}
-              %u GMO완전표시제 입법 청원 캠페인
-            %br/
-          %p.mg-lg 보건복지위원회의 법안심사소위원회 위원장인 인재근 의원에게 전달한 17만여명의 GMO완전표시제 서명 캠페인
-  / Footer - bloc-45 END
-  / Footer - bloc-46
-  #bloc-46.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row
-        .col-sm-4
-          %a{:href => "ilknow.html"}
-            %img.img-responsive{:src => "img/캠페인_당신의투표3.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "ilknow.html"}
-              %u 나는 알아야겠당
-            %br/
-          %p.mg-lg 바글시민와글입법 3차까지의 진행을 이어 법안 심사 통과 압박 액션까지, 총 800여명의 당원이 뭉친 국내 최초의 프로젝트 정당
-        .col-sm-4
-          %a{:href => "iknow3.html"}
-            %img.img-responsive{:src => "img/캠페인_바글3.png"}/
-          %h3.mg-md.tc-outer-space
-            %a{:href => "iknow3.html"}
-              %u 바글시민와글입법(3) 전문가 쟁점토론, 당원 투표
-            %br/
-          %p.mg-lg 프로젝트 정당 ‘나는 알아야겠당'에서 발의할 입법안 ‘GMO 완전표시제’에 대한 전문가 쟁점 토론과 시민 투표를 진행한 프로젝트
-        .col-sm-4
-          %a{:href => "iknow2.html"}
-            %img.img-responsive{:src => "img/캠페인_바글2.png"}/
-          %h3.mg-md.tc-outer-space
-            %a{:href => "iknow2.html"}
-              %u 바글시민와글입법(2) 정당 이름 투표, 당원 모집
-            %br/
-          %p.mg-lg 바글와글 1차 쟁점법안 투표에서 4개 법안 중 5470개의 표를 받은 GMO 완전표시제 입법을 위한 원이슈 프로젝트 정당 만들기
-  / Footer - bloc-46 END
-  / Footer - bloc-47
-  #bloc-47.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row
-        .col-sm-4
-          %a{:href => "iknow1.html"}
-            %img.img-responsive{:src => "img/캠페인_바글1.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "iknow1.html"}
-              %u 바글시민와글입법(1) 입법안 채택
-            %br/
-          %p.mg-lg 2016년 입법 진행과정을 추적할 쟁점 법안 4가지 중 입법할 안을 시민이 투표하여 결정한 프로젝트
-        .col-sm-4
-          %a{:href => "yourvote.html"}
-            %img.img-responsive{:src => "img/캠페인_당신의투표2.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "yourvote.html"}
-              %u 당신의 투표를 예측해 드립니다
-            %br/
-          %p.mg-lg 사전에 전국 유권자 1500명에게 물어, 최적화된 7개 문항만을 뽑아 구성한 예측모델로 응답자의 투표 결과를 예측한 프로젝트
-        .col-sm-4
-          %a{:href => "letter.html"}
-            %img.img-responsive{:src => "img/캠페인_국민의투표.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "letter.html"}
-              %u 국회의장에게 보내는 편지
-            %br/
-          %p.mg-lg 테러방지법 본회의 의결을 막기 위한 야권의 필리버스터가 일주일 째 이어지던 당시 테러방지법에 대한 시민의 의견을 모은 프로젝트
-  / Footer - bloc-47 END
-  / Footer - bloc-48
-  #bloc-48.bloc.tc-white.bloc-bg-texture.texture-darken.bgc-white.bg-GettyImages-483184276
-    .container.bloc-md
-      .row
-        .col-sm-12
-          %h2.mg-md.device-bloc-text.tc-white
-            %i We develop democracy.
-          %p.mg-lg.device-bloc-text-p 빠띠의 캠페인 비하인드 스토리를 블로그에서 만나보세요.
-          %a.btn.btn-wire.btn-lg.device-bloc-button.btn-sq.wire-btn-white{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"}
-            자세한 캠페인 이야기 보기
-            %br/
-  / Footer - bloc-48 END
+      = render 'campaigns'
+
+
+
+
   / Footer - bloc-49
   #bloc-49.bloc.bgc-white.l-bloc
     .container.bloc-sm
@@ -251,7 +73,8 @@
             %a{:href => "parti.html"}
               %u 빠띠
             %br/
-          %p.mg-lg-xs.mg-lg 덕업일치를 위한 오픈커뮤니티
+          %p.mg-lg-xs.mg-lg
+            덕업일치를 위한 오픈커뮤니티
         .col-sm-6
           %a{:href => "wouldyou.html"}
             %img.img-responsive{:src => "img/우주당3.png"}/
@@ -259,20 +82,24 @@
             %a{:href => "wouldyou.html"}
               %u 우주당 Would You Party
             %br/
-          %p.mg-lg 디지털 직접민주주의 프로젝트 정당
+          %p.mg-lg
+            디지털 직접민주주의 프로젝트 정당
   / Footer - bloc-50 END
   / Footer - bloc-51
   #bloc-51.bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-md
       .row
         .col-sm-12
-          %h2.text-center.mg-lg.tc-outer-space 팀
+          %h2.text-center.mg-lg.tc-outer-space
+            팀
       .row
         .col-sm-2
           %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/스크린샷%202017-01-10%20오전%201.33.19.png", :width => "170"}/
         .col-sm-4
-          %h3.blocs-team-header 권오현
-          %p.blocs-team-details 빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
+          %h3.blocs-team-header
+            권오현
+          %p.blocs-team-details
+            빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
           %br/
           %a{:href => "index.html", :target => "_blank"}
             %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
@@ -283,8 +110,10 @@
         .col-sm-2
           %img.img-circle.center-block.blocs-team-avatar.img-frame-rd.mg-sm{:height => "170", :src => "img/팀원사진_정사각형_달리.png", :width => "170"}/
         .col-sm-4
-          %h3.blocs-team-header 김영민
-          %p.blocs-team-details 플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체을 고민하고 실천하고 있습니다.
+          %h3.blocs-team-header
+            김영민
+          %p.blocs-team-details
+            플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체을 고민하고 실천하고 있습니다.
           %br/
           %a{:href => "https://twitter.com/blue_spider", :target => "_blank"}
             %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
@@ -294,8 +123,10 @@
         .col-sm-2
           %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/IMG_6811.jpg", :width => "170"}/
         .col-sm-4
-          %h3.blocs-team-header 박은지
-          %p.blocs-team-details 디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 디자이너의 노동환경에 관심이 많습니다.
+          %h3.blocs-team-header
+            박은지
+          %p.blocs-team-details
+            디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 디자이너의 노동환경에 관심이 많습니다.
           %br/
           %a{:href => "index.html", :target => "_blank"}
             %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
@@ -306,8 +137,10 @@
         .col-sm-2
           %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/팀원사진_정사각형_쿠스.png", :width => "170"}/
         .col-sm-4
-          %h3.blocs-team-header 변형준
-          %p.blocs-team-details 빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
+          %h3.blocs-team-header
+            변형준
+          %p.blocs-team-details
+            빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
           %br/
           %a{:href => "index.html", :target => "_blank"}
             %span.fa.fa-facebook.icon-sm.pull-left
@@ -365,6 +198,6 @@
     .container.bloc-md
       .row
         .col-sm-12
-          %h2.mg-md.device-bloc-text 스티비 이메일 구독 신청 양식 코드
+          %h2.mg-md.device-bloc-text
+            스티비 이메일 구독 신청 양식 코드
   / Footer - bloc-55 END
-/ Main container END

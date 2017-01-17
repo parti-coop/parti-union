@@ -1,0 +1,39 @@
+#bloc-43 {
+  .compaign-header {
+    padding-bottom: 40px;
+
+    h3 {
+      font-family: $font_0;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+
+  .campaigns-body {
+    h3 {
+      font-family: $font_0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    p {
+      font-family: $font_0;
+      font-weight: 400;
+    }
+  }
+
+  .compaign-footer {
+    h2 {
+      font-family: $font_0;
+      font-weight: 800;
+    }
+    p {
+      font-family: $font_0;
+      font-weight: 600;
+    }
+  }
+}
