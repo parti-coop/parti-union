@@ -1,0 +1,32 @@
+= form_for [:admin, @slide] do |f|
+  .form-group
+    = f.label :order
+    = f.number_field :order, class: 'form-control input-lg'
+    .help-block
+      슬라이드가 보여질 순서를 숫자로 입력해주세요. (순서가 같은 슬라이드의 경우, 먼저 만들어진 슬라이드부터 보여집니다)
+
+  .form-group
+    = f.label :image
+    = f.hidden_field :image_cache, value: f.object.image_cache
+    = f.file_field :image, class: 'form-control input-lg'
+    .help-block
+      이미지파일은 https://tinypng.com 와 같은 서비스를 사용해서 최대한 줄여서 넣어주세요
+    - if upload_file_exists?(@slide.try(:image))
+      = image_tag @slide.image.sm.url, class: 'img-thumbnail', style: 'max-width: 50%'
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control input-lg'
+
+  .form-group
+    = f.label :body
+    = f.text_area :body, class: 'form-control input-lg'
+
+  .form-group
+    = f.label :url
+    = f.text_field :url, class: 'form-control input-lg'
+    .help-block
+      슬라이드이미지를 클릭했을 때 연결될 링크가 있다면, http:// 나 https://로 시작되는 형식으로 url을 입력해주세요.
+
+  .form-group
+    = f.submit class: 'btn btn-primary'

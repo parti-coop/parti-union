@@ -20,6 +20,11 @@ gem 'ruby_dig', '~> 0.0.2'
 gem 'meta-tags', '~> 2.1.0'
 gem 'browser', '~> 2.0', '>= 2.0.2'
 
+# file upload
+gem 'carrierwave', '~> 0.10.0'
+gem "mini_magick"
+gem "fog"
+
 # notification
 gem 'slack-notifier', '~> 1.4'
 gem 'exception_notification', '~> 4.1', '>= 4.1.4'

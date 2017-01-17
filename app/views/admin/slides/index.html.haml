@@ -1,2 +1,36 @@
-- Slide.all.each do |slide|
-  = slide.postion
+%section.admin-slides
+  .container
+    .page-header
+      %h2
+        메인슬라이드 관리
+        .pull-right
+          %small
+            = link_to '새로운 슬라이드 만들기', new_admin_slide_path
+    %table.table.table-condensed
+      %thead
+        %tr
+          %th 슬라이드 순서
+          %th 이미지
+          %th 타이틀
+          %th 내용
+          %th 링크url
+          %th 관리
+      %tbody
+        - @slides.each do |slide|
+          %tr
+            %td
+              = slide.order
+            %td
+              = image_tag slide.image.sm.url
+            %td
+              = slide.title
+            %td
+              = slide.body
+            %td
+              = slide.url
+            %td
+              = link_to '수정', edit_admin_slide_path(slide)
+              %br
+              = link_to '삭제', admin_slide_path(slide), method: :delete, 'data-confirm': '정말로 삭제하시겠습니까?'
+
+
