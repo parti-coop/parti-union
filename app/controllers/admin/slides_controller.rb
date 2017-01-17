@@ -40,7 +40,7 @@ module Admin
     private
 
     def slide_params
-      params.require(:slide).permit(:order, :image, :title, :url, :body)
+      params.require(:slide).permit(:order, :image, :title, :body)
     end
   end
 end

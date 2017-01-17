@@ -10,4 +10,25 @@
 
 .carousel-inner {
   height: 533px;
+  @media (max-width: $screen-xs-max) {
+    height: 300px;
+  }
+
+  .item {
+    height: 533px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $screen-xs-max) {
+      height: 300px;
+    }
+  }
+}
+
+.admin-slides {
+  form {
+    max-width: 600px;
+    margin: 40px auto;
+  }
+
 }

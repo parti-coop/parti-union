@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20170117082211) do
     t.integer  "order",                    null: false
     t.string   "image",                    null: false
     t.string   "title"
-    t.string   "url"
     t.text     "body",       limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false

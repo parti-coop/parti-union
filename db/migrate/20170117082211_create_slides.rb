@@ -4,7 +4,6 @@ class CreateSlides < ActiveRecord::Migration[5.0]
       t.integer :order, null: false
       t.string :image, null: false
       t.string :title
-      t.string :url
       t.text :body
 
       t.timestamps null: false

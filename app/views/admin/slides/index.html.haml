@@ -13,7 +13,6 @@
           %th 이미지
           %th 타이틀
           %th 내용
-          %th 링크url
           %th 관리
       %tbody
         - @slides.each do |slide|
@@ -26,8 +25,6 @@
               = slide.title
             %td
               = slide.body
-            %td
-              = slide.url
             %td
               = link_to '수정', edit_admin_slide_path(slide)
               %br
