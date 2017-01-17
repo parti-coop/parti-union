@@ -12,14 +12,20 @@
       .navbar-collapse.navbar-1.collapse
         %ul.site-navigation.nav.navbar-nav
           %li
-            %a{:href => "#anchor-about"} about
+            = link_to root_path(anchor: 'anchor-about') do
+              about
           %li
-            %a{:href => "#anchor-collaboration"} 협업
+            = link_to root_path(anchor: 'anchor-collaboration') do
+              협업
           %li
-            %a{:href => "#anchor-campaign"} 캠페인
+            = link_to root_path(anchor: 'anchor-campaign') do
+              캠페인
           %li
-            %a{:href => "#anchor-platform"} 플랫폼
+            = link_to root_path(anchor: 'anchor-platform') do
+              플랫폼
           %li
-            %a{:href => "#anchor-team"} team
+            = link_to root_path(anchor: 'anchor-team') do
+              team
           %li
-            %a{:href => "#anchor-contact"} contact
+            = link_to root_path(anchor: 'anchor-contact') do
+              contact
