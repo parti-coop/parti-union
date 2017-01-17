@@ -1,203 +1,195 @@
-.page-container
+#bloc-1.bloc.full-width-bloc.bgc-white.l-bloc
+  .container
+    = render 'main_slider'
 
-  #bloc-0.bloc.bgc-white.l-bloc
-    .container
-      = render 'header'
+#bloc-2.bloc.bloc-bg-texture.texture-darken.bg-GettyImages-538362390.tc-anti-flash-white.bgc-white
+  .container.bloc-lg
+    .row
+      .col-sm-12
+        %h2.mg-md.device-bloc-text.text-center
+          빠띠 Parti
+        %p.mg-lg.device-bloc-text-p.text-center
+          누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
 
-  #bloc-1.bloc.full-width-bloc.bgc-white.l-bloc
-    .container
-      = render 'main_slider'
+#bloc-3.bloc.bgc-outer-space.d-bloc
+  .container.bloc-md
+    .row
+      .col-sm-4
+        %h3.text-center.text-left-xs.mg-clear
+          캠페인
+        %p.text-center.text-left-xs
+          시민들이 쉽고 재미있게
+          %br
+          정치에 참여하는 캠페인을 진행합니다.
+      .col-sm-4
+        %h3.text-center.text-left-xs.mg-clear
+          플랫폼
+        %p.text-center.text-left-xs
+          기술을 활용해
+          %br
+          더 나은 민주주의를 위한 플랫폼을 만듭니다.
+      .col-sm-4
+        %h3.text-center.text-left-xs.mg-clear
+          협업
+        %p.text-center.text-left-xs
+          다양한 이해당사자들과
+          %br
+          협업하여 문제를 해결합니다
 
-  #bloc-2.bloc.bloc-bg-texture.texture-darken.bg-GettyImages-538362390.tc-anti-flash-white.bgc-white
-    .container.bloc-lg
-      .row
-        .col-sm-12
-          %h2.mg-md.device-bloc-text.text-center
-            빠띠 Parti
-          %p.mg-lg.device-bloc-text-p.text-center
-            누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
+/ ScrollToTop Button
+%a.bloc-button.btn.btn-d.scrollToTop{:onclick => "scrollToTarget('1')"}
+  %span.fa.fa-chevron-up
+/ ScrollToTop Button END
 
-  #bloc-3.bloc.bgc-outer-space.d-bloc
-    .container.bloc-md
-      .row
-        .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear
-            캠페인
-          %p.text-center.text-left-xs
-            시민들이 쉽고 재미있게
-            %br
-            정치에 참여하는 캠페인을 진행합니다.
-        .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear
-            플랫폼
-          %p.text-center.text-left-xs
-            기술을 활용해
-            %br
-            더 나은 민주주의를 위한 플랫폼을 만듭니다.
-        .col-sm-4
-          %h3.text-center.text-left-xs.mg-clear
-            협업
-          %p.text-center.text-left-xs
-            다양한 이해당사자들과
-            %br
-            협업하여 문제를 해결합니다
-
-  / ScrollToTop Button
-  %a.bloc-button.btn.btn-d.scrollToTop{:onclick => "scrollToTarget('1')"}
-    %span.fa.fa-chevron-up
-  / ScrollToTop Button END
-
-  #bloc-43.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      = render 'campaigns'
+#bloc-43.bloc.bgc-white.l-bloc
+  .container.bloc-sm
+    = render 'campaigns'
 
 
-
-
-  / Footer - bloc-49
-  #bloc-49.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 플랫폼
-  / Footer - bloc-49 END
-  / Footer - bloc-50
-  #bloc-50.bloc.bgc-white.l-bloc
-    .container.bloc-md
-      .row
-        .col-sm-6
+/ Footer - bloc-49
+#bloc-49.bloc.bgc-white.l-bloc
+  .container.bloc-sm
+    .row.voffset-md
+      .col-xs-12.col-md-8.col-md-offset-2
+        %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %span 플랫폼
+/ Footer - bloc-49 END
+/ Footer - bloc-50
+#bloc-50.bloc.bgc-white.l-bloc
+  .container.bloc-md
+    .row
+      .col-sm-6
+        %a{:href => "parti.html"}
+          %img.img-responsive{:src => "img/빠띠2.png"}/
+        %h3.mg-sm.tc-outer-space
           %a{:href => "parti.html"}
-            %img.img-responsive{:src => "img/빠띠2.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "parti.html"}
-              %u 빠띠
-            %br/
-          %p.mg-lg-xs.mg-lg
-            덕업일치를 위한 오픈커뮤니티
-        .col-sm-6
+            %u 빠띠
+          %br/
+        %p.mg-lg-xs.mg-lg
+          덕업일치를 위한 오픈커뮤니티
+      .col-sm-6
+        %a{:href => "wouldyou.html"}
+          %img.img-responsive{:src => "img/우주당3.png"}/
+        %h3.mg-sm.tc-outer-space
           %a{:href => "wouldyou.html"}
-            %img.img-responsive{:src => "img/우주당3.png"}/
-          %h3.mg-sm.tc-outer-space
-            %a{:href => "wouldyou.html"}
-              %u 우주당 Would You Party
-            %br/
-          %p.mg-lg
-            디지털 직접민주주의 프로젝트 정당
-  / Footer - bloc-50 END
-  / Footer - bloc-51
-  #bloc-51.bloc.bgc-anti-flash-white.l-bloc
-    .container.bloc-md
-      .row
-        .col-sm-12
-          %h2.text-center.mg-lg.tc-outer-space
-            팀
-      .row
-        .col-sm-2
-          %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/스크린샷%202017-01-10%20오전%201.33.19.png", :width => "170"}/
-        .col-sm-4
-          %h3.blocs-team-header
-            권오현
-          %p.blocs-team-details
-            빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
+            %u 우주당 Would You Party
           %br/
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-facebook.icon-sm.pull-left
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-github.pull-left.icon-sm
-        .col-sm-2
-          %img.img-circle.center-block.blocs-team-avatar.img-frame-rd.mg-sm{:height => "170", :src => "img/팀원사진_정사각형_달리.png", :width => "170"}/
-        .col-sm-4
-          %h3.blocs-team-header
-            김영민
-          %p.blocs-team-details
-            플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체을 고민하고 실천하고 있습니다.
-          %br/
-          %a{:href => "https://twitter.com/blue_spider", :target => "_blank"}
-            %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
-          %a{:href => "https://github.com/dalikim", :target => "_blank"}
-            %span.fa.fa-github.icon-sm.pull-left
-      .row.voffset
-        .col-sm-2
-          %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/IMG_6811.jpg", :width => "170"}/
-        .col-sm-4
-          %h3.blocs-team-header
-            박은지
-          %p.blocs-team-details
-            디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 디자이너의 노동환경에 관심이 많습니다.
-          %br/
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-facebook.icon-sm.pull-left
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-tumblr.icon-sm.pull-left
-        .col-sm-2
-          %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/팀원사진_정사각형_쿠스.png", :width => "170"}/
-        .col-sm-4
-          %h3.blocs-team-header
-            변형준
-          %p.blocs-team-details
-            빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
-          %br/
-          %a{:href => "index.html", :target => "_blank"}
-            %span.fa.fa-facebook.icon-sm.pull-left
-          %a{:href => "https://github.com/qus1225", :target => "_blank"}
-            %span.fa.fa-github.icon-sm.pull-left
-  / Footer - bloc-51 END
-  / Footer - bloc-52
-  #bloc-52.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row.voffset
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.tc-outer-space
-            %span
-              %strong 협업
-  / Footer - bloc-52 END
-  / Footer - bloc-53
-  #bloc-53.bloc.bgc-white.l-bloc
-    .container.bloc-lg
-      .row
-        .col-sm-2
-          %img.img-responsive.center-block.mg-md{:src => "img/한겨레21.png"}/
-        .col-sm-2
-          %img.img-responsive.center-block.mg-md{:src => "img/와글.png"}/
-        .col-sm-2
-          %img.img-responsive.center-block.mg-md{:src => "img/아이쿱.png"}/
-        .col-sm-2
-          %img.img-responsive.center-block.mg-md{:src => "img/초록우산.png"}/
-        .col-sm-2
-          %img.img-responsive.center-block.mg-md{:src => "img/0dcc4b5e364882d6ee8c4ef0ea5f56e0.png"}/
-        .col-sm-2
-  / Footer - bloc-53 END
-  / Footer - bloc-54
-  #bloc-54.bloc.bgc-outer-space.d-bloc
-    .container.bloc-md
-      .row.voffset-clear-xs
-        .col-sm-12.col-md-6.col-md-offset-3
-          .col-xs-3
-            .text-center
-              %a.social{:href => " https://twitter.com/parti_xyz ", :target => "_blank"}
-                %span.fa.fa-twitter.icon-md
-          .col-xs-3
-            .text-center
-              %a.social{:href => "https://www.facebook.com/PartiUnion/ ", :target => "_blank"}
-                %span.fa.fa-facebook.icon-md
-          .col-xs-3
-            .text-center
-              %a.social{:href => "https://github.com/parti-xyz", :target => "_blank"}
-                %span.fa.fa-github.icon-md
-          .col-xs-3
-            .text-center
-              %span.fa.fa-envelope.icon-md
-  / Footer - bloc-54 END
-  / Footer - bloc-55
-  #bloc-55.bloc.bloc-bg-texture.texture-darken.tc-white.bg-lines-h-bg.bg-repeat.bgc-white
-    .container.bloc-md
-      .row
-        .col-sm-12
-          %h2.mg-md.device-bloc-text
-            스티비 이메일 구독 신청 양식 코드
-  / Footer - bloc-55 END
+        %p.mg-lg
+          디지털 직접민주주의 프로젝트 정당
+/ Footer - bloc-50 END
+/ Footer - bloc-51
+#bloc-51.bloc.bgc-anti-flash-white.l-bloc
+  .container.bloc-md
+    .row
+      .col-sm-12
+        %h2.text-center.mg-lg.tc-outer-space
+          팀
+    .row
+      .col-sm-2
+        %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/스크린샷%202017-01-10%20오전%201.33.19.png", :width => "170"}/
+      .col-sm-4
+        %h3.blocs-team-header
+          권오현
+        %p.blocs-team-details
+          빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
+        %br/
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-facebook.icon-sm.pull-left
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-github.pull-left.icon-sm
+      .col-sm-2
+        %img.img-circle.center-block.blocs-team-avatar.img-frame-rd.mg-sm{:height => "170", :src => "img/팀원사진_정사각형_달리.png", :width => "170"}/
+      .col-sm-4
+        %h3.blocs-team-header
+          김영민
+        %p.blocs-team-details
+          플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체을 고민하고 실천하고 있습니다.
+        %br/
+        %a{:href => "https://twitter.com/blue_spider", :target => "_blank"}
+          %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
+        %a{:href => "https://github.com/dalikim", :target => "_blank"}
+          %span.fa.fa-github.icon-sm.pull-left
+    .row.voffset
+      .col-sm-2
+        %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/IMG_6811.jpg", :width => "170"}/
+      .col-sm-4
+        %h3.blocs-team-header
+          박은지
+        %p.blocs-team-details
+          디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 디자이너의 노동환경에 관심이 많습니다.
+        %br/
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-twitter.icon-sm.pull-left.blocs-team-first-social
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-facebook.icon-sm.pull-left
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-tumblr.icon-sm.pull-left
+      .col-sm-2
+        %img.img-circle.center-block.blocs-team-avatar.img-frame-rd{:height => "170", :src => "img/팀원사진_정사각형_쿠스.png", :width => "170"}/
+      .col-sm-4
+        %h3.blocs-team-header
+          변형준
+        %p.blocs-team-details
+          빠띠에서 맡고 있는 직무와 관심있는 이슈 소개
+        %br/
+        %a{:href => "index.html", :target => "_blank"}
+          %span.fa.fa-facebook.icon-sm.pull-left
+        %a{:href => "https://github.com/qus1225", :target => "_blank"}
+          %span.fa.fa-github.icon-sm.pull-left
+/ Footer - bloc-51 END
+/ Footer - bloc-52
+#bloc-52.bloc.bgc-white.l-bloc
+  .container.bloc-sm
+    .row.voffset
+      .col-xs-12.col-md-8.col-md-offset-2
+        %h3.statement-bloc-text.tc-outer-space
+          %span
+            %strong 협업
+/ Footer - bloc-52 END
+/ Footer - bloc-53
+#bloc-53.bloc.bgc-white.l-bloc
+  .container.bloc-lg
+    .row
+      .col-sm-2
+        %img.img-responsive.center-block.mg-md{:src => "img/한겨레21.png"}/
+      .col-sm-2
+        %img.img-responsive.center-block.mg-md{:src => "img/와글.png"}/
+      .col-sm-2
+        %img.img-responsive.center-block.mg-md{:src => "img/아이쿱.png"}/
+      .col-sm-2
+        %img.img-responsive.center-block.mg-md{:src => "img/초록우산.png"}/
+      .col-sm-2
+        %img.img-responsive.center-block.mg-md{:src => "img/0dcc4b5e364882d6ee8c4ef0ea5f56e0.png"}/
+      .col-sm-2
+/ Footer - bloc-53 END
+/ Footer - bloc-54
+#bloc-54.bloc.bgc-outer-space.d-bloc
+  .container.bloc-md
+    .row.voffset-clear-xs
+      .col-sm-12.col-md-6.col-md-offset-3
+        .col-xs-3
+          .text-center
+            %a.social{:href => " https://twitter.com/parti_xyz ", :target => "_blank"}
+              %span.fa.fa-twitter.icon-md
+        .col-xs-3
+          .text-center
+            %a.social{:href => "https://www.facebook.com/PartiUnion/ ", :target => "_blank"}
+              %span.fa.fa-facebook.icon-md
+        .col-xs-3
+          .text-center
+            %a.social{:href => "https://github.com/parti-xyz", :target => "_blank"}
+              %span.fa.fa-github.icon-md
+        .col-xs-3
+          .text-center
+            %span.fa.fa-envelope.icon-md
+/ Footer - bloc-54 END
+/ Footer - bloc-55
+#bloc-55.bloc.bloc-bg-texture.texture-darken.tc-white.bg-lines-h-bg.bg-repeat.bgc-white
+  .container.bloc-md
+    .row
+      .col-sm-12
+        %h2.mg-md.device-bloc-text
+          스티비 이메일 구독 신청 양식 코드
+/ Footer - bloc-55 END
