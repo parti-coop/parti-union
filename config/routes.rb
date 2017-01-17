@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get 'campaigns/:slug', to: 'campaigns#show', as: :campaign_detail
+  get 'campaigns/:slug', to: 'pages#campaign_detail', as: :campaign_detail
+  get 'platforms/:slug', to: 'pages#platform_detail', as: :platform_detail
 end
