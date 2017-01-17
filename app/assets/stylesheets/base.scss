@@ -30,7 +30,7 @@ $font_2: Helvetica;
 $font_3: Josefin Sans;
 
 //urls
-$url_0: url(img/pageload-spinner.gif);
+$url_0: url(pageload-spinner.gif);
 $url_3: url(img/onlne-stage.png);
 $url_5: url(img/lines-h-bg.png);
 
@@ -63,6 +63,12 @@ a {
 button {
   outline: none!important;
   outline: none!important;
+}
+.page-container {
+  padding-top: 52px;
+  @media (max-width: $screen-xs-max) {
+    padding-top: 50px;
+  }
 }
 .application-header {
   position: fixed !important;

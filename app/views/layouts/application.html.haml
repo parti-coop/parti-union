@@ -21,10 +21,10 @@
     %section(style='position: fixed; z-index: 1000; width: 100%; top: 64px;')
       .container
         .unobtrusive-flash-container
+    = render 'application/header'
     .page-container
-      = render 'application/header'
       = yield
-      = render 'application/footer'
+    = render 'application/footer'
     = javascript_include_tag 'application'
     = yield :script if content_for?(:script)
 
