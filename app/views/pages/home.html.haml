@@ -1,38 +1,6 @@
 = render 'main_slider'
 
-#bloc-2.bloc.bloc-bg-texture.texture-darken.bg-GettyImages-538362390.tc-anti-flash-white.bgc-white
-  .container.bloc-lg
-    .row
-      .col-sm-12
-        %h2.mg-md.device-bloc-text.text-center
-          빠띠 Parti
-        %p.mg-lg.device-bloc-text-p.text-center
-          누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
-
-#bloc-3.bloc.bgc-outer-space.d-bloc
-  .container.bloc-md
-    .row
-      .col-sm-4
-        %h3.text-center.text-left-xs.mg-clear
-          캠페인
-        %p.text-center.text-left-xs
-          시민들이 쉽고 재미있게
-          %br
-          정치에 참여하는 캠페인을 진행합니다.
-      .col-sm-4
-        %h3.text-center.text-left-xs.mg-clear
-          플랫폼
-        %p.text-center.text-left-xs
-          기술을 활용해
-          %br
-          더 나은 민주주의를 위한 플랫폼을 만듭니다.
-      .col-sm-4
-        %h3.text-center.text-left-xs.mg-clear
-          협업
-        %p.text-center.text-left-xs
-          다양한 이해당사자들과
-          %br
-          협업하여 문제를 해결합니다
+= render 'about'
 
 / ScrollToTop Button
 %a.bloc-button.btn.btn-d.scrollToTop{:onclick => "scrollToTarget('1')"}
@@ -45,57 +13,4 @@
 
 = render 'team'
 
-/ Footer - bloc-52
-#bloc-52.bloc.bgc-white.l-bloc
-  .container.bloc-sm
-    .row.voffset
-      .col-xs-12.col-md-8.col-md-offset-2
-        %h3.statement-bloc-text.tc-outer-space
-          %span
-            %strong 협업
-/ Footer - bloc-52 END
-/ Footer - bloc-53
-#bloc-53.bloc.bgc-white.l-bloc
-  .container.bloc-lg
-    .row
-      .col-sm-2
-        %img.img-responsive.center-block.mg-md{:src => "img/한겨레21.png"}/
-      .col-sm-2
-        %img.img-responsive.center-block.mg-md{:src => "img/와글.png"}/
-      .col-sm-2
-        %img.img-responsive.center-block.mg-md{:src => "img/아이쿱.png"}/
-      .col-sm-2
-        %img.img-responsive.center-block.mg-md{:src => "img/초록우산.png"}/
-      .col-sm-2
-        %img.img-responsive.center-block.mg-md{:src => "img/0dcc4b5e364882d6ee8c4ef0ea5f56e0.png"}/
-      .col-sm-2
-/ Footer - bloc-53 END
-/ Footer - bloc-54
-#bloc-54.bloc.bgc-outer-space.d-bloc
-  .container.bloc-md
-    .row.voffset-clear-xs
-      .col-sm-12.col-md-6.col-md-offset-3
-        .col-xs-3
-          .text-center
-            %a.social{:href => " https://twitter.com/parti_xyz ", :target => "_blank"}
-              %span.fa.fa-twitter.icon-md
-        .col-xs-3
-          .text-center
-            %a.social{:href => "https://www.facebook.com/PartiUnion/ ", :target => "_blank"}
-              %span.fa.fa-facebook.icon-md
-        .col-xs-3
-          .text-center
-            %a.social{:href => "https://github.com/parti-xyz", :target => "_blank"}
-              %span.fa.fa-github.icon-md
-        .col-xs-3
-          .text-center
-            %span.fa.fa-envelope.icon-md
-/ Footer - bloc-54 END
-/ Footer - bloc-55
-#bloc-55.bloc.bloc-bg-texture.texture-darken.tc-white.bg-lines-h-bg.bg-repeat.bgc-white
-  .container.bloc-md
-    .row
-      .col-sm-12
-        %h2.mg-md.device-bloc-text
-          스티비 이메일 구독 신청 양식 코드
-/ Footer - bloc-55 END
+= render 'collaboration'

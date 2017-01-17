@@ -6,6 +6,7 @@
 @import "campaigns";
 @import "platforms";
 @import "team";
+@import "about";
 
 #bloc-2 {
   h2 {
@@ -604,9 +605,6 @@ label {
 }
 .bg-lines-h-bg {
   background-image: $url_5;
-}
-.bg-GettyImages-483184276 {
-  background-image: $url_6;
 }
 @media(max-width: 1024px) {
   .bloc {
