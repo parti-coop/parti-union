@@ -4,6 +4,7 @@
 @import "header";
 @import "main-slider";
 @import "campaigns";
+@import "platforms";
 
 #bloc-2 {
   h2 {
@@ -481,21 +482,6 @@ iframe {
 .showScrollTop {
   font-size: 14px;
   opacity: 1;
-}
-.blocsapp-device-imac {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 4% 8.5% 23.7%;
-  background-image: $url_1;
-  img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
 }
 h1 {
   font-family: $font_2;
