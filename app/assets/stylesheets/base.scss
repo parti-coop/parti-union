@@ -34,6 +34,18 @@ $url_0: url(img/pageload-spinner.gif);
 $url_3: url(img/onlne-stage.png);
 $url_5: url(img/lines-h-bg.png);
 
+// 상단고정 헤더가 있을 경우 앵커위치가 헤더에 가리지 않게 해줍니다
+.anchor{
+  display: block;
+  height: 52px; /*same height as header*/
+  margin-top: -52px; /*same height as header*/
+  visibility: hidden;
+  @media (max-width: $screen-xs-max) {
+    height: 50px; /*same height as header*/
+    margin-top: -50px; /*same height as header*/
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -51,6 +63,11 @@ a {
 button {
   outline: none!important;
   outline: none!important;
+}
+.application-header {
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
 }
 #page-loading-blocs-notifaction {
   position: fixed;
