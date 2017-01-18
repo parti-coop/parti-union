@@ -1,4 +1,4 @@
-# union
+# parti-union
 
 ## 실환경 구축 방법
 
