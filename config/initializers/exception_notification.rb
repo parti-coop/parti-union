@@ -6,7 +6,7 @@ ExceptionNotification.configure do |config|
   end
 
   config.add_notifier :slack, {
-    username: "Union #{Rails.env}",
+    username: "PartiUnion #{Rails.env}",
     webhook_url: ENV["SLACK_WEBHOOK_URL"],
     additional_parameters: {
       mrkdwn: true

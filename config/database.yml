@@ -12,8 +12,8 @@ default: &default
 
 development:
   <<: *default
-  database:  union_development_<%= branch %>
+  database:  parti_union_development_<%= branch %>
 
 test:
   <<: *default
-  database:  union_test_<%= branch %>
+  database:  parti_union_test_<%= branch %>
