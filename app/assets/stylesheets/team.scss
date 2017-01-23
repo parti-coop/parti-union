@@ -2,3 +2,25 @@
   width: 150px;
   height: 150px;
 }
+
+.team-container {
+  .team-member-container {
+    padding-bottom: 20px;
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 0;
+    }
+  }
+  .team-member {
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 40px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .socail-account {
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
+}
