@@ -14,10 +14,6 @@
   }
 }
 
-.platform-wouldyou {
-  background-image: url('platform-parti-detail-background.png');
-}
-
 .paltform-detail {
   h3 {
     font-family: $font_0;
@@ -28,4 +24,11 @@
     font-weight: 400;
     line-height: 24px;
   }
+}
+
+.device-bloc-icon {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 80px;
+  max-height: 80px;
 }
