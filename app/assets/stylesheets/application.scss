@@ -188,9 +188,9 @@
   font-weight: 600;
   padding: 15px;
   img {
-    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    height: 24px;
   }
 }
 .navbar-toggle {
@@ -830,7 +830,6 @@ label {
   .navbar-brand img {
     max-height: 40px;
     width: auto;
-    margin: -10px 10px 0 0;
   }
   .bloc-group .bloc {
     display: block;
