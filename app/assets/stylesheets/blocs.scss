@@ -29,18 +29,13 @@ $font_1: Lato;
 $font_2: Helvetica;
 $font_3: Josefin Sans;
 
-//urls
-$url_0: url(pageload-spinner.gif);
-$url_3: url(img/onlne-stage.png);
-$url_5: url(img/lines-h-bg.png);
-
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
   z-index: 100000;
-  background: $white $url_0 no-repeat center center;
+  background: $white asset_url('pageload-spinner.gif') no-repeat center center;
 }
 .bloc {
   width: 100%;
@@ -921,7 +916,6 @@ label {
 }
 .statement-bloc-text {
   line-height: 38px;
-  font-style: italic;
   font-size: 28px;
   text-align: center;
   font-weight: lighter;
@@ -1003,12 +997,6 @@ label {
   &:hover {
     color: $color_deluge_approx!important;
   }
-}
-.bg-onlne-stage-bg {
-  background-image: $url_3;
-}
-.bg-lines-h-bg {
-  background-image: $url_5;
 }
 @media(max-width: 1024px) {
   .bloc {
