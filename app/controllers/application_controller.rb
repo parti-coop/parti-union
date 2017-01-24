@@ -11,17 +11,17 @@ class ApplicationController < ActionController::Base
   end
 
   def build_meta_options(options)
-    site_name = "빠띠유니온 PartiUnion"
-    title = view_context.strip_tags(options[:title]) || "빠띠유니온"
+    site_name = "빠띠 Parti"
+    title = view_context.strip_tags(options[:title]) || "빠띠, We develop democracy"
     image = options[:image] || view_context.image_url('seo.png')
     url = options[:url] || root_url
-    description = view_context.strip_tags(options[:description]) || "빠띠유니온 입니다"
+    description = view_context.strip_tags(options[:description]) || "누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다"
     {
       title:       title,
       reverse:     true,
       image:       image,
       description: description,
-      keywords:    "시민, 정치, 국회, 입법, 법안, 민주주의, 온라인정치, 정치참여",
+      keywords:    "빠띠, 빠흐띠, 우주당, 정치캠페인, 민주주의 캠페인, 정치참여, 정치, 민주주의, IT, 더나은민주주의, digital democracy, 시민, 직접민주주의",
       canonical:   url,
       twitter: {
         site_name: site_name,
