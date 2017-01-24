@@ -9,7 +9,7 @@
                 %li{class: "#{'active' if index == 0}", "data-slide-to" => index, "data-target" => "#carousel-1"}
             .carousel-inner
               - @slides.each_with_index do |slide, index|
-                .item{class: "#{'active' if index == 0}", style: "background-image: url(#{image_url(slide.image.url)});"}
+                .item{class: "#{'active' if index == 0}", style: "background-image: url(#{asset_url(slide.image.url)});"}
                   .carousel-caption
                     - if slide.title.present?
                       %h1.mg-md
