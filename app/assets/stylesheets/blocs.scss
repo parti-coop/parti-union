@@ -352,6 +352,7 @@ $font_3: Josefin Sans;
   }
   .navbar a {
     color: $black_60;
+    text-shadow: 1px 1px 1px gainsboro;
     &:hover {
       color: $black_100;
     }
