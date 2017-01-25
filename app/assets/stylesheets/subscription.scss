@@ -1,0 +1,22 @@
+.subscription {
+  .device-bloc-text-p {
+    font-family: Open Sans;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input {
+    width: 200px;
+    color: black;
+  }
+  .email-input {
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
+}
