@@ -1220,7 +1220,6 @@ label {
   .nav > li {
     margin-top: 0;
     border-bottom: 1px solid $black_10;
-    background: $black_5;
     text-align: left;
     padding-left: 15px;
     width: 100%;
@@ -1348,7 +1347,6 @@ label {
 }
 .nav > li {
   float: left;
-  margin-top: 4px;
   font-size: 16px;
   a {
     &:hover {
