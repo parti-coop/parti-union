@@ -352,7 +352,6 @@ $font_3: Josefin Sans;
   }
   .navbar a {
     color: $black_60;
-    text-shadow: 1px 1px 1px gainsboro;
     &:hover {
       color: $black_100;
     }
@@ -627,6 +626,23 @@ $font_3: Josefin Sans;
     right: 20px;
     //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
     transform: translate(0, -50%);
+    li {
+      a {
+        padding-left: 0;
+        &:after {
+          content: '|';
+          margin-left: 12px;
+        }
+      }
+      &:last-child {
+        a {
+          &:after {
+            content: none;
+            margin-left: 0;
+          }
+        }
+      }
+    }
   }
   .nav-center {
     text-align: center;
