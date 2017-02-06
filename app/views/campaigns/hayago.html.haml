@@ -2,10 +2,12 @@
   .container.bloc-md
     .row
       .col-sm-8
-        = image_tag "campaign-hayago-detail.png", class: 'img-responsive'
+        = link_to 'http://wouldyouparty.org/events/2', target: '_blank' do
+          = image_tag "campaign-hayago-detail.png", class: 'img-responsive'
       .col-sm-4
         %h3.mg-md
-          우주당 : 하야GO
+          = link_to 'http://wouldyouparty.org/events/2', target: '_blank' do
+            우주당 : 하야GO
         %p
           직접민주주의 프로젝트 정당 우주당의 첫번째 이번트로, 박근혜 대통령 탄핵 집회 참여 인증사진과 메시지를 공유하여 집회에 같이 참여한 참가자를 찾거나 장소에 구애받지 않고 온라인에서 함께할 수 있는 프로젝트.
           %br/

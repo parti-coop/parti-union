@@ -2,10 +2,12 @@
   .container.bloc-md
     .row
       .col-sm-8
-        = image_tag "campaign-nongmo-detail.png", class: 'img-responsive'
+        = link_to 'http://nongmo.parti.xyz/', target: '_blank' do
+          = image_tag "campaign-nongmo-detail.png", class: 'img-responsive'
       .col-sm-4
         %h3.mg-md
-          GMO완전표시제 입법 청원 캠페인
+          = link_to 'http://nongmo.parti.xyz/', target: '_blank' do
+            GMO완전표시제 입법 청원 캠페인
         %p
           국회 보건복지위원회의 법안심사소위원회 위원장인 인재근 의원(더불어민주당 도봉구갑)을 방문하여 17만여명의 서명 전달했습니다.
           %br/

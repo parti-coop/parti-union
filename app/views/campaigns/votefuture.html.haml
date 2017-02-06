@@ -2,10 +2,12 @@
   .container.bloc-md
     .row
       .col-sm-8
-        = image_tag "campaign-votefuture-detail.png", class: 'img-responsive'
+        = link_to 'http://votefuture.kr/', target: '_blank' do
+          = image_tag "campaign-votefuture-detail.png", class: 'img-responsive'
       .col-sm-4
         %h3.mg-md
-          미래에서 온 투표
+          = link_to 'http://votefuture.kr/', target: '_blank' do
+            미래에서 온 투표
         %p
           아동의 제안을 모아 아동정책을 제 19대 대선 후보에게 전달하는 정책 제안 프로젝트.
           %br
