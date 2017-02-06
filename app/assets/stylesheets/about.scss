@@ -1,8 +1,28 @@
 .about-slogan {
+  h2 {
+    font-weight: 800;
+    @media (min-width: $screen-xs-max) {
+      font-size: 50px;
+    }
+    @media (max-width: $screen-xs-max) {
+      line-height: 46px;
+    }
+  }
+  .bloc-md {
+    @media (min-width: $screen-xs-max) {
+      padding: 70px 0;
+    }
+  }
   .device-bloc-text-p {
     font-family: Open Sans;
     font-weight: 600;
-    margin-bottom: 38px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 30px;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 24px;
+      font-size: 20px;
+    }
   }
   .btn {
     margin-top: 20px;
