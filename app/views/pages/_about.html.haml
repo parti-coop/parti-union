@@ -18,24 +18,24 @@
           민주주의를 확산시키기 위해
           %br.visible-xs
           노력합니다.
-        %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email"} 빠띠 소식 받아보기
-
-#subscribe-email.modal.fade{:role => "dialog", :tabindex => "-1"}
-  .modal-dialog{:role => "document"}
-    .modal-content
-      .modal-header
-        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} &#215;
-        .header-title
-          이메일구독
-      .modal-body
-        %form{:action => "https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers", :method => "POST"}
-          %p.mg-lg.device-bloc-text-p
-            누구나 쉽고 즐겁게 참여하는 정치 모델을 만듭니다
-          .email-input
-            %label{:for => "email"} 이메일 주소
-            %input#email{:name => "email", :type => "text"}/
-          %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', :type => "submit"} 새로운 정치 모델 소식 구독하기
+        %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 소식 받아보기
+  #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+    .modal-dialog{:role => "document"}
+      .modal-content
+        .modal-body
+          %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+            %span{"aria-hidden" => "true"} &#215;
+          %form{:action => "https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers", :method => "POST"}
+            %h3.email-guide
+              민주주의 벤처
+              %br.visible-xs
+              빠띠의 소식을
+              %br.visible-xs
+              이메일로 받아보세요!
+            .email-input
+              %label{:for => "email"} 이메일 주소
+              %input#email{:name => "email", :type => "email", class: 'form-control'}/
+            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} 구독신청
 
 #bloc-3.bloc.bgc-outer-space.d-bloc
   .container.bloc-md

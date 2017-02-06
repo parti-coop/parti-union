@@ -27,16 +27,52 @@
   .btn {
     margin-top: 20px;
   }
-  label {
-    margin-right: 10px;
-  }
-  input {
-    width: 200px;
-    color: black;
-  }
-  .email-input {
-    @media (max-width: $screen-xs-max) {
-      text-align: center;
+  #subscribe-email-modal {
+    text-align: center;
+    color: #484848;
+
+    .modal-dialog {
+      margin-top: 10%;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 30%;
+      }
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .email-guide {
+      color: #6b37c1;
+      @media (max-width: $screen-xs-max) {
+        line-height: 28px;
+      }
+    }
+
+    .email-input {
+      margin-top: 18px;
+      @media (max-width: $screen-xs-max) {
+        text-align: center;
+      }
+      label {
+        margin-right: 10px;
+        color: gray;
+      }
+      input {
+        width: 200px;
+        color: black;
+        display: inline-block;
+      }
+    }
+
+    button[type= "submit"] {
+      border-radius: 4px;
+      padding: 6px 16px;
+      color: #fff;
+      background-color: #6b37c1 !important;
+      @media (max-width: $screen-xs-max) {
+        width: inherit;
+      }
     }
   }
 }
