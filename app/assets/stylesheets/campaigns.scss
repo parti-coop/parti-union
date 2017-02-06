@@ -49,3 +49,14 @@
     line-height: 24px;
   }
 }
+
+.button-wrapper {
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+}
+.btn {
+  @media (max-width: $screen-xs-max) {
+    width: inherit;
+  }
+}

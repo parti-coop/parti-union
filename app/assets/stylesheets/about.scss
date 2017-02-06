@@ -24,8 +24,16 @@
       font-size: 20px;
     }
   }
+  .button-wrapper {
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
   .btn {
-    margin-top: 20px;
+    margin-top: 22px;
+    @media (max-width: $screen-xs-max) {
+      width: inherit;
+    }
   }
   #subscribe-email-modal {
     text-align: center;
