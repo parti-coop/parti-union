@@ -1,0 +1,12 @@
+.footer-container {
+  @media (max-width: 767px) {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      .col-sm-12 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
