@@ -1,17 +1,17 @@
 / bloc-8
-#bloc-8.bloc.bloc-bg-texture.texture-darken.bgc-white.tc-white.platform-wouldyou{ style: "background-image: url(#{asset_url('platform-wouldyou-detail-background.png')})" }
+#bloc-8.bloc.bloc-bg-texture.texture-darken.bgc-white.tc-white.platform-wouldyou{ style: "background-image: url(#{asset_url('platforms/platform-wouldyou-detail-background.png')})" }
   .container.bloc-lg
     .row
       .col-sm-6
-        = image_tag "platform-wouldyou-detail1.png", class: 'img-responsive device-bloc-icon'
+        = image_tag "platforms/platform-wouldyou-detail1.png", class: 'img-responsive device-bloc-icon'
         %h2.mg-md.device-bloc-text
           우주당
         %p.mg-lg.device-bloc-text-p
-          디지털 직접 민주주의 프로젝트 정당
+          직접 민주주의 프로젝트 정당
         %a.btn.btn-wire.btn-lg.device-bloc-button.btn-sq.wire-btn-white{:href => "http://wouldyouparty.org/", :target => "_blank"} 우주당으로 가기
       .col-sm-6
         .center-block.blocsapp-device.blocsapp-device-imac
-          = image_tag "platform-wouldyou-detail2.png", class: 'img-responsive'
+          = image_tag "platforms/platform-wouldyou-detail2.png", class: 'img-responsive'
 
 / bloc-8 END
 / bloc-9
@@ -25,4 +25,14 @@
           우주당은 시민들이 자발적으로 만드는 시민들의 정치 놀이터입니다.
           %br
           직접 민주주의 방식에 기반하여 시민이 주도하는 새로운 정치 문화를 함께 만들어 갑니다.
+          %br
+          이슈별 커뮤니티 :
+          = link_to 'http://wouldyou.parti.xyz', 'http://wouldyou.parti.xyz', target: '_blank'
+          %br
+          페이스북 페이지 :
+          = link_to 'fb.com/wouldyouparty.org', 'http://fb.com/wouldyouparty.org', target: '_blank'
+          %br
+          트위터 :
+          = link_to 'twitter.com/wouldyouparty', 'http://twitter.com/wouldyouparty', target: '_blank'
+
 / bloc-9 END
