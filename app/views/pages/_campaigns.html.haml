@@ -62,11 +62,14 @@
 
       .row
         .col-sm-4
-          = image_tag "campaigns/campaign-inno.png", class: 'img-responsive', onclick: "alert('만드는 중이예요^^');"
+          %a{:href => "campaigns/innovators"}
+            = image_tag "campaigns/campaign-inno.png", class: 'img-responsive'
           %h3.mg-sm.tc-outer-space
-            당신은 혁신의 편입니까?
+            %a{:href => "campaigns/innovators"}
+              %u 당신은 혁신의 편입니까?
+            %br/
           %p.mg-lg
-            (coming soon) 혁신가들의 제안으로 만드는 혁신정책 프로젝트
+            혁신가들의 제안으로 만드는 혁신정책 프로젝트
         .col-sm-4
           %a{:href => "campaigns/votefuture"}
             = image_tag "campaigns/campaign-votefuture.png", class: 'img-responsive'
