@@ -42,11 +42,14 @@
           %p.mg-lg
             (coming soon) 세월호 참사의 기록에 시민과 연구자가 자유롭게 접근하고, 기록과 기억의 공유로 한국 사회의 변화 방향을 제안하는 프로젝트
         .col-sm-4
-          = image_tag "campaigns/campaign-inno.png", class: 'img-responsive', onclick: "alert('만드는 중이예요^^');"
+          %a{:href => "campaigns/issuebattle"}
+            = image_tag "campaigns/campaign-issuebattle.png", class: 'img-responsive'
           %h3.mg-sm.tc-outer-space
-            당신은 혁신의 편입니까?
+            %a{:href => "campaigns/issuebattle"}
+              %u 정책배틀
+            %br/
           %p.mg-lg
-            (coming soon) 혁신가들의 제안으로 만드는 혁신정책 프로젝트
+            사회적 의제를 놓고 전문가, 활동가, 정치인, 일반 시민들이 모여서 토론과 투표를 통해 해결책을 마련해 가는 참여형 의사결정 플랫폼 '타운홀'을 활용하여 오프라인에서 전문가가 제안하고 시민이 투표하는 '정책배틀' 캠페인.
         .col-sm-4
           %a{:href => "campaigns/votefuture1"}
             = image_tag "campaigns/campaign-votefuture1.png", class: 'img-responsive'
@@ -58,6 +61,12 @@
             아동들이 직접 국회에 가서 그들이 제안하는 대선 공약을 발표한 캠페인.
 
       .row
+        .col-sm-4
+          = image_tag "campaigns/campaign-inno.png", class: 'img-responsive', onclick: "alert('만드는 중이예요^^');"
+          %h3.mg-sm.tc-outer-space
+            당신은 혁신의 편입니까?
+          %p.mg-lg
+            (coming soon) 혁신가들의 제안으로 만드는 혁신정책 프로젝트
         .col-sm-4
           %a{:href => "campaigns/votefuture"}
             = image_tag "campaigns/campaign-votefuture.png", class: 'img-responsive'
@@ -76,6 +85,8 @@
             %br/
           %p.mg-lg
             박근혜 대통령 탄핵 집회 참여 인증사진과 메시지를 공유하여 집회에 같이 참여한 참가자를 찾거나 장소에 구애받지 않고 온라인에서 함께할 수 있는 프로젝트
+
+      .row
         .col-sm-4
           %a{:href => "campaigns/nongmo"}
             = image_tag "campaigns/campaign-nongmo.png", class: 'img-responsive'
@@ -85,8 +96,6 @@
             %br/
           %p.mg-lg
             보건복지위원회의 법안심사소위원회 위원장인 인재근 의원에게 전달한 17만여명의 GMO완전표시제 서명 캠페인
-
-      .row
         .col-sm-4
           %a{:href => "campaigns/iknow"}
             = image_tag "campaigns/campaign-iknow.png", class: 'img-responsive'
@@ -105,6 +114,8 @@
             %br/
           %p.mg-lg
             프로젝트 정당 ‘나는 알아야겠당'에서 발의할 입법안 ‘GMO 완전표시제’에 대한 전문가 쟁점 토론과 시민 투표를 진행한 프로젝트
+
+      .row
         .col-sm-4
           %a{:href => "campaigns/iknow2"}
             = image_tag "campaigns/campaign-iknow2.png", class: 'img-responsive'
@@ -114,8 +125,6 @@
             %br/
           %p.mg-lg
             바글와글 1차 쟁점법안 투표에서 4개 법안 중 5470개의 표를 받은 GMO 완전표시제 입법을 위한 원이슈 프로젝트 정당 만들기
-
-      .row
         .col-sm-4
           %a{:href => "campaigns/iknow1"}
             = image_tag "campaigns/campaign-iknow1.png", class: 'img-responsive'
@@ -134,6 +143,7 @@
             %br/
           %p.mg-lg
             시민이 직접 입법 제안하고, 천명의 지지를 받으면 입법안을 의원에게 전달하는 시민입법플랫폼
+      .row
         .col-sm-4
           %a{:href => "campaigns/yourvote"}
             = image_tag "campaigns/campaign-yourvote.png", class: 'img-responsive'
@@ -143,7 +153,6 @@
             %br/
           %p.mg-lg
             사전에 전국 유권자 1500명에게 물어, 최적화된 7개 문항만을 뽑아 구성한 예측모델로 응답자의 투표 결과를 예측한 프로젝트
-      .row
         .col-sm-4
           %a{:href => "campaigns/letter"}
             = image_tag "campaigns/campaign-letter.png", class: 'img-responsive'
