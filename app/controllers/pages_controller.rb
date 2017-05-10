@@ -3,6 +3,10 @@ class PagesController < ApplicationController
     @slides = Slide.priority.recent
   end
   def campaign_detail
+    if params[:slug] == 'index'
+      render_404 and return
+    end
+
     render "campaigns/#{params[:slug]}"
   end
 
