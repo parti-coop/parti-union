@@ -1,12 +1,13 @@
 .about-slogan {
   h2 {
-    font-weight: 800;
-    @media (min-width: $screen-xs-max) {
-      font-size: 50px;
-    }
-    @media (max-width: $screen-xs-max) {
-      line-height: 46px;
-    }
+    font-weight: 200;
+    letter-spacing:-0.08em;
+  }
+  h2>span{
+    color:#e1b8ff;
+    font-weight:400;
+    padding:5px;
+    border-bottom:1px solid #e1b8ff;
   }
   .bloc-md {
     @media (min-width: $screen-xs-max) {
@@ -15,13 +16,14 @@
   }
   .device-bloc-text-p {
     font-family: Open Sans;
-    font-weight: 600;
-    margin-top: 40px;
+    font-weight: 300;
+    margin-top: 30px;
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 20px;
     @media (max-width: $screen-xs-max) {
-      margin-top: 24px;
-      font-size: 20px;
+      margin-top: 26px;
+      margin-left:14px;
+      font-size: 18px;
     }
   }
   .button-wrapper {
@@ -33,6 +35,10 @@
     margin-top: 22px;
     @media (max-width: $screen-xs-max) {
       width: inherit;
+    }
+    &:hover{
+      color:#e1b8ff !important;
+      border-color:#e1b8ff !important;
     }
   }
   #subscribe-email-modal {
