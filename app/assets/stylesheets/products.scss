@@ -8,6 +8,47 @@
       color: white;
     }
   }
+  section.list {
+    background-color: white;
+    margin-bottom: 130px;
+    .list-title {
+      text-align: center;
+      .main-title {
+        margin-top: 45px;
+        margin-bottom: 10.8px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        letter-spacing: -0.07em;
+      }
+      .sub-title {
+        margin-bottom: 33px;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 1);
+        line-height: 30px;
+        letter-spacing: -0.07em;
+      }
+    }
+    .product-title {
+      margin-top: 18px;
+      margin-bottom: 7px;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 1);
+      letter-spacing: -0.07em;
+      text-align: center;
+    }
+    .product-price {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 1);
+      letter-spacing: -0.07em;
+      text-align: center;
+    }
+
+
+  }
 
   // .about {
   //   background-color: rgba(123, 95, 168, 1);

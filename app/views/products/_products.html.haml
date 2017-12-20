@@ -1,1 +1,22 @@
-
+.page-products
+  %section.list
+    .container
+      .col-xs-12.col-md-8.col-md-offset-2
+        .list-title
+          .main-title
+            빠띠스토어
+            %br/
+          .sub-title
+            일상에서 민주주의를 만나는 법. 빠띠가 만든 굿즈와 스토리를 만나보세요.
+            %br/
+            수익은 민주주의 활동가 활동바에 후원됩니다.
+    .container
+      .row
+      - @products.each do |p|
+        .col-sm-4
+          %a{:href => "campaigns/issuebattle"}
+            = image_tag "campaigns/campaign-votefuture1.png", class: 'img-responsive'
+          .product-title= p.title
+          .product-price
+            = number_to_currency(p.price, unit: "", precision: 0)
+            원
