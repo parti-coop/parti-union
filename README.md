@@ -19,7 +19,7 @@ production:
   S3_SECRET_KEY: xx
   S3_REGION: xx
   S3_BUCKET: xx
-  DEFAULT_ADMIN_EMAIL: 최초 관리자 이메일 
+  DEFAULT_ADMIN_EMAIL: 최초 관리자 이메일
   DEFAULT_ADMIN_PROVIDER: 최초 관리자의 인증 제공 업체 구별자
   DEFAULT_ADMIN_UID: 인증 제공 업체에 등록된 최초 관리자의 uid
 ```
@@ -73,7 +73,7 @@ development:
     username: 사용자이름
     password: 암호
 ```
- 
+
 #### 스키마
 
 ```
@@ -91,4 +91,16 @@ export FACEBOOK_APP_ID="xx"
 export FACEBOOK_APP_SECRET="xx"
 export TWITTER_APP_ID="xx"
 export TWITTER_APP_SECRET="xx"
+```
+
+### 굿즈 추가하기
+
+lib/tasks/products.rake에 product의 세부내용을 추가합니다.
+app/assets/images/products에 slug과 동일한 이름의 폴더를 생성한 후 그 안에 image파일을 추가합니다. 해당 폴더안에 아래 파일들을 추가합니다.
+* primary.png : 굿즈 리스트 화면에 표시될 상품의 이미지입니다.
+
+아래 명령어를 수행합니다.
+
+```
+$ bin/rails products:seed
 ```
