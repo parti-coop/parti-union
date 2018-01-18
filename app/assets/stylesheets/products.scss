@@ -55,13 +55,13 @@
   }
 }
 
-.page-fish-product {
+.product {
   .img-product {
     height: 300px;
     width: 100%;
-    // max-width: 400px;
     margin-bottom: 22px;
     background-size: cover;
+    background-position: center;
   }
   .product-intro {
     margin-top: 36px;
@@ -119,29 +119,32 @@
     margin-bottom: 38px;
   }
 
-  .product-contents {
+  .product-description {
     text-align: center;
   }
-  .content01, .content06 {
+  .first-content, .last-content {
     margin-bottom: 18px;
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
   }
-  .content02, .content03, .content04, .content05 {
+  .content {
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
   }
-  .visual01, .visual04, .visual05 {
-    width: 400px;
+  .vertical-visual {
+    width: 450px;
     background-size: cover;
     display:block;
     margin:18px auto;
   }
-  .visual02, .visual03, .visual06 {
-    width: 500px;
+  .horizontal-visual {
+    width: 700px;
     background-size: cover;
     margin:18px auto;
+  }
+  .content-link {
+    text-decoration: underline;
   }
 }
