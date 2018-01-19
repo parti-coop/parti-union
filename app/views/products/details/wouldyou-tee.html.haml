@@ -2,16 +2,17 @@
   %section.product-details
     .container
       .row.product-intro
-        .col-sm-7.col-md-5.keyvisual
+        .col-sm-6.keyvisual
           .img-product{style: "background-image: url(#{asset_url('products/wouldyou-tee/details/wouldyou_tee.png')})"}
-        .col-sm-5.col-md-7.information
+        .col-sm-6.information
           .product-title
             우주당 맨투맨 티셔츠
-          .product-price
-            00,000원 / 개당
+          -# .product-price
+          -#   00,000원 / 개당
           .product-subtitle
+            %br
             직접 민주주의 프로젝트 정당 우주당의 로고 티셔츠
-          %a.purchase-topbtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+          %a.purchase-topbtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.');"} 구매하기
       .product-description
         .first-content
           = image_tag "products/wouldyou-tee/details/wouldyou_tee.png", class: 'img-responsive horizontal-visual'
@@ -45,9 +46,9 @@
           ,
           %a.content-link{href:'https://www.facebook.com/wouldyouparty.org/',target:'_blank'}
             페이스북
-          ,에서 확인해보세요.
+          에서 확인해보세요.
         .last-content
           %br
           사이즈: S(85), M(90), L(100), XL(105), 2XL(110), 3XL(115)
 
-        %a.purchase-bottombtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+        %a.purchase-bottombtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.');"} 구매하기

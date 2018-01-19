@@ -37,8 +37,8 @@ namespace :products do
         slug: 'wouldyou-stickerblack',
         price: '미정')
 
-      seed(title: '우주당 스티커 (투명)',
-        description: '우주당 스티커 (투명)입니다',
+      seed(title: '우주당 스티커 (화이트)',
+        description: '우주당 스티커 (화이트)입니다',
         slug: 'wouldyou-stickertrans',
         price: '미정')
     end

@@ -2,16 +2,18 @@
   %section.product-details
     .container
       .row.product-intro
-        .col-sm-7.col-md-5.keyvisual
+        .col-sm-6.keyvisual
           .img-product{style: "background-image: url(#{asset_url('products/democracy-card/details/card_1.png')})"}
-        .col-sm-5.col-md-7.information
+        .col-sm-6.information
           .product-title
             조직 민주주의 엽서 세트
-          .product-price
-            00,000원 / 개당
+          -# .product-price
+          -#   00,000원 / 개당
           .product-subtitle
+            %br
             내가 속한 조직과 단체의 민주주의를 돌아보는 엽서 세트
-          %a.purchase-topbtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+          %a.purchase-topbtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.')"} 구매하기
+          -# %a.share-btn.btn{:href => "", onclick: "alert('준비중입니다')"}
       .product-description
         .first-content
           = image_tag "products/democracy-card/details/card_1.png", class: 'img-responsive horizontal-visual'
@@ -22,11 +24,11 @@
           나눈 대담 기록을 체크리스트로 만들어봤습니다.
         .content
           = image_tag "products/democracy-card/details/card_2.png", class: 'img-responsive horizontal-visual'
-          내가 속한 조직은 민주적인지, 그리고 나는 어떻게 민주적으로 존재할 수 있는지 묻고 답해보세요.
+          내가 속한 조직이나 회사를 생각하면 민주주의와 많이 먼 것 같죠?
           %br
-          국제 NPO 컨퍼런스 세션에서 엔스파이럴, 롤링다이어스, 빠띠가
+          (좌) 인맥에 따라 달라지는 회사 생활,
           %br
-          나눈 대담 기록을 체크리스트로 만들어봤습니다.
+          그저 줄을 잘못 선 것일뿐이라 자신 또는 친구에게 위로 엽서카드를 주세요.
         .content
           %br
           (우) 어차피 답은 정해져 있고 대답만 하는 메일이 지겨워질 때,
@@ -49,4 +51,4 @@
           %br
           엽서 사이즈 : 100 x 148 (mm)
 
-        %a.purchase-bottombtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+        %a.purchase-bottombtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.');"} 구매하기

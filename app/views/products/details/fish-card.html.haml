@@ -2,16 +2,17 @@
   %section.product-details
     .container
       .row.product-intro
-        .col-sm-7.col-md-5.keyvisual
+        .col-sm-6.keyvisual
           .img-product{style: "background-image: url(#{asset_url('products/fish-card/details/fishcard_2.png')})"}
-        .col-sm-5.col-md-7.information
+        .col-sm-6.information
           .product-title
             물고기 파티 네트워킹 스티커
-          .product-price
-            00,000원 / 개당
+          -# .product-price
+          -#   00,000원 / 개당
           .product-subtitle
+            %br
             독립적인 개인들을 위한 즐겁고 가벼운 네트워킹 프로그램 스티커
-          %a.purchase-topbtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+          %a.purchase-topbtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.');"} 구매하기
       .product-description
         .first-content
           = image_tag "products/fish-card/details/fish_1.jpg", class: 'img-responsive vertical-visual'
@@ -51,8 +52,12 @@
           독립적이고 자유로운 개인이면서도 뭔가 함께할 사람을 찾고 있다면,
           %br
           이 스티커를 활용한 물고기 피티를 열어보세요 :)
+          %br
+          %br
+          %a.content-link{href:'https://parti-xyz.gitbooks.io/issue-guide/content/bb3c-ace0-ae30-d30c-d2f0.html',target:'_blank'}
+            물고기 파티 가이드 보기
         .last-content
           %br
           사이즈: A4사이즈, 297 x 210 (mm)
 
-        %a.purchase-bottombtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+        %a.purchase-bottombtn.btn{:href => "", onclick: "alert('2월 오픈 준비 중입니다.');"} 구매하기

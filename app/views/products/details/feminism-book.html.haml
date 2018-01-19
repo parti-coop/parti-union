@@ -2,16 +2,17 @@
   %section.product-details
     .container
       .row.product-intro
-        .col-sm-7.col-md-5.keyvisual
+        .col-sm-6.keyvisual
           .img-product{style: "background-image: url(#{asset_url('products/feminism-book/details/femi_book_1.png')})"}
-        .col-sm-5.col-md-7.information
+        .col-sm-6.information
           .product-title
             페미니스트 선생님이 필요해 도서
-          .product-price
-            00,000원 / 개당
+          -# .product-price
+          -#   00,000원 / 개당
           .product-subtitle
+            %br
             페미니스트 선생님과 성평등 교육의 확산을 지지하는 도서
-          %a.purchase-topbtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+          %a.purchase-topbtn.btn{:href => "http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=126029924", target:'_blank'} 구매하기
       .product-description
         .first-content
           = image_tag "products/feminism-book/details/femi_book_2.jpg", class: 'img-responsive horizontal-visual'
@@ -36,11 +37,11 @@
           %br
           관련 운동의 캠페인 내용은 해시태그 캠페인 참여자들이 기자회견에 사용한
           %br
-          %a.content-link{href:'http://wouldyouparty.govcraft.org/petitions/54',target:'_blank'}
+          %a.content-link{href:'http://dev.partiunion.org/products/femischool-picket',target:'_blank'}
             피켓 페이지
           에서 더 확인하실 수 있습니다.
         .last-content
           %br
           본 책은 온/오프라인 서점에서 구매하실 수 있습니다.
 
-        %a.purchase-bottombtn.btn{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"} 구매하기
+        %a.purchase-bottombtn.btn{:href => "http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=126029924", target:'_blank'} 구매하기
