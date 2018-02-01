@@ -77,10 +77,18 @@ development:
 #### 스키마
 
 ```
-CREATE DATABASE green_umbrella_development_브랜치이름 CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE parti_union_development_브랜치이름 CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
-이후 db:migrate로 수행합니다.
+여기서 현재 프로젝트에 연결되는 database의 이름은 config/datbase.yml에서 확인할 수 있습니다. 이 프로젝트는 part_union_development임을 알 수 있습니다. 이후 db 마이그레이션을 수행합니다.
+```
+bin/rails db:migrate
+```
+이 작업은 여태까지의 db 변경사항(db/migrate에 기록된)을 db에 모두 적용하는 과정입니다. 이 때, 에러가 날 경우에는 
+- 손으로 데이터베이스 스키마를 수정하였을 경우
+- 실행 중에 마이그레이션 파일을 수정한 경우
+- 마이그레이션이 스키마 마이그레이션 테이블에 업데이트되지 않은 경우
+등의 문제의 가능성이 있습니다.
 
 ### 로그인 준비
 
@@ -104,3 +112,22 @@ app/assets/images/products에 slug과 동일한 이름의 폴더를 생성한 �
 ```
 $ bin/rails products:seed
 ```
+
+### 로컬 서버 켜기
+
+puma-dev https://github.com/puma/puma-dev 를 설치합니다.
+
+```
+$ brew install puma/puma/puma-dev
+$ puma-dev link -n parti-union
+$ sudo puma-dev -setup
+$ puma-dev -install -d test
+```
+
+아래 명령어로 서버가 켜진 것을 확인할 수 있습니다. 주소는 .dev와의 충돌을 피하기 위해 .test 로 설정합니다.
+
+```
+$ ps aux | grep puma-dev
+```
+
+서버가 켜져 있다면 브라우저의 주소창에 parti-union.test 를 입력합니다. 메인 페이지를 확인합니다.
