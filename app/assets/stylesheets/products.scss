@@ -159,3 +159,31 @@
     text-decoration: underline;
   }
 }
+section.showcase{
+  padding: 100px 80px;
+  background-color: #7b5fa8;
+  color: white;
+  h1{
+    small{
+      font-weight: 100;
+      color: #c2b3da;
+      line-height: 70px;
+      border-bottom: 1px solid #c2b3da;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Apple SD Gothic Neo';
+    letter-spacing: -0.07em;
+  }
+  p.desc{
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+  }
+  p.comment{
+
+  }
+}
