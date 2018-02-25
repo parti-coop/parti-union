@@ -163,6 +163,20 @@ section.showcase{
   padding: 100px 80px;
   background-color: #7b5fa8;
   color: white;
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+    h1{
+      line-height: 100px;
+      font-size: 80px !important;
+    }
+    h1 small{
+      font-size: 16px !important;
+    }
+    padding: 20px;
+    .media-left{
+      display: block;
+    }
+  }
   h1{
     small{
       font-weight: 100;
@@ -182,8 +196,5 @@ section.showcase{
     font-size: 16px;
     font-weight: 200;
     line-height: 24px;
-  }
-  p.comment{
-
   }
 }
