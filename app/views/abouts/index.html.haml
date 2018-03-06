@@ -63,7 +63,15 @@
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span MISSION
           %p.mg-sm.text-center
-            일상 속에서 개인이 자신의 목소리를 낼 수 있는 공간을 만듭니다. 시민 개인의 목소리를 모으고, 이를 지지하는 사람들 연결합니다. 연결된 사람들이 변화를 위해 문제를 함께 해결할 수 있는 도구를 제공합니다.
+            %strong<>일상 속에서 개인이 자신의 목소리를 낼 수 있는
+            %br
+            %strong<>공간을 만듭니다.
+            %br
+            %strong<>시민 개인의 목소리를 모으고, 이를 지지하는 사람들을
+            %br
+            %strong<>연결합니다.
+            %br
+            %strong<>연결된 사람들이 변화를 위해 문제를 함께 해결할 수 있는 도구를 제공합니다.
 
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
@@ -84,7 +92,7 @@
             %br.visible-xs
             일상적인 도구를 만듭니다.
             %br.visible-xs
-
+            %br
             %strong<>빠띠 속도로(실험적인)
             %br.visible-xs
             빠띠가 가진 고유한 보폭을 유지하며 일합니다.
@@ -93,14 +101,14 @@
             %br.visible-xs
             작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
             %br.visible-xs
-
+            %br
             %strong<>섬세하게
             %br.visible-xs
             소수의견도 무시되지 않는 의사결정 과정을 설계합니다.
             %br.visible-xs
             모든 과정은 투명하고 꼼꼼하게 기록됩니다.
             %br.visible-xs
-
+            %br
             %strong<>느슨하게 연결된
             %br.visible-xs
             능동적이고 독립적인 개인이
@@ -111,7 +119,7 @@
             %br.visible-xs
             다양성이 인정받는 건강한 토양을 만들어 나갑니다.
             %br.visible-xs
-
+            %br
             %strong<>기술을 활용한
             %br.visible-xs
             기술이 만들어 낸 가능성을 긍정적으로 보고
@@ -124,7 +132,7 @@
             %br.visible-xs
 
   #bloc-51.bloc.bgc-white.l-bloc.team-container
-    .container.bloc-md
+    .container.bloc-sm
       .row
         .col-sm-12
           %h2.text-center.mg-lg.tc-outer-space
@@ -218,18 +226,6 @@
                 %span.fa.fa-github.icon-sm
               %a{:href => "https://brunch.co.kr/@martian", :target => "_blank"}
                 %span.fa.fa-home.icon-sm
-      .row.team-member-container
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-july.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              홍진아
-            %p.blocs-team-details
-              스토리텔링과 캠페인 기획을 하고 있습니다. 나의 언어로 말하는 페미니즘, 우리 세대의 노동, 국가폭력이 야기하는 사회문제에 관심이 있습니다.
-            .socail-account
-              %a{:href => "https://www.facebook.com/mindrambler", :target => "_blank"}
-                %span.fa.fa-facebook.icon-sm
 
   #bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
@@ -237,9 +233,15 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 소개 자료
-          %p.mg-sm.text-center
-            빠띠 PPT 소개 자료 다운로드
-            %br.visible-xs
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>빠띠 PPT 소개 자료 다운로드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>리플렛 PDF 다운로드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>로고 파일 다운로드
 
   #bloc.bgc-white.l-bloc
     .container.bloc-sm
@@ -247,8 +249,26 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 보도자료
-          %p.mg-sm.text-center
+          %p.mg-md.text-center
             언론에 소개된 빠띠 소식을 공유합니다
-            %br.visible-xs
-
-      빠띠 관련 소식 더보기
+          .article-box
+            타이틀
+            %br
+            서브 타이틀
+            %br
+            2018-01-01
+          .article-box
+            타이틀
+            %br
+            서브 타이틀
+            %br
+            2018-01-01
+          .article-box
+            타이틀
+            %br
+            서브 타이틀
+            %br
+            2018-01-01
+      .more-article-box.text-center
+        .text
+          빠띠 관련 소식 더보기

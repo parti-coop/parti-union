@@ -26,5 +26,41 @@
       margin-top: 300px;
     }
   }
+
+  .introduce-box {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    .introduce-text {
+      padding-top: 38px;
+    }
+  }
+
+  .article-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(151, 151, 151, 1);
+  }
+
+  .article-box:last-child {
+    border-bottom: 1px solid rgba(151, 151, 151, 1);
+  }
+
+  .more-article-box {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    .text {
+      padding: 10px;
+      color: rgba(150, 111, 214, 1);
+      border: 1px solid rgba(150, 111, 214, 1);
+    }
+  }
+
 }
 
