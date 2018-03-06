@@ -13,4 +13,8 @@ class PagesController < ApplicationController
   def platform_detail
     render "platforms/#{params[:slug]}"
   end
+
+  def about
+    render "abouts/index"
+  end
 end
