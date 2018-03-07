@@ -39,16 +39,18 @@
     }
   }
 
+  //colors
+  $color_line: rgba(151, 151, 151, 1);
+
   .article-box {
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px solid rgba(151, 151, 151, 1);
-  }
-
-  .article-box:last-child {
-    border-bottom: 1px solid rgba(151, 151, 151, 1);
+    border-top: 1px solid $color_line;
+    &:last-child {
+      border-bottom: 1px solid $color_line;
+    }
   }
 
   .more-article-box {
