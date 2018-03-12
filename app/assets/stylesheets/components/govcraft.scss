@@ -1,0 +1,108 @@
+#page-govcraft {
+
+  $ash_gray: rgba(182, 182, 182, 1);
+
+  h2 {
+    font-weight: 800;
+    font-size: 24px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  p {
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .header {
+    top: 50px;
+    left: 0px;
+    height: 400px;
+    background-color: rgba(182, 182, 182, 1);
+    .about-text {
+      margin-top: 300px;
+      font-family: Noto Serif CJK KR;
+    }
+  }
+
+  .govcraft-app {
+    margin-bottom: 30px;
+    .govcraft-app-link {
+      color: rgba(0,0,0,0.5);
+    }
+    .govcraft-app-icon {
+      width: 135px;
+      height: 135px;
+      margin-top: 30px;
+    }
+    .govcraft-app-text {
+      color: rgba(0,0,0,0.5);
+      margin-top: 10px;
+    }
+  }
+
+  .introduce-box {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    .introduce-text {
+      padding-top: 38px;
+    }
+  }
+
+  .campaign {
+    height: 210px;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+  }
+
+  .campaign-text {
+    margin: 20px;
+    color: rgba(0,0,0,0.5);
+  }
+
+  //colors
+  $color_line: rgba(151, 151, 151, 1);
+
+  .article-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid $color_line;
+    &.last {
+      border-bottom: 1px solid $color_line;
+    }
+  }
+
+  .more-govcraft-box {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    .text {
+      padding: 10px;
+      border: 1px solid rgba(97, 97, 97, 1);
+    }
+  }
+
+  .upgraded-govcraft {
+    height: 210px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    .text {
+      padding-top: 145px;
+      margin-left: 20px;
+    }
+  }
+
+}
+
