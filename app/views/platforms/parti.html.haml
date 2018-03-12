@@ -13,7 +13,35 @@
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 팀과 커뮤니티를 위한 민주주의 플랫폼
           %p.mg-sm.text-center
-            팀이 더 민주적으로 협력하기를 원하세요? 이슈에 공감하는 사람들과 이야기를 나누고 싶으세요? 회사, 마을, 단체, 동아리 등 나의 일상을 더 민주적인 삶으로 채우고 싶은 사람들을 빠띠에서 만나 보세요. 웹, 앱에서 지금 바로 빠띠를 사용할 수 있습니다.
+            팀이 더 민주적으로 협력하기를 원하세요?
+            %br
+            이슈에 공감하는 사람들과 이야기를 나누고 싶으세요?
+            %br
+            회사, 마을, 단체, 동아리 등 나의 일상을
+            %br
+            민주적인 삶으로 채우고 싶은 사람들을
+            %br
+            빠띠에서 만나 보세요.
+            %br
+            웹, 앱에서 지금 바로 빠띠를 사용할 수 있습니다.
+      .row.parti-app
+        .col-sm-4
+          %a{:href => "https://parti.xyz/", :target => "_blank"}
+            .parti-app-link
+              = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+              .text-center.parti-app-text
+                PC/모바일 웹에서 빠띠 사용하기
+
+        .col-sm-4
+          .parti-app-link
+            = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+            .text-center.parti-app-text
+              아이폰 앱으로 사용하기
+        .col-sm-4
+          .parti-app-link
+            = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+            .text-center.parti-app-text
+              안드로이드 어플리케이션으로 사용하기
 
   #bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
@@ -63,7 +91,9 @@
             %span 업그레이드형 그룹 빠띠 파트너
           .more-parti-box
             %p.text-center.text
-              %strong<>비용 안내 및 개설 문의
+              %a{:href => "https://parti.xyz/service", :target => "_blank"}
+                %strong<>비용 안내 및 개설 문의
+
           .upgraded-parti
             .text
               %strong<>쓰레기덕질
@@ -80,278 +110,3 @@
               %br
               %strong<>미트쉐어 쓰레기덕질 커뮤니티
 
-  #bloc.bgc-anti-flash-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 소개 자료
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>빠띠 PPT 소개 자료 다운로드
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>리플렛 PDF 다운로드
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>로고 파일 다운로드
-
-  #bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 보도자료
-          %p.mg-md.text-center
-            언론에 소개된 빠띠 소식을 공유합니다
-          .article-box
-            타이틀
-            %br
-            서브 타이틀
-            %br
-            2018-01-01
-          .article-box
-            타이틀
-            %br
-            서브 타이틀
-            %br
-            2018-01-01
-          .article-box.last
-            타이틀
-            %br
-            서브 타이틀
-            %br
-            2018-01-01
-          .more-article-box.text-center
-            .text
-              빠띠 관련 소식 더보기
-
-
-#bloc-5.bloc.bloc-bg-texture.texture-darken.tc-white.bgc-white{ style: "background-image: url(#{asset_url('platforms/platform-parti-detail-background.png')})" }
-  .container.bloc-lg
-    .row
-      .col-sm-6
-        = image_tag "platforms/platform-parti-detail1.png", class: 'img-responsive device-bloc-icon'
-        %h2.mg-md.device-bloc-text
-          빠띠 Parti
-        %p.mg-lg.device-bloc-text-p
-          덕업일치를 위한 오픈 커뮤니티
-        %a.btn.btn-wire.btn-lg.device-bloc-button.btn-sq.wire-btn-white{:href => "https://parti.xyz/", :target => "_blank"} 빠띠로 가기
-      .col-sm-6
-        .center-block.blocsapp-device.blocsapp-device-imac
-          = image_tag "platforms/platform-parti-detail2.png", class: 'img-responsive'
-#bloc-6.bloc.bgc-white.l-bloc.paltform-detail
-  .container.bloc-md
-    .row.voffset
-      .col-sm-12
-        %h3.mg-md
-          덕업일치를 위한 오픈 커뮤니티 빠띠 !
-        %p
-          %strong
-            빠띠(parti)는 무엇인가요?
-          %br/
-          빠띠(parti)는 프랑스어로 ‘정당&rsquo;과 ‘파티&rsquo;라는 뜻으로, 파티(party)처럼 즐겁게 커뮤니티에 참여(participation)한다는 뜻입니다. 민주주의 플랫폼을 만드는 팀이 덕업일치가 웬말이냐, 싶으신 분들도 있죠? 우리는 자기 개성을 발견하고, 공감해주는 사람이 있다면 한국 사회의 공론장이 더 민주적인 모습이 될 거라 믿습니다. 시민들이 빠띠 서비스에서 자기 목소리를 내고, 이에 공감하는 사람들을 만나고, 이 커뮤니티들이 서로 느슨하게 연대되는 모습을 그리고 있습니다.
-          %br/
-          %br/
-
-          %strong
-            사회이슈나 정치 주제의 빠띠만 만들 수 있나요?
-          %br/
-          빠띠의 첫 모습은 사회이슈 덕후들의 수다 공간이었어요.그래서 이슈 중심의 주제가 많지만, 빠띠는 정치참여가 의회에만 있거나 시위만 있는 것은 아니라고 생각합니다. 우리는 발언하고, 공감하고, 토론하고, 행동하는 활동 모두 정치 활동이라 인정받길 바랍니다. 이야기하고 싶은 주제가 있다면 주저하지 말고 만들어보세요.
-          %br/
-          %br/
-
-          %strong
-            만들고 싶은 주제의 빠띠가 있는데 또 만들어도 되나요?
-          %br/
-          주제가 같고, 그에 대한 입장이 비슷하더라도 이야기하는 사람에 따라 다르기 마련입니다.주제가 같다고 해서 모두 한 빠띠에 모일 필요는 없습니다. 큰 물고기가 아니라 작은 물고기들이 떼를 지어 자유롭게 움직이는 모습을 상상해 보세요.우리는 빠띠가 이런 작은 물고기 같기를 바랍니다. 작은 수가 모인 빠띠라도 나와 함께하는 사람들의 정체성을 유지하면서 자유롭게 이야기 나눌 수 있습니다.
-          %br/
-          %br/
-
-          %strong
-            빠띠를 가입하지 않아도 글을 쓸 수 있나요?
-          %br/
-          모든 빠띠는 가입하지 않아도 글 작성 외에 글 열람, 공감하기, 댓글쓰기가 가능합니다. 대신 가입하면 글 작성과 함께 새로운 글, 활동이 업데이트될 때마다 타임라인에서 바로 확인할 수 있어요.
-          %br/
-          %br/
-
-          %strong
-            오거나이저란 무엇인가요?
-          %br/
-          빠띠를 만든 사람을 부르는 말이에요. 빠띠 메이커일 경우 빠띠 수정 페이지 - 오거나이저 영역에 회원 아이디를 등록하면 해당 아이디의 회원을 오거나이저로 등록할 수도 있습니다. 오거나이저를 그만두고 싶을 땐 나 이외의 다른 회원을 오거나이저로 등록하고, 오거나이저 입력란에서 내 아이디를 지우면 됩니다. 여러명과 공동으로 오거나이저도 가능하니 마음이 맞는 사람이 있다면 함께 빠띠를 키워 보는 것도 좋아요.
-          %br/
-          %br/
-
-          %strong
-            가입하기
-          %br/
-          %br/
-
-          %strong
-            관심있는 주제의 빠띠를 발견했습니다. 자주 볼 수 있는 방법은 없나요?
-          %br/
-          해당 빠띠를 가입하면 업데이트 될 때마다 타임라인에서 내용을 볼 수 있습니다. 또한 매일 한 번씩 가입한 빠띠의 새 업데이트 내용을 모아 메일로 받을 수 있습니다.
-          %br/
-          %br/
-
-          %strong
-            내 관심사에 맞는 빠띠를 더 구독하고 싶은데 어떻게 찾을 수 있나요?
-          %br/
-          메뉴에서 빠띠 찾기 페이지에서 업데이트 순, 이름 순, 인기 순, 최신 순으로 찾거나 검색을 통해 원하는 빠띠를 찾아보세요.
-          %br/
-          %br/
-
-          %strong
-            가입한 빠띠에서 나가고 싶습니다. 어떻게 하면 되나요?
-          %br/
-          해당하는 빠띠의 상단에 있는 ‘가입함’ 버튼을 클릭하면 나오는 ‘빠띠 나가기’ 버튼을 클릭하면 됩니다.
-          %br/
-          %br/
-
-          %strong
-            이메일, 알림 설정
-          %br/
-          %br/
-
-          %strong
-            내가 가입한 빠띠에 새로 올라온 글을 어떻게 알 수 있나요?
-          %br/
-          가입한 빠띠라면 새로 올라온 글을 매일 한번, 메일로 받을 수 있습니다. 또는 타임라인에서 업데이트된 순서대로 글을 확인할 수 있습니다.
-          %br/
-          %br/
-
-          %strong
-            이메일 구독을 취소하고 싶습니다. 어떻게 하나요?
-          %br/
-          내 프로필 수정 페이지 (
-          %a.ltc-dark-pastel-purple{:href => "http://parti.xyz/users/edit", :target => "_blank"} http://parti.xyz/users/edit
-          ) 에서 메일 수신 여부를 설정할 수 있습니다.
-          %br/
-          %br/
-
-          %strong
-            어떤 내용을 알림으로 받을 수 있나요? 알림을 해제할 수는 없나요?
-          %br/
-          내 아이디로 멘션(@아이디)을 받았거나 내가 댓글 또는 ‘공감하기’ 버튼을 눌렀던 글에 새로운 댓글이 달리면 알림을 받습니다. 웹에선 아직 특정 알림만 받거나 해제할 수 있는 기능은 없습니다.
-          %br/
-          %br/
-
-          %strong
-            빠띠 만들기
-            %br/
-          %br/
-
-          %strong
-            빠띠는 어떻게 만드나요?
-          %br/
-          PC로 빠띠에 접속 - 메인에서 ‘빠띠 만들기(
-          %a.ltc-dark-pastel-purple{:href => "http://parti.xyz/parties/new_intro", :target => "_blank"} http://parti.xyz/parties/new_intro
-          )’ 버튼을 클릭해서 빠띠를 만들 수 있습니다.
-          %br/
-          %br/
-
-          %strong
-            빠띠를 삭제하려면 어떻게 해야하나요?
-          %br/
-          빠띠는 오거나이저 뿐만 아니라 빠띠를 구독하는 사람들과 공동으로 가꾸는 공간입니다. 따라서 빠띠에 게시글이 있으면 오거나이저가 독단적으로 빠띠를 삭제할 수 없습니다. 혹시 잘못 개설한 빠띠라면 help@parti.xyz로 해당 빠띠 링크를 알려주세요.
-          %br/
-          %br/
-
-          %strong
-            빠띠를 만든 오거나이저 외에 다른 사람이 운영할 수 있나요?
-            %br/
-          네, 오거나이저라면 만드신 빠띠 상단에서 ‘수정’ 버튼이 보입니다.수정 페이지의 가장 하단에 ‘오거나이저’ 입력란에 함께 빠띠를 가꾸고 싶은 사람의 빠띠 아이디를 적으면 공동 오거나이저로 등록됩니다. (예 - ‘아이디1, 아이디2, 아이디3’ 처럼 각 아이디에 ‘ , ‘ 쉼표로 구분하여 입력해주세요.)
-          %br/
-          %br/
-
-          %strong
-            오거나이저가 되면 어떤 권한을 가질 수 있나요?
-            %br/
-          이름과 사진을 수정하고, 블랙리스트 회원 등록, 메신저 링크 연결이 가능하고, 메일로는 내 빠띠에 가입한 회원 알림이 옵니다. 오거나이저라도 빠띠에 대한 정보를 변경할 때는 가입한 멤버들과 함께 논의하는 것을 권합니다.
-          %br/
-          %br/
-
-          %strong
-            빠띠에 스팸 / 인종, 성별 등 차별발언 / 혐오발언이 올라옵니다.
-            %br/
-          오거나이저라면 블랙리스트 회원을 등록할 수 있습니다. 내가 오거나이저인 빠띠의 상단에 수정 버튼을 클릭하고 - ‘블랙리스트 회원’ 입력란에 아이디를 적어주세요. 불행히도 여러 명이라면, 각 아이디를 ‘ , ‘ 쉼표로 구분하여 입력하면 됩니다. 혹시 나와 의견이 다르다고 해서 무조건 블랙리스트 회원으로 등록하실 분은 없으시겠죠? 이 기능은 꼭 필요한 경우에 신중히 사용해주세요.
-          %br/
-          %br/
-
-          %strong
-            비슷하거나 관련있는 주제의 빠띠와 내 빠띠를 연결하고 싶어요.
-            %br/
-          PC에서 내가 오거나이저인 빠띠에 들어가보시면 오른쪽 부분에 ‘관련빠띠’가 있습니다. ‘추가’를 클릭해서 연결하고 싶은 빠띠의 이름을 적어보세요.
-          %br/
-          %br/
-
-          %strong
-            빠띠 회원들과 서로 대화를 나눌 수 있는 방법은 없나요?
-            %br/
-          현재 빠띠 회원에게 메시지 보내는 기능은 없지만, 멘션을 보내거나 빠띠 상단에 메신저 버튼을 추가할 수 있습니다.
-          %br
-          1) 멘션 보내기 (누구나)댓글, 에디터, 글을 작성할 수 있는 영역에 ’@아이디’를 넣으면 해당 아이디의 회원에게 알림이 갑니다.
-          %br
-          2) 메신저 버튼 만들기 (오거나이저일 경우)내가 오거나이저인 빠띠에 들어가서, 상단의 ‘수정’ 버튼을 클릭하시면 ‘메신저 열기’ 영역이 있습니다. 이 칸에 텔레그램 슈퍼그룹, 카카오톡 오픈채팅, 페이스북 메신저 링크 URL 중 하나를 입력해 주세요.
-          %br/
-          %br/
-
-          %strong
-            그룹 빠띠 만들기
-            %br/
-          %br/
-
-          %strong
-            제가 속한 단체의 사람들과 함께 빠띠 서비스를 이용하고 싶습니다. 여러가지 주제를 다루고 있어 관련 빠띠로 엮는 것만으로는 부족한데, 우리 단체의 빠띠만 모을 수 있나요?
-            %br/
-          빠띠에는 광주, 나는 알아야겠당, 바꿈 ‘그룹’이라는 것이 있습니다. 이 기능으로 빠띠와 똑같은 모습으로 단체의 빠띠를 묶을 수 있습니다. 현재 회원이 직접 그룹을 만드는 기능은 사이트 내에 없어요.혹시 구성원이 자발적인 커뮤니티 그룹을 자유롭게 만들기를 바라고, 민주적인 소통 방식을 지향하는 그룹이라면 빠띠 팀에게 메일(help@parti.xyz)로 문의해주세요.
-          %br/
-          %br/
-
-          %strong
-            빠띠에 글 올리기글을 쓸 때 꼭 빠띠를 선택해야만 하나요?
-            %br/
-          네, 빠띠는 SNS 서비스처럼 개인 공간에 글이 올라가는 것이 아니라, 특정 주제를 다루는 빠띠에 글을 쓰고 회원들과 공유하는 커뮤니티 성격의 서비스입니다. 따라서 글을 쓸 때 그 이슈를 다루는 빠띠를 선택해서 작성해야합니다.
-          %br/
-          %br/
-
-          %strong 지금 바로 하고 싶은 이야기가 있는데 어떤 빠띠에 올려야 할 지 모르겠어요. 관련있는 빠띠는 어떻게 찾을 수 있나요?
-          또 이 이슈를 다루는 빠띠가 없으면 어떻게 하나요?두 가지 방법이 있습니다.
-          %br
-          1) 빠띠 찾기메뉴에서 빠띠 찾기를 클릭해보세요. 빠띠 리스트에서 관련있는 빠띠를 찾거나, 검색을 통해 찾을 수 있습니다.
-          %br
-          2) 빠띠 만들기그래도 관련있는 빠띠가 없다면 PC로 빠띠에 접속 - 메인에서 ‘빠띠 만들기’를 클릭해서 빠띠를 만들어 올려 보세요.
-          %br/
-          %br/
-
-          %strong
-            파일 용량이 10mb가 넘어서 ’파일 공유하기’에서 업로드가 되지 않습니다. 어떻게 하면 되나요?
-            %br/
-          파일 용량이 크거나 업로드할 파일을 개인 블로그나 구글 드라이브 서비스 등을 이용해 업로드하고 해당 링크를 공유하는 것을 권장합니다.
-          %br/
-          %br/
-
-          %strong 탈퇴
-          %br/
-          %br/
-
-          %strong
-            탈퇴하고 싶어요.
-            %br/
-          아직 서비스 내에서 바로 탈퇴가 가능하지 않습니다. 탈퇴를 원하시면 help@parti.xyz 메일로 보내주세요.
-          %br/
-          %br/
-
-          %strong 제안
-          %br/
-          %br/
-
-          %strong
-            이런 기능이 있었으면 좋겠어요.빠띠는 사용자 분들의 제안을 최대한 반영하려고 합니다.
-            %br/
-          기능 제안 및 불편 사항, 또는 감사와 즐거운 이야기 :) 모두 빠띠만든당(
-          %a.ltc-dark-pastel-purple{:href => "http://parti.xyz/p/parti", :target => "_blank"} http://parti.xyz/p/parti
-          )에서 자유롭게 게시해주시거나,또는 help@parti.xyz 메일로 연락주세요.
-          %br/
-          %br/
-          감사합니다.
