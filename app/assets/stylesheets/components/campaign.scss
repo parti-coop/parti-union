@@ -1,0 +1,75 @@
+#page-campaign {
+
+  $ash_gray: rgba(182, 182, 182, 1);
+
+  h2 {
+    font-weight: 800;
+    font-size: 24px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  p {
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .header {
+    top: 50px;
+    left: 0px;
+    height: 400px;
+    background-color: rgba(182, 182, 182, 1);
+    .about-text {
+      margin-top: 300px;
+      font-family: Noto Serif CJK KR;
+    }
+  }
+
+  .govcraft-app {
+    margin-bottom: 30px;
+    .govcraft-app-link {
+      color: rgba(0,0,0,0.5);
+    }
+    .govcraft-app-icon {
+      width: 135px;
+      height: 135px;
+      margin-top: 30px;
+    }
+    .govcraft-app-text {
+      color: rgba(0,0,0,0.5);
+      margin-top: 10px;
+    }
+  }
+
+  .introduce-box {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    .introduce-text {
+      padding-top: 38px;
+    }
+  }
+
+  .campaign {
+    height: 210px;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 10px;
+  }
+
+  .campaign-img {
+    padding: 10px;
+  }
+
+  .campaign-text {
+    margin: 10px;
+    color: rgba(0,0,0,0.5);
+  }
+
+}
+
