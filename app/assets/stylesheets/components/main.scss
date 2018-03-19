@@ -1,0 +1,160 @@
+#page-main {
+
+  $ash_gray: rgba(182, 182, 182, 1);
+
+  h2 {
+    font-weight: 800;
+    font-size: 24px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  p {
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .header {
+    top: 50px;
+    left: 0px;
+    height: 400px;
+    background:
+      /* top, transparent black, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      #{asset_url('about-slogan-background.jpg')};
+    background-color: rgba(182, 182, 182, 1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .about-text {
+      margin-top: 300px;
+      color: white;
+      font-family: Noto Serif CJK KR;
+    }
+  }
+
+  .main-text {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+
+  .activity {
+    margin-bottom: 20px;
+    .activity-link {
+      color: rgba(0,0,0,0.5);
+    }
+    .activity-icon {
+      width: 135px;
+      height: 135px;
+      margin-top: 30px;
+    }
+    .activity-text {
+      color: rgba(0,0,0,0.5);
+      margin-top: 10px;
+    }
+  }
+
+  .introduce-box {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.5);
+    border: 1px;
+    margin: 20px;
+
+    .introduce-text {
+      padding-top: 38px;
+    }
+  }
+
+  .campaign {
+    height: 210px;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .campaign-text {
+    margin: 10px;
+    color: rgba(0,0,0,0.5);
+  }
+
+  //colors
+  $color_line: rgba(151, 151, 151, 1);
+
+  .article-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid $color_line;
+    &.last {
+      border-bottom: 1px solid $color_line;
+    }
+  }
+
+  .more-campagin-box {
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    .text {
+      padding: 10px;
+      border: 1px solid rgba(97, 97, 97, 1);
+    }
+  }
+
+  .platform {
+    height: 210px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .box {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .text {
+      padding-top: 145px;
+      margin-left: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .community {
+    height: 210px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .box {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .text {
+      padding-top: 145px;
+      margin-left: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+}
+
