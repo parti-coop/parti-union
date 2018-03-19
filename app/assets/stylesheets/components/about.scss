@@ -19,9 +19,21 @@
     top: 50px;
     left: 0px;
     height: 400px;
+    background:
+      /* top, transparent black, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      #{asset_url('about-header.jpg')};
     background-color: rgba(182, 182, 182, 1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     .about-text {
       margin-top: 300px;
+      color: white;
       font-family: Noto Serif CJK KR;
     }
   }
@@ -34,6 +46,7 @@
     margin: 20px;
 
     .introduce-text {
+      color: rgba(0, 0, 0, 0.5);
       padding-top: 38px;
     }
   }
