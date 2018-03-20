@@ -12,10 +12,13 @@
       .navbar-collapse.navbar-1.collapse
         %ul.site-navigation.nav.navbar-nav
           %li
-            = link_to root_path(anchor: 'anchor-about') do
+            = link_to '/about' do
               소개
           %li
-            = link_to root_path(anchor: 'anchor-campaign') do
+            = link_to '/#anchor-it-platform' do
+              플랫폼
+          %li
+            = link_to '/campaign' do
               캠페인
           %li
             %a{href:'https://medium.com/parti-xyz-developers',target:'_blank'}
@@ -24,7 +27,7 @@
             %a{href:'https://union.parti.xyz/p/partinews',target:'_blank'}
               보도자료
           %li
-            = link_to root_path(anchor: 'anchor-team') do
+            = link_to '/about#anchor-team' do
               팀
           / %li
           /   = link_to root_path(anchor: 'anchor-collaboration') do
