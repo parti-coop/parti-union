@@ -28,22 +28,22 @@
         .col-sm-4
           %a{:href => "https://parti.xyz/", :target => "_blank"}
             .parti-app-link
-              = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+              = image_tag "icon/web.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
               .text-center.parti-app-text
                 PC/모바일 웹에서 빠띠 사용하기
 
         .col-sm-4
           .parti-app-link
-            = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+            = image_tag "icon/iphone.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
             .text-center.parti-app-text
               아이폰 앱으로 사용하기
         .col-sm-4
           .parti-app-link
-            = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+            = image_tag "icon/android.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
             .text-center.parti-app-text
               안드로이드 어플리케이션으로 사용하기
 
-  #bloc.bgc-anti-flash-white.l-bloc
+  .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -59,7 +59,7 @@
             %p.text-center.introduce-text
               %strong<>데모스 위키
 
-  #bloc.bgc-white.l-bloc
+  .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -67,23 +67,29 @@
             %span 이슈 커뮤니티
           %p.mg-md.text-center
             빠띠를 사용하여 커뮤니티를 활발히 운영하고 있는 모임들을 소개합니다.
-          .issue-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
-          .issue-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
-          .issue-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-feminism.png')})" }
+            %a{:href => "https://parti.xyz/p/feminism", :target => "_blank"}
+              .box
+                .text
+                  %strong<>페미니즘
+                  %br
+                  %strong<>여성 인권 이슈의 정보를 모으고, 의사표현을 하는 곳입니다
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-vegi-curious.png')})" }
+            %a{:href => "https://parti.xyz/p/vegi-curious", :target => "_blank"}
+              .box
+                .text
+                  %strong<>동물과 채식이 궁금해
+                  %br
+                  %strong<>동물권을 함께 공부하고, 소소하게 채식을 실천해보아요
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-enhancers.png')})" }
+            %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
+              .box
+                .text
+                  %strong<>1인 활동가, 연구자 모이시오
+                  %br
+                  %strong<>동료 고픈 당신, 커몽
 
-  #bloc.bgc-anti-flash-white.l-bloc
+  .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -94,19 +100,25 @@
               %a{:href => "https://parti.xyz/service", :target => "_blank"}
                 %strong<>비용 안내 및 개설 문의
 
-          .upgraded-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
-          .upgraded-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
-          .upgraded-parti
-            .text
-              %strong<>쓰레기덕질
-              %br
-              %strong<>미트쉐어 쓰레기덕질 커뮤니티
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-zero-waste.png')})" }
+            %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
+              .box
+                .text
+                  %strong<>쓰레기덕질
+                  %br
+                  %strong<>쓰레기에 관한 모든 이야기를 나눌 수 있는 곳
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-meetshare.png')})" }
+            %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
+              .box
+                .text
+                  %strong<>미트쉐어
+                  %br
+                  %strong<>NPO센터가 진행한 미트쉐어 커뮤니티
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-union.png')})" }
+            %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
+              .box
+                .text
+                  %strong<>민주주의 활동가 그룹
+                  %br
+                  %strong<>빠띠의 민주주의 활동가 그룹입니다
 
