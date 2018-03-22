@@ -31,33 +31,33 @@
           %h3.statement-bloc-text.mg-clear
             %span 민주적인 삶과 문화를 위한 활동
         .col-xs-12.col-md-8.col-md-offset-2
-          .col-xs-12.col-sm-6.activity
+          .col-xs-12.col-sm-3.activity
             = link_to root_path(anchor: 'anchor-it-platform') do
               = image_tag "icon/platform.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
               .text-center.activity-text
                 IT 플랫폼
-          .col-xs-12.col-sm-6.activity
+          .col-xs-12.col-sm-3.activity
             = link_to root_path(anchor: 'anchor-guide') do
               = image_tag "icon/guide.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
               .text-center.activity-text
                 가이드
-          .col-xs-12.col-sm-6.activity
-            = link_to root_path(anchor: 'anchor-commmunity') do
+          .col-xs-12.col-sm-3.activity
+            = link_to root_path(anchor: 'anchor-community') do
               = image_tag "icon/community.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
               .text-center.activity-text
                 커뮤니티
-          .col-xs-12.col-sm-6.activity
+          .col-xs-12.col-sm-3.activity
             = link_to root_path(anchor: 'anchor-campagin') do
               = image_tag "icon/campaign.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
               .text-center.activity-text
                 캠페인
-  #anchor-it-platform.bgc-anti-flash-white.l-bloc
+  #anchor-it-platform.bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span IT 플랫폼
-          %p.text-center.text
+          %p.mg-sm.text-center.text
             사회의 각 영역에서 필요한 민주주의 플랫폼을 만들고
             %br
             각 플랫폼을 적절히 사용하기 위한 가이드를 함께 개발하고 있습니다.
@@ -88,7 +88,7 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 가이드
-          %p.text-center.text
+          %p.mg-sm.text-center.text
             조직, 커뮤니티 등에서 빠띠의 플랫폼을 활용하거나
             %br
             일상 속 민주주의 문화를 개선시킬 수 있는 가이드를 개발하고 있습니다.
@@ -110,7 +110,7 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 커뮤니티
-          %p.text-center.text
+          %p.mg-sm.text-center.text
             각 플랫폼을 적절히 사용하기 위한 가이드를 함께 개발하고 있습니다.
             %br
             사회의 각 영역에 민주주의 문화를 확산시키기 위한
@@ -140,7 +140,7 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 캠페인
-          %p.mg-md.text-center
+          %p.mg-sm.text-center
             시민들의 목소리를 모으고 발화하게 하는 Voice,
             %br
             모인 의견으로 숙의할 수 있는 Deliberation,
@@ -185,7 +185,25 @@
             %p.text-center.text
               = link_to "campaign" do
                 캠페인 더 보기
-
+  .bloc.bgc-outer-space.d-bloc
+    .container.bloc-sm.footer-container
+      .row.voffset-clear-xs
+        .col-sm-12.col-md-6.col-md-offset-3
+          .col-xs-12.mg-sm
+            %h4.mg-md.text-center
+              민주주의 활동가 그룹 빠띠
+            %p.mg-sm.text-center
+              인터넷 시대를 살아가는 우리에게는
+              %br
+              더 나은 민주주의 시스템과 문화가 필요합니다.
+              %br
+              빠띠의 활동이 궁금하시거나,
+              %br
+              함께하고픈 활동이 있다면 언제나 연락주세요.
+            .more-campagin-box
+              %p.text-center.text
+                = link_to "about" do
+                  민주주의 활동가 그룹 소개
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
@@ -193,7 +211,7 @@
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 굿즈
           .more-parti-box
-            %p.text-center.text
+            %p.mg-sm.text-center.text
               %a{:href => "https://parti.xyz/service", :target => "_blank"}
                 빠띠가 만든 굿즈와 스토리를 만나보세요.
                 %br

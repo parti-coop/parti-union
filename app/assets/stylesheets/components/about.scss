@@ -60,6 +60,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid $color_line;
+    a {
+      color: rgba(0, 0, 0, 0.5);
+    }
     &.last {
       border-bottom: 1px solid $color_line;
     }
@@ -74,6 +77,11 @@
       color: rgba(150, 111, 214, 1);
       border: 1px solid rgba(150, 111, 214, 1);
     }
+  }
+
+  .content-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 20px 30% 20px 30%;
   }
 
 }
