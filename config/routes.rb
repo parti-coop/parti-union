@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'products/:slug', to: "products#product_detail", as: :product_detail
   get 'about', to: 'abouts#about', as: :about_detail
   get 'campaign', to: 'campaigns#campaign', as: :campaigns
+  get 'contents', to: 'contents#contents', as: :contents
 
   namespace :admin do
     resources :slides
