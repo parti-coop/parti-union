@@ -12,29 +12,23 @@
       .navbar-collapse.navbar-1.collapse
         %ul.site-navigation.nav.navbar-nav
           %li
-            = link_to '/about' do
-              소개
+            = link_to root_path do
+              홈
           %li
-            = link_to '/#anchor-it-platform' do
-              플랫폼
+            = link_to '/platforms/parti' do
+              빠띠
+          %li
+            = link_to '/platforms/govcraft' do
+              가브크래프트
           %li
             = link_to '/campaign' do
               캠페인
           %li
-            %a{href:'https://medium.com/parti-xyz-developers',target:'_blank'}
-              블로그
-          %li
-            %a{href:'https://union.parti.xyz/p/partinews',target:'_blank'}
-              보도자료
-          %li
-            = link_to '/about#anchor-team' do
-              팀
+            = link_to '/contents' do
+              컨텐츠
           / %li
-          /   = link_to root_path(anchor: 'anchor-collaboration') do
-          /     협업
-          %li
-            = link_to root_path(anchor: 'anchor-contact') do
-              연락처
+          /  = link_to root_path(anchor: 'anchor-contact') do
+          /    연락처
           %li
             = link_to products_path do
               굿즈
