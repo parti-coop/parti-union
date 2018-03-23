@@ -5,59 +5,93 @@
         Platforms for Democratic Life and Culture
         %br
         민주적인 삶과 문화를 만듭니다.
-
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
-      .row.voffset-md
+      .row
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 더 나은 민주주의
-          %p.mg-sm.text-center.main-text
-            개인의 목소리가 들리지 않는 일상,
-            %br.visible-xs
-            각자의 문제를 함께 해결할 수 있는 도구/방법이 없는 시민,
+            %span MISSION
+          %p.mg-sm.text-center
+            %strong<>일상 속에서 개인이 자신의 목소리를 낼 수 있는
             %br
-            다양한 삶의 가능성이 없는 사회에는
-            %br.visible-xs
-            더 나은 민주주의 문화가 필요합니다.
+            %strong<>공간을 만듭니다.
             %br
-            일상 속에서 개인의 목소리를 낼 수 있는 공간을 만들고,
-            %br.visible-xs
-            그 목소리를 모으고, 이를 지지하는 사람들 연결하고,
+            %strong<>시민 개인의 목소리를 모으고, 이를 지지하는 사람들을
             %br
-            변화를 만들고 함께 해결할 수 있는 도구를 제공합니다.
+            %strong<>연결합니다.
+            %br
+            %strong<>연결된 사람들이 변화를 위해 문제를 함께 해결할 수 있는
+            %br
+            %strong<>도구를 제공합니다.
+  .content-line
+  .bloc.bgc-white.l-bloc
+    .container.bloc-sm
       .row
-        .col-xs-12
-          %h3.statement-bloc-text.mg-clear
-            %span 민주적인 삶과 문화를 위한 활동
         .col-xs-12.col-md-8.col-md-offset-2
-          .col-xs-12.col-sm-6.activity
-            = link_to root_path(anchor: 'anchor-it-platform') do
-              = image_tag "icon/platform.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
-              .text-center.activity-text
-                IT 플랫폼
-          .col-xs-12.col-sm-6.activity
-            = link_to root_path(anchor: 'anchor-guide') do
-              = image_tag "icon/guide.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
-              .text-center.activity-text
-                가이드
-          .col-xs-12.col-sm-6.activity
-            = link_to root_path(anchor: 'anchor-commmunity') do
-              = image_tag "icon/community.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
-              .text-center.activity-text
-                커뮤니티
-          .col-xs-12.col-sm-6.activity
-            = link_to root_path(anchor: 'anchor-campagin') do
-              = image_tag "icon/campaign.jpg", class: 'img-circle center-block img-frame-rd activity-icon'
-              .text-center.activity-text
-                캠페인
-  #anchor-it-platform.bgc-anti-flash-white.l-bloc
+          %h3.statement-bloc-text.mg-clear.tc-outer-space
+            %span OUR WAY
+          %p.mg-sm.text-center
+            %strong<>일상적으로
+            %br
+            거대 담론에 가려진 일상을 더 드러내고,
+            %br.visible-xs
+            일상의 문제에 초점을 둡니다.
+            %br
+            삶, 그리고 개인과 떨어져있지 않은 해결책을 고민합니다.
+            %br
+            언제 어디서나 이야기하고 참여할 수 있는
+            %br.visible-xs
+            일상적인 도구를 만듭니다.
+            %br
+            %br
+            %strong<>빠띠 속도로(실험적인)
+            %br
+            빠띠가 가진 고유한 보폭을 유지하며 일합니다.
+            %br
+            완벽한 과정 미리 설계하기 보다는
+            %br.visible-xs
+            작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
+            %br
+            %br
+            %strong<>섬세하게
+            %br
+            소수의견도 무시되지 않는 의사결정 과정을 설계합니다.
+            %br
+            모든 과정은 투명하고 꼼꼼하게 기록됩니다.
+            %br
+            %br
+            %strong<>느슨하게 연결된
+            %br
+            능동적이고 독립적인 개인이
+            %br.visible-xs
+            느슨하게 연결되어 만드는 힘을 긍정합니다.
+            %br
+            다양한 관심사를 존중하고,
+            %br.visible-xs
+            다양성이 인정받는 건강한 토양을 만들어 나갑니다.
+            %br
+            %br
+            %strong<>기술을 활용한
+            %br
+            기술이 만들어 낸 가능성을 긍정적으로 보고
+            %br.visible-xs
+            기술의 공공성에 대한 담론을 만듭니다.
+            %br
+            기술을 가지고 더 나은 민주주의 문화를
+            %br.visible-xs
+            구현하기 위한 시스템을 만듭니다.
+            %br
+            %br
+            %strong<>다양한
+            %br
+            빠띠에서는 성적지향·성별정체성·성별표현을 이유로 한 차별을 금지합니다.
+  #anchor-it-platform.bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span IT 플랫폼
-          %p.text-center.text
+          %p.mg-sm.text-center.text
             사회의 각 영역에서 필요한 민주주의 플랫폼을 만들고
             %br
             각 플랫폼을 적절히 사용하기 위한 가이드를 함께 개발하고 있습니다.
@@ -82,65 +116,13 @@
                   %strong<>타운홀
                   %br
                   %strong<>실시간 토론을 위한 플랫폼
-  #anchor-guide.bloc.bgc-anti-flash-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 가이드
-          %p.text-center.text
-            조직, 커뮤니티 등에서 빠띠의 플랫폼을 활용하거나
-            %br
-            일상 속 민주주의 문화를 개선시킬 수 있는 가이드를 개발하고 있습니다.
-          .introduce-box
-            %p.text-center.introduce-text
-              %a{:href => "http://demos-wiki.partiunion.org/index.php?title=%EC%BA%A0%ED%8E%98%EC%9D%B8_%EA%B0%80%EC%9D%B4%EB%93%9C", :target => "_blank"}
-                %strong<>조직 내 민주주의 가이드
-          .introduce-box
-            %p.text-center.introduce-text
-              %a{:href => "http://demos-wiki.partiunion.org/index.php?title=%EC%9D%B4%EC%8A%88%EA%B0%80_%EC%9E%88%EC%9D%84%EB%95%8C_%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98", :target => "_blank"}
-                %strong<>이슈 커뮤니티 가이드
-          .introduce-box
-            %p.text-center.introduce-text
-              %a{:href => "http://demos-wiki.partiunion.org/", :target => "_blank"}
-                %strong<>데모스 위키
-  #anchor-community.bloc.bgc-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 커뮤니티
-          %p.text-center.text
-            각 플랫폼을 적절히 사용하기 위한 가이드를 함께 개발하고 있습니다.
-            %br
-            사회의 각 영역에 민주주의 문화를 확산시키기 위한
-            %br
-            커뮤니티를 운영하고, 지원하고 있습니다.
-            %br
-            커뮤니티에 함께하고 싶거나, 빠띠의 민주주의 플랫폼을
-            %br
-            활용한 커뮤니티를 개설하고 싶다면 언제든 연락주세요.
-          .community{ style: "background-image: url(#{asset_url('community-organizer.jpg')})" }
-            %a{:href => "https://organizer.parti.xyz/p/orgs", :target => "_blank"}
-              .box
-                .text
-                  %strong<>오거나이저 그룹
-                  %br
-                  %strong<>빠띠 오거나이저들의 커뮤니티
-          .community{ style: "background-image: url(#{asset_url('community-wouldyou.png')})" }
-            %a{:href => "http://wouldyouparty.govcraft.org/", :target => "_blank"}
-              .box
-                .text
-                  %strong<>우주당
-                  %br
-                  %strong<>그룹 소개
   #anchor-campagin.bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 캠페인
-          %p.mg-md.text-center
+          %p.mg-sm.text-center
             시민들의 목소리를 모으고 발화하게 하는 Voice,
             %br
             모인 의견으로 숙의할 수 있는 Deliberation,
@@ -185,6 +167,157 @@
             %p.text-center.text
               = link_to "campaign" do
                 캠페인 더 보기
+  #anchor-guide.bloc.bgc-anti-flash-white.l-bloc
+    .container.bloc-sm
+      .row.voffset-md
+        .col-xs-12.col-md-8.col-md-offset-2
+          %h3.statement-bloc-text.mg-clear.tc-outer-space
+            %span 민주주의 컨텐츠
+          %p.mg-sm.text-center.text
+            조직, 커뮤니티 등에서 빠띠의 플랫폼을 활용하거나
+            %br
+            일상 속 민주주의 문화를 개선시킬 수 있는 가이드를 개발하고 있습니다.
+          .introduce-box
+            %p.text-center.introduce-text
+              %a{:href => "http://demos-wiki.partiunion.org/index.php?title=%EC%BA%A0%ED%8E%98%EC%9D%B8_%EA%B0%80%EC%9D%B4%EB%93%9C", :target => "_blank"}
+                %strong<>가이드
+          .introduce-box
+            %p.text-center.introduce-text
+              %a{:href => "http://demos-wiki.partiunion.org/index.php?title=%EC%9D%B4%EC%8A%88%EA%B0%80_%EC%9E%88%EC%9D%84%EB%95%8C_%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98", :target => "_blank"}
+                %strong<>블로그
+          .introduce-box
+            %p.text-center.introduce-text
+              %a{:href => "http://demos-wiki.partiunion.org/", :target => "_blank"}
+                %strong<>민주주의 리포트
+  #anchor-team.bloc.bgc-white.l-bloc.team-container
+    .container.bloc-md
+      .row
+        .col-sm-12
+          %h2.text-center.mg-md.tc-outer-space
+            TEAM
+          %p.text-center
+            빠띠는 다양한 영역에서 활동하고 있는
+            %br.visible-xs
+            민주주의 활동가들과 함께하고 있습니다.
+      .row.team-member-container.mg-sm
+        .team-member
+          .col-sm-2
+            = image_tag "team-picture-sis.png", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+          .col-sm-4
+            %h3.blocs-team-header
+              권오현
+            %p.blocs-team-details
+              세상이 모두에게 즐겁고 평화로운 곳이 되는데 기여하려고 잘 하든 못하든 상관없이 여러가지 일을 벌입니다.
+            .socail-account
+              %a{:href => "https://twitter.com/rest515", :target => "_blank"}
+                %span.fa.fa-twitter.icon-sm
+              %a{:href => "https://www.facebook.com/rest515", :target => "_blank"}
+                %span.fa.fa-facebook.icon-sm
+              %a{:href => "https://github.com/rest515", :target => "_blank"}
+                %span.fa.fa-github.icon-sm
+        .team-member
+          .col-sm-2
+            = image_tag "team-picture-dali.png", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+          .col-sm-4
+            %h3.blocs-team-header
+              달리
+            %p.blocs-team-details
+              플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체를 고민하고 실천하고 있습니다.
+            .socail-account
+              %a{:href => "https://twitter.com/blue_spider", :target => "_blank"}
+                %span.fa.fa-twitter.icon-sm
+              %a{:href => "https://github.com/dalikim", :target => "_blank"}
+                %span.fa.fa-github.icon-sm
+      .row.team-member-container
+        .team-member
+          .col-sm-2
+            = image_tag "team-picture-berry.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+          .col-sm-4
+            %h3.blocs-team-header
+              박은지
+            %p.blocs-team-details
+              디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 생활동반자법, 젠더이슈, 주거문제에 관심이 많습니다.
+            .socail-account
+              %a{:href => "https://twitter.com/berrytext140", :target => "_blank"}
+                %span.fa.fa-twitter.icon-sm
+              %a{:href => "https://www.facebook.com/rozyroom", :target => "_blank"}
+                %span.fa.fa-facebook.icon-sm
+              %a{:href => "http://oysterberry.tumblr.com/", :target => "_blank"}
+                %span.fa.fa-home.icon-sm
+        .team-member
+          .col-sm-2
+            = image_tag "team-picture-ssinkj.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+          .col-sm-4
+            %h3.blocs-team-header
+              정승구
+            %p.blocs-team-details
+              커뮤니티를 만드는 사람들을 돕고 있습니다. 세상을 긍정적으로 변화시키는 커뮤니티에 관심이 많습니다.
+            .socail-account
+              %a{:href => "https://medium.com/@seungkujung", :target => "_blank"}
+                %span.fa.fa-medium.icon-sm
+      .row.team-member-container
+        .team-member
+          .col-sm-2
+            = image_tag "team-picture-greenhair.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+          .col-sm-4
+            %h3.blocs-team-header
+              조이성화
+            %p.blocs-team-details
+              개발을 합니다. 페미니즘, 군인권, 학교에서의 민주주의에 관심이 있습니다. 혐오와 차별이 없는 세상이 되었으면 좋겠습니다.
+            .socail-account
+              %a{:href => "https://www.facebook.com/Martian.Lee", :target => "_blank"}
+                %span.fa.fa-facebook.icon-sm
+              %a{:href => "https://github.com/martianlee", :target => "_blank"}
+                %span.fa.fa-github.icon-sm
+              %a{:href => "https://brunch.co.kr/@martian", :target => "_blank"}
+                %span.fa.fa-home.icon-sm
+
+  #bloc.bgc-anti-flash-white.l-bloc
+    .container.bloc-sm
+      .row.voffset-md
+        .col-xs-12.col-md-8.col-md-offset-2
+          %h3.statement-bloc-text.mg-clear.tc-outer-space
+            %span 소개 자료
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>빠띠 소개 자료 다운로드
+          .introduce-box
+            %a{:href => "https://union.parti.xyz/file_source/2866/download"}
+              %p.text-center.introduce-text
+                %strong<>리플렛 다운로드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>로고 다운로드
+
+  #bloc.bgc-white.l-bloc
+    .container.bloc-sm
+      .row.voffset-md
+        .col-xs-12.col-md-8.col-md-offset-2
+          %h3.statement-bloc-text.mg-clear.tc-outer-space
+            %span 기사 및 보도자료
+          %p.mg-md.text-center
+            언론에 소개된 빠띠 소식을 공유합니다
+          .article-box
+            %a{:href => "http://news.joins.com/article/21494433", :target => "_blank"}
+              [TONG] “개발자=코딩? 아니죠~ 컴퓨터와 사람 사이 통역합니다”
+              %br
+              2017-04-19
+          .article-box
+            %a{:href => "http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002313223", :target => "_blank"}
+              온라인으로 대통령 탄핵하는 세상, 올까?
+              %br
+              [인터뷰] 인터넷이 아닌 민주주의를 개발합니다, 권오현 빠흐띠 대표
+              %br
+              2017-04-05
+          .article-box.last
+            %a{:href => "http://m.etnews.com/20161213000311?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D", :target => "_blank"}
+              "온라인 공론장이 세상을 바꿀 수 있다" | 빠띠 인터뷰
+              %br
+              2016-06-30
+          .more-article-box.text-center
+            %a{:href => "https://union.parti.xyz/p/partinews"}
+              .more-article-text
+                빠띠 관련 소식 더보기
 
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
@@ -193,7 +326,7 @@
           %h3.statement-bloc-text.mg-clear.tc-outer-space
             %span 굿즈
           .more-parti-box
-            %p.text-center.text
+            %p.mg-sm.text-center.text
               %a{:href => "https://parti.xyz/service", :target => "_blank"}
                 빠띠가 만든 굿즈와 스토리를 만나보세요.
                 %br
@@ -202,4 +335,5 @@
             %p.text-center.text
               %a{:href => "campaign", :target => "_blank"}
                 민주주의 굿즈 더 보기
+
 

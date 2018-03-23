@@ -64,11 +64,10 @@
     background-color: rgba(255, 255, 255, 1);
     border-radius: 3px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.5);
-    border: 1px;
     margin: 20px;
 
     .introduce-text {
+      color: rgba(0, 0, 0, 0.5);
       padding-top: 38px;
     }
   }
@@ -98,8 +97,22 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid $color_line;
+    a {
+      color: rgba(0, 0, 0, 0.5);
+    }
     &.last {
       border-bottom: 1px solid $color_line;
+    }
+  }
+
+  .more-article-box {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    .more-article-text {
+      padding: 10px;
+      color: rgba(150, 111, 214, 1);
+      border: 1px solid rgba(150, 111, 214, 1);
     }
   }
 
