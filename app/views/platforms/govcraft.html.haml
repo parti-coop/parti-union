@@ -23,11 +23,11 @@
       .row.govcraft-app
         .col-xs-8.col-xs-offset-2.col-md-6.col-md-offset-3
           %a{:href => "http://govcraft.org/", :target => "_blank"}
-            = image_tag "team-picture-sis.png", class: 'img-circle center-block img-frame-rd govcraft-app-icon'
+            = image_tag "icon/web.png", class: 'img-circle center-block img-frame-rd govcraft-app-icon'
             .text-center.govcraft-app-text
               PC/모바일 웹에서 가브크래프트 사용하기
 
-  #bloc.bgc-anti-flash-white.l-bloc
+  .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -42,7 +42,7 @@
               %a{:href => "http://demos-wiki.partiunion.org/", :target => "_blank"}
                 %strong<>데모스 위키
 
-  #bloc.bgc-white.l-bloc
+  .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -57,14 +57,14 @@
           .row
             .col-xs-12.col-md-6
               %a{:href => "http://govcraft.org/p/HIM", :target => "_blank"}
-                .campaign
+                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-young-law.png')})" }
                 .campaign-text
                   "#피해자를_피해자로 아청법 개정을 촉구합니다"
                   %br
                   성매수 피해 십대 여성을 보호할 수 있도록
             .col-xs-12.col-md-6
               %a{:href => "http://wouldyouparty.govcraft.org/p/bisang2016", :target => "_blank"}
-                .campaign
+                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-president-park.png')})" }
                 .campaign-text
                   [퇴진행동] 즉각 퇴진! 조기 탄핵! 온라인비상국민행동
                   %br
@@ -74,12 +74,12 @@
           .row
             .col-xs-12.col-md-6
               %a{:href => "http://govcraft.org/petitions/58", :target => "_blank"}
-                .campaign
+                .campaign{ style: "background-image: url(#{asset_url('campaigns/campagin-jeju-airport.png')})" }
                 .campaign-text
                   제주 제2공항 전면재검토를 요구합니다
             .col-xs-12.col-md-6
               %a{:href => "http://wouldyouparty.govcraft.org/petitions/54", :target => "_blank"}
-                .campaign
+                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-feminst-teacher')})" }
                 .campaign-text
                   우리에겐_페미니스트_선생님이_필요합니다
                   %br
@@ -88,21 +88,23 @@
             .col-xs-12.col-md-6
               %h5.mg-md.text-center
                 아카이브
-              .campaign
-              .campaign-text
-                타이틀
-                %br
-                서브 타이틀
+              %a{:href => "http://wouldyouparty.org/archives/1", :target => "_blank"}
+                .campaign{ style: "background-image: url(#{asset_url('platforms/govcraft-archives')})" }
+                .campaign-text
+                  세월호 아카이브
+                  %br
+                  세월호 참사를 시민의 힘으로 기록하고 기억합니다.
             .col-xs-12.col-md-6
               %h5.mg-md.text-center
                 추모
-              .campaign
-              .campaign-text
-                타이틀
-                %br
-                서브 타이틀
+              %a{:href => "http://govcraft.org/sympathies/1", :target => "_blank"}
+                .campaign{ style: "background-image: url(#{asset_url('platforms/govcraft-sympathies')})" }
+                .campaign-text
+                  故 백남기 농민 추모
+                  %br
+                  당신의 모습이 아직 가슴 속에 선명합니다
 
-  #bloc.bgc-anti-flash-white.l-bloc
+  .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -113,19 +115,18 @@
               %a{:href => "https://parti.xyz/service", :target => "_blank"}
                 %strong<>비용 안내 및 개설 문의
 
-          .upgraded-govcraft
-            .text
-              %strong<>그룹 이름
-              %br
-              %strong<>그룹 소개
-          .upgraded-govcraft
-            .text
-              %strong<>그룹 이름
-              %br
-              %strong<>그룹 소개
-          .upgraded-govcraft
-            .text
-              %strong<>그룹 이름
-              %br
-              %strong<>그룹 소개
+          .upgraded-govcraft{ style: "background-image: url(#{asset_url('platforms/govcraft-rebootkorea.jpg')})" }
+            %a{:href => "http://rebootkorea.govcraft.org/", :target => "_blank"}
+              .box
+                .text
+                  %strong<>국민개헌넷
+                  %br
+                  %strong<>국민의 목소리가 개헌안에 담길 수 있기를 요구합니다.
+          .upgraded-govcraft{ style: "background-image: url(#{asset_url('platforms/govcraft-urimanna.png')})" }
+            %a{:href => "http://urimanna.govcraft.org/", :target => "_blank"}
+              .box
+                .text
+                  %strong<>우리가 만드는 나라
+                  %br
+                  %strong<>그룹 소개
 
