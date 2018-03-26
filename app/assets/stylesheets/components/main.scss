@@ -2,6 +2,87 @@
 
   $ash_gray: rgba(182, 182, 182, 1);
 
+  .about-slogan h1 {
+    font-weight: 200;
+    letter-spacing: -0.08em;
+  }
+
+  .about-slogan {
+    .device-bloc-text-p {
+      font-family: Open Sans;
+      font-weight: 300;
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 20px;
+      @media (max-width: 420px) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    .bloc-md {
+      @media (min-width: 767px){
+        padding: 140px 0 80px;
+      }
+    }
+    h1 > span {
+      color: #e1b8ff;
+      font-weight: 400;
+      padding: 5px;
+      border-bottom: 1px solid #e1b8ff;
+    }
+    .btn {
+      margin-top: 22px;
+    }
+    #subscribe-email-modal {
+      text-align: center;
+      color: #484848;
+
+      .modal-dialog {
+        margin-top: 10%;
+        @media (max-width: $screen-xs-max) {
+          margin-top: 30%;
+        }
+      }
+
+      .modal-body {
+        padding: 24px;
+      }
+
+      .email-guide {
+        color: #6b37c1;
+        @media (max-width: $screen-xs-max) {
+          line-height: 28px;
+        }
+      }
+
+      .email-input {
+        margin-top: 18px;
+        @media (max-width: $screen-xs-max) {
+          text-align: center;
+        }
+        label {
+          margin-right: 10px;
+          color: gray;
+        }
+        input {
+          width: 200px;
+          color: black;
+          display: inline-block;
+        }
+      }
+
+      button[type= "submit"] {
+        border-radius: 4px;
+        padding: 6px 16px;
+        color: #fff;
+        background-color: #6b37c1 !important;
+        @media (max-width: $screen-xs-max) {
+          width: inherit;
+        }
+      }
+    }
+  }
+
   h2 {
     font-weight: 800;
     font-size: 24px;

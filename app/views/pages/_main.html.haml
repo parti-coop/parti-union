@@ -1,15 +1,40 @@
 #page-main
-  .header
-    .bloc.container.bloc-sm.bloc-bg-texture.texture-darken
-      %p.text-center.about-text
-        Platforms for Democratic Life and Culture
-        %br
-        민주적인 삶과 문화를 만듭니다.
+  .bloc.bloc-bg-texture.texture-darken.tc-anti-flash-white.bgc-white.about-slogan{ style: "background-image: url(#{asset_url('about-slogan-background.jpg')})" }
+    .container.bloc-md
+      .row
+        .col-sm-12
+          %h1.mg-md.device-bloc-text.tc-white
+            일상을 더
+            %br.visible-xs
+            %span
+              민주적으로
+            %br.visible-xs
+          %p.mg-lg.device-bloc-text-p
+            Platforms for Democratic Life and Culture
+            %br
+            민주적인 삶과 문화를 만듭니다.
+          .button-wrapper
+            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 소식 받아보기
+    #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} &#215;
+            %form{:action => "https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers", :method => "POST"}
+              %h3.email-guide
+                빠띠의 소식을
+                %br.visible-xs
+                이메일로 받아보세요!
+              .email-input
+                %label{:for => "email"} 이메일 주소
+                %input#email{:name => "email", :type => "email", class: 'form-control'}/
+              %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} 구독신청
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span MISSION
           %p.mg-sm.text-center
             %strong<>일상 속에서 개인이 자신의 목소리를 낼 수 있는
@@ -28,7 +53,7 @@
     .container.bloc-sm
       .row
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span OUR WAY
           %p.mg-sm.text-center
             %strong<>일상적으로
@@ -89,7 +114,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span IT 플랫폼
           %p.mg-sm.text-center.text
             사회의 각 영역에서 필요한 민주주의 플랫폼을 만들고
@@ -120,7 +145,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 캠페인
           %p.mg-sm.text-center
             시민들의 목소리를 모으고 발화하게 하는 Voice,
@@ -171,7 +196,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 민주주의 컨텐츠
           %p.mg-sm.text-center.text
             조직, 커뮤니티 등에서 빠띠의 플랫폼을 활용하거나
@@ -276,7 +301,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 소개 자료
           .introduce-box
             %p.text-center.introduce-text
@@ -293,7 +318,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 기사 및 보도자료
           %p.mg-md.text-center
             언론에 소개된 빠띠 소식을 공유합니다
@@ -323,7 +348,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 굿즈
           .more-parti-box
             %p.mg-sm.text-center.text
