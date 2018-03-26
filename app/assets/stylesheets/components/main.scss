@@ -179,6 +179,10 @@
   //colors
   $color_line: rgba(151, 151, 151, 1);
 
+  .article-title {
+    color: white;
+  }
+
   .article-box {
     margin-left: 20px;
     margin-right: 20px;
@@ -186,7 +190,7 @@
     padding-bottom: 10px;
     border-top: 1px solid $color_line;
     a {
-      color: rgba(0, 0, 0, 0.5);
+      color: rgba(255, 255, 255, 0.8);
     }
     &.last {
       border-bottom: 1px solid $color_line;
@@ -199,7 +203,7 @@
     padding-right: 60px;
     .more-article-text {
       padding: 10px;
-      color: rgba(0, 0, 0, 0.5);
+      color: rgba(255, 255, 255, 0.8);
       border: 1px solid $color_line;
     }
   }
