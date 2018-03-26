@@ -15,6 +15,33 @@
     line-height: 24px;
   }
 
+  .about-slogan {
+    padding-top: 50px;
+    .device-bloc-text-p {
+      font-family: Open Sans;
+      font-weight: 300;
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 28px;
+      @media (max-width: 420px) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    .bloc-md {
+      @media (min-width: 767px){
+        padding: 140px 0 80px;
+      }
+    }
+    h1 > span {
+      color: #e1b8ff;
+      font-weight: 400;
+      padding: 5px;
+      border-bottom: 1px solid #e1b8ff;
+    }
+  }
+
   .header {
     top: 50px;
     left: 0px;
@@ -27,7 +54,7 @@
         rgba(0, 0, 0, 0.5)
       ),
       /* bottom, image */
-      #{asset_url('community-parti.png')};
+      #{asset_url('platforms/platform-parti-detail-background.png')};
     background-color: rgba(182, 182, 182, 1);
     background-position: center;
     background-size: cover;

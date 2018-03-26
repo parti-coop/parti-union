@@ -1,11 +1,12 @@
 #page-parti
-  .header
-    .container.bloc-sm
-      %p.text-center.about-text
-        빠띠
-        %br
-        팀과 커뮤니티를 위한 민주주의 플랫폼
-
+  .bloc.bloc-bg-texture.texture-darken.tc-anti-flash-white.bgc-white.about-slogan{ style: "background-image: url(#{asset_url('platform-parti.jpg')})" }
+    .container.bloc-md
+      .row
+        .col-sm-12
+          %h1.mg-md.device-bloc-text.tc-white
+            빠띠
+          %p.mg-lg.device-bloc-text-p
+            팀과 커뮤니티를 위한 민주주의 플랫폼
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
@@ -33,31 +34,16 @@
                 PC/모바일 웹에서 빠띠 사용하기
 
         .col-sm-4
-          .parti-app-link
-            = image_tag "icon/iphone.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
-            .text-center.parti-app-text
-              아이폰 앱으로 사용하기
+          %a{:href => "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", :target => "_blank"}
+            .parti-app-link
+              = image_tag "icon/iphone.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+              .text-center.parti-app-text
+                아이폰 앱으로 사용하기
         .col-sm-4
           .parti-app-link
             = image_tag "icon/android.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
             .text-center.parti-app-text
               안드로이드 어플리케이션으로 사용하기
-
-  .bloc.bgc-anti-flash-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
-            %span 가이드
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>조직 내 민주주의 가이드
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>이슈 커뮤니티 가이드
-          .introduce-box
-            %p.text-center.introduce-text
-              %strong<>데모스 위키
 
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
@@ -100,7 +86,7 @@
               %a{:href => "https://parti.xyz/service", :target => "_blank"}
                 %strong<>비용 안내 및 개설 문의
 
-          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-zero-waste.png')})" }
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-zero-waste.jpg')})" }
             %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
               .box
                 .text
@@ -114,11 +100,27 @@
                   %strong<>미트쉐어
                   %br
                   %strong<>NPO센터가 진행한 미트쉐어 커뮤니티
-          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-union.png')})" }
+          .issue-parti{ style: "background-image: url(#{asset_url('platforms/platform-parti-union.jpg')})" }
             %a{:href => "https://meetshare.parti.xyz/p/enhancers", :target => "_blank"}
               .box
                 .text
                   %strong<>민주주의 활동가 그룹
                   %br
                   %strong<>빠띠의 민주주의 활동가 그룹입니다
+
+  .bloc.bgc-anti-flash-white.l-bloc
+    .container.bloc-sm
+      .row.voffset-md
+        .col-xs-12.col-md-8.col-md-offset-2
+          %h3.statement-bloc-text.mg-clear.tc-outer-space
+            %span 가이드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>조직 내 민주주의 가이드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>이슈 커뮤니티 가이드
+          .introduce-box
+            %p.text-center.introduce-text
+              %strong<>데모스 위키
 
