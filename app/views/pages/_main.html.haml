@@ -332,9 +332,10 @@
                 %strong<>리플렛&nbsp;
                 %span.fa.fa-download
           .introduce-box
-            %p.text-center.introduce-text
-              %strong<>로고&nbsp;
-              %span.fa.fa-download
+            %a{:href => "https://drive.google.com/file/d/1qeWDwjoOZqHQL48ksGmHmlBdwJ4q4uFb/view?usp=sharing"}
+              %p.text-center.introduce-text
+                %strong<>로고&nbsp;
+                %span.fa.fa-download
 
   #bloc-48.bloc.tc-white.bloc-bg-texture.texture-darken.bgc-white{style: "background-image: url(#{asset_url('news.jpg')});"}
     .container.bloc-sm
@@ -373,7 +374,7 @@
                 .col-xs-6.text-right
                   출처 : 전자신문
           .more-article-box.text-center
-            %a{:href => "https://union.parti.xyz/p/partinews"}
+            %a{:href => "https://union.parti.xyz/p/partinews", :target => "_blank"}
               .more-article-text
                 빠띠 관련 소식 더보기
 

@@ -40,12 +40,13 @@
               .text-center.parti-app-text
                 아이폰 앱으로 사용하기
         .col-sm-4
-          .parti-app-link
-            = image_tag "icon/android.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
-            .text-center.parti-app-text
-              안드로이드 어플리케이션으로 사용하기
+          %a{:href => "https://play.google.com/store/apps/details?id=xyz.parti.catan&hl=ko", :target => "_blank"}
+            .parti-app-link
+              = image_tag "icon/android.png", class: 'img-circle center-block img-frame-rd parti-app-icon'
+              .text-center.parti-app-text
+                안드로이드 어플리케이션으로 사용하기
 
-  .bloc.bgc-white.l-bloc
+  .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
@@ -75,7 +76,7 @@
                   %br
                   %strong<>동료 고픈 당신, 커몽
 
-  .bloc.bgc-anti-flash-white.l-bloc
+  .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
