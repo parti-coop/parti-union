@@ -1,16 +1,18 @@
 #page-govcraft
-  .header
-    .container.bloc-sm
-      %p.text-center.about-text
-        가브크래프트
-        %br
-        참여형 캠페인을 위한 플랫폼
+  .bloc.bloc-bg-texture.texture-darken.tc-anti-flash-white.bgc-white.about-slogan{ style: "background-image: url(#{asset_url('platform-govcraft.jpg')})" }
+    .container.bloc-md
+      .row
+        .col-sm-12
+          %h1.mg-md.device-bloc-text.tc-white
+            가브크래프트
+          %p.mg-lg.device-bloc-text-p
+            참여형 캠페인을 위한 플랫폼
 
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 참여형 캠페인을 위한 플랫폼
           %p.mg-sm.text-center
             시민이 스스로 말하고, 행동하는 캠페인을 만들고 계세요?
@@ -31,7 +33,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 가이드
           .introduce-box
             %p.text-center.introduce-text
@@ -46,69 +48,81 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 캠페인 케이스
           %p.mg-md.text-center
             가브크래프트를 활용해
             %br.visible-xs
             참여형 캠페인을 시작할 수 있는 가이드입니다.
-          %h5.mg-md.text-center
+          %h4.mg-md.text-center
             이벤트형 캠페인
           .row
             .col-xs-12.col-md-6
               %a{:href => "http://govcraft.org/p/HIM", :target => "_blank"}
                 .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-young-law.png')})" }
                 .campaign-text
-                  "#피해자를_피해자로 아청법 개정을 촉구합니다"
-                  %br
-                  성매수 피해 십대 여성을 보호할 수 있도록
+                  %h3
+                    %u
+                      "#피해자를_피해자로 아청법 개정을 촉구합니다"
+                  %p.mg-sm
+                  성매수 피해 십대 여성을 보호하기 위한 캠페인
             .col-xs-12.col-md-6
               %a{:href => "http://wouldyouparty.govcraft.org/p/bisang2016", :target => "_blank"}
                 .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-president-park.png')})" }
                 .campaign-text
-                  [퇴진행동] 즉각 퇴진! 조기 탄핵! 온라인비상국민행동
-                  %br
+                  %h3
+                    %u
+                      [퇴진행동] 즉각 퇴진! 조기 탄핵! 온라인비상국민행동
+                  %p.mg-sm
                   박근혜 전 대통령 퇴진을 위한 캠페인
-          %h5.mg-md.text-center
+          %h4.mg-md.text-center
             서명 캠페인
           .row
             .col-xs-12.col-md-6
               %a{:href => "http://govcraft.org/petitions/58", :target => "_blank"}
-                .campaign{ style: "background-image: url(#{asset_url('campaigns/campagin-jeju-airport.png')})" }
+                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-jeju-airport.jpg')})" }
                 .campaign-text
-                  제주 제2공항 전면재검토를 요구합니다
+                  %h3
+                    %u
+                      제주 제2공항 전면재검토를 요구합니다
             .col-xs-12.col-md-6
               %a{:href => "http://wouldyouparty.govcraft.org/petitions/54", :target => "_blank"}
                 .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-feminst-teacher')})" }
                 .campaign-text
-                  우리에겐_페미니스트_선생님이_필요합니다
-                  %br
-                  기자회견에 동참해주세요!
+                  %h3
+                    %u
+                      우리에겐_페미니스트_선생님이_필요합니다
+                  %p.mg-sm
+                    최근 집중적으로 사이버불링 공격의 대상자가 되고 있는 페미니스트 선생님에 대한 문제 해결을 위한 캠페인
           .row
             .col-xs-12.col-md-6
-              %h5.mg-md.text-center
+              %h4.mg-md.text-center
                 아카이브
               %a{:href => "http://wouldyouparty.org/archives/1", :target => "_blank"}
                 .campaign{ style: "background-image: url(#{asset_url('platforms/govcraft-archives')})" }
                 .campaign-text
-                  세월호 아카이브
-                  %br
-                  세월호 참사를 시민의 힘으로 기록하고 기억합니다.
+                  %h3
+                    %u
+                      세월호 아카이브
+                  %p.mg-sm
+                    세월호 참사를 시민의 힘으로 기록하고 기억합니다.
             .col-xs-12.col-md-6
-              %h5.mg-md.text-center
+              %h4.mg-md.text-center
                 추모
               %a{:href => "http://govcraft.org/sympathies/1", :target => "_blank"}
                 .campaign{ style: "background-image: url(#{asset_url('platforms/govcraft-sympathies')})" }
                 .campaign-text
-                  故 백남기 농민 추모
-                  %br
-                  당신의 모습이 아직 가슴 속에 선명합니다
+                  %h3
+                    %u
+                      故 백남기 농민 추모
+                  %p.mg-sm
+                    당신의 모습이 아직 가슴 속에 선명합니다
 
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 가브크래프트 그룹 개설
           .more-govcraft-box
             %p.text-center.text
@@ -121,12 +135,12 @@
                 .text
                   %strong<>국민개헌넷
                   %br
-                  %strong<>국민의 목소리가 개헌안에 담길 수 있기를 요구합니다.
+                  %strong<>국민의 목소리가 개헌안에 담길 수 있기를 요구하는 네트워크
           .upgraded-govcraft{ style: "background-image: url(#{asset_url('platforms/govcraft-urimanna.png')})" }
             %a{:href => "http://urimanna.govcraft.org/", :target => "_blank"}
               .box
                 .text
                   %strong<>우리가 만드는 나라
                   %br
-                  %strong<>그룹 소개
+                  %strong<>전국적인 온라인 만민공동회 구축을 통해 깨어있는 시민들의 자발적 네트워크
 
