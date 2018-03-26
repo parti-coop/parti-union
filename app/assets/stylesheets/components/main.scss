@@ -14,6 +14,7 @@
       margin-top: 30px;
       margin-bottom: 0;
       font-size: 20px;
+      line-height: 28px;
       @media (max-width: 420px) {
         font-size: 20px;
         text-align: center;
@@ -124,6 +125,12 @@
     padding-right: 0px!important;
   }
 
+  .visible-md {
+      @media (min-width: $screen-md-max){
+        display: block !important;
+      }
+  }
+
   .activity {
     margin-bottom: 20px;
     .activity-link {
@@ -140,14 +147,14 @@
     }
   }
 
-  .introduce-box {
+  .contents-box {
     height: 100px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 3px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     margin: 20px;
 
-    .introduce-text {
+    .contents-text {
       color: rgba(0, 0, 0, 0.5);
       padding-top: 38px;
     }
@@ -188,22 +195,23 @@
 
   .more-article-box {
     margin-top: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     .more-article-text {
       padding: 10px;
-      color: rgba(150, 111, 214, 1);
-      border: 1px solid rgba(150, 111, 214, 1);
+      color: rgba(0, 0, 0, 0.5);
+      border: 1px solid $color_line;
     }
   }
 
-  .more-campagin-box {
+  .more-campaign-box {
     margin-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    .text {
+    .more-campaign-text {
       padding: 10px;
-      border: 1px solid rgba(97, 97, 97, 1);
+      color: rgba(0, 0, 0, 0.5);
+      border: 1px solid $color_line;
     }
   }
 
@@ -247,6 +255,20 @@
       padding-top: 145px;
       margin-left: 20px;
       color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+
+  .introduce-box {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+
+    .introduce-text {
+      color: rgba(0, 0, 0, 0.5);
+      padding-top: 38px;
     }
   }
 
