@@ -12,9 +12,6 @@
       .navbar-collapse.navbar-1.collapse
         %ul.site-navigation.nav.navbar-nav
           %li
-            = link_to root_path do
-              홈
-          %li
             = link_to '/platforms/parti' do
               빠띠
           %li
@@ -32,3 +29,6 @@
           %li
             = link_to products_path do
               굿즈
+          %li
+            %a{:href => "https://www.facebook.com/PartiUnion", :target => "_blank", class: 'img-responsive'}
+              문의하기
