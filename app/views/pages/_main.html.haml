@@ -35,7 +35,7 @@
       .row
         .col-xs-12.col-md-8.col-md-offset-2
           %h2.statement-bloc-text.mg-clear.tc-outer-space
-            %span MISSION
+            %span 미션
           %p.mg-sm.text-center
             일상 속에서 개인이 자신의 목소리를 낼 수 있는
             %br
@@ -54,7 +54,7 @@
       .row
         .col-xs-12.col-md-8.col-md-offset-2
           %h2.statement-bloc-text.mg-clear.tc-outer-space
-            %span OUR WAY
+            %span 빠띠 스타일
           %p.mg-sm.text-center
             .row
               .col-xs-12.col-md-6.text-center
@@ -73,6 +73,19 @@
                 %br
                 %br
               .col-xs-12.col-md-6.text-center
+                %strong<>느슨하게 연결된
+                %br
+                %br.visible-md
+                능동적이고 독립적인 개인이
+                %br
+                느슨하게 연결되어 만드는 힘을 긍정합니다.
+                %br
+                다양한 관심사를 존중하고,
+                %br
+                다양성이 인정받는 건강한 토양을 만들어 나갑니다.
+                %br
+            .row
+              .col-xs-12.col-md-6.text-center
                 %strong<>빠띠 속도로(실험적인)
                 %br
                 %br.visible-md
@@ -83,7 +96,6 @@
                 작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
                 %br
                 %br
-            .row
               .col-xs-12.col-md-6.text-center
                 %strong<>섬세하게
                 %br
@@ -91,15 +103,6 @@
                 소수의견도 무시되지 않는 의사결정 과정을 설계합니다.
                 %br
                 모든 과정은 투명하고 꼼꼼하게 기록됩니다.
-                %br
-                %br
-              .col-xs-12.col-md-6.text-center
-                %strong<>느슨하게 연결된
-                %br
-                %br.visible-md
-                능동적이고 독립적인 개인이
-                %br
-                느슨하게 연결되어 만드는 힘을 긍정합니다.
                 %br
                 %br
             .row
@@ -117,14 +120,10 @@
                 %br
                 %br
               .col-xs-12.col-md-6.text-center
-                %strong<>다양한
+                %strong<>차별 없는
                 %br
                 %br.visible-md
-                다양한 관심사를 존중하고,
-                %br
-                다양성이 인정받는 건강한 토양을 만들어 나갑니다.
-                %br
-                빠띠에서는 성적지향·성별정체성·성별표현을
+                빠띠에서는 성적지향 · 성별정체성 · 성별표현을
                 %br
                 이유로 한 차별을 금지합니다.
   #anchor-it-platform.bloc.bgc-anti-flash-white.l-bloc
@@ -236,7 +235,7 @@
       .row
         .col-sm-12
           %h2.text-center.mg-md.tc-outer-space
-            TEAM
+            빠띠팀
           %p.text-center
             빠띠는 다양한 영역에서 활동하고 있는
             %br.visible-xs
@@ -376,7 +375,7 @@
           .more-article-box.text-center
             %a{:href => "https://union.parti.xyz/p/partinews", :target => "_blank"}
               .more-article-text
-                빠띠 관련 소식 더보기
+                빠띠 관련 소식 더 보기
 
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
@@ -384,15 +383,21 @@
         .col-xs-12.col-md-8.col-md-offset-2
           %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 굿즈
-          .more-parti-box
-            %p.mg-sm.text-center.text
-              %a{:href => "https://parti.xyz/service", :target => "_blank"}
-                빠띠가 만든 굿즈와 스토리를 만나보세요.
-                %br
-                수익은 민주주의 캠페인의 활동비로 후원됩니다.
+          %p.mg-sm.text-center.text
+            빠띠가 만든 굿즈와 스토리를 만나보세요.
+            %br
+            수익은 민주주의 캠페인의 활동비로 후원됩니다.
+          .row
+            - @products.take(4).each do |product|
+              .col-xs-12.col-md-6
+                = link_to "/products/#{product.slug}" do
+                  .img-responsive{style: "background-image: url(#{asset_url('products/' + product.slug + '/primary.png')})"}
+                  .campaign{ style: "background-image: url(#{asset_url('products/' + product.slug + '/primary.png')})" }
+                  .campaign-text
+                    %strong<>= product.title
           .more-campaign-box
             %p.text-center.more-campaign-text
-              %a{:href => "campaign", :target => "_blank"}
+              %a{:href => "products"}
                 민주주의 굿즈 더 보기
 
 
