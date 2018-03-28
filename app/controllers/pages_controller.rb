@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
     @slides = Slide.priority.recent
     @products = Product.all
+    @team = Team.all
   end
   def campaign_detail
     if params[:slug] == 'index'

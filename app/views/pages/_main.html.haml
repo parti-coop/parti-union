@@ -240,80 +240,30 @@
             빠띠는 다양한 영역에서 활동하고 있는
             %br.visible-xs
             민주주의 활동가들과 함께하고 있습니다.
-      .row.team-member-container.mg-sm
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-sis.png", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              권오현
-            %p.blocs-team-details
-              세상이 모두에게 즐겁고 평화로운 곳이 되는데 기여하려고 잘 하든 못하든 상관없이 여러가지 일을 벌입니다.
-            .socail-account
-              %a{:href => "https://twitter.com/rest515", :target => "_blank"}
-                %span.fa.fa-twitter.icon-sm
-              %a{:href => "https://www.facebook.com/rest515", :target => "_blank"}
-                %span.fa.fa-facebook.icon-sm
-              %a{:href => "https://github.com/rest515", :target => "_blank"}
-                %span.fa.fa-github.icon-sm
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-dali.png", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              달리
-            %p.blocs-team-details
-              플랫폼 개발을 하고 있습니다. 삶에서 자급자립, 대안공동체를 고민하고 실천하고 있습니다.
-            .socail-account
-              %a{:href => "https://twitter.com/blue_spider", :target => "_blank"}
-                %span.fa.fa-twitter.icon-sm
-              %a{:href => "https://github.com/dalikim", :target => "_blank"}
-                %span.fa.fa-github.icon-sm
-      .row.team-member-container
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-berry.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              박은지
-            %p.blocs-team-details
-              디자인을 베이스로 캠페인를 기획하고 있습니다. 페미니즘, 여성이 겪는 가정폭력, 생활동반자법, 젠더이슈, 주거문제에 관심이 많습니다.
-            .socail-account
-              %a{:href => "https://twitter.com/berrytext140", :target => "_blank"}
-                %span.fa.fa-twitter.icon-sm
-              %a{:href => "https://www.facebook.com/rozyroom", :target => "_blank"}
-                %span.fa.fa-facebook.icon-sm
-              %a{:href => "http://oysterberry.tumblr.com/", :target => "_blank"}
-                %span.fa.fa-home.icon-sm
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-ssinkj.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              정승구
-            %p.blocs-team-details
-              커뮤니티를 만드는 사람들을 돕고 있습니다. 세상을 긍정적으로 변화시키는 커뮤니티에 관심이 많습니다.
-            .socail-account
-              %a{:href => "https://medium.com/@seungkujung", :target => "_blank"}
-                %span.fa.fa-medium.icon-sm
-      .row.team-member-container
-        .team-member
-          .col-sm-2
-            = image_tag "team-picture-greenhair.jpg", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-          .col-sm-4
-            %h3.blocs-team-header
-              조이성화
-            %p.blocs-team-details
-              혐오와 차별이 없는 세상이 되었으면 좋겠습니다.
-              %br
-              글을 쓰고 개발을 합니다. 페미니즘, 군인권, 학교에서의 민주주의에 관심이 있습니다.
-            .socail-account
-              %a{:href => "https://www.facebook.com/Martian.Lee", :target => "_blank"}
-                %span.fa.fa-facebook.icon-sm
-              %a{:href => "https://github.com/martianlee", :target => "_blank"}
-                %span.fa.fa-github.icon-sm
-              %a{:href => "https://brunch.co.kr/@martian", :target => "_blank"}
-                %span.fa.fa-home.icon-sm
+      - @team.shuffle.each_slice(2) do |members|
+        .row.team-member-container.mg-sm
+          - members.each do |member|
+            .team-member
+              .col-sm-2
+                = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+              .col-sm-4
+                %h3.blocs-team-header
+                  #{member.name}
+                %p.blocs-team-details
+                  #{member.description}
+                .socail-account
+                  - if member.twitter
+                    %a{:href => "#{member.twitter}", :target => "_blank"}
+                      %span.fa.fa-twitter.icon-sm
+                  - if member.facebook
+                    %a{:href => "#{member.facebook}", :target => "_blank"}
+                      %span.fa.fa-facebook.icon-sm
+                  - if member.github
+                    %a{:href => "#{member.github}", :target => "_blank"}
+                      %span.fa.fa-github.icon-sm
+                  - if member.blog
+                    %a{:href => "#{member.blog}", :target => "_blank"}
+                      %span.fa.fa-home.icon-sm
 
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
@@ -399,5 +349,22 @@
             %p.text-center.more-campaign-text
               %a{:href => "products"}
                 민주주의 굿즈 더 보기
+
+  .bloc.bgc-anti-flash-white.l-bloc
+    .container.bloc-sm
+      .row.voffset-md
+        .col-xs-12.col-md-8.col-md-offset-2
+          %h2.statement-bloc-text.mg-clear.tc-outer-space
+            %span 굿즈
+          %p.mg-sm.text-center.text
+            빠띠가 만든 굿즈와 스토리를 만나보세요.
+            %br
+            수익은 민주주의 캠페인의 활동비로 후원됩니다.
+          .row
+            - @team.shuffle.each do |member|
+              .col-xs-12.col-md-6
+                .campaign{style: "background-image: url(#{asset_url(member.profile+'')})"}
+                .campaign-text
+                  %strong<>= member.name
 
 
