@@ -65,6 +65,12 @@
       font-family: Noto Serif CJK KR;
     }
   }
+  .parti-howto {
+    @media (min-width: 767px){
+      padding-top: 150px;
+    }
+  }
+
 
   .parti-app {
     margin-bottom: 30px;
