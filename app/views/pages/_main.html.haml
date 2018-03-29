@@ -14,7 +14,7 @@
             %br
             민주적인 삶과 문화를 만듭니다.
           .button-wrapper
-            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 소식 받아보기
+            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 민주주의 리포트 받아보기
     #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
         .modal-content
@@ -23,9 +23,9 @@
               %span{"aria-hidden" => "true"} &#215;
             %form{:action => "https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers", :method => "POST"}
               %h3.email-guide
-                빠띠의 소식을
+                빠띠의 민주주의 리포트를
                 %br.visible-xs
-                이메일로 받아보세요!
+                월간 뉴스레터로 받아보세요.
               .email-input
                 %label{:for => "email"} 이메일 주소
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
@@ -349,22 +349,3 @@
             %p.text-center.more-campaign-text
               %a{:href => "products"}
                 민주주의 굿즈 더 보기
-
-  .bloc.bgc-anti-flash-white.l-bloc
-    .container.bloc-sm
-      .row.voffset-md
-        .col-xs-12.col-md-8.col-md-offset-2
-          %h2.statement-bloc-text.mg-clear.tc-outer-space
-            %span 굿즈
-          %p.mg-sm.text-center.text
-            빠띠가 만든 굿즈와 스토리를 만나보세요.
-            %br
-            수익은 민주주의 캠페인의 활동비로 후원됩니다.
-          .row
-            - @team.shuffle.each do |member|
-              .col-xs-12.col-md-6
-                .campaign{style: "background-image: url(#{asset_url(member.profile+'')})"}
-                .campaign-text
-                  %strong<>= member.name
-
-
