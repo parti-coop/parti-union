@@ -101,6 +101,19 @@ export TWITTER_APP_ID="xx"
 export TWITTER_APP_SECRET="xx"
 ```
 
+
+### 팀원 추가하기
+
+lib/tasks/team.rake에 team의 세부내용을 추가합니다.
+app/assets/images에 profile과 동일한 이름의 프로필 이미지 파일을 추가합니다.
+
+아래 명령어를 수행합니다.
+
+```
+$ bin/rails team:seed
+```
+
+
 ### 굿즈 추가하기
 
 lib/tasks/products.rake에 product의 세부내용을 추가합니다.
