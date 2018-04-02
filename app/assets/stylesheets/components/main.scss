@@ -1,5 +1,4 @@
 #page-main {
-
   $ash_gray: rgba(182, 182, 182, 1);
 
   .about-slogan h1 {
@@ -85,19 +84,6 @@
     }
   }
 
-  h2 {
-    font-weight: 800;
-    font-size: 24px;
-  }
-  h3 {
-    font-weight: 600;
-    font-size: 18px;
-  }
-  p {
-    font-weight: 400;
-    line-height: 24px;
-  }
-
   .header {
     top: 50px;
     left: 0px;
@@ -136,9 +122,6 @@
       margin-left: 10px!important;
       margin-right: 10px!important;
     }
-  }
-  .parti-style-text {
-    font-size: 13px;
   }
 
   .visible-md {

@@ -27,7 +27,7 @@ namespace :team do
         blog: 'https://medium.com/@seungkujung')
 
       seed(name: '조이성화',
-        description: '혐오와 차별이 없는 세상이 되었으면 좋겠습니다.<br>글을 쓰고 개발을 합니다. 페미니즘, 군인권, 학교에서의 민주주의에 관심이 있습니다.',
+        description: '혐오와 차별이 없는 세상이 되었으면 좋겠습니다. 글을 쓰고 개발을 합니다. 페미니즘, 군인권, 학교에서의 민주주의에 관심이 있습니다.',
         profile: 'team-picture-greenhair.jpg',
         facebook: 'https://www.facebook.com/Martian.Lee',
         github: 'https://github.com/martianlee',

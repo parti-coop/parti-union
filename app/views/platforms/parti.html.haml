@@ -10,10 +10,10 @@
   .bloc.bgc-white.l-bloc
     .container.bloc-sm
       .voffset-md
-        .col-xs-12.col-md-10.col-md-offset-1
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+        .col-xs-12
+          %h4.text-center.mg-clear.tc-outer-space
             %span 팀과 커뮤니티를 위한 민주주의 플랫폼
-          %p.mg-sm.text-center
+          %p.mg-md.text-center
             팀이 더 민주적으로 협력하기를 원하세요?
             %br
             이슈에 공감하는 사람들과 이야기를 나누고 싶으세요?
@@ -26,12 +26,12 @@
             %br
             웹, 앱에서 지금 바로 빠띠를 사용할 수 있습니다.
           .row.mg-md
-            .col-sm-8
-              = image_tag "platforms/platform-join-parti", style: 'width: 100%'
+            .col-sm-8.text-center
+              = image_tag "platforms/platform-join-parti", style: 'width: 85%'
             .col-sm-4
               %p.mg-sm.parti-howto
-                %strong<>이미 만들어진 빠띠에 가입해 보세요!
-                %br
+                %h5
+                  다른 빠띠에 가입해 보세요!
                 내 홈에서 게시물을 확인할 수 있습니다.
                 %br
                 사회 이슈, 취미, 스터디 등
@@ -45,24 +45,25 @@
                 토론을 진행해 보세요.
           .row.mg-md
             .col-sm-4
-              %p.mg-sm.text-right.parti-howto
-                %strong<>새로 빠띠를 만들어 보세요!
-                %br
-                동물과 채식, 쓰레기 덕질하기, 페미니즘
-                %br
-                당신이 관심있는 이슈가 있다면
-                %br
-                버튼 하나로 새로운 빠띠를 만들어 보세요.
-                %br
-                그룹에서 다양한 이야기를 나누고 싶을 때는
-                %br
-                그룹 빠띠를 만들어 보세요.
-                %br
-                그룹의 토론이, 다양한 이야기들이
-                %br
-                더 선명해집니다.
-            .col-sm-8
-              = image_tag "platforms/platform-make-parti", style: 'width: 100%'
+              %p.mg-sm.parti-howto
+                %h5.text-right
+                  새로 빠띠를 만들어 보세요!
+                .text-right
+                  동물과 채식, 쓰레기 덕질하기, 페미니즘
+                  %br
+                  당신이 관심있는 이슈가 있다면
+                  %br
+                  버튼 하나로 새로운 빠띠를 만들어 보세요.
+                  %br
+                  그룹에서 다양한 이야기를 나누고 싶을 때는
+                  %br
+                  그룹 빠띠를 만들어 보세요.
+                  %br
+                  그룹의 토론이, 다양한 이야기들이
+                  %br
+                  더 선명해집니다.
+            .col-sm-8.text-center
+              = image_tag "platforms/platform-make-parti", style: 'width: 85%'
       .row.parti-app
         .col-sm-4
           %a{:href => "https://parti.xyz/", :target => "_blank"}
@@ -88,7 +89,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h4.text-center.mg-clear.tc-outer-space
             %span 이슈 커뮤니티
           %p.mg-md.text-center
             빠띠를 사용하여 커뮤니티를 활발히 운영하고 있는 모임들을 소개합니다.
@@ -118,7 +119,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h4.text-center.mg-clear.tc-outer-space
             %span 업그레이드형 그룹 빠띠 파트너
           .more-parti-box
             %p.text-center.text
@@ -151,7 +152,7 @@
     .container.bloc-sm
       .row.voffset-md
         .col-xs-12.col-md-8.col-md-offset-2
-          %h3.statement-bloc-text.mg-clear.tc-outer-space
+          %h4.text-center.mg-clear.tc-outer-space
             %span 가이드
           .introduce-box
             %p.text-center.introduce-text
