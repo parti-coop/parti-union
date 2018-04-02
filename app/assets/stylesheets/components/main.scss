@@ -33,6 +33,7 @@
     }
     .btn {
       margin-top: 22px;
+      border-radius: 5px;
     }
     #subscribe-email-modal {
       text-align: center;
@@ -123,6 +124,21 @@
   .main-text {
     padding-left: 0px!important;
     padding-right: 0px!important;
+  }
+
+  .mission-img {
+    width: 140px;
+    margin-bottom: 15px;
+  }
+
+  .parti-style {
+    @media (max-width: $screen-xs-max) {
+      margin-left: 10px!important;
+      margin-right: 10px!important;
+    }
+  }
+  .parti-style-text {
+    font-size: 13px;
   }
 
   .visible-md {

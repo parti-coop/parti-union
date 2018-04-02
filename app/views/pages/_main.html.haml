@@ -2,7 +2,7 @@
   .bloc.bloc-bg-texture.texture-darken.tc-anti-flash-white.bgc-white.about-slogan{ style: "background-image: url(#{asset_url('about-slogan-background.jpg')})" }
     .container.bloc-md
       .row
-        .col-sm-12
+        .col-sm-10.col-sm-offset-1
           %h1.mg-md.device-bloc-text.tc-white
             일상을 더
             %br.visible-xs
@@ -31,101 +31,104 @@
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
               %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} 구독신청
   .bloc.bgc-white.l-bloc
-    .container.bloc-sm
+    .container.bloc-md
       .row
-        .col-xs-12.col-md-8.col-md-offset-2
+        .col-xs-12.col-md-10.col-md-offset-1
           %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 미션
-          %p.mg-sm.text-center
-            일상 속에서 개인이 자신의 목소리를 낼 수 있는
-            %br
-            %strong<>공간을 만듭니다.
-            %br
-            시민 개인의 목소리를 모으고, 이를 지지하는 사람들을
-            %br
-            %strong<>연결합니다.
-            %br
-            연결된 사람들이 변화를 위해 문제를 함께 해결할 수 있는
-            %br
-            %strong<>도구를 제공합니다.
+          %p.mg-md.text-center
+            .row
+              .col-xs-12.col-md-4.text-center
+                = image_tag "mission1.png", class: 'mission-img'
+                %br
+                일상 속에서 개인이 자신의
+                %br
+                목소리를 낼 수 있는
+                %br
+                %h3
+                  공간을 만듭니다.
+              .col-xs-12.col-md-4.text-center
+                = image_tag "mission2.png", class: 'mission-img'
+                %br
+                시민 개인의 목소리를 모으고,
+                %br
+                이를 지지하는 사람들을
+                %h3
+                  연결합니다.
+              .col-xs-12.col-md-4.text-center
+                = image_tag "mission3.png", class: 'mission-img'
+                %br
+                연결된 사람들이 변화를 위해
+                %br
+                문제를 함께 해결할 수 있는
+                %br
+                %h3
+                  도구를 제공합니다.
   .content-line
   .bloc.bgc-white.l-bloc
-    .container.bloc-sm
+    .container.bloc-md
       .row
-        .col-xs-12.col-md-8.col-md-offset-2
+        .col-xs-12
           %h2.statement-bloc-text.mg-clear.tc-outer-space
             %span 빠띠 스타일
-          %p.mg-sm.text-center
-            .row
-              .col-xs-12.col-md-6.text-center
-                %strong<>일상적으로
-                %br
-                %br.visible-md
-                거대 담론에 가려진 일상을 더 드러내고,
-                %br
-                일상의 문제에 초점을 둡니다.
-                %br
-                삶, 그리고 개인과 떨어져있지 않은 해결책을 고민합니다.
-                %br
-                언제 어디서나 이야기하고 참여할 수 있는
-                %br
-                일상적인 도구를 만듭니다.
-                %br
-                %br
-              .col-xs-12.col-md-6.text-center
-                %strong<>느슨하게 연결된
-                %br
-                %br.visible-md
-                능동적이고 독립적인 개인이
-                %br
-                느슨하게 연결되어 만드는 힘을 긍정합니다.
-                %br
-                다양한 관심사를 존중하고,
-                %br
-                다양성이 인정받는 건강한 토양을 만들어 나갑니다.
-                %br
-            .row
-              .col-xs-12.col-md-6.text-center
-                %strong<>빠띠 속도로(실험적인)
-                %br
-                %br.visible-md
-                빠띠가 가진 고유한 보폭을 유지하며 일합니다.
-                %br
-                완벽한 과정 미리 설계하기 보다는
-                %br.visible-xs
-                작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
-                %br
-                %br
-              .col-xs-12.col-md-6.text-center
-                %strong<>섬세하게
-                %br
-                %br.visible-md
-                소수의 의견도 무시되지 않는 의사결정 과정을 설계합니다.
-                %br
-                모든 과정은 투명하고 꼼꼼하게 기록됩니다.
-                %br
-                %br
-            .row
-              .col-xs-12.col-md-6.text-center
-                %strong<>기술을 활용한
-                %br
-                %br.visible-md
-                기술이 만들어 낸 가능성을 긍정적으로 보고
-                %br
-                기술의 공공성에 대한 담론을 만듭니다.
-                %br
-                기술을 가지고 더 나은 민주주의 문화를
-                %br
-                구현하기 위한 시스템을 만듭니다.
-                %br
-                %br
-              .col-xs-12.col-md-6.text-center
-                %strong<>차별 없는
-                %br
-                %br.visible-md
-                빠띠에서는 성적지향 · 성별정체성 · 성별표현을
-                %br
-                이유로 한 차별을 금지합니다.
+          %p.mg-md.text-center
+            .row.parti-style
+              .col-xs-12.col-md-4
+                %h3
+                  1. 일상적으로
+                .parti-style-text
+                  거대 담론에 가려진 일상을 더 드러내고,
+                  %br
+                  일상의 문제에 초점을 둡니다. 삶, 그리고 개인과 떨어져있지 않은 해결책을 고민합니다.
+                  %br
+                  언제 어디서나 이야기하고 참여할 수 있는
+                  %br
+                  일상적인 도구를 만듭니다.
+              .col-xs-12.col-md-4
+                %h3
+                  2. 느슨하게 연결된
+                .parti-style-text
+                  능동적이고 독립적인 개인이 느슨하게 연결되어
+                  %br
+                  만드는 힘을 긍정합니다.
+                  %br
+                  다양한 관심사를 존중하고, 다양성이 인정받는
+                  %br
+                  건강한 토양을 만들어 나갑니다.
+              .col-xs-12.col-md-4
+                %h3
+                  3. 기술을 활용한
+                .parti-style-text
+                  기술이 만들어 낸 가능성을 긍정적으로 보고
+                  %br
+                  기술의 공공성에 대한 담론을 만듭니다.
+                  %br
+                  기술을 가지고 더 나은 민주주의 문화를
+                  %br
+                  구현하기 위한 시스템을 만듭니다.
+            .row.parti-style
+              .col-xs-10.col-md-4
+                %h3
+                  4. 섬세하게
+                .parti-style-text
+                  소수의 의견도 무시되지 않는 의사결정 과정을 설계합니다.
+                  모든 과정은 투명하고 꼼꼼하게 기록됩니다.
+              .col-xs-12.col-md-4
+                %h3
+                  5. 빠띠 속도로(실험적인)
+                .parti-style-text
+                  빠띠가 가진 고유한 보폭을 유지하며 일합니다.
+                  %br
+                  완벽한 과정 미리 설계하기 보다는
+                  %br.visible-xs
+                  작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
+              .col-xs-12.col-md-4
+                %h3
+                  6. 차별 없는
+                .parti-style-text
+                  빠띠에서는 성적지향 · 성별정체성 · 성별표현을
+                  %br
+                  이유로 한 차별을 금지합니다.
   #anchor-it-platform.bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm
       .row.voffset-md
