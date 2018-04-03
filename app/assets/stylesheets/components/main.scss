@@ -7,6 +7,11 @@
   }
 
   .about-slogan {
+    .text{
+      @media (max-width: 420px) {
+        text-align: center;
+      }
+    }
     .device-bloc-text-p {
       font-family: Open Sans;
       font-weight: 300;
@@ -15,7 +20,6 @@
       font-size: 20px;
       line-height: 28px;
       @media (max-width: 420px) {
-        font-size: 20px;
         text-align: center;
       }
     }
