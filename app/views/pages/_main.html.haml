@@ -267,6 +267,9 @@
                   - if member.blog
                     %a{:href => "#{member.blog}", :target => "_blank"}
                       %span.fa.fa-home.icon-sm
+                  - if member.steemit
+                    %a{:href => "#{member.steemit}", :target => "_blank"}
+                      = image_tag "steemit.png", class: 'steemit'
 
   .bloc.bgc-anti-flash-white.l-bloc
     .container.bloc-sm

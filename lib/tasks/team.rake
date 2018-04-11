@@ -32,6 +32,14 @@ namespace :team do
         facebook: 'https://www.facebook.com/Martian.Lee',
         github: 'https://github.com/martianlee',
         blog: 'https://brunch.co.kr/@martian')
+
+      seed(name: '김금진',
+        description: '사람과 개를 좋아하는 빠띠의 활동가. 빠띠의 이모저모를 세상에 알립니다. 페미니즘, 조직, 먹고 사는 일, 세상을 바꾸는 기술, 데이터, 블록체인에 관심있습니다.',
+        profile: 'team-picture-geumjin.jpg',
+        facebook: 'https://www.facebook.com/jinjinzhenzhen',
+        github: 'https://github.com/classykimpam',
+        blog: 'https://medium.com/@gjkim',
+        steemit: 'https://steemit.com/@classykimpam')
     end
   end
 

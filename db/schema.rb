@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20180328153559) do
     t.string   "facebook"
     t.string   "github"
     t.string   "blog"
+    t.string   "steemit"
     t.text     "description", limit: 65535
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false

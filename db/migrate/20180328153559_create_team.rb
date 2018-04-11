@@ -7,6 +7,7 @@ class CreateTeam < ActiveRecord::Migration[5.0]
       t.string :facebook
       t.string :github
       t.string :blog
+      t.string :steemit
       t.text :description
       t.timestamps null: false
     end
