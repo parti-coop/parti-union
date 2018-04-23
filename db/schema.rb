@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20180328153559) do
     t.string   "profile"
     t.string   "twitter"
     t.string   "facebook"
+    t.string   "instagram"
     t.string   "github"
     t.string   "blog"
     t.string   "steemit"

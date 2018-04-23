@@ -5,6 +5,7 @@ class CreateTeam < ActiveRecord::Migration[5.0]
       t.string :profile
       t.string :twitter
       t.string :facebook
+      t.string :instagram
       t.string :github
       t.string :blog
       t.string :steemit

@@ -261,6 +261,9 @@
                   - if member.facebook
                     %a{:href => "#{member.facebook}", :target => "_blank"}
                       %span.fa.fa-facebook.icon-sm
+                  - if member.instagram
+                    %a{:href => "#{member.instagram}", :target => "_blank"}
+                      %span.fa.fa-instagram.icon-sm
                   - if member.github
                     %a{:href => "#{member.github}", :target => "_blank"}
                       %span.fa.fa-github.icon-sm
