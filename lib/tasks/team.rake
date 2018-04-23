@@ -40,6 +40,12 @@ namespace :team do
         github: 'https://github.com/classykimpam',
         blog: 'https://medium.com/@gjkim',
         steemit: 'https://steemit.com/@classykimpam')
+
+      team_seed(name: '오승은',
+        description: '선한 기운이 서로에게 느껴지는 세상이 되었으면 좋겠습니다. 페미니즘, 주거문제, 젠더이슈에 관심이 많습니다.',
+        profile: 'team-picture-sun.jpg',
+        instagram: 'https://instagram.com/floraeun_n',
+        blog: 'https://blog.naver.com/samri1428',)
     end
   end
 
