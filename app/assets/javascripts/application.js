@@ -7,3 +7,7 @@
 $(function(){
   $('.masonry-container').masonry();
 })
+
+$(function(){
+  $('.preload-modal').modal('show');
+});

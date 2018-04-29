@@ -15,7 +15,7 @@
             민주적인 삶과 문화를 만듭니다.
           .button-wrapper
             %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 민주주의 리포트 받아보기
-    #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+    #subscribe-email-modal.modal.fade{:class => "#{@subscribe}", :role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
         .modal-content
           .modal-body

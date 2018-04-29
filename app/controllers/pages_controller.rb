@@ -4,6 +4,13 @@ class PagesController < ApplicationController
     @products = Product.all
     @team = Team.all
   end
+  def subscribe
+    @slides = Slide.priority.recent
+    @products = Product.all
+    @team = Team.all
+    @subscribe = "preload-modal"
+    render "home"
+  end
   def campaign_detail
     if params[:slug] == 'index'
       render_404 and return
