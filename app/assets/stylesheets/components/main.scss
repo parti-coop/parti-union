@@ -4,6 +4,8 @@
   .about-slogan h1 {
     font-weight: 200;
     letter-spacing: -0.08em;
+    font-size: 5.5rem;
+    line-height: 6.5rem;
   }
 
   .about-slogan {
@@ -25,7 +27,7 @@
     }
     .bloc-md {
       @media (min-width: 767px){
-        padding: 140px 0 80px;
+        padding: 120px 0 60px;
       }
     }
     h1 > span {
@@ -35,6 +37,7 @@
       border-bottom: 1px solid #e1b8ff;
     }
     .btn {
+      font-size: 1.5rem;
       margin-top: 22px;
       border-radius: 5px;
     }
