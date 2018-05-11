@@ -15,6 +15,7 @@
     %script{:src => "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}
     %script{:src => "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}
 
+
     = csrf_meta_tags
 
   %body{class: "app-#{params[:controller]} app-#{params[:controller]}-#{params[:action]}"}
@@ -38,3 +39,19 @@
 
         ga('create', 'UA-74081354-1', 'auto');
         ga('send', 'pageview');
+      :javascript
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '100890123900372');
+        fbq('track', 'PageView');
+        %noscript
+          %img{:height => "1", :src => "https://www.facebook.com/tr?id=100890123900372&ev=PageView\n&noscript=1", :width => "1"}/
+        / End Facebook Pixel Code
+
+
