@@ -129,6 +129,9 @@
     background-color: #fff !important;
     margin-bottom: 10px;
     padding: 30px;
+    @media (max-width: 420px) {
+      padding: 80px;
+    }
     margin-top: 10px;
     font-family: Helvetica;
     border-radius: 1px;
@@ -139,10 +142,14 @@
     background-repeat: no-repeat;
   }
 
-  h5 {
+  .report-title{
     font-size: 2rem;
     line-height: 2rem;
-    font-weight: 400;
+    font-weight: 350;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   .report-content {
