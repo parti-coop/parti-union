@@ -112,5 +112,44 @@
     margin: 20px 30% 20px 30%;
   }
 
+  .magazine {
+    .btn:hover {
+        color: #e1b8ff !important;
+        border-color: #e1b8ff !important;
+    }
+
+    .btn-wire:hover {
+        background: transparent !important;
+        border: 2px solid transparent;
+    }
+    border: 1px solid transparent;
+
+    color: #fff !important;
+    border-color: #fff !important;
+    background-color: #fff !important;
+    margin-bottom: 10px;
+    padding: 30px;
+    margin-top: 10px;
+    font-family: Helvetica;
+    border-radius: 1px;
+    text-align: center;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h5 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .report-content {
+    font-family: Open Sans;
+    font-weight: 200;
+    letter-spacing: -0.05em;
+  }
+
 }
 
