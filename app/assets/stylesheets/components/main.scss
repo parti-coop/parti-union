@@ -346,15 +346,25 @@
       padding: 80px;
       margin: 15px 0 15px 0;
     }
-    border: 2px solid transparent;
+    border: 2px solid;
     border-color: #fff !important;
     border-radius: 5px;
   }
 
-  .report-add-title{
+  .report-more-title{
     margin-top: 20px;
     border-radius: 5px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
+
+  .btn {
+      font-size: 1.5rem;
+      margin-top: 22px;
+      border-radius: 5px;
+    }
 
   .report-content {
     font-family: Open Sans;

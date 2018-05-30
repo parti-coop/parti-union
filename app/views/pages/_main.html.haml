@@ -272,19 +272,21 @@
               %u 5월 민주주의 리포트
           .report-content
             \#근로보다_노동 #독립러의_노동절 #사무실에서_일이_안되는_이유 #다같이_만드는_기고_계약서
-        .col-xs-12.col-sm-6
-          %h5.report-title.report-add-title.btn.btn-wire.btn-lg.device-bloc-button.btn-sq.wire-btn-white
-            %a{'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
-              구독하기
-              %i{class: "fa fa-envelope", }
-          .report-content
+        .col-xs-12.col-sm-2
+          .button-wrapper
+            = link_to '/contents' do
+              .magazine{ style: "background-image: url(#{asset_url('contents/april.jpg')})" }
+        .col-xs-12.col-sm-4
+          %h5.report-title
+            = link_to '/contents' do
+              %u
+                더 보기...
 
       .row
-        .col-xs-12.col-md-8.col-md-offset-2
-          .more-article-box.text-center
-            = link_to '/contents' do
-              .more-article-text
-                민주주의 리포트 더 보기
+        .col-xs-12.col-md-8.col-md-offset-2.text-center
+          .button-wrapper
+            %button.btn.btn-wire.btn-lg.btn-sq.wire-btn-white.device-bloc-button{'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
+              구독하기
   #anchor-team.bloc.bgc-white.l-bloc.team-container
     .container.bloc-md
       .row
