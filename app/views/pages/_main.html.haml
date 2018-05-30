@@ -14,7 +14,7 @@
             %br
             민주적인 삶과 문화를 만듭니다.
           .button-wrapper
-            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 민주주의 리포트 받아보기
+            %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq wire-btn-white', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 빠띠 민주주의 리포트 구독하기
     #subscribe-email-modal.modal.fade{:class => "#{@subscribe}", :role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
         .modal-content
@@ -25,7 +25,7 @@
               %h5.email-guide
                 빠띠의 민주주의 리포트를
                 %br.visible-xs
-                월간 뉴스레터로 받아보세요.
+                매월 여러분의 메일함에서 받아보세요.
               .email-input
                 %label{:for => "email"} 이메일 주소
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
@@ -119,7 +119,7 @@
                 .parti-style-text
                   빠띠가 가진 고유한 보폭을 유지하며 일합니다.
                   %br
-                  완벽한 과정 미리 설계하기 보다는
+                  완벽한 과정을 미리 설계하기 보다는
                   %br.visible-xs
                   작은 실험을 통해 점진적으로 과정을 만들어 나갑니다.
               .col-xs-12.col-md-4
@@ -238,10 +238,9 @@
           %h4.mg-md.text-center
             민주주의 리포트
           %p.text-center
-            빠띠는 매 달 빠띠의 캠페인, 커뮤니티, 팀원들의 이야기를 리포트로 편집해 보내드립니다.
+            빠띠 소식을 한 달에 한 번 이메일로 보내드립니다.
             %br
-            %b{'data-toggle': "modal", 'data-target': "#subscribe-email-modal"} 구독하기
-            를 눌러주세요!
+            빠띠의 캠페인, 커뮤니티, 팀원들의 이야기가 궁금하신 분은 구독해주세요.
         .col-xs-12.col-sm-2
           .button-wrapper
             %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
@@ -273,6 +272,13 @@
               %u 5월 민주주의 리포트
           .report-content
             \#근로보다_노동 #독립러의_노동절 #사무실에서_일이_안되는_이유 #다같이_만드는_기고_계약서
+        .col-xs-12.col-sm-6
+          %h5.report-title.report-add-title.btn.btn-wire.btn-lg.device-bloc-button.btn-sq.wire-btn-white
+            %a{'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
+              구독하기
+              %i{class: "fa fa-envelope", }
+          .report-content
+
       .row
         .col-xs-12.col-md-8.col-md-offset-2
           .more-article-box.text-center

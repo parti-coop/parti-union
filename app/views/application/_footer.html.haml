@@ -5,14 +5,14 @@
       .row.voffset-clear-xs
         .col-sm-12.col-md-6.col-md-offset-3
           %h4.mg-lg.text-center
-            %span 더 나은 민주주의 리포트
+            %span 민주주의 리포트
           .more-govcraft-box
             %p.text-center.text
-              빠띠의 민주주의 리포트를 월간 뉴스레터로 받아보세요.
+              빠띠의 민주주의 리포트를 매월 이메일로 받아보세요.
               %br
               .button-wrapper.text-center
                 %button{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
-                  %u<>뉴스레터 신청하기
+                  %u<>구독하기
   #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
     .modal-dialog{:role => "document"}
       .modal-content
@@ -23,7 +23,7 @@
             %h5.email-guide
               빠띠의 민주주의 리포트를
               %br.visible-xs
-              월간 뉴스레터로 받아보세요.
+              매월 여러분의 메일함에서 받아보세요.
             .email-input
               %label{:for => "email"} 이메일 주소
               %input#email{:name => "email", :type => "email", class: 'form-control'}/
