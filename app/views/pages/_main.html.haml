@@ -233,7 +233,7 @@
                 %strong<>블로그
   #bloc-48.bloc.tc-white.bloc-bg-texture.texture-darken.bgc-white{style: "background-image: url(#{asset_url('campaigns/campaign-footer.png')});"}
     .container.bloc-md.contents-magazine
-      .row
+      .row.mg-sm
         .col-sm-12
           %h4.mg-md.text-center
             민주주의 리포트
@@ -241,38 +241,39 @@
             빠띠 소식을 한 달에 한 번 이메일로 보내드립니다.
             %br
             빠띠의 캠페인, 커뮤니티, 팀원들의 이야기가 궁금하신 분은 구독해주세요.
-        .col-xs-12.col-sm-2
+      .row
+        .col-xs-12.col-sm-2.col-magazine
           .button-wrapper
-            %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
-              .magazine{ style: "background-image: url(#{asset_url('contents/march.png')})" }
-        .col-xs-12.col-sm-4
+            %a{:href => "https://stibee.com/api/v1.0/emails/share/dtjE9FkV2GaOBg-oYSVQNfTYJkcA", :target => "_blank"}
+              .magazine{ style: "background-image: url(#{asset_url('contents/may.png')})" }
+        .col-xs-12.col-sm-4.col-magazine.mg-md
           %h5.report-title
-            %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
-              %u 3월 민주주의 리포트
+            %a{:href => "https://stibee.com/api/v1.0/emails/share/dtjE9FkV2GaOBg-oYSVQNfTYJkcA", :target => "_blank"}
+              %u 5월 민주주의 리포트
           .report-content
-            \#빠띠_회고 #여성의날_굳즈 #쓰레기덕질_프로젝트
-        .col-xs-12.col-sm-2
+            \#근로보다_노동 #독립러의_노동절 #사무실에서_일이_안되는_이유 #다같이_만드는_기고_계약서
+        .col-xs-12.col-sm-2.col-magazine
           .button-wrapper
             %a{:href => "https://stibee.com/api/v1.0/emails/share/bJgOqkuRCBBjYiK3ZqRqEmB8z7xU", :target => "_blank"}
               .magazine{ style: "background-image: url(#{asset_url('contents/new-app.png')})" }
-        .col-xs-12.col-sm-4
+        .col-xs-12.col-sm-4.col-magazine.mg-md
           %h5.report-title
             %u
               %a{:href => "https://stibee.com/api/v1.0/emails/share/bJgOqkuRCBBjYiK3ZqRqEmB8z7xU", :target => "_blank"} 4월 민주주의 리포트
           .report-content
             \#기술_리터러시 #앱으로_빠띠 #세월호_아카이브 #금요일엔_빠띠_실험실 #홈페이지_새단장
       .row
-        .col-xs-12.col-sm-2
+        .col-xs-12.col-sm-2.col-magazine
           .button-wrapper
-            %a{:href => "https://stibee.com/api/v1.0/emails/share/dtjE9FkV2GaOBg-oYSVQNfTYJkcA", :target => "_blank"}
-              .magazine{ style: "background-image: url(#{asset_url('contents/may.png')})" }
-        .col-xs-12.col-sm-4
+            %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
+              .magazine{ style: "background-image: url(#{asset_url('contents/march.png')})" }
+        .col-xs-12.col-sm-4.col-magazine.mg-md
           %h5.report-title
-            %a{:href => "https://stibee.com/api/v1.0/emails/share/dtjE9FkV2GaOBg-oYSVQNfTYJkcA", :target => "_blank"}
-              %u 5월 민주주의 리포트
+            %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
+              %u 3월 민주주의 리포트
           .report-content
-            \#근로보다_노동 #독립러의_노동절 #사무실에서_일이_안되는_이유 #다같이_만드는_기고_계약서
-        .col-xs-12.col-sm-2
+            \#빠띠_회고 #여성의날_굳즈 #쓰레기덕질_프로젝트
+        .col-xs-12.col-sm-2.col-magazine
           .button-wrapper
             = link_to '/contents' do
               .magazine{ style: "background-image: url(#{asset_url('contents/april.jpg')})" }
