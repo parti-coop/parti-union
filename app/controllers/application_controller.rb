@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
       reverse:     true,
       image:       image,
       description: description,
-      keywords:    "빠띠, 우주당, 정치캠페인, 민주주의 캠페인, 정치참여, 정치, 민주주의, IT, 더나은민주주의, digital democracy, 시민, 직접민주주의, 일상의 민주주의",
+      keywords:    "빠띠, 우주당, 정치캠페인, 민주주의 캠페인, 정치참여, 정치, 민주주의, IT, 더나은민주주의, digital democracy, 시민, 직접민주주의, 일상의 민주주의, 공공재, 공론장, 숙의민주주의",
       canonical:   url,
       twitter: {
         site_name: site_name,
