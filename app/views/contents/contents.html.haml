@@ -75,10 +75,19 @@
               %p.text-center.introduce-text
                 %a{:href => "https://brunch.co.kr/magazine/parti", :target => "_blank"}
                   %strong<>브런치
-            .introduce-box
-              %p.text-center.introduce-text
-                %a{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"}
-                  %strong<>미디엄
+      - @posts.in_groups_of(3, false).each do |group|
+        .row
+          - group.each do |post|
+            .col-xs-12.col-sm-4
+              %h5.article-title
+                %u
+                  = link_to post[0].text, post[1].text, target: '_blank'
+          - if group.length == 2
+            .col-xs-12.col-sm-4
+              %h5.article-title
+                %u
+                  = link_to '더 보기...', "https://medium.com/parti-xyz-developers", target: '_blank'
+
   .bloc.bgc-white.l-bloc
     .container.bloc-md
       .row.voffset-md
