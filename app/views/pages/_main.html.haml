@@ -242,18 +242,28 @@
             %br
             빠띠의 캠페인, 커뮤니티, 팀원들의 이야기가 궁금하신 분은 구독해주세요.
       .row
-        .col-xs-12.col-sm-2.col-magazine
+        .col-xs-12.col-sm-2.col-magazine.mg-md
+          .button-wrapper
+            %a{:href => "https://stib.ee/mab", :target => "_blank"}
+              .magazine{ style: "background-image: url(#{asset_url('contents/july.png')})" }
+        .col-xs-12.col-sm-4.col-magazine.mg-md
+          %h5.report-title
+            %u
+              %a{:href => "https://stib.ee/mab", :target => "_blank"} 7월 민주주의 리포트
+          .report-content
+            \#여름방학_예고편 #민주주의_서울 #공공기관_화장실_비상용_생리대_비치 #타운홀_정책배틀
+        .col-xs-12.col-sm-2.col-magazine.mg-md
           .button-wrapper
             %a{:href => "https://stibee.com/api/v1.0/emails/share/R8ERZk_eQSqZU_ayafsVZV4Up9m_", :target => "_blank"}
               .magazine{ style: "background-image: url(#{asset_url('contents/june.png')})" }
-        .col-xs-12.col-sm-4.col-magazine
+        .col-xs-12.col-sm-4.col-magazine.mg-md
           %h5.report-title
             %a{:href => "https://stib.ee/EWT", :target => "_blank"}
               %u 6월 민주주의 리포트
           .report-content
             \#인터넷 #민주주의 #공공재 #빠띠_스브스뉴스 #미세먼지_대책 #인턴일기 #내향적인_활동가_모임
-
-        .col-xs-12.col-sm-2.col-magazine
+      .row
+        .col-xs-12.col-sm-2.col-magazine.mg-md
           .button-wrapper
             %a{:href => "https://stibee.com/api/v1.0/emails/share/dtjE9FkV2GaOBg-oYSVQNfTYJkcA", :target => "_blank"}
               .magazine{ style: "background-image: url(#{asset_url('contents/may.png')})" }
@@ -263,22 +273,11 @@
               %u 5월 민주주의 리포트
           .report-content
             \#근로보다_노동 #독립러의_노동절 #사무실에서_일이_안되는_이유 #다같이_만드는_기고_계약서
-      .row
-        .col-xs-12.col-sm-2.col-magazine
-          .button-wrapper
-            %a{:href => "https://stibee.com/api/v1.0/emails/share/bJgOqkuRCBBjYiK3ZqRqEmB8z7xU", :target => "_blank"}
-              .magazine{ style: "background-image: url(#{asset_url('contents/new-app.png')})" }
-        .col-xs-12.col-sm-4.col-magazine.mg-md
-          %h5.report-title
-            %u
-              %a{:href => "https://stibee.com/api/v1.0/emails/share/bJgOqkuRCBBjYiK3ZqRqEmB8z7xU", :target => "_blank"} 4월 민주주의 리포트
-          .report-content
-            \#기술_리터러시 #앱으로_빠띠 #세월호_아카이브 #금요일엔_빠띠_실험실 #홈페이지_새단장
-        .col-xs-12.col-sm-2.col-magazine
+        .col-xs-12.col-sm-2.col-magazine.mg-md
           .button-wrapper
             = link_to '/contents' do
               .magazine{ style: "background-image: url(#{asset_url('contents/april.jpg')})" }
-        .col-xs-12.col-sm-4
+        .col-xs-12.col-sm-4.mg-md
           %h5.report-title
             = link_to '/contents' do
               %u
