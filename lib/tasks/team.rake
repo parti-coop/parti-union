@@ -46,6 +46,18 @@ namespace :team do
         profile: 'team-picture-sun.jpg',
         instagram: 'https://instagram.com/floraeun_n',
         blog: 'https://blog.naver.com/samri1428',)
+      
+      team_seed(name: '박용',
+        description: 'Decentalization, Democracy 와 관련된 활동을 하고 있습니다. 교육은 디폴트 ',
+        profile: 'team-picture-kenta.jpg',
+        github: 'https://github.com/pangol',
+        blog: 'https://medium.com/@kenta_90926',)
+      
+      team_seed(name: '성예슬',
+        description: '한 개인으로 존중받으며 함께 살아가는 공동체를 지향합니다. 한 명의 목소리가 세상을 바꾼다고 믿고 있습니다. 불편한 일들에 유쾌하게 대응하는 기술을 배우는 중입니다(젠더, 페미니즘, 여성, 노동권). ',
+        profile: 'team-picture-jerry.jpg',
+        facebook: 'https://www.facebook.com/jjerry88',)
+    
     end
   end
 
