@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @slides = Slide.priority.recent
     @products = Product.all
     @team = Team.all
+    @campaigns = Campaign.all
   end
   def subscribe
     @slides = Slide.priority.recent

@@ -176,36 +176,16 @@
             새로운 정치 실험 Lab,
             %br
             이 4가지 성격의 캠페인을 제안하고 시도하고 있습니다
-          .row
-            .col-xs-12.col-md-6
-              %a{:href => "http://sewolarchive.org/", :target => "_blank"}
-                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-sewol.png')})" }
-                .campaign-text
-                  %strong<>세월호 아카이브
-                  %br
-                  세월호 참사의 기록에 시민과 연구자가 자유롭게 접근하고, 기록과 기억의 공유로 한국사회의 변화 방향을 제안하는 프로젝트
-            .col-xs-12.col-md-6
-              %a{:href => "campaigns/iknow"}
-                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-iknow.png')})" }
-                .campaign-text
-                  %strong<>나는 알아야겠당
-                  %br
-                  바글시민와글입법 3차까지의 진행을 이어 법안 심사 통과 압박 액션까지, 총 800여명의 당원이 뭉친 국내 최초의 프로젝트 정당
-          .row
-            .col-xs-12.col-md-6
-              %a{:href => "campaigns/votefuture"}
-                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-votefuture.png')})" }
-                .campaign-text
-                  %strong<>미래에서 온 투표
-                  %br
-                  아동의 제안을 모아 아동정책을 제 19대 대선 후보에게 전달하는 정책 제안 프로젝트
-            .col-xs-12.col-md-6
-              %a{:href => "http://govcraft.org/p/HIM", :target => "_blank"}
-                .campaign{ style: "background-image: url(#{asset_url('campaigns/campaign-young-law.png')})" }
-                .campaign-text
-                  %strong<>"#피해자를_피해자로 아청법 개정을 촉구합니다"
-                  %br
-                  성매수 피해 십대 여성을 보호를 위한 프로젝트
+          - @campaigns.shuffle.take(4).each_slice(2) do |campaign_list|
+            .row
+              - campaign_list.each do |campaign|
+                .col-xs-12.col-md-6
+                  %a{href: "#{campaign.url}", target: "_blank"}
+                    .campaign{ style: "background-image: url(#{asset_url(campaign.image)})" }
+                    .campaign-text
+                      %strong="#{campaign.title}"
+                      %br
+                      ="#{campaign.description}"
           .more-campaign-box
             %p.text-center.more-campaign-text
               = link_to "campaign" do
