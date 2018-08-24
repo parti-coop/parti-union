@@ -10,6 +10,7 @@ class PagesController < ApplicationController
     @products = Product.all
     @team = Team.all
     @subscribe = "preload-modal"
+    @campaigns = Campaign.all
     render "home"
   end
   def campaign_detail
