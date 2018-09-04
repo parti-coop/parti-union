@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :prepare_meta_tags, if: "request.get?"
+  before_action :set_locale
 
   if Rails.env.production? or Rails.env.staging?
     rescue_from ActiveRecord::RecordNotFound, ActionController::UnknownFormat do |exception|
@@ -62,5 +63,9 @@ class ApplicationController < ActionController::Base
         type: 'website'
       }
     }
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 end

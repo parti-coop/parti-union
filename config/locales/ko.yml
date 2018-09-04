@@ -1,0 +1,16 @@
+ko:
+  errors:
+    format: "%{message}"
+    messages:
+      invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
+  activerecord:
+    models:
+      user: 사용자
+      team: 팀원
+      campaign: 캠페인
+  home:
+    slogan: 일상을 더 민주적으로
+    header1: Platforms for Democratic Life and Culture
+    header2: 민주적인 삶과 문화를 만듭니다.
+    subscribe: 빠띠 민주주의 리포트 구독하기
+
