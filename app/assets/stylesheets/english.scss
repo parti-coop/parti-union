@@ -1,0 +1,154 @@
+@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+
+#page-english {
+  .h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: rgba(51, 51, 51, 1);
+    @media (max-width: $screen-sm-max) {
+      font-size: 24px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 48px;
+    }
+  }
+  .h2 {
+    font-family: 'Noto Sans CJK KR';
+    font-weight: 300;
+    color: rgba(182, 182, 182, 1);
+    letter-spacing: -0.04em;
+    line-height: 70px;
+    @media (max-width: $screen-sm-max) {
+      font-size: 36px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 50px;
+    }
+  }
+  .h3 {
+
+  }
+  .h4 {
+    font-family: 'Noto Sans CJK KR';
+    font-size: 30px;
+    color: rgba(97, 97, 97, 1);
+    letter-spacing: -0.04em;
+  }
+  .p {
+
+  }
+  .caption {
+
+  }
+  .platform {
+
+  }
+  .slogan {
+    @media (max-width: $screen-sm-max) {
+      height: 240px;
+      padding: 0 16px 0 16px;
+    }
+    @media (min-width: $screen-sm-min) {
+      height: 500px;
+    }
+
+    background-image: -webkit-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
+    background-image: -moz-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
+    background-image: -o-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
+    background-image: linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
+
+    .h1 {
+      margin: 0;
+      @media (max-width: $screen-sm-max) {
+        padding-top: 149px;
+        text-align: left;
+      }
+      @media (min-width: $screen-sm-min) {
+        padding-top: 373px;
+        text-align: center;
+      }
+    }
+  }
+  .mission {
+    text-align: left;
+    @media (min-width: $screen-sm-min) {
+      padding: 0 190px 0 190px;
+    }
+    .h2 {
+
+    }
+    .h4 {
+
+    }
+  }
+  .who-we-are {
+    .photo {
+
+    }
+    .h2 {
+
+    }
+    .h4 {
+
+    }
+  }
+  .platforms {
+    .h2 {
+
+    }
+    .p {
+
+    }
+    .slide {
+
+    }
+  }
+  .contents
+    .h2 {
+
+    }
+    .p {
+
+    }
+    .content {
+
+    }
+  .movement {
+    .h2 {
+
+    }
+    .p {
+
+    }
+    .card {
+
+    }
+  }
+  .be-with-us {
+    .h2 {
+
+    }
+    .p {
+
+    }
+    .clap {
+
+    }
+  }
+  .contact {
+    .p {
+
+    }
+    .sns {
+
+    }
+    .newsletter {
+
+    }
+    .subscribe {
+
+    }
+  }
+}

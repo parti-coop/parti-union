@@ -24,4 +24,7 @@ class PagesController < ApplicationController
   def platform_detail
     render "platforms/#{params[:slug]}"
   end
+
+  def english
+  end
 end
