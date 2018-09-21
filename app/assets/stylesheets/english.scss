@@ -1,7 +1,11 @@
 @import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
 
 #page-english {
-  .h1 {
+  @media (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .h1 { // Slogan
     font-family: 'Noto Serif KR', serif;
     font-size: 48px;
     font-weight: 900;
@@ -11,47 +15,89 @@
       font-size: 24px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 48px;
+      font-size: 70px;
     }
   }
-  .h2 {
+  .h2 { // Title
     font-family: 'Noto Sans CJK KR';
     font-weight: 300;
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
-    line-height: 70px;
     @media (max-width: $screen-sm-max) {
+      line-height: 40px;
       font-size: 36px;
     }
     @media (min-width: $screen-sm-min) {
       font-size: 50px;
     }
   }
-  .h3 {
-
-  }
-  .h4 {
+  .h3 { // Subtitle 1
     font-family: 'Noto Sans CJK KR';
-    font-size: 30px;
+    font-weight: 500;
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      font-size: 36px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 40px;
+    }
+  }
+  .h4 { // Subtitle 2
+    font-family: 'Noto Sans CJK KR';
+    color: rgba(97, 97, 97, 1);
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      line-height: 36px;
+      font-size: 18px;
+    }
+    @media (min-width: $screen-sm-min) {
+      line-height: 40px;
+      font-size: 30px;
+    }
   }
   .p {
-
+    font-family: 'Noto Sans CJK KR';
+    color: rgba(97, 97, 97, 1);
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 24px;
+    }
   }
   .caption {
-
+    font-family: 'Noto Sans CJK KR';
+    color: rgba(97, 97, 97, 1);
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      font-size: 14px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 20px;
+    }
   }
   .platform {
-
+    font-family: 'Noto Sans CJK KR';
+    color: rgba(51, 51, 51, 1);
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      font-size: 36px;
+    }
+    @media (min-width: $screen-sm-min) {
+      font-size: 60px;
+    }
   }
   .slogan {
+    text-align: left;
     @media (max-width: $screen-sm-max) {
       height: 240px;
       padding: 0 16px 0 16px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 500px;
+      height: 330px;
+      padding: 0 190px 0 190px;
     }
 
     background-image: -webkit-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
@@ -60,21 +106,20 @@
     background-image: linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
 
     .h1 {
-      margin: 0;
       @media (max-width: $screen-sm-max) {
         padding-top: 149px;
         text-align: left;
       }
       @media (min-width: $screen-sm-min) {
-        padding-top: 373px;
-        text-align: center;
+        padding-top: 177px;
       }
     }
   }
   .mission {
     text-align: left;
     @media (min-width: $screen-sm-min) {
-      padding: 0 190px 0 190px;
+      height: 481px;
+      padding: 42px 190px 0 190px;
     }
     .h2 {
 
@@ -84,49 +129,97 @@
     }
   }
   .who-we-are {
+    background-color: rgba(51, 51, 51, 1);
+    height: 400px;
     .photo {
-
+      height: 100%;
+      width: 30%;
+      float: left;
+      background-image: asset_url('parti_member.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity : .32;
+      margin-right: 44px;
     }
-    .h2 {
-
-    }
-    .h4 {
-
+    .description {
+      padding: 107px 160px 0 0;
+      .h2 {
+        color: rgba(255, 255, 255, 1) !important;
+      }
+      .h4 {
+        color: rgba(255, 255, 255, 1) !important;
+      }
     }
   }
   .platforms {
-    .h2 {
+    @media (min-width: $screen-sm-min) {
+      height: 760px;
+      padding: 36px 190px 0 190px;
+    }
+    .h3 {
 
     }
     .p {
 
     }
     .slide {
-
+      @media (min-width: $screen-sm-min) {
+        height: 600px;
+      }
     }
   }
-  .contents
+  .contents {
+    @media (min-width: $screen-sm-min) {
+      height: 360px;
+      padding: 36px 190px 0 190px;
+    }
     .h2 {
 
     }
     .p {
 
     }
-    .content {
-
+    .box {
+      height: 100px;
+      width: 47%;
+      margin: 15px 0 0 15px;
+      background-color: rgba(179, 132, 255, 1);
+      border-radius: 10px;
+      box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
+      font-family: 'Noto Sans CJK KR';
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      padding: 34px;
+      font-size: 24px;
     }
+  }
   .movement {
-    .h2 {
+    @media (min-width: $screen-sm-min) {
+      height: 800px;
+      padding: 16px 190px 0 190px;
+    }
+    .h3 {
 
     }
     .p {
 
     }
     .card {
-
+      width: 33%;
+      @media (min-width: $screen-sm-min) {
+        height: 290px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
   .be-with-us {
+    background-color: rgba(236, 236, 236, 1);
+    @media (min-width: $screen-sm-min) {
+      height: 250px;
+      padding: 36px 190px 0 190px;
+    }
     .h2 {
 
     }
@@ -134,21 +227,55 @@
 
     }
     .clap {
-
+      margin-top: 20px;
+      float: right;
+      height: 120px;
+      width: 120px;
+      background-color: rgba(179, 132, 255, 1);
+      border-radius: 120px;
+      box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.5);
+      padding: 26px;
+      .clap-image {
+        padding: 33px;
+        width: 68px;
+        margin: 0 auto;
+        background-image: asset_url('clap.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
   .contact {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    @media (min-width: $screen-sm-min) {
+      height: 450px;
+      padding: 43px 397px 0 397px;
+    }
+    .h3 {
+      color: rgba(255, 255, 255, 1);
+    }
     .p {
-
+      color: rgba(255, 255, 255, 1);
     }
     .sns {
 
     }
     .newsletter {
-
+      font-size: 30px;
     }
     .subscribe {
-
+      margin-top: 12px;
+      height: 65px;
+      padding: 0 100px 0 100px;
+      background-color: rgba(179, 132, 255, 1);
+      border-radius: 10px;
+      box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
     }
   }
 }
