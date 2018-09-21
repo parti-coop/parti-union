@@ -33,38 +33,74 @@
       .box.col-sm-6
         Guide for your Democratic Life
       .box.col-sm-6
-        Blog
+        %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
+          Blog
   .movement
     .h3
       Our actions and aims
     .p
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst regular citizens.
-    .row
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/1.png')})" }
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/2.png')})" }
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/3.png')})" }
-    .row.hiddne-xs
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/4.png')})" }
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/5.png')})" }
-      .card.col-sm-4{style: "background-image: url(#{asset_url('actions/6.png')})" }
+    .photo
+      .row
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/1.png')})" }
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/2.png')})" }
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/3.png')})" }
+      .row.hidden-xs
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/4.png')})" }
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/5.png')})" }
+        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/6.png')})" }
   .be-with-us
-    .clap
+    .clap.hidden-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
     .h2
       Spread the word
-    .h4
-      Why don't you introduce us to your friends?
-  .contact
-    .h3
-      Contact Us
     .p
-      If you are curious about our activities or you would like to join us, please don’t hesitate to contact us.
+      Why don't you introduce us to your friends?
+    .clap.visible-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
+      .clap-image
+    #clap-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} &#215;
+              .h3.email-guide
+                I support Parti!
+              .sns
+                .box
+                %img{ src: "#{asset_url('contact/twitter.png')}"}
+                .box
+                  %img{ src: "#{asset_url('contact/facebook.png')}"}
+
+  .contact
+    .text
+      .h3
+        Contact Us
+      .p
+        If you are curious about our activities or you would like to join us, please don’t hesitate to contact us.
     .sns
-      .twitter
-      .facebook
-      .github
-      .email
+      .box
+        %img{ src: "#{asset_url('contact/twitter.png')}"}
+      .box
+        %img{ src: "#{asset_url('contact/facebook.png')}"}
+      .box
+        %img{ src: "#{asset_url('contact/github.png')}"}
+      .box
+        %img{ src: "#{asset_url('contact/email.png')}"}
     .newsletter
       Newsletter
-    .subscribe
+    %button.subscribe{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
       Subscribe (Korean)
+    #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} &#215;
+            %form{:action => "https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers", :method => "POST"}
+              %h5.email-guide
+                Subscribe Parti in your mailbox
+              .email-input
+                %label{:for => "email"} Email
+                %input#email{:name => "email", :type => "email", class: 'form-control'}/
+              %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} subscribe
