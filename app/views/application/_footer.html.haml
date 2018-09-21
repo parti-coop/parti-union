@@ -1,6 +1,6 @@
 %a{class: 'anchor', id: 'anchor-contact'}
 #footer
-  - unless current_page?(root_path)
+  - unless current_page?(root_path) or current_page?(eng_path)
     .bgc-footer.l-bloc
       .container.bloc-md.footer-container
         .row.voffset-clear-xs
@@ -29,49 +29,50 @@
                 %label{:for => "email"} 이메일 주소
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
               %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} 구독신청
-  .bloc.bgc-outer-space.d-bloc
-    .container.bloc-md.footer-container
-      .row.voffset-clear-xs
-        .col-sm-12.col-md-6.col-md-offset-3
-          .mg-lg
-            %h4.mg-lg.text-center
-              민주주의 활동에 함께하기
-            %p.text-center
-              인터넷 시대를 살아가는 우리에게는
-              %br
-              더 나은 민주주의 시스템과 문화가 필요합니다.
-              %br
-              빠띠의 활동이 궁금하시거나,
-              %br
-              함께하고픈 활동이 있다면 언제나 연락주세요.
-          .col-xs-3
-            .text-center
-              %a.social{:href => "https://www.facebook.com/PartiUnion/ ", :target => "_blank"}
-                .social-text
-                  %span.fa.fa-facebook.icon-md
-          .col-xs-3
-            .text-center
-              %a.social{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"}
-                .social-text
-                  %span.fa.fa-medium.icon-md
-          .col-xs-3
-            .text-center
-              %a{:href => "mailto:help@parti.xyz"}
-                .social-text
-                  %span.fa.fa-envelope.icon-md
-          .col-xs-3
-            .text-center
-              %a.social{:href => "https://github.com/parti-xyz", :target => "_blank"}
-                .social-text
-                  %span.fa.fa-github.icon-md
-      .row.voffset-clear-xs
-        .col-sm-12.col-md-6.col-md-offset-3
-          .col-xs-12
-            %div.info.mg-sm.text-center
-              유한회사 빠흐띠(parti LLC.)
-              %br
-              대표자: 권오현
-              %br
-              사업자 등록번호: 438-87-00225
-              %br
-              소재지: 서울특별시 성동구 왕십리로2길 20, 3층(성수동1가)
+  - unless current_page?(eng_path)
+    .bloc.bgc-outer-space.d-bloc
+      .container.bloc-md.footer-container
+        .row.voffset-clear-xs
+          .col-sm-12.col-md-6.col-md-offset-3
+            .mg-lg
+              %h4.mg-lg.text-center
+                민주주의 활동에 함께하기
+              %p.text-center
+                인터넷 시대를 살아가는 우리에게는
+                %br
+                더 나은 민주주의 시스템과 문화가 필요합니다.
+                %br
+                빠띠의 활동이 궁금하시거나,
+                %br
+                함께하고픈 활동이 있다면 언제나 연락주세요.
+            .col-xs-3
+              .text-center
+                %a.social{:href => "https://www.facebook.com/PartiUnion/ ", :target => "_blank"}
+                  .social-text
+                    %span.fa.fa-facebook.icon-md
+            .col-xs-3
+              .text-center
+                %a.social{:href => "https://medium.com/parti-xyz-developers", :target => "_blank"}
+                  .social-text
+                    %span.fa.fa-medium.icon-md
+            .col-xs-3
+              .text-center
+                %a{:href => "mailto:help@parti.xyz"}
+                  .social-text
+                    %span.fa.fa-envelope.icon-md
+            .col-xs-3
+              .text-center
+                %a.social{:href => "https://github.com/parti-xyz", :target => "_blank"}
+                  .social-text
+                    %span.fa.fa-github.icon-md
+        .row.voffset-clear-xs
+          .col-sm-12.col-md-6.col-md-offset-3
+            .col-xs-12
+              %div.info.mg-sm.text-center
+                유한회사 빠흐띠(parti LLC.)
+                %br
+                대표자: 권오현
+                %br
+                사업자 등록번호: 438-87-00225
+                %br
+                소재지: 서울특별시 성동구 왕십리로2길 20, 3층(성수동1가)
