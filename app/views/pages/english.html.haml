@@ -19,11 +19,63 @@
       Platforms
     .p
       We create platforms, campaigns, and user guides in order to make your life more democratic.
-    .slide
+    .owl-carousel.owl-theme.slide
       .card
+        .platform-name
+          Parti
+        .image
+          %img{ src: "#{asset_url('platforms/parti.png')}"}
+        .description
+          .p
+            A useful platform designed to make companies and other organisations or communities more democratic.
+          .download
+            %button.box
+              %img{ src: "#{asset_url('icon/apple.png')}"}
+              .hidden-xs
+                App Store
+            %button.box
+              %img{ src: "#{asset_url('icon/google-play.png')}"}
+              .hidden-xs
+                Google Play
+            %button.link.btn-english
+              %a{href:"https://parti.xyz", target: "_blank" }
+                Web
       .card
+        .platform-name
+          Govcraft
+        .image
+          %img{ src: "#{asset_url('platforms/govcraft.png')}"}
+        .description
+          .p
+            A platform to help citizens get involved with political campaigns which affect their lives. This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
+          .download
+            %button.link.btn-english
+              %a{href:"https://govcraft.org", target: "_blank" }
+                Web
       .card
+        .platform-name
+          Parti Townhall
+        .image
+          %img{ src: "#{asset_url('platforms/townhall.png')}"}
+        .description
+          .p
+            A fun and easy real-time decision-making platform, which is especially useful during live seminars, lectures and presentations, that can make such events more interactive and allow the audience to participate more actively.
+          .download
+            %button.link.btn-english
+              %a{href:"http://townhall.kr", target: "_blank" }
+                Web
       .card
+        .image
+          %img{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
+        .description
+          .platform-name
+            Democracy Seoul
+          .p
+            The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
+          .download
+            %button.link.btn-english
+              %a{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+                Web
   .contents
     .h3
       How to use
