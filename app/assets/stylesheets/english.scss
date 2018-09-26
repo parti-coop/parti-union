@@ -329,17 +329,66 @@
       color: #484848;
 
       .modal-dialog {
+        width: 500px;
         margin-top: 15%;
         @media (max-width: $screen-xs-max) {
           margin-top: 30%;
         }
+        .modal-content {
+          background-color: rgba(179, 132, 255, 1);
+        }
       }
       .modal-body {
-        padding: 24px;
-        width: 500px;
+        width: 100%;
+        background-color: rgba(179, 132, 255, 1);
+        padding: 5px 20px 5px 20px;
         height: 275px;
+        .email-guide {
+          margin-top: 62px;
+          color: rgba(255, 255, 255, 1);
+          font-family: 'Noto Sans CJK KR';
+          font-size: 40px;
+          text-align: center;
+          font-weight: bold;
+          @media (max-width: $screen-xs-max) {
+            line-height: 28px;
+          }
+        }
+        .close{
+          font-size: 40px;
+        }
         .sns {
           display: inline-block;
+          .box{
+            margin-top: 25px;
+            float: left;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 50px;
+            position:relative;
+            img {
+              margin: 12px;
+              max-width: 28px;
+              max-height: 28px;
+              position:absolute;
+              width:auto; height:auto;
+              margin:auto;
+              top:0; bottom:0; left:0; right:0;
+            }
+            &:not(:last-child){
+              margin-right: 15px;
+            }
+
+            -webkit-transition: margin 0.3s ease-out;
+            -moz-transition: margin 0.3s ease-out;
+            -o-transition: margin 0.3s ease-out;
+
+            &:hover {
+              margin-top: 15px;
+              cursor:pointer;
+            }
+          }
         }
       }
     }
@@ -437,6 +486,11 @@
       color: #484848;
 
       .modal-dialog {
+        width: 500px;
+        .modal-content {
+          background-color: rgba(179, 132, 255, 1);
+        }
+        background-color: rgba(179, 132, 255, 1);
         margin-top: 15%;
         @media (max-width: $screen-xs-max) {
           margin-top: 30%;
@@ -444,32 +498,47 @@
       }
 
       .modal-body {
+        display: inline-block;
         padding: 24px;
+        width: 100%;
         height: 275px;
-      }
-
-      .email-guide {
-        color: #6b37c1;
-        @media (max-width: $screen-xs-max) {
-          line-height: 28px;
-        }
-      }
-
-      .email-input {
-        margin-top: 18px;
-        @media (max-width: $screen-xs-max) {
+        .email-guide {
+          margin-top: 62px;
+          color: rgba(255, 255, 255, 1);
+          font-family: 'Noto Sans CJK KR';
+          font-size: 30px;
           text-align: center;
+          font-weight: bold;
+          text-align: center;
+          @media (max-width: $screen-xs-max) {
+            line-height: 28px;
+          }
         }
-        label {
-          margin-right: 10px;
-          color: gray;
+        .close {
+          font-size: 40px;
         }
-        input {
-          width: 200px;
-          color: black;
-          display: inline-block;
+        .email-input {
+          margin-top: 18px;
+          @media (max-width: $screen-xs-max) {
+            text-align: center;
+          }
+          label {
+            margin-right: 10px;
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Noto Sans CJK KR';
+          }
+          input {
+            width: 200px;
+            color: black;
+            display: inline-block;
+          }
+          button {
+            display: inline-block;
+            font-family: 'Noto Sans CJK KR';
+          }
         }
       }
+
     }
   }
 }
