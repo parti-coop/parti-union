@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 gem 'haml-rails', '~> 0.9.0'
 gem 'unobtrusive_flash', '~> 3.2'
+gem 'owlcarousel-rails'
 
 #util
 gem 'envyable', '~> 0.2.0'
