@@ -64,13 +64,15 @@
           .modal-body
             %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
               %span{"aria-hidden" => "true"} &#215;
-              .h3.email-guide
-                I support Parti!
-              .sns
-                .box
+            .h3.email-guide
+              I support Parti !
+            .sns
+              .box
                 %img{ src: "#{asset_url('contact/twitter.png')}"}
-                .box
-                  %img{ src: "#{asset_url('contact/facebook.png')}"}
+              .box
+                %img{ src: "#{asset_url('contact/facebook.png')}"}
+              .box
+                %img{ src: "#{asset_url('contact/link.png')}"}
 
   .contact
     .text
@@ -103,4 +105,4 @@
               .email-input
                 %label{:for => "email"} Email
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
-              %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} subscribe
+                %button{class: 'btn', :type => "submit"} subscribe
