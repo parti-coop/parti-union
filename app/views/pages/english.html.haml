@@ -65,11 +65,11 @@
               %a{href:"http://townhall.kr", target: "_blank" }
                 Web
       .card
+        .platform-name
+          Democracy Seoul
         .image
           %img{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
         .description
-          .platform-name
-            Democracy Seoul
           .p
             The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
           .download
@@ -81,11 +81,12 @@
       How to use
     .p
       We want to make sure that our users feel confident using our platforms so we provide helpful guides which explain how to use them and how to get the most out of them. We also update our blog regularly if you are interested in learning more about what we’re doing.
-    .row
-      .box.col-sm-6
-        Guide for your Democratic Life
-      .box.col-sm-6
-        %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
+    .row.line
+      .col-sm-6
+        %a.box{href:"https://parti.xyz/p/demos-guide", target: "_blank" }
+          Guide for your Democratic Life
+      .col-sm-6
+        %a.box{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
           Blog
   .movement
     .h3
@@ -120,9 +121,9 @@
               I support Parti !
             .sns
               .box
-                %img{ src: "#{asset_url('contact/twitter.png')}"}
+                =social_share_button_tag("Do you know Parti?", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
               .box
-                %img{ src: "#{asset_url('contact/facebook.png')}"}
+                =social_share_button_tag("Do you know Parti?", :allow_sites => %w(facebook), url: 'http://dev.partiunion.org', desc: 'Democracy More, Parti !')
               .box
                 %img{ src: "#{asset_url('contact/link.png')}"}
 
@@ -133,13 +134,14 @@
       .p
         If you are curious about our activities or you would like to join us, please don’t hesitate to contact us.
     .sns
-      .box
+
+      %a.box{href: "https://twitter.com/parti_xyz", target: "_blank"}
         %img{ src: "#{asset_url('contact/twitter.png')}"}
-      .box
+      %a.box{href: "https://www.facebook.com/PartiUnion/", target: "_blank"}
         %img{ src: "#{asset_url('contact/facebook.png')}"}
-      .box
+      %a.box{href: "https://github.com/parti-xyz", target: "_blank"}
         %img{ src: "#{asset_url('contact/github.png')}"}
-      .box
+      %a.box{href: "mailto:help@parti.xyz"}
         %img{ src: "#{asset_url('contact/email.png')}"}
     .newsletter
       Newsletter
