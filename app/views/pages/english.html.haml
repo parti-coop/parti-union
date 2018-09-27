@@ -80,7 +80,7 @@
       We want to make sure that our users feel confident using our platforms so we provide helpful guides which explain how to use them and how to get the most out of them. We also update our blog regularly if you are interested in learning more about what we’re doing.
     .row.line
       .col-sm-6
-        %a.box{href:"https://parti.xyz/p/demos-guide", target: "_blank" }
+        %a.box{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
           Guide for your Democratic Life
       .col-sm-6
         %a.box{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
@@ -90,6 +90,8 @@
       Our actions and aims
     .p
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst regular citizens.
+      %a.span{href: "https://medium.com/parti-xyz-developers", target: "_blank"}
+        Read more >
     .photo
       .row
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/1.png')})" }
@@ -118,11 +120,12 @@
               I support Parti !
             .sns
               .box
-                =social_share_button_tag("Do you know Parti?", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
+                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
               .box
-                =social_share_button_tag("Do you know Parti?", :allow_sites => %w(facebook), url: 'http://dev.partiunion.org', desc: 'Democracy More, Parti !')
+                =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: 'http://dev.partiunion.org', desc: 'Democracy More, Parti !')
               .box
-                %img{ src: "#{asset_url('contact/link.png')}"}
+                .btn.js-clipboard{ ' data-clipboard-text': "#{root_url}en", 'data-toggle': 'tooltip', 'data-trigger': 'manual', 'data-title': 'Copied!' }
+                  %img{ src: "#{asset_url('contact/link.png')}"}
 
   .contact
     .text

@@ -367,7 +367,11 @@
 
     }
     .p {
-
+      .span {
+        font-family: "NotoSansCJKkr-Bold";
+        display: inline;
+        color: rgba(54, 182, 169, 1);
+      }
     }
     .photo {
       padding: 15px;
@@ -395,7 +399,7 @@
     }
     @media (min-width: $screen-sm-min) {
       height: 250px;
-      padding: 36px 190px 0 190px;
+      padding: 55px 190px 0 190px;
     }
     .h2 {
       color: rgba(97, 97, 97, 1);
@@ -409,7 +413,7 @@
       -o-transition: margin 0.4s ease-out;
 
       &:hover {
-        margin-top: 10px;
+        margin-top: 0px;
         cursor:pointer;
       }
 
@@ -417,7 +421,7 @@
         margin: 40px auto;
       }
       @media (min-width: $screen-sm-min) {
-        margin-top: 20px;
+        margin-top: 10px;
         float: right;
       }
       height: 120px;
@@ -483,19 +487,21 @@
             background-color: rgba(255, 255, 255, 1);
             border-radius: 50px;
             position:relative;
-            img, button, .social-share-button {
+            img, .social-share-button {
               margin: 12px;
               max-width: 28px;
               max-height: 28px;
               position:absolute;
               width:auto; height:auto;
-              margin:auto;
               top:0; bottom:0; left:0; right:0;
+            }
+            .btn {
+              border-width: 0px;
             }
             &:not(:last-child){
               margin-right: 15px;
             }
-            .ssb-twitter, .ssb-facebook {
+            .ssb-twitter, .ssb-facebook, .js-clipboard {
               background-size: auto;
               height: 28px;
               width: 28px;
@@ -505,9 +511,6 @@
             }
             .ssb-facebook {
               background-image: asset_url('contact/facebook.png');
-            }
-            .js-clipboard {
-              background-image: asset_url('contact/link.png');
             }
 
 
