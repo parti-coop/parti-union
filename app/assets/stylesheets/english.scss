@@ -290,9 +290,10 @@
             @media (min-width: $screen-sm-min) {
               width: 200px;
             }
-            a {
-              color: rgba(255, 255, 255, 1);
-            }
+            display: inline-block;
+            padding-top: 12px;
+            text-align: center;
+            color: white;
           }
           &:not(:last-child){
             margin-right: 15px;
@@ -482,7 +483,7 @@
             background-color: rgba(255, 255, 255, 1);
             border-radius: 50px;
             position:relative;
-            img, .social-share-button {
+            img, button, .social-share-button {
               margin: 12px;
               max-width: 28px;
               max-height: 28px;
@@ -504,6 +505,9 @@
             }
             .ssb-facebook {
               background-image: asset_url('contact/facebook.png');
+            }
+            .js-clipboard {
+              background-image: asset_url('contact/link.png');
             }
 
 

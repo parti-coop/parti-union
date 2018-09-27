@@ -5,6 +5,7 @@
 //= require blocs.min
 //= require owl.carousel
 //= require social-share-button
+//= require clipboard
 
 $(function(){
   $('.masonry-container').masonry();
@@ -22,4 +23,14 @@ $(document).ready(function(){
       margin: 20,
       autoWidth: true
   })
+
+  $('.js-clipboard').each(function(index, elm) {
+    var clipboard = new Clipboard(elm);
+    clipboard.on('success', function(e) {
+      $(e.trigger).tooltip('show');
+      setTimeout(function() { $(e.trigger).tooltip('hide'); }, 1000);
+      e.clearSelection();
+    });
+  });
 });
+

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'about', to: 'abouts#about', as: :about_detail
   get 'campaign', to: 'campaigns#campaign', as: :campaigns
   get 'contents', to: 'contents#contents', as: :contents
-  get 'eng', to: 'pages#english', as: :eng
+  get 'en', to: 'pages#english', as: :english
 
   namespace :admin do
     resources :slides
