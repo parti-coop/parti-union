@@ -22,6 +22,7 @@ gem 'ruby_dig', '~> 0.0.2'
 gem 'meta-tags', '~> 2.1.0'
 gem 'browser', '~> 2.0', '>= 2.0.2'
 gem 'nokogiri'
+gem 'social-share-button'
 
 # file upload
 gem 'carrierwave', '~> 0.10.0'

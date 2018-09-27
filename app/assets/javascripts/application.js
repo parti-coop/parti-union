@@ -4,6 +4,7 @@
 //= require bootstrap
 //= require blocs.min
 //= require owl.carousel
+//= require social-share-button
 
 $(function(){
   $('.masonry-container').masonry();
@@ -18,7 +19,7 @@ $(document).ready(function(){
       navication: true,
       center: true,
       loop: false,
-      margin: 30,
+      margin: 20,
       autoWidth: true
   })
 });
