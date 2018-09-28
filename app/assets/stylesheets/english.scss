@@ -1,6 +1,7 @@
-@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 #page-english {
+  font-family: 'Noto Sans CJK KR';
   @media (min-width: 1280px) {
     width: 1280px;
     margin: 0 auto;
@@ -20,7 +21,7 @@
     }
   }
   .h2 { // Title
-    font-family: 'Noto Sans CJK KR';
+    font-family: 'NotoSansCJKkr-Light';
     font-weight: 300;
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
@@ -46,6 +47,7 @@
   }
   .h4 { // Subtitle 2
     font-family: 'Noto Sans CJK KR';
+    font-weight: 300;
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
@@ -379,7 +381,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 16px;
-        @media (max-width: $screen-sm-min) {
+        @media (max-width: $screen-sm-max) {
           height: 290px;
         }
         @media (min-width: $screen-sm-min) {
@@ -413,7 +415,12 @@
       -o-transition: margin 0.4s ease-out;
 
       &:hover {
-        margin-top: 0px;
+        @media (max-width: $screen-sm-max) {
+          margin-top: -5px;
+        }
+        @media (min-width: $screen-sm-min) {
+          margin-top: 10px;
+        }
         cursor:pointer;
       }
 
@@ -421,7 +428,7 @@
         margin: 40px auto;
       }
       @media (min-width: $screen-sm-min) {
-        margin-top: 10px;
+        margin: 5px 80px 0 0;
         float: right;
       }
       height: 120px;
@@ -444,16 +451,14 @@
       color: #484848;
 
       .modal-dialog {
-        @media (max-width: $screen-sm-min) {
+        @media (max-width: $screen-sm-max) {
+          margin-top: 30%;
           width: auto;
         }
         @media (min-width: $screen-sm-min) {
           width: 500px;
         }
         margin-top: 15%;
-        @media (max-width: $screen-xs-max) {
-          margin-top: 30%;
-        }
         .modal-content {
           background-color: rgba(179, 132, 255, 1);
         }
@@ -579,28 +584,29 @@
       }
     }
     .newsletter {
+      font-family: 'Noto Sans CJK KR';
       @media (max-width: $screen-sm-max) {
         font-size: 24px;
       }
       @media (min-width: $screen-sm-min) {
         font-size: 30px;
       }
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .subscribe {
       @media (max-width: $screen-sm-max) {
-        background-color: rgba(54, 182, 169, 1);
-        padding: 15px 30px 15px 30px;
+        background-color: rgba(179, 132, 255, 1);
+        padding: 10px 40px 10px 40px;
         margin: 15px 10px 0px 10px;
         font-size: 20px;
       }
       @media (min-width: $screen-sm-min) {
         background-color: rgba(179, 132, 255, 1);
         width: 300px;
-        margin: 20px auto;
+        margin: 15px auto;
         font-size: 24px;
       }
-      height: 65px;
+      height: 55px;
       border-radius: 10px;
       border-width: 0px;
       box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
@@ -648,7 +654,7 @@
           text-align: center;
           font-weight: bold;
           text-align: center;
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: $screen-sm-max) {
             line-height: 28px;
           }
         }
@@ -657,7 +663,7 @@
         }
         .email-input {
           margin-top: 18px;
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: $screen-sm-max) {
             text-align: center;
           }
           label {
