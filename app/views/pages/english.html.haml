@@ -1,82 +1,96 @@
 #page-english
   .slogan
-    .h1
-      DEMOCRACY MORE
+    .slogan-wrapper
+      %img{ src: "#{asset_url('parti_ci_black.png')}"}
+      .slogan-text
+        DEMOCRACY MORE
   .mission
-    .h2
+    .title.light
       We can build better democratic systems and culture through IT platforms.
-    .h4
+    .subtitle2.regular
       Due to Korea’s hierarchy system, it can be challenging to communicate democratically in everyday life. Regular citizens may have great difficulty when trying to make positive changes to society. So Parti wants to make a more democratic life and culture. We do this by creating IT platforms and organising offline meetups.
   .who-we-are
-    .photo
+    .photo.hidden-xs
     .description
-      .h2
+      .title.light
         We are a group of democracy activists
-      .h4
+      .subtitle2.regular
         who create IT platforms, contents, and communities to spread democracy in the world.
   .platforms
-    .h3
+    .subtitle
       Platforms
-    .p
+    .maintext
       We create platforms, campaigns, and user guides in order to make your life more democratic.
     .owl-carousel.owl-theme.slide
       .card
         .platform-name
           Parti.xyz
         .image
-          %img{ src: "#{asset_url('platforms/parti.png')}"}
+          %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
+          %img.visible-xs{ src: "#{asset_url('platforms/parti-mobile.png')}"}
         .description
-          .p
+          .maintext
             A useful platform designed to make companies and other organisations or communities more democratic.
           .download
             %button.box
-              %img{ src: "#{asset_url('icon/apple.png')}"}
-              .hidden-xs
-                App Store
+              %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
+                %img{ src: "#{asset_url('icon/apple.png')}"}
+                .hidden-xs
+                  App Store
             %button.box
-              %img{ src: "#{asset_url('icon/google-play.png')}"}
-              .hidden-xs
-                Google Play
-            %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
-              Web
+              %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
+                %img{ src: "#{asset_url('icon/google-play.png')}"}
+                .hidden-xs
+                  Google Play
+            %button.btn
+              %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
+                Web
       .card
         .platform-name
           Parti Govcraft
         .image
-          %img{ src: "#{asset_url('platforms/govcraft.png')}"}
+          %img.hidden-xs{ src: "#{asset_url('platforms/govcraft.png')}"}
+          %img.visible-xs{ src: "#{asset_url('platforms/govcraft-mobile.png')}"}
         .description
-          .p
-            A platform to help citizens get involved with political campaigns which affect their lives. This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
-          .download
-            %a.link.btn-english{href:"https://govcraft.org", target: "_blank" }
-              Web
+          .maintext
+            A platform to help citizens get involved with political campaigns which affect their lives.
+            %br.visible-xs
+            This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
+          .download.fill
+            %button.btn.fill
+              %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
+                Web
       .card
         .platform-name
           Parti Townhall
         .image
-          %img{ src: "#{asset_url('platforms/townhall.png')}"}
+          %img.hidden-xs{ src: "#{asset_url('platforms/townhall.png')}"}
+          %img.visible-xs{ src: "#{asset_url('platforms/townhall-mobile.png')}"}
         .description
-          .p
+          .maintext
             A fun and easy real-time decision-making platform, which is especially useful during live seminars, lectures and presentations, that can make such events more interactive and allow the audience to participate more actively.
-          .download
-            %a.link.btn-english{href:"http://townhall.kr", target: "_blank" }
-              Web
+          .download.fill
+            %button.btn.fill
+              %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
+                Web
       .card
         .platform-name
           Democracy Seoul
         .image
-          %img{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
+          %img.hidden-xs{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
+          %img.visible-xs{ src: "#{asset_url('platforms/democracy-seoul-mobile.png')}"}
         .description
-          .p
+          .maintext
             The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
-          .download
-            %a.link.btn-english{href:"https://democracy.seoul.go.kr/", target: "_blank" }
-              Web
+          .download.fill
+            %button.btn.fill
+              %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+                Web
 
   .contents
-    .h3
+    .subtitle.medium
       How to use
-    .p
+    .maintext
       We want to make sure that our users feel confident using our platforms so we provide helpful guides which explain how to use them and how to get the most out of them. We also update our blog regularly if you are interested in learning more about what we’re doing.
     .row.line
       .col-sm-6
@@ -86,27 +100,34 @@
         %a.box{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
           Blog
   .movement
-    .h3
+    .subtitle.medium
       Our actions and aims
-    .p
+    .maintext
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst regular citizens.
+      %br.visible-xs
       %a.span{href: "https://medium.com/parti-xyz-developers", target: "_blank"}
         Read more >
     .photo
       .row
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/1.png')})" }
+          .caption.regular
+            사진 / 한겨례
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/2.png')})" }
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/3.png')})" }
       .row.hidden-xs
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/4.png')})" }
+          .caption.regular
+            사진 / 한겨례
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/5.png')})" }
         .card.col-sm-4{style: "background-image: url(#{asset_url('actions/6.png')})" }
+          .caption.regular
+            사진 / 한겨례
   .be-with-us
     .clap.hidden-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
-    .h2
+    .title
       Spread the word
-    .p
+    .maintext
       Why don't you introduce us to your friends?
     .clap.visible-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
@@ -116,29 +137,28 @@
           .modal-body
             %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
               %span{"aria-hidden" => "true"} &#215;
-            .h3.email-guide
+            .subtitle.medium.email-guide
               I support Parti !
             .sns
               .box
-                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
-              .box
                 =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: 'http://dev.partiunion.org', desc: 'Democracy More, Parti !')
+              .box
+                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
               .box
                 .btn.js-clipboard{ ' data-clipboard-text': "#{root_url}en", 'data-toggle': 'tooltip', 'data-trigger': 'manual', 'data-title': 'Copied!' }
                   %img{ src: "#{asset_url('contact/link.png')}"}
 
   .contact
     .text
-      .h3
+      .subtitle.medium
         Contact Us
-      .p
+      .maintext
         If you are curious about our activities or you would like to join us, please don’t hesitate to contact us.
     .sns
-
-      %a.box{href: "https://twitter.com/parti_xyz", target: "_blank"}
-        %img{ src: "#{asset_url('contact/twitter.png')}"}
       %a.box{href: "https://www.facebook.com/PartiUnion/", target: "_blank"}
         %img{ src: "#{asset_url('contact/facebook.png')}"}
+      %a.box{href: "https://twitter.com/parti_xyz", target: "_blank"}
+        %img{ src: "#{asset_url('contact/twitter.png')}"}
       %a.box{href: "https://github.com/parti-xyz", target: "_blank"}
         %img{ src: "#{asset_url('contact/github.png')}"}
       %a.box{href: "mailto:help@parti.xyz"}

@@ -1,95 +1,107 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+$font_0: 'NotoSansCJKkr';
+$font_1: 'Noto Serif KR';
+
+.light      { font-weight: 300; }
+.regular    { font-weight: 400; }
+.medium     { font-weight: 500; }
+.bold       { font-weight: 700; }
+
 #page-english {
-  font-family: 'Noto Sans CJK KR';
-  @media (min-width: 1280px) {
-    width: 1280px;
-    margin: 0 auto;
-  }
+  font-family: 'NotoSansCJKkr-Medium';
+  width: 100%;
+  margin: 0 auto;
+
   // Font
-  .h1 { // Slogan
+  .slogan-text { // Slogan
     font-family: 'Noto Serif KR', serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: -0.04em;
     color: rgba(51, 51, 51, 1);
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-sm-min) {
       font-size: 30px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 70px;
+      font-size: 48px;
     }
   }
-  .h2 { // Title
+  .title { // Title
     font-family: 'NotoSansCJKkr-Light';
-    font-weight: 300;
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
-      line-height: 40px;
-      font-size: 36px;
+    @media (max-width: $screen-sm-min) {
+      line-height: 42px;
+      font-size: 40px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 50px;
+      line-height: 60px;
+      font-size: 54px;
     }
   }
-  .h3 { // Subtitle 1
-    font-family: 'Noto Sans CJK KR';
-    font-weight: 500;
+  .subtitle { // Subtitle 1
+    font-family: 'NotoSansCJKkr-Medium';
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
-      font-size: 36px;
+    @media (max-width: $screen-sm-min) {
+      font-size: 42px;
+      line-height: 42px;
     }
     @media (min-width: $screen-sm-min) {
       font-size: 40px;
     }
   }
-  .h4 { // Subtitle 2
-    font-family: 'Noto Sans CJK KR';
-    font-weight: 300;
+  .subtitle2 { // Subtitle 2
+    font-family: 'NotoSansCJKkr-Light';
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
-      line-height: 24px;
-      font-size: 18px;
+    @media (max-width: $screen-sm-min) {
+      line-height: 28px;
+      font-size: 20px;
     }
     @media (min-width: $screen-sm-min) {
       line-height: 40px;
       font-size: 30px;
     }
   }
-  .p {
-    font-family: 'Noto Sans CJK KR';
+  .maintext { // Main text
+    font-family: $font_0;
     color: rgba(97, 97, 97, 1);
+    font-weight: 400;
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
-      font-size: 16px;
+    @media (max-width: $screen-sm-min) {
+      font-size: 18px;
     }
     @media (min-width: $screen-sm-min) {
       font-size: 24px;
     }
   }
   .caption {
-    font-family: 'Noto Sans CJK KR';
-    color: rgba(97, 97, 97, 1);
+    font-family: $font_0;
+    color: rgba(255, 255, 255, 1);
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
-      font-size: 14px;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media (max-width: $screen-sm-min) {
+      font-size: 16px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 20px;
+      font-size: 17px;
     }
   }
   .platform-name {
     margin: 20px;
     position: absolute;
-    font-family: 'Noto Sans CJK KR';
+    font-family: 'NotoSansCJKkr-Medium';
     font-weight: bold;
     color: rgba(255, 255, 255, 1) !important;
     text-align: left;
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-sm-min) {
         font-size: 40px;
       }
       @media (min-width: $screen-sm-min) {
@@ -97,10 +109,10 @@
       }
   }
   .platform {
-    font-family: 'Noto Sans CJK KR';
+    font-family: 'NotoSansCJKkr-Medium';
     color: rgba(51, 51, 51, 1);
     letter-spacing: -0.04em;
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-sm-min) {
       font-size: 36px;
     }
     @media (min-width: $screen-sm-min) {
@@ -112,14 +124,16 @@
     border-radius: 10px;
   }
   .slogan {
-    text-align: left;
-    @media (max-width: $screen-sm-max) {
+    text-align: center;
+    @media (max-width: $screen-sm-min) {
       height: 160px;
       padding: 0 16px 0 16px;
+      padding-top: 48px;
     }
     @media (min-width: $screen-sm-min) {
       height: 330px;
-      padding: 0 190px 0 190px;
+      margin: 0 auto;
+      padding-top: 133px;
     }
 
     background-image: -webkit-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
@@ -127,48 +141,60 @@
     background-image: -o-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
     background-image: linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
 
-    .h1 {
-      @media (max-width: $screen-sm-max) {
-        padding-top: 98px;
-        text-align: left;
+    .slogan-wrapper {
+      display: inline-block;
+    }
+
+    img {
+      margin : 0 auto;
+      @media (max-width: $screen-sm-min) {
+        width: 108px;
       }
       @media (min-width: $screen-sm-min) {
-        padding-top: 177px;
+        display: inline-block;
+        width: 188px;
+        float: left;
+        padding-bottom: 50px;
+        margin-right: 30px;
+      }
+    }
+
+    .slogan-text {
+      margin-top: 6px;
+      text-align: center;
+      @media (min-width: $screen-sm-min) {
+        padding-top: 8px;
+        display: inline-block;
       }
     }
   }
   .mission {
     text-align: left;
-    @media (max-width: $screen-sm-max) {
-      padding: 0 16px 20px 16px;
+    @media (max-width: $screen-sm-min) {
+      padding: 20px 16px 20px 16px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 481px;
-      padding: 42px 190px 0 190px;
+      padding: 42px 0 20px 0;
+      width: 70%;
+      margin: 0 auto;
     }
-    .h2 {
-
-    }
-    .h4 {
-
+    .subtitle2 {
+      margin-top: 15px;
     }
   }
   .who-we-are {
     background-color: rgba(51, 51, 51, 1);
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-xs-max) {
       height: 240px;
+      background-image: asset_url('parti-member-mobile.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
     @media (min-width: $screen-sm-min) {
       height: 400px;
     }
     .photo {
-      @media (max-width: $screen-sm-max) {
-        width: 100%;
-        height: 240px;
-        z-index: 2;
-        position: absolute;
-        background-color: rgba(51, 51, 51, 1);
-      }
       @media (min-width: $screen-sm-min) {
         height: 100%;
         width: 30%;
@@ -182,42 +208,74 @@
       opacity : .32;
     }
     .description {
-      @media (max-width: $screen-sm-max) {
-        z-index: 100;
-        padding: 20px 16px 0 16px;
+      @media (max-width: $screen-sm-min) {
+        margin-top: 10px;
+        padding: 30px 16px 0 16px;
       }
       @media (min-width: $screen-sm-min) {
         padding: 107px 160px 0 0;
       }
-      .h2 {
+      .title {
         color: rgba(255, 255, 255, 1) !important;
       }
-      .h4 {
+      .subtitle2 {
         color: rgba(255, 255, 255, 1) !important;
+        @media (max-width: $screen-sm-min) {
+          margin-top: 24px;
+        }
+        @media (min-width: $screen-sm-min) {
+        }
       }
     }
   }
   .platforms {
-    @media (max-width: $screen-sm-max) {
+    width: 100%;
+    @media (max-width: $screen-sm-min) {
       padding: 20px 16px 0 16px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 850px;
-      padding: 36px 190px 0 190px;
+      padding: 36px 15% 0 15%;
     }
-    .slide {
-      @media (max-width: $screen-sm-max) {
-        margin-left: -25px;
-        width: 393px;
+    .maintext{
+      @media (max-width: $screen-sm-min) {
+        margin-top: 10px;
       }
       @media (min-width: $screen-sm-min) {
-        margin-left: -200px;
-        width: 1300px;
+      }
+    }
+    .slide {
+      @media (max-width: $screen-sm-min) {
+        margin-left: -5%;
+        width: 110%;
+      }
+      @media (min-width: $screen-sm-min) {
+        margin-left: -25%;
+        width: 150%;
         height: 600px;
       }
+      .owl-nav {
+        background: transparent;
+      }
+      .owl-next, .owl-prev {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 25%;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 35px;
+        &:hover{
+          background: transparent;
+        }
+      }
+      .owl-next {
+        right: 0;
+      }
+      .owl-prev {
+        left: 0;
+      }
       .card {
-        @media (max-width: $screen-sm-max) {
-          width: 320px;
+        @media (max-width: $screen-sm-min) {
+          width: 310px;
           height: 600px;
         }
         @media (min-width: $screen-sm-min) {
@@ -229,14 +287,8 @@
         border-radius: 9px;
         box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 
-        .h3 {
-
-        }
-        .p {
-
-        }
         .image {
-          @media (max-width: $screen-sm-max) {
+          @media (max-width: $screen-sm-min) {
             // height: 383px;
           }
           @media (min-width: $screen-sm-min) {
@@ -244,10 +296,23 @@
           }
         }
         .description {
-          padding: 20px;
+          @media (max-width: $screen-sm-min) {
+            padding: 13px;
+          }
+          @media (min-width: $screen-sm-min) {
+            padding: 20px;
+          }
+        }
+        .maintext {
+          color: rgba(101, 110, 115, 1);
         }
         .download {
-          margin-top: 15px;
+          @media (max-width: $screen-sm-min) {
+            margin-top: 5px;
+          }
+          @media (min-width: $screen-sm-min) {
+            margin-top: 15px;
+          }
           display: inline-block;
           .box {
             display: inline-block;
@@ -255,14 +320,14 @@
             background-color: rgba(51, 51, 51, 1);
             color: rgba(255, 255, 255, 1);
             border-radius: 10px;
-            font-family: 'Noto Sans CJK KR';
+            font-family: 'NotoSansCJKkr-Medium';
             font-size: 18px;
             font-weight: bold;
             color: rgba(255, 255, 255, 1);
             text-align: left;
-            letter-spacing: -0.04em;
+            letter-spacing: -0.02em;
             text-align: center;
-            @media (max-width: $screen-sm-max) {
+            @media (max-width: $screen-sm-min) {
               float:left;
               margin-right: 10px;
               width: 50px;
@@ -280,40 +345,59 @@
               display: inline-block;
             }
           }
-          .link {
-            font-family: 'Noto Sans CJK KR';
-            font-size: 18px;
-            font-weight: bold;
-            height: 50px;
-            @media (max-width: $screen-sm-max) {
-              float: left;
-              width: 150px;
+          button {
+            padding: 0;
+            border-radius: 10px;
+            a {
+              color : rgba(255, 255, 255, 1);
             }
-            @media (min-width: $screen-sm-min) {
-              width: 200px;
+            .link {
+              font-size: 18px;
+              font-weight: bold;
+              height: 50px;
+              @media (max-width: $screen-sm-min) {
+                float: left;
+                width: 150px;
+              }
+              @media (min-width: $screen-sm-min) {
+                width: 305px;
+              }
+              display: inline-block;
+              padding-top: 12px;
+              text-align: center;
+              color: white;
             }
-            display: inline-block;
-            padding-top: 12px;
-            text-align: center;
-            color: white;
           }
           &:not(:last-child){
             margin-right: 15px;
           }
         }
       }
+      .fill {
+        @media (max-width: $screen-sm-min) {
+          width: 100% !important;
+        }
+      }
     }
   }
   .contents {
-    @media (max-width: $screen-sm-max) {
-      padding: 20px 16px 0 16px;
+    @media (max-width: $screen-sm-min) {
+      padding: 20px 17px 0 17px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 360px;
-      padding: 36px 190px 0 190px;
+      width: 70%;
+      margin: 60px auto;
+      padding: 36px 0 0 0;
+    }
+    .maintext {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 10px;
+      }
+      @media (min-width: $screen-sm-min) {
+      }
     }
     .line {
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-sm-min) {
         margin-top: 5px;
       }
       @media (min-width: $screen-sm-min) {
@@ -321,7 +405,7 @@
       }
     }
     .box {
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-sm-min) {
         height: 70px;
         width: 100%;
         margin-top: 15px;
@@ -338,7 +422,7 @@
       background-color: rgba(179, 132, 255, 1);
       border-radius: 10px;
       box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
-      font-family: 'Noto Sans CJK KR';
+      font-family: 'NotoSansCJKkr-Medium';
       font-weight: bold;
       color: rgba(255, 255, 255, 1);
       text-align: center;
@@ -358,21 +442,24 @@
     }
   }
   .movement {
-    @media (max-width: $screen-sm-max) {
-      padding: 20px 16px 0 16px;
+    @media (max-width: $screen-sm-min) {
+      padding: 30px 16px 0 16px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 800px;
-      padding: 16px 190px 0 190px;
+      width: 70%;
+      margin: 0 auto;
+      padding: 16px 0 0 0;
     }
-    .h3 {
-
-    }
-    .p {
+    .maintext {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 10px;
+      }
+      @media (min-width: $screen-sm-min) {
+      }
       .span {
-        font-family: "NotoSansCJKkr-Bold";
         display: inline;
         color: rgba(54, 182, 169, 1);
+        font-weight: 500;
       }
     }
     .photo {
@@ -381,33 +468,41 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 16px;
-        @media (max-width: $screen-sm-max) {
+        @media (max-width: $screen-sm-min) {
           height: 290px;
         }
         @media (min-width: $screen-sm-min) {
-          margin-right: 16px;
-          width: 280px;
+          width: 32%;
           height: 280px;
+          &:not(:last-child){
+            margin-right: 2%;
+          }
         }
       }
     }
   }
   .be-with-us {
     background-color: rgba(236, 236, 236, 1);
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-sm-min) {
       height: 360px;
       padding: 30px 16px 0 16px;
       text-align: center;
     }
     @media (min-width: $screen-sm-min) {
       height: 250px;
-      padding: 55px 190px 0 190px;
+      padding: 55px 15% 0 15%;
+      margin: 0 auto;
     }
-    .h2 {
+    .title {
       color: rgba(97, 97, 97, 1);
     }
-    .p {
+    .maintext {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 15px;
+      }
+      @media (min-width: $screen-sm-min) {
 
+      }
     }
     .clap {
       -webkit-transition: margin 0.4s ease-out;
@@ -415,7 +510,7 @@
       -o-transition: margin 0.4s ease-out;
 
       &:hover {
-        @media (max-width: $screen-sm-max) {
+        @media (max-width: $screen-sm-min) {
           margin-top: -5px;
         }
         @media (min-width: $screen-sm-min) {
@@ -424,8 +519,8 @@
         cursor:pointer;
       }
 
-      @media (max-width: $screen-sm-max) {
-        margin: 40px auto;
+      @media (max-width: $screen-sm-min) {
+        margin: 30px auto;
       }
       @media (min-width: $screen-sm-min) {
         margin: 5px 80px 0 0;
@@ -451,7 +546,7 @@
       color: #484848;
 
       .modal-dialog {
-        @media (max-width: $screen-sm-max) {
+        @media (max-width: $screen-sm-min) {
           margin-top: 30%;
           width: auto;
         }
@@ -469,14 +564,16 @@
         padding: 5px 20px 5px 20px;
         height: 275px;
         .email-guide {
-          margin-top: 62px;
           color: rgba(255, 255, 255, 1);
-          font-family: 'Noto Sans CJK KR';
+          font-family: 'NotoSansCJKkr-Medium';
           font-size: 40px;
           text-align: center;
           font-weight: bold;
           @media (max-width: $screen-xs-max) {
-            line-height: 28px;
+            margin-top: 72px;
+          }
+          @media (min-width: $screen-sm-min) {
+            margin-top: 52px;
           }
         }
         .close{
@@ -536,19 +633,26 @@
     text-align: center;
     background-color: rgba(51, 51, 51, 1);
     color: rgba(255, 255, 255, 1);
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-sm-min) {
       height: 400px;
       padding: 20px 16px 0 16px;
     }
     @media (min-width: $screen-sm-min) {
       height: 450px;
-      padding: 43px 380px 0 380px;
+      margin: 0 auto;
+      padding: 43px 25% 0 25%;
     }
-    .h3 {
+    .subtitle {
       color: rgba(255, 255, 255, 1);
     }
-    .p {
+    .maintext {
       color: rgba(255, 255, 255, 1);
+      @media (max-width: $screen-sm-min) {
+        margin-top: 10px;
+      }
+      @media (min-width: $screen-sm-min) {
+        margin-top: 10px;
+      }
     }
     .sns {
       display: inline-block;
@@ -584,8 +688,8 @@
       }
     }
     .newsletter {
-      font-family: 'Noto Sans CJK KR';
-      @media (max-width: $screen-sm-max) {
+      font-family: 'NotoSansCJKkr-Medium';
+      @media (max-width: $screen-sm-min) {
         font-size: 24px;
       }
       @media (min-width: $screen-sm-min) {
@@ -594,23 +698,23 @@
       margin-top: 30px;
     }
     .subscribe {
-      @media (max-width: $screen-sm-max) {
-        background-color: rgba(179, 132, 255, 1);
+      @media (max-width: $screen-sm-min) {
         padding: 10px 40px 10px 40px;
         margin: 15px 10px 0px 10px;
         font-size: 20px;
       }
       @media (min-width: $screen-sm-min) {
-        background-color: rgba(179, 132, 255, 1);
         width: 300px;
         margin: 15px auto;
         font-size: 24px;
       }
       height: 55px;
+      background-color: rgba(54, 182, 169, 1);
       border-radius: 10px;
       border-width: 0px;
       box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
       color: rgba(255, 255, 255, 1);
+      font-weight: 700;
       text-align: center;
 
       -webkit-transition: margin 0.3s ease-out;
@@ -618,6 +722,7 @@
       -o-transition: margin 0.3s ease-out;
 
       &:hover {
+        background-color: rgba(42, 161, 149, 1);
         margin-top: 10px;
         cursor:pointer;
       }
@@ -649,12 +754,12 @@
         .email-guide {
           margin-top: 62px;
           color: rgba(255, 255, 255, 1);
-          font-family: 'Noto Sans CJK KR';
+          font-family: 'NotoSansCJKkr-Medium';
           font-size: 30px;
           text-align: center;
           font-weight: bold;
           text-align: center;
-          @media (max-width: $screen-sm-max) {
+          @media (max-width: $screen-sm-min) {
             line-height: 28px;
           }
         }
@@ -663,13 +768,13 @@
         }
         .email-input {
           margin-top: 18px;
-          @media (max-width: $screen-sm-max) {
+          @media (max-width: $screen-sm-min) {
             text-align: center;
           }
           label {
             margin-right: 10px;
             color: rgba(255, 255, 255, 1);
-            font-family: 'Noto Sans CJK KR';
+            font-family: 'NotoSansCJKkr-Medium';
           }
           input {
             width: 200px;
@@ -677,8 +782,9 @@
             display: inline-block;
           }
           button {
+            margin-top: 10px;
             display: inline-block;
-            font-family: 'Noto Sans CJK KR';
+            font-family: 'NotoSansCJKkr-Medium';
           }
         }
       }
