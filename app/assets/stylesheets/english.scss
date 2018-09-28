@@ -36,7 +36,7 @@ $font_1: 'Noto Serif KR';
       font-size: 40px;
     }
     @media (min-width: $screen-sm-min) {
-      line-height: 60px;
+      line-height: 70px;
       font-size: 54px;
     }
   }
@@ -74,7 +74,7 @@ $font_1: 'Noto Serif KR';
       font-size: 18px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 24px;
+      font-size: 27px;
     }
   }
   .caption {
@@ -213,7 +213,7 @@ $font_1: 'Noto Serif KR';
         padding: 30px 16px 0 16px;
       }
       @media (min-width: $screen-sm-min) {
-        padding: 107px 160px 0 0;
+        padding: 147px 100px 0 0;
       }
       .title {
         color: rgba(255, 255, 255, 1) !important;
@@ -224,6 +224,7 @@ $font_1: 'Noto Serif KR';
           margin-top: 24px;
         }
         @media (min-width: $screen-sm-min) {
+          margin-top: 10px;
         }
       }
     }
@@ -311,7 +312,8 @@ $font_1: 'Noto Serif KR';
             margin-top: 5px;
           }
           @media (min-width: $screen-sm-min) {
-            margin-top: 15px;
+            margin-top: 10px;
+            margin-bottom: 3px;
           }
           display: inline-block;
           .box {
@@ -495,6 +497,11 @@ $font_1: 'Noto Serif KR';
     }
     .title {
       color: rgba(97, 97, 97, 1);
+      @media (max-width: $screen-sm-min) {
+      }
+      @media (min-width: $screen-sm-min) {
+        margin-top: 20px;
+      }
     }
     .maintext {
       @media (max-width: $screen-sm-min) {
