@@ -17,12 +17,27 @@ $(function(){
 
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
-      navication: true,
+      navigation: true,
       center: true,
       loop: false,
-      margin: 20,
-      autoWidth: true
-  })
+      margin: 18,
+      autoWidth: true,
+      autoplay: true,
+      autoplayTimeout:20000,
+      freeDrag: true,
+      nav: true,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+  });
+
+  var width = $(window).width();
+  $(window).on('resize', function(){
+     if($(this).width() != width){
+        width = $(this).width();
+        $('.owl-item').find('.card').map(function(){
+          $(this).width(width * 0.8);
+        });
+     }
+  });
 
   $('.js-clipboard').each(function(index, elm) {
     var clipboard = new Clipboard(elm);
