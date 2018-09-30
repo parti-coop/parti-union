@@ -529,7 +529,7 @@ $font_1: 'Noto Serif KR';
           margin-top: -5px;
         }
         @media (min-width: $screen-sm-min) {
-          margin-top: 10px;
+          margin-top: -5px;
         }
         cursor:pointer;
       }
@@ -649,13 +649,11 @@ $font_1: 'Noto Serif KR';
     background-color: rgba(51, 51, 51, 1);
     color: rgba(255, 255, 255, 1);
     @media (max-width: $screen-sm-min) {
-      height: 400px;
-      padding: 20px 16px 0 16px;
+      padding: 20px 16px 20px 16px;
     }
     @media (min-width: $screen-sm-min) {
-      height: 450px;
       margin: 0 auto;
-      padding: 43px 25% 0 25%;
+      padding: 43px 25% 40px 25%;
     }
     .subtitle {
       color: rgba(255, 255, 255, 1);

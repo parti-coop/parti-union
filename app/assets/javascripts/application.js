@@ -2,10 +2,16 @@
 //= require jquery_ujs
 //= require masonry.pkgd
 //= require bootstrap
+//= require unobtrusive_flash
+//= require unobtrusive_flash_bootstrap
 //= require blocs.min
 //= require owl.carousel
 //= require social-share-button
 //= require clipboard
+
+
+// unobtrusive_flash
+UnobtrusiveFlash.flashOptions['timeout'] = 3000;
 
 $(function(){
   $('.masonry-container').masonry();

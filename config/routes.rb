@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'campaign', to: 'campaigns#campaign', as: :campaigns
   get 'contents', to: 'contents#contents', as: :contents
   get 'en', to: 'pages#english', as: :english
+  post 'stibee', to: 'pages#stibee', as: :stibee
 
   namespace :admin do
     resources :slides
