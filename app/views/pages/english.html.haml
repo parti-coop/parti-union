@@ -3,7 +3,7 @@
     .slogan-wrapper
       %img{ src: "#{asset_url('parti_ci_black.png')}"}
       .slogan-text
-        DEMOCRACY MORE
+        Democracy More
   .mission
     .title.light
       We can build better democratic systems and culture through IT platforms.
@@ -103,23 +103,23 @@
     .subtitle.medium
       Our actions and aims
     .maintext
-      Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst regular citizens.
+      Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst citizens.
       %br.visible-xs
       %a.span{href: campaigns_path}
         Read more >
     .photo
       .row
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/1.png')})" }
+        %a.card.col-sm-4{ href: root_url + "campaigns/toktok", style: "background-image: url(#{asset_url('actions/1.png')})" }
           .caption.regular
             사진 / 한겨례
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/2.png')})" }
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/3.png')})" }
+        %a.card.col-sm-4{ href: root_url + "campaigns/votefuture1", style: "background-image: url(#{asset_url('actions/2.png')})" }
+        %a.card.col-sm-4{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank" , style: "background-image: url(#{asset_url('actions/3.png')})" }
       .row.hidden-xs
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/4.png')})" }
+        %a.card.col-sm-4{ href: root_url + "campaigns/iknow", style: "background-image: url(#{asset_url('actions/4.png')})" }
           .caption.regular
             사진 / 한겨례
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/5.png')})" }
-        .card.col-sm-4{style: "background-image: url(#{asset_url('actions/6.png')})" }
+        %a.card.col-sm-4{ href: root_url + "campaigns/toktok", style: "background-image: url(#{asset_url('actions/5.png')})" }
+        %a.card.col-sm-4{ href: root_url + "campaigns/issuebattle", style: "background-image: url(#{asset_url('actions/6.png')})" }
           .caption.regular
             사진 / 한겨례
   .be-with-us
@@ -141,11 +141,11 @@
               I support Parti !
             .sns
               .box
-                =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: 'http://dev.partiunion.org', desc: 'Democracy More, Parti !')
+                =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: request.original_url, desc: 'Democracy More, Parti !')
               .box
                 =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
               .box
-                .btn.js-clipboard{ ' data-clipboard-text': "#{root_url}en", 'data-toggle': 'tooltip', 'data-trigger': 'manual', 'data-title': 'Copied!' }
+                .btn.js-clipboard{ ' data-clipboard-text': "#{root_url}en", 'data-toggle': 'tooltip', 'data-title': 'Copied!' }
                   %img{ src: "#{asset_url('contact/link.png')}"}
 
   .contact
@@ -179,4 +179,4 @@
               .email-input
                 %label{:for => "email"} Email
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
-                %button{class: 'btn', :type => "submit"} subscribe
+                %button.btn.btn-english{:type => "submit"} subscribe

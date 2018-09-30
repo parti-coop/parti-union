@@ -122,6 +122,12 @@ $font_1: 'Noto Serif KR';
   .btn-english {
     background-color: rgba(54, 182, 169, 1);
     border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+      background-color: rgba(42, 161, 149, 1);
+      color: rgba(255, 255, 255, 1) !important;
+      border-width: 0;
+    }
   }
   .slogan {
     text-align: center;
@@ -213,7 +219,10 @@ $font_1: 'Noto Serif KR';
         padding: 30px 16px 0 16px;
       }
       @media (min-width: $screen-sm-min) {
-        padding: 137px 100px 0 0;
+        padding: 80px 100px 0 0;
+      }
+      @media (min-width: $screen-md-min) {
+        padding: 125px 100px 0 0;
       }
       .title {
         color: rgba(255, 255, 255, 1) !important;
@@ -224,7 +233,7 @@ $font_1: 'Noto Serif KR';
           margin-top: 24px;
         }
         @media (min-width: $screen-sm-min) {
-          margin-top: 10px;
+          margin-top: 20px;
         }
       }
     }
@@ -281,7 +290,6 @@ $font_1: 'Noto Serif KR';
         }
         @media (min-width: $screen-sm-min) {
           width: 900px;
-          height: 600px;
         }
         margin-top: 20px;
         margin-bottom: 10px;
@@ -739,7 +747,7 @@ $font_1: 'Noto Serif KR';
       color: #484848;
 
       .modal-dialog {
-        @media (max-width: $screen-xs-max) {
+        @media (max-width: $screen-sm-min) {
           width: auto;
           margin-top: 30%;
         }
@@ -789,7 +797,12 @@ $font_1: 'Noto Serif KR';
             display: inline-block;
           }
           button {
-            margin-top: 10px;
+            @media (min-width: $screen-sm-min) {
+              margin-top: 5px;
+            }
+            @media (max-width: $screen-sm-min) {
+              margin-top: 10px;
+            }
             display: inline-block;
             font-family: 'NotoSansCJKkr-Medium';
           }

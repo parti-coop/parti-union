@@ -23,8 +23,7 @@ $(document).ready(function(){
       margin: 18,
       autoWidth: true,
       autoplay: true,
-      autoplayTimeout:20000,
-      freeDrag: true,
+      autoplayTimeout: 15000,
       nav: true,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
   });
@@ -47,5 +46,6 @@ $(document).ready(function(){
       e.clearSelection();
     });
   });
+
 });
 
