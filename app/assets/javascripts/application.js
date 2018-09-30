@@ -38,14 +38,16 @@ $(document).ready(function(){
      }
   });
 
-  $('.js-clipboard').each(function(index, elm) {
-    var clipboard = new Clipboard(elm);
-    clipboard.on('success', function(e) {
-      $(e.trigger).tooltip('show');
-      setTimeout(function() { $(e.trigger).tooltip('hide'); }, 1000);
-      e.clearSelection();
-    });
+  $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+  $.fn.modal.Constructor.prototype._enforceFocus = function() {};
+
+  var clipboard = new Clipboard('.js-clipboard');
+  clipboard.on('success', function(e) {
+    $(e.trigger).tooltip('show');
+    setTimeout(function() { $(e.trigger).tooltip('hide'); }, 1000);
+    e.clearSelection();
   });
+
 
 });
 
