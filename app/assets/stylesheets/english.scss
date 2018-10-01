@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
 
-$font_0: 'NotoSansCJKkr';
+$font_sans: "Noto Sans";
+$font_0: 'Noto Sans CJK KR';
+$font_serif: "Noto Serif";
 $font_1: 'Noto Serif KR';
 
 .light      { font-weight: 300; }
@@ -9,26 +12,25 @@ $font_1: 'Noto Serif KR';
 .bold       { font-weight: 700; }
 
 #page-english {
-  font-family: 'NotoSansCJKkr-Medium';
+  font-family: $font_sans, $font_0;
   width: 100%;
   margin: 0 auto;
 
   // Font
   .slogan-text { // Slogan
-    font-family: 'Noto Serif KR', serif;
+    font-family: $font_serif, $font_1, "Times New Roman", Times, serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: -0.04em;
     color: rgba(51, 51, 51, 1);
     @media (max-width: $screen-sm-min) {
-      font-size: 30px;
+      font-size: 39px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 48px;
+      font-size: 70px;
     }
   }
   .title { // Title
-    font-family: 'NotoSansCJKkr-Light';
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-min) {
@@ -41,7 +43,6 @@ $font_1: 'Noto Serif KR';
     }
   }
   .subtitle { // Subtitle 1
-    font-family: 'NotoSansCJKkr-Medium';
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-min) {
@@ -53,7 +54,6 @@ $font_1: 'Noto Serif KR';
     }
   }
   .subtitle2 { // Subtitle 2
-    font-family: 'NotoSansCJKkr-Light';
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-min) {
@@ -66,7 +66,6 @@ $font_1: 'Noto Serif KR';
     }
   }
   .maintext { // Main text
-    font-family: $font_0;
     color: rgba(97, 97, 97, 1);
     font-weight: 400;
     letter-spacing: -0.04em;
@@ -78,7 +77,6 @@ $font_1: 'Noto Serif KR';
     }
   }
   .caption {
-    font-family: $font_0;
     color: rgba(255, 255, 255, 1);
     letter-spacing: -0.04em;
     height: 30px;
@@ -130,15 +128,15 @@ $font_1: 'Noto Serif KR';
     }
   }
   .slogan {
-    text-align: center;
     @media (max-width: $screen-sm-min) {
-      height: 160px;
+      height: 220px;
       padding: 0 16px 0 16px;
-      padding-top: 48px;
+      padding-top: 105px;
     }
     @media (min-width: $screen-sm-min) {
       height: 330px;
       margin: 0 auto;
+      padding: 55px 15% 0 15%;
       padding-top: 133px;
     }
 
@@ -152,25 +150,23 @@ $font_1: 'Noto Serif KR';
     }
 
     img {
-      margin : 0 auto;
       @media (max-width: $screen-sm-min) {
         width: 108px;
       }
       @media (min-width: $screen-sm-min) {
-        display: inline-block;
-        width: 188px;
-        float: left;
-        padding-bottom: 50px;
+        width: 217px;
         margin-right: 30px;
       }
     }
 
     .slogan-text {
-      margin-top: 6px;
-      text-align: center;
+      margin-top: 5px;
+      text-align: left;
+      @media (max-width: $screen-sm-min) {
+        margin-left: 5px;
+      }
       @media (min-width: $screen-sm-min) {
-        padding-top: 8px;
-        display: inline-block;
+        margin: 0 0 0 12px;
       }
     }
   }
@@ -180,7 +176,7 @@ $font_1: 'Noto Serif KR';
       padding: 20px 16px 20px 16px;
     }
     @media (min-width: $screen-sm-min) {
-      padding: 42px 0 20px 0;
+      padding: 42px 0 50px 0;
       width: 70%;
       margin: 0 auto;
     }
@@ -242,9 +238,11 @@ $font_1: 'Noto Serif KR';
     width: 100%;
     @media (max-width: $screen-sm-min) {
       padding: 20px 16px 0 16px;
+      margin-bottom: 10px;
     }
     @media (min-width: $screen-sm-min) {
       padding: 36px 15% 0 15%;
+      margin-bottom: 20px;
     }
     .maintext{
       @media (max-width: $screen-sm-min) {
@@ -261,7 +259,6 @@ $font_1: 'Noto Serif KR';
       @media (min-width: $screen-sm-min) {
         margin-left: -25%;
         width: 150%;
-        height: 600px;
       }
       .owl-nav {
         background: transparent;
@@ -286,10 +283,11 @@ $font_1: 'Noto Serif KR';
       .card {
         @media (max-width: $screen-sm-min) {
           width: 310px;
-          height: 600px;
+          height: 620px;
         }
         @media (min-width: $screen-sm-min) {
           width: 900px;
+          height: 600px;
         }
         margin-top: 20px;
         margin-bottom: 10px;
@@ -317,11 +315,11 @@ $font_1: 'Noto Serif KR';
         }
         .download {
           @media (max-width: $screen-sm-min) {
-            margin-top: 5px;
+            margin-top: 10px;
           }
           @media (min-width: $screen-sm-min) {
             margin-top: 10px;
-            margin-bottom: 3px;
+            margin-bottom: 5px;
           }
           display: inline-block;
           .box {
@@ -396,7 +394,7 @@ $font_1: 'Noto Serif KR';
     }
     @media (min-width: $screen-sm-min) {
       width: 70%;
-      margin: 60px auto;
+      margin: 20px auto;
       padding: 36px 0 0 0;
     }
     .maintext {
@@ -462,31 +460,35 @@ $font_1: 'Noto Serif KR';
     }
     .maintext {
       @media (max-width: $screen-sm-min) {
-        margin-top: 10px;
+        margin: 10px 0 10px 0 ;
       }
       @media (min-width: $screen-sm-min) {
+        margin: 5px 0 10px 0 ;
       }
       .span {
         display: inline;
         color: rgba(54, 182, 169, 1);
         font-weight: 500;
+        font-family: $font_0;
       }
     }
     .photo {
-      padding: 15px;
+      // padding: 15px;
       .card {
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 16px;
         @media (max-width: $screen-sm-min) {
+          width: 100%;
           height: 290px;
         }
         @media (min-width: $screen-sm-min) {
-          width: 32%;
           height: 280px;
-          &:not(:last-child){
-            margin-right: 2%;
-          }
+        }
+      }
+      .col-sm-4 {
+        @media (min-width: $screen-sm-min) {
+          padding-right: 5px;
         }
       }
     }
@@ -494,8 +496,7 @@ $font_1: 'Noto Serif KR';
   .be-with-us {
     background-color: rgba(236, 236, 236, 1);
     @media (max-width: $screen-sm-min) {
-      height: 360px;
-      padding: 30px 16px 0 16px;
+      padding: 40px 16px 20px 16px;
       text-align: center;
     }
     @media (min-width: $screen-sm-min) {
@@ -516,7 +517,7 @@ $font_1: 'Noto Serif KR';
         margin-top: 15px;
       }
       @media (min-width: $screen-sm-min) {
-
+        margin: 5px 0 10px 0;
       }
     }
     .clap {
@@ -525,9 +526,6 @@ $font_1: 'Noto Serif KR';
       -o-transition: margin 0.4s ease-out;
 
       &:hover {
-        @media (max-width: $screen-sm-min) {
-          margin-top: -5px;
-        }
         @media (min-width: $screen-sm-min) {
           margin-top: -5px;
         }

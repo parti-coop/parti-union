@@ -1,9 +1,8 @@
 #page-english
   .slogan
-    .slogan-wrapper
-      %img{ src: "#{asset_url('parti_ci_black.png')}"}
-      .slogan-text
-        Democracy More
+    %img{ src: "#{asset_url('parti_ci_black.png')}"}
+    .slogan-text
+      Democracy More
   .mission
     .title.light
       We can build better democratic systems and culture through IT platforms.
@@ -17,7 +16,7 @@
       .subtitle2.regular
         who create IT platforms, contents, and communities to spread democracy in the world.
   .platforms
-    .subtitle
+    .subtitle.medium
       Platforms
     .maintext
       We create platforms, campaigns, and user guides in order to make your life more democratic.
@@ -104,22 +103,33 @@
       Our actions and aims
     .maintext
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst citizens.
-      %br.visible-xs
       %a.span{href: campaigns_path}
         Read more >
     .photo
       .row
-        %a.card.col-sm-4{ href: root_url + "campaigns/toktok", style: "background-image: url(#{asset_url('actions/1.png')})" }
+        .col-sm-4
+          %a{ href: root_url + "campaigns/toktok"}
+            .card{style: "background-image: url(#{asset_url('actions/1.png')})" }
           .caption.regular
             사진 / 한겨례
-        %a.card.col-sm-4{ href: root_url + "campaigns/votefuture1", style: "background-image: url(#{asset_url('actions/2.png')})" }
-        %a.card.col-sm-4{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank" , style: "background-image: url(#{asset_url('actions/3.png')})" }
+        .col-sm-4
+          %a{ href: root_url + "campaigns/votefuture1"}
+            .card{style: "background-image: url(#{asset_url('actions/2.png')})" }
+        .col-sm-4
+          %a{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank"}
+          .card{style: "background-image: url(#{asset_url('actions/3.png')})" }
       .row.hidden-xs
-        %a.card.col-sm-4{ href: root_url + "campaigns/iknow", style: "background-image: url(#{asset_url('actions/4.png')})" }
+        .col-sm-4
+          %a{ href: root_url + "campaigns/iknow"}
+            .card{ style: "background-image: url(#{asset_url('actions/4.png')})" }
           .caption.regular
             사진 / 한겨례
-        %a.card.col-sm-4{ href: root_url + "campaigns/toktok", style: "background-image: url(#{asset_url('actions/5.png')})" }
-        %a.card.col-sm-4{ href: root_url + "campaigns/issuebattle", style: "background-image: url(#{asset_url('actions/6.png')})" }
+        .col-sm-4
+          %a{ href: root_url + "campaigns/toktok"}
+            .card{ style: "background-image: url(#{asset_url('actions/5.png')})" }
+        .col-sm-4
+          %a{ href: root_url + "campaigns/issuebattle"}
+            .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
           .caption.regular
             사진 / 한겨례
   .be-with-us
