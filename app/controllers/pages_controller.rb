@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   def stibee
     data = params[:email]
     begin
-      uri = URI.parse('https://stibee.com/api/v1.0/lists/8eGeZJ_Ir8_jNilIvX8XV2a6BQ==/public/subscribers')
+      uri = URI.parse('https://stibee.com/api/v1.0/lists/v1NhKd0XWaKx1-Tx0vc30O7zWlo=/public/subscribers')
       body = URI.encode_www_form("email": params[:email])
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
