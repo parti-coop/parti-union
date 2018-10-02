@@ -12,13 +12,13 @@ $font_1: 'Noto Serif KR';
 .bold       { font-weight: 700; }
 
 #page-english {
-  font-family: $font_sans, $font_0;
+  font-family: $font_0, $font_sans;
   width: 100%;
   margin: 0 auto;
 
   // Font
   .slogan-text { // Slogan
-    font-family: $font_serif, $font_1, "Times New Roman", Times, serif;
+    font-family: $font_1, $font_serif, "Times New Roman", Times, serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: -0.04em;
@@ -73,13 +73,13 @@ $font_1: 'Noto Serif KR';
       font-size: 18px;
     }
     @media (min-width: $screen-sm-min) {
-      font-size: 27px;
+      font-size: 26px;
     }
   }
   .caption {
     color: rgba(255, 255, 255, 1);
     letter-spacing: -0.04em;
-    height: 30px;
+    height: 40px;
     width: 100px;
     position: absolute;
     bottom: 0;
@@ -214,7 +214,7 @@ $font_1: 'Noto Serif KR';
         margin-top: 10px;
         padding: 30px 16px 0 16px;
       }
-      @media (min-width: $screen-sm-min) {
+      @media (max-width: $screen-md-max) and (min-width: $screen-sm-min) {
         padding: 80px 100px 0 0;
       }
       @media (min-width: $screen-md-min) {
@@ -287,7 +287,7 @@ $font_1: 'Noto Serif KR';
         }
         @media (min-width: $screen-sm-min) {
           width: 900px;
-          height: 600px;
+          height: 610px;
         }
         margin-top: 20px;
         margin-bottom: 10px;
@@ -483,7 +483,7 @@ $font_1: 'Noto Serif KR';
           height: 290px;
         }
         @media (min-width: $screen-sm-min) {
-          height: 280px;
+          height: 290px;
         }
       }
       .col-sm-4 {

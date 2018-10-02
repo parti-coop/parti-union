@@ -28,7 +28,6 @@ $(document).ready(function(){
       loop: false,
       margin: 18,
       autoWidth: true,
-      autoplay: true,
       nav: true,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
   });
