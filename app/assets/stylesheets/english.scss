@@ -1,27 +1,65 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
 
-$font_sans: "Noto Sans";
-$font_0: 'Noto Sans CJK KR';
-$font_serif: "Noto Serif";
-$font_1: 'Noto Serif KR';
+@font-face {
+  font-family: 'NotoSans-Light';
+  src: font_url('NotoSans-Light.otf');
+  src: font_url('NotoSans-Light.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Light.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: font_url('NotoSans-Regular.otf');
+  src: font_url('NotoSans-Regular.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Regular.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: font_url('NotoSans-Medium.otf');
+  src: font_url('NotoSans-Medium.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Medium.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: font_url('NotoSans-Bold.otf');
+  src: font_url('NotoSans-Bold.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Bold.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.light      { font-weight: 300; }
-.regular    { font-weight: 400; }
-.medium     { font-weight: 500; }
-.bold       { font-weight: 700; }
+$font_sans: "Noto Sans";
+$font_0: 'NotoSans-Regular';
+$font_1: 'Noto Serif KR';
+$font_2: 'NotoSans-Light';
+$font_3: 'NotoSans-Medium';
+$font_4: 'NotoSans-Bold';
+$font_serif: "Noto Serif";
+
+.light      { font-family: $font_2; font-weight: 300; }
+.regular    { font-family: $font_0; font-weight: 400; }
+.medium     { font-family: $font_3; font-weight: 500; }
+.bold       { font-family: $font_4; font-weight: 700; }
 
 #page-english {
-  font-family: $font_sans, $font_0;
+  font-family: $font_0, $font_sans;
   width: 100%;
   margin: 0 auto;
   a {
-    font-family: $font_sans, $font_0;
+    font-family: $font_3, $font_sans;
+  }
+  span {
+    font-family: $font_0, $font_sans;
   }
 
   // Font
   .slogan-text { // Slogan
-    font-family: $font_serif, $font_1, "Times New Roman", Times, serif;
+    font-family: $font_1, serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: -0.04em;
@@ -37,20 +75,20 @@ $font_1: 'Noto Serif KR';
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      line-height: 42px;
-      font-size: 40px;
+      line-height: 40px;
+      font-size: 38px;
     }
     @media (min-width: $screen-sm-max) {
       line-height: 60px;
-      font-size: 54px;
+      font-size: 50px;
     }
   }
   .subtitle { // Subtitle 1
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      font-size: 42px;
-      line-height: 42px;
+      font-size: 36px;
+      line-height: 36px;
     }
     @media (min-width: $screen-sm-max) {
       font-size: 40px;
@@ -61,7 +99,7 @@ $font_1: 'Noto Serif KR';
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
       line-height: 28px;
-      font-size: 20px;
+      font-size: 18px;
     }
     @media (min-width: $screen-sm-max) {
       line-height: 40px;
@@ -73,16 +111,16 @@ $font_1: 'Noto Serif KR';
     font-weight: 400;
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      font-size: 17px;
+      font-size: 16px;
     }
     @media (min-width: $screen-sm-max) {
-      font-size: 25px;
+      font-size: 24px;
     }
   }
   .caption {
     color: rgba(255, 255, 255, 1);
     letter-spacing: -0.04em;
-    height: 40px;
+    height: 50px;
     width: 100px;
     position: absolute;
     bottom: 0;
@@ -216,9 +254,9 @@ $font_1: 'Noto Serif KR';
         padding: 30px 16px 0 16px;
       }
       @media (max-width: $screen-md-max) and (min-width: $screen-sm-max) {
-        padding: 80px 60px 0 0;
+        padding: 90px 60px 0 0;
       }
-      @media (min-width: $screen-md-min) {
+      @media (min-width: $screen-md-max) {
         padding: 125px 60px 0 0;
       }
       .title {
@@ -286,10 +324,7 @@ $font_1: 'Noto Serif KR';
         @media (min-width: 620px) and (max-width: $screen-sm-min) {
           display : block;
         }
-        @media (max-width: 620px) {
-          display: none;
-        }
-        @media (min-width: $screen-sm-min) {
+        @media (max-width: 620px), (min-width: $screen-sm-min)  {
           display: none;
         }
       }
@@ -417,13 +452,14 @@ $font_1: 'Noto Serif KR';
     @media (min-width: $screen-sm-max) {
       width: 70%;
       margin: 20px auto;
-      padding: 36px 0 0 0;
+      padding: 20px 0 0 0;
     }
     .maintext {
       @media (max-width: $screen-sm-max) {
         margin-top: 10px;
       }
       @media (min-width: $screen-sm-max) {
+        margin-top: 5px
       }
     }
     .line {
@@ -635,15 +671,20 @@ $font_1: 'Noto Serif KR';
               margin-right: 15px;
             }
             .ssb-twitter, .ssb-facebook, .js-clipboard {
-              background-size: auto;
-              height: 28px;
-              width: 28px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             }
             .ssb-twitter {
               background-image: asset_url('contact/twitter.png');
+              margin-top: 2px;
+              height: 23px;
+              width: 28px;
             }
             .ssb-facebook {
               background-image: asset_url('contact/facebook.png');
+              height: 28px;
+              width: 14px;
             }
 
 

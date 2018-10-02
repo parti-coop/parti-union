@@ -1,4 +1,4 @@
-#p레ge-english
+#page-english
   .slogan
     %img{ src: "#{asset_url('parti_ci_black.png')}"}
     .slogan-text
@@ -22,7 +22,7 @@
       We create platforms, campaigns, and user guides in order to make your life more democratic.
     .owl-carousel.owl-theme.slide
       .card
-        .platform-name
+        .platform-name.bold
           Parti.xyz
         .image
           %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
@@ -30,22 +30,22 @@
         .description
           .maintext
             A useful platform designed to make companies and other organisations or communities more democratic.
-          .download
-            %button.box
-              %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
-                %img{ src: "#{asset_url('icon/apple.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  App Store
-            %button.box
-              %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
-                %img{ src: "#{asset_url('icon/google-play.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  Google Play
-            %button.btn
-              %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
-                Web
+        .download
+          %button.box
+            %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
+              %img{ src: "#{asset_url('icon/apple.png')}"}
+              .market-text.hidden-sm.hidden-xs
+                App Store
+          %button.box
+            %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
+              %img{ src: "#{asset_url('icon/google-play.png')}"}
+              .market-text.hidden-sm.hidden-xs
+                Google Play
+          %button.btn
+            %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
+              Web
       .card
-        .platform-name
+        .platform-name.bold.bold.bold.bold
           Parti Govcraft
         .image
           %img.hidden-xs{ src: "#{asset_url('platforms/govcraft.png')}"}
@@ -60,7 +60,7 @@
             %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
               Web
       .card
-        .platform-name
+        .platform-name.bold.bold.bold
           Parti Townhall
         .image
           %img.hidden-xs{ src: "#{asset_url('platforms/townhall.png')}"}
@@ -73,7 +73,7 @@
             %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
               Web
       .card
-        .platform-name
+        .platform-name.bold.bold
           Democracy Seoul
         .image
           %img.hidden-xs{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
@@ -81,12 +81,12 @@
         .description
           .maintext
             The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
-                Web
+        .download.fill
+          %button.btn.fill
+            %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+              Web
       .card.visible-sm-card
-        .platform-name
+        .platform-name.bold
 
 
   .contents
@@ -106,6 +106,7 @@
       Our actions and aims
     .maintext
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst citizens.
+      %br.visible-xs
       %a.span.bold{href: campaigns_path}
         Read more >
     .photo
