@@ -11,28 +11,28 @@
           %span.icon-bar
       .navbar-collapse.navbar-1.collapse
         %ul.site-navigation.nav.navbar-nav
+          %li
+            = link_to '/platforms/parti' do
+              빠띠
+          %li
+            = link_to '/platforms/govcraft' do
+              가브크래프트
+          %li
+            = link_to '/campaign' do
+              캠페인
+          %li
+            = link_to '/contents' do
+              민주주의 리포트
+          / %li
+          /  = link_to root_path(anchor: 'anchor-contact') do
+          /    연락처
+          %li
+            = link_to products_path do
+              굿즈
+          %li
+            %a{:href => "https://www.facebook.com/PartiUnion", :target => "_blank", class: 'img-responsive'}
+              문의하기
           - unless current_page?(english_path)
-            %li
-              = link_to '/platforms/parti' do
-                빠띠
-            %li
-              = link_to '/platforms/govcraft' do
-                가브크래프트
-            %li
-              = link_to '/campaign' do
-                캠페인
-            %li
-              = link_to '/contents' do
-                민주주의 리포트
-            / %li
-            /  = link_to root_path(anchor: 'anchor-contact') do
-            /    연락처
-            %li
-              = link_to products_path do
-                굿즈
-            %li
-              %a{:href => "https://www.facebook.com/PartiUnion", :target => "_blank", class: 'img-responsive'}
-                문의하기
             %li
               = link_to english_path do
                 EN

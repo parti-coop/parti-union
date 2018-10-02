@@ -33,14 +33,6 @@ $(document).ready(function(){
   });
 
   var width = $(window).width();
-  $(window).on('resize', function(){
-     if($(this).width() != width){
-        width = $(this).width();
-        $('.owl-item').find('.card').map(function(){
-          $(this).width(width * 0.8);
-        });
-     }
-  });
 
   $.fn.modal.Constructor.prototype.enforceFocus = function() {};
   $.fn.modal.Constructor.prototype._enforceFocus = function() {};

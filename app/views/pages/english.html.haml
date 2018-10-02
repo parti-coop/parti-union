@@ -1,4 +1,4 @@
-#page-english
+#p레ge-english
   .slogan
     %img{ src: "#{asset_url('parti_ci_black.png')}"}
     .slogan-text
@@ -9,7 +9,7 @@
     .subtitle2.regular
       Due to Korea’s hierarchy system, it can be challenging to communicate democratically in everyday life. Regular citizens may have great difficulty when trying to make positive changes to society. So Parti wants to make a more democratic life and culture. We do this by creating IT platforms and organising offline meetups.
   .who-we-are
-    .photo.hidden-xs
+    .photo.hidden-sm
     .description
       .title.light
         We are a group of democracy activists
@@ -18,7 +18,7 @@
   .platforms
     .subtitle.medium
       Platforms
-    .maintext
+    .platforms-text.maintext
       We create platforms, campaigns, and user guides in order to make your life more democratic.
     .owl-carousel.owl-theme.slide
       .card
@@ -34,12 +34,12 @@
             %button.box
               %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
                 %img{ src: "#{asset_url('icon/apple.png')}"}
-                .hidden-xs
+                .market-text.hidden-sm.hidden-xs
                   App Store
             %button.box
               %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
                 %img{ src: "#{asset_url('icon/google-play.png')}"}
-                .hidden-xs
+                .market-text.hidden-sm.hidden-xs
                   Google Play
             %button.btn
               %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
@@ -53,12 +53,12 @@
         .description
           .maintext
             A platform to help citizens get involved with political campaigns which affect their lives.
-            %br.visible-xs
+            %br.visible-sm
             This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
-                Web
+        .download.fill
+          %button.btn.fill
+            %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
+              Web
       .card
         .platform-name
           Parti Townhall
@@ -68,10 +68,10 @@
         .description
           .maintext
             A fun and easy real-time decision-making platform, which is especially useful during live seminars, lectures and presentations, that can make such events more interactive and allow the audience to participate more actively.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
-                Web
+        .download.fill
+          %button.btn.fill
+            %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
+              Web
       .card
         .platform-name
           Democracy Seoul
@@ -85,6 +85,9 @@
             %button.btn.fill
               %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
                 Web
+      .card.visible-sm-card
+        .platform-name
+
 
   .contents
     .subtitle.medium
@@ -103,7 +106,7 @@
       Our actions and aims
     .maintext
       Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst citizens.
-      %a.span.medium{href: campaigns_path}
+      %a.span.bold{href: campaigns_path}
         Read more >
     .photo
       .row
@@ -111,7 +114,7 @@
           %a{ href: root_url + "campaigns/toktok"}
             .card{style: "background-image: url(#{asset_url('actions/1.png')})" }
           .caption.regular
-            사진 / 한겨례
+            사진 / 한겨레
         .col-sm-4
           %a{ href: root_url + "campaigns/votefuture1"}
             .card{style: "background-image: url(#{asset_url('actions/2.png')})" }
@@ -123,7 +126,7 @@
           %a{ href: root_url + "campaigns/iknow"}
             .card{ style: "background-image: url(#{asset_url('actions/4.png')})" }
           .caption.regular
-            사진 / 한겨례
+            사진 / 한겨레
         .col-sm-4
           %a{ href: root_url + "campaigns/toktok"}
             .card{ style: "background-image: url(#{asset_url('actions/5.png')})" }
@@ -131,15 +134,15 @@
           %a{ href: root_url + "campaigns/issuebattle"}
             .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
           .caption.regular
-            사진 / 한겨례
+            사진 / 한겨레
   .be-with-us
-    .clap.hidden-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
+    .clap.hidden-sm.hidden-xs{'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
     .title.light
       Spread the word
     .maintext
       Why don't you introduce us to your friends?
-    .clap.visible-xs{class: 'clap', 'data-toggle': "modal", 'data-target': "#clap-modal"}
+    .clap.visible-sm.visible-xs{'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
     #clap-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
