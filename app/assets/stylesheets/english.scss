@@ -94,7 +94,6 @@ $font_1: 'Noto Serif KR';
   .platform-name {
     margin: 20px;
     position: absolute;
-    font-family: 'NotoSansCJKkr-Medium';
     font-weight: bold;
     color: rgba(255, 255, 255, 1) !important;
     text-align: left;
@@ -107,7 +106,6 @@ $font_1: 'Noto Serif KR';
       }
   }
   .platform {
-    font-family: 'NotoSansCJKkr-Medium';
     color: rgba(51, 51, 51, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-min) {
@@ -328,7 +326,6 @@ $font_1: 'Noto Serif KR';
             background-color: rgba(51, 51, 51, 1);
             color: rgba(255, 255, 255, 1);
             border-radius: 10px;
-            font-family: 'NotoSansCJKkr-Medium';
             font-size: 18px;
             font-weight: bold;
             color: rgba(255, 255, 255, 1);
@@ -430,7 +427,6 @@ $font_1: 'Noto Serif KR';
       background-color: rgba(179, 132, 255, 1);
       border-radius: 10px;
       box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
-      font-family: 'NotoSansCJKkr-Medium';
       font-weight: bold;
       color: rgba(255, 255, 255, 1);
       text-align: center;
@@ -468,8 +464,6 @@ $font_1: 'Noto Serif KR';
       .span {
         display: inline;
         color: rgba(54, 182, 169, 1);
-        font-weight: 500;
-        font-family: $font_0;
       }
     }
     .photo {
@@ -578,7 +572,6 @@ $font_1: 'Noto Serif KR';
         height: 275px;
         .email-guide {
           color: rgba(255, 255, 255, 1);
-          font-family: 'NotoSansCJKkr-Medium';
           font-size: 40px;
           text-align: center;
           font-weight: bold;
@@ -699,7 +692,6 @@ $font_1: 'Noto Serif KR';
       }
     }
     .newsletter {
-      font-family: 'NotoSansCJKkr-Medium';
       @media (max-width: $screen-sm-min) {
         font-size: 24px;
       }
@@ -765,7 +757,6 @@ $font_1: 'Noto Serif KR';
         .email-guide {
           margin-top: 62px;
           color: rgba(255, 255, 255, 1);
-          font-family: 'NotoSansCJKkr-Medium';
           font-size: 30px;
           text-align: center;
           font-weight: bold;
@@ -785,7 +776,6 @@ $font_1: 'Noto Serif KR';
           label {
             margin-right: 10px;
             color: rgba(255, 255, 255, 1);
-            font-family: 'NotoSansCJKkr-Medium';
           }
           input {
             width: 200px;
@@ -800,7 +790,6 @@ $font_1: 'Noto Serif KR';
               margin-top: 10px;
             }
             display: inline-block;
-            font-family: 'NotoSansCJKkr-Medium';
           }
         }
       }
