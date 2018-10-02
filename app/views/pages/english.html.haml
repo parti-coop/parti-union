@@ -121,7 +121,7 @@
             .card{style: "background-image: url(#{asset_url('actions/2.png')})" }
         .col-sm-4
           %a{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank"}
-          .card{style: "background-image: url(#{asset_url('actions/3.png')})" }
+            .card{style: "background-image: url(#{asset_url('actions/3.png')})" }
       .row.hidden-xs
         .col-sm-4
           %a{ href: root_url + "campaigns/iknow"}
@@ -137,13 +137,11 @@
           .caption.regular
             사진 / 한겨레
   .be-with-us
-    .clap.hidden-sm.hidden-xs{'data-toggle': "modal", 'data-target': "#clap-modal"}
-      .clap-image
     .title.light
       Spread the word
     .maintext
       Why don't you introduce us to your friends?
-    .clap.visible-sm.visible-xs{'data-toggle': "modal", 'data-target': "#clap-modal"}
+    %button.clap{'data-toggle': "modal", 'data-target': "#clap-modal"}
       .clap-image
     #clap-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
@@ -189,7 +187,7 @@
               %span{"aria-hidden" => "true"} &#215;
             %form{:action => stibee_path, :method => "POST"}
               = hidden_field_tag :authenticity_token, form_authenticity_token
-              %h5.email-guide
+              .subtitle.email-guide
                 Thanks for subscribing!
               .email-input
                 %label{:for => "email"} Email

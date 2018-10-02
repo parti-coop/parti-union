@@ -56,6 +56,12 @@ $font_serif: "Noto Serif";
   span {
     font-family: $font_0, $font_sans;
   }
+  button {
+    font-family: $font_4, $font_sans;
+  }
+  label {
+    font-family: $font_0, $font_sans;
+  }
 
   // Font
   .slogan-text { // Slogan
@@ -572,7 +578,7 @@ $font_serif: "Noto Serif";
         margin-top: 15px;
       }
       @media (min-width: $screen-sm-max) {
-        margin: 5px 0 10px 0;
+        margin: 7px 0 10px 0;
       }
     }
     .clap {
@@ -582,7 +588,7 @@ $font_serif: "Noto Serif";
 
       &:hover {
         @media (min-width: $screen-sm-max) {
-          margin-top: -5px;
+          margin-top: -130px;
         }
         cursor:pointer;
       }
@@ -591,13 +597,14 @@ $font_serif: "Noto Serif";
         margin: 20px auto 0px auto;
       }
       @media (min-width: $screen-sm-max) {
-        margin: 5px 80px 0 0;
+        margin: -120px 80px 0 0;
         float: right;
       }
       height: 120px;
       width: 120px;
       background-color: rgba(179, 132, 255, 1);
       border-radius: 120px;
+      border-width: 0px;
       box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.5);
       padding: 26px;
       .clap-image {
@@ -615,8 +622,8 @@ $font_serif: "Noto Serif";
 
       .modal-dialog {
         @media (max-width: $screen-sm-max) {
-          margin-top: 30%;
-          width: auto;
+          margin: 30% auto;
+          width: 90%;
         }
         @media (min-width: $screen-sm-max) {
           width: 500px;
@@ -636,7 +643,7 @@ $font_serif: "Noto Serif";
           font-size: 40px;
           text-align: center;
           font-weight: bold;
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: $screen-sm-max) {
             margin-top: 72px;
           }
           @media (min-width: $screen-sm-max) {
@@ -821,7 +828,7 @@ $font_serif: "Noto Serif";
 
       .modal-body {
         display: inline-block;
-        padding: 24px;
+        padding: 24px 0 0 0;
         width: 100%;
         height: 275px;
         .email-guide {
