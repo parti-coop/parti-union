@@ -55,6 +55,8 @@ $font_4: 'NotoSans-Bold';
   font-family: $font_0, $font_sans;
   width: 100%;
   margin: 0 auto;
+  letter-spacing: -0.04em;
+
   a {
     font-family: $font_3, $font_sans;
   }
