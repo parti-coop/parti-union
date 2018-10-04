@@ -22,7 +22,7 @@
       We create platforms, campaigns, and user guides in order to make your life more democratic.
     .owl-carousel.owl-theme.slide
       .card
-        .platform-name.bold
+        .platform-name.medium
           Parti.xyz
         .image
           %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
@@ -155,7 +155,7 @@
               .box
                 =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: request.original_url, desc: 'Democracy More, Parti !')
               .box
-                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://dev.partiunion.org')
+                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: 'http://partiunion.org/en')
               .box
                 .btn.js-clipboard{ ' data-clipboard-text': "#{root_url}en", 'data-toggle': 'tooltip', 'data-title': 'Copied!' }
                   %img{ src: "#{asset_url('contact/link.png')}"}
