@@ -51,6 +51,12 @@ $font_4: 'NotoSans-Bold';
 .medium     { font-family: $font_3; font-weight: 500; }
 .bold       { font-family: $font_4; font-weight: 700; }
 
+.english-container {
+  a {
+    font-family: $font_0, $font_sans;
+  }
+}
+
 #page-english {
   font-family: $font_0, $font_sans;
   width: 100%;

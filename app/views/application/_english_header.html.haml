@@ -1,5 +1,5 @@
 #bloc-0.bloc.bgc-white.l-bloc.application-header
-  .container
+  .english-container
     %nav.navbar.row
       .navbar-header
         = link_to root_path, class: 'navbar-brand' do
@@ -13,25 +13,25 @@
         %ul.site-navigation.nav.navbar-nav
           %li
             = link_to '/platforms/parti' do
-              빠띠
+              Parti
           %li
             = link_to '/platforms/govcraft' do
-              가브크래프트
+              Govcraft
           %li
             = link_to '/campaign' do
-              캠페인
+              Campaigns
           %li
             = link_to '/contents' do
-              민주주의 리포트
+              Democracy Reports
           / %li
           /  = link_to root_path(anchor: 'anchor-contact') do
           /    연락처
           %li
             = link_to products_path do
-              굿즈
+              Goods
           %li
             %a{:href => "https://www.facebook.com/PartiUnion", :target => "_blank", class: 'img-responsive'}
-              문의하기
+              Contacts
           %li
-            = link_to english_path do
-              EN
+            = link_to root_path do
+              KR
