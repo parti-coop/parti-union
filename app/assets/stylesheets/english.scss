@@ -84,7 +84,7 @@ $font_4: 'NotoSans-Bold';
     letter-spacing: -0.04em;
     color: rgba(51, 51, 51, 1);
     @media (max-width: $screen-sm-max) {
-      font-size: 38px;
+      font-size: 37px;
     }
     @media (min-width: $screen-sm-max) {
       font-size: 70px;
@@ -95,7 +95,7 @@ $font_4: 'NotoSans-Bold';
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
       line-height: 40px;
-      font-size: 38px;
+      font-size: 36px;
     }
     @media (min-width: $screen-sm-max) {
       line-height: 60px;
@@ -107,7 +107,7 @@ $font_4: 'NotoSans-Bold';
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
       font-size: 36px;
-      line-height: 36px;
+      line-height: 44px;
     }
     @media (min-width: $screen-sm-max) {
       font-size: 40px;
@@ -130,6 +130,7 @@ $font_4: 'NotoSans-Bold';
     font-weight: 400;
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
+      line-height: 24px;
       font-size: 16px;
     }
     @media (min-width: $screen-sm-max) {
@@ -187,17 +188,24 @@ $font_4: 'NotoSans-Bold';
       border-width: 0;
     }
   }
+  .main-container {
+    @media (max-width: $screen-sm-max) {
+      padding: 20px 12px 10px 12px;
+    }
+    @media (min-width: $screen-sm-max) {
+      margin: 0 auto;
+      padding: 40px 15% 40px 15%;
+    }
+  }
+
   .slogan {
     @media (max-width: $screen-sm-max) {
       height: 220px;
-      padding: 0 14px 0 9px;
-      padding-top: 105px;
+      padding-top: 85px;
     }
     @media (min-width: $screen-sm-max) {
       height: 330px;
-      margin: 0 auto;
-      padding: 55px 15% 0 15%;
-      padding-top: 127px;
+      padding-top: 87px;
     }
 
     background-image: -webkit-linear-gradient(-270deg, rgba(54, 182, 169, 1) 0%, rgba(164, 153, 201, 1) 100%);
@@ -220,7 +228,6 @@ $font_4: 'NotoSans-Bold';
     }
 
     .slogan-text {
-      margin-top: 5px;
       text-align: left;
       @media (max-width: $screen-sm-max) {
         margin-left: 5px;
@@ -232,17 +239,6 @@ $font_4: 'NotoSans-Bold';
   }
   .mission {
     text-align: left;
-    @media (max-width: $screen-sm-max) {
-      padding: 20px 16px 20px 16px;
-    }
-    @media (min-width: $screen-sm-max) {
-      padding: 42px 0 50px 0;
-      width: 70%;
-      margin: 0 auto;
-    }
-    .subtitle2 {
-      margin-top: 15px;
-    }
   }
   .who-we-are {
     background-color: rgba(51, 51, 51, 1);
@@ -285,33 +281,12 @@ $font_4: 'NotoSans-Bold';
       }
       .subtitle2 {
         color: rgba(255, 255, 255, 1) !important;
-        @media (max-width: $screen-sm-max) {
-          margin-top: 24px;
-        }
-        @media (min-width: $screen-sm-max) {
-          margin-top: 20px;
-        }
+        margin-top: 20px;
       }
     }
   }
   .platforms {
     width: 100%;
-    @media (max-width: $screen-sm-max) {
-      padding: 20px 16px 0 16px;
-      margin-bottom: 10px;
-    }
-    @media (min-width: $screen-sm-max) {
-      padding: 36px 15% 0 15%;
-      margin-bottom: 20px;
-    }
-    .platforms-text{
-      @media (max-width: $screen-sm-max) {
-        margin-top: 10px;
-      }
-      @media (min-width: $screen-sm-max) {
-        margin-top: 5px;
-      }
-    }
     .slide {
       @media (max-width: $screen-sm-max) {
         margin-left: -5%;
@@ -377,14 +352,6 @@ $font_4: 'NotoSans-Bold';
         margin-bottom: 10px;
         border-radius: 9px;
         box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
-        .image {
-          @media (max-width: $screen-sm-max) {
-            // height: 383px;
-          }
-          @media (min-width: $screen-sm-max) {
-            // height: 383px;
-          }
-        }
         .description {
           @media (max-width: $screen-sm-max) {
             padding: 13px;
@@ -475,28 +442,12 @@ $font_4: 'NotoSans-Bold';
     }
   }
   .contents {
-    @media (max-width: $screen-sm-max) {
-      padding: 20px 17px 0 17px;
-    }
-    @media (min-width: $screen-sm-max) {
-      width: 70%;
-      margin: 20px auto;
-      padding: 20px 0 0 0;
-    }
     .maintext {
       @media (max-width: $screen-sm-max) {
         margin-top: 10px;
       }
       @media (min-width: $screen-sm-max) {
         margin-top: 5px
-      }
-    }
-    .line {
-      @media (max-width: $screen-sm-max) {
-        margin-top: 5px;
-      }
-      @media (min-width: $screen-sm-max) {
-        margin-top: 15px;
       }
     }
     .box {
@@ -536,21 +487,7 @@ $font_4: 'NotoSans-Bold';
     }
   }
   .movement {
-    @media (max-width: $screen-sm-max) {
-      padding: 30px 16px 0 16px;
-    }
-    @media (min-width: $screen-sm-max) {
-      width: 70%;
-      margin: 0 auto;
-      padding: 30px 0 0 0;
-    }
     .maintext {
-      @media (max-width: $screen-sm-max) {
-        margin: 10px 0 10px 0 ;
-      }
-      @media (min-width: $screen-sm-max) {
-        margin: 5px 0 10px 0 ;
-      }
       .span {
         display: inline;
         color: rgba(54, 182, 169, 1);
@@ -585,13 +522,11 @@ $font_4: 'NotoSans-Bold';
   .be-with-us {
     background-color: rgba(236, 236, 236, 1);
     @media (max-width: $screen-sm-max) {
-      padding: 40px 16px 40px 16px;
+      padding: 30px 5px 30px 5px;
       text-align: center;
     }
     @media (min-width: $screen-sm-max) {
       height: 250px;
-      padding: 55px 15% 0 15%;
-      margin: 0 auto;
     }
     .title {
       color: rgba(97, 97, 97, 1);
@@ -599,14 +534,6 @@ $font_4: 'NotoSans-Bold';
       }
       @media (min-width: $screen-sm-max) {
         margin-top: 20px;
-      }
-    }
-    .maintext {
-      @media (max-width: $screen-sm-max) {
-        margin-top: 15px;
-      }
-      @media (min-width: $screen-sm-max) {
-        margin: 7px 0 10px 0;
       }
     }
     .clap {
