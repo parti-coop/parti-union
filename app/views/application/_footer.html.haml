@@ -1,6 +1,6 @@
 %a{class: 'anchor', id: 'anchor-contact'}
-#footer
-  - unless current_page?(root_path) or current_page?(english_path)
+- unless current_page?(root_path) or current_page?(english_path)
+  #footer
     .bgc-footer.l-bloc
       .container.bloc-md.footer-container
         .row.voffset-clear-xs
@@ -29,7 +29,6 @@
                 %label{:for => "email"} 이메일 주소
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
               %button{class: 'btn btn-wire btn-lg device-bloc-button btn-sq', :type => "submit"} 구독신청
-  - unless current_page?(english_path)
     .bloc.bgc-outer-space.d-bloc
       .container.bloc-md.footer-container
         .row.voffset-clear-xs

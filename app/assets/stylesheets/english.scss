@@ -4,7 +4,7 @@
   }
 }
 
-#page-english {
+#page-english, #page-main {
   font-family: $font_0, $font_sans;
   width: 100%;
   margin: 0 auto;
@@ -26,7 +26,6 @@
   // Font
   .slogan-text { // Slogan
     font-family: $font_1, serif;
-    font-size: 48px;
     font-weight: 900;
     letter-spacing: -0.04em;
     color: rgba(51, 51, 51, 1);
@@ -35,6 +34,18 @@
     }
     @media (min-width: $screen-sm-max) {
       font-size: 70px;
+    }
+  }
+  .slogan-korean-text { // Slogan
+    font-family: $font_1, serif;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: rgba(51, 51, 51, 1);
+    @media (max-width: $screen-sm-max) {
+      font-size: 37px;
+    }
+    @media (min-width: $screen-sm-max) {
+      font-size: 52px;
     }
   }
   .title { // Title
@@ -181,6 +192,16 @@
       }
       @media (min-width: $screen-sm-max) {
         margin: 0 0 0 12px;
+      }
+    }
+
+    .slogan-korean-text {
+      text-align: left;
+      @media (max-width: $screen-sm-max) {
+        margin-left: 5px;
+      }
+      @media (min-width: $screen-sm-max) {
+        margin: 0 0 0 13px;
       }
     }
   }
