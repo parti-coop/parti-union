@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'NotoSans-Light';
+  src: font_url('NotoSans-Light.otf');
+  src: font_url('NotoSans-Light.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Light.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: font_url('NotoSans-Regular.otf');
+  src: font_url('NotoSans-Regular.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Regular.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: font_url('NotoSans-Medium.otf');
+  src: font_url('NotoSans-Medium.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Medium.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: font_url('NotoSans-Bold.otf');
+  src: font_url('NotoSans-Bold.eot?#iefix') format("embedded-opentype"),
+    font_url('NotoSans-Bold.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSerif-Bold';
+  src: font_url('NotoSerifCJKkr-Bold-subset');
+  src: font_url('NotoSerifCJKkr-Bold-subset.woff') format("woff"),
+        font_url('NotoSerifCJKkr-Bold-subset.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font_sans: "Noto Sans";
+$font_0: 'NotoSans-Regular';
+$font_1: 'NotoSerif-Bold';
+$font_2: 'NotoSans-Light';
+$font_3: 'NotoSans-Medium';
+$font_4: 'NotoSans-Bold';
+
+.light      { font-family: $font_2; font-weight: 300; }
+.regular    { font-family: $font_0; font-weight: 400; }
+.medium     { font-family: $font_3; font-weight: 500; }
+.bold       { font-family: $font_4; font-weight: 700; }
