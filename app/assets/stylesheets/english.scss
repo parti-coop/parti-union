@@ -95,6 +95,29 @@
       font-size: 24px;
     }
   }
+  .toolkit-title {
+    color: rgba(97, 97, 97, 1);
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      line-height: 20px;
+      font-size: 22px;
+    }
+    @media (min-width: $screen-sm-max) {
+      line-height: 28px;
+      font-size: 26px;
+    }
+  }
+  .toolkit-text { // Main text
+    color: rgba(97, 97, 97, 1);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    @media (max-width: $screen-sm-max) {
+      font-size: 13px;
+    }
+    @media (min-width: $screen-sm-max) {
+      font-size: 14px;
+    }
+  }
   .caption {
     color: rgba(255, 255, 255, 1);
     letter-spacing: -0.04em;
@@ -310,11 +333,11 @@
         }
         @media (min-width: 1800px) {
           width: 1200px;
-          height: 600px;
+          height: 700px;
         }
         @media (min-width: 2400px) {
           width: 1800px;
-          height: 600px;
+          height: 700px;
         }
         margin-top: 20px;
         margin-bottom: 10px;
@@ -451,6 +474,35 @@
 
       a {
         color: rgba(255, 255, 255, 1);
+      }
+    }
+    .toolkit {
+      margin-top: 35px;
+      height: 240px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.23), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+      background-color: #ffffff;
+      padding: 10% 0 8% 0;
+      .book {
+        position: absolute;
+        width: 33%;
+        height: 216px;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #97a4d5;
+        margin: -13% 0 0 5%;
+        padding: 3%;
+        img {
+          width: 33%;
+        }
+      }
+      .description {
+        margin: 0 5% 0 47%;
+      }
+      .download {
+        position: absolute;
+        bottom: 14%;
+        right: 10%;
+        color: rgba(179, 132, 255, 1);
       }
     }
   }

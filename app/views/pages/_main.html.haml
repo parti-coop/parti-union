@@ -21,7 +21,7 @@
   .platforms
     .main-container
       .subtitle.medium
-        Platforms
+        플랫폼
       .platforms-text.maintext.mg-sm
         빠띠는 당신의 삶을 더 민주적으로 만들기 위해 필요한 플랫폼과 사용 가이드를 만듭니다.
       .owl-carousel.owl-theme.slide
@@ -96,13 +96,33 @@
         빠띠 민주주의 툴킷
       .maintext.mg-sm
         빠띠의 플랫폼을 손쉽게 활용할 수 있도록 가이드를 공유합니다. 저희의 가이드는 오픈소스로 누구나 해당 조직, 커뮤니티에 적용할 수 있습니다. 더불어 빠띠의 민주주의 활동 내역을 살필 수 있습니다.
-      .row.line
+      .row.line.mg-sm
         .col-sm-6
-          %a.box{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
-            민주주의 가이드
+          .toolkit
+            .book
+              = image_tag 'parti_ci_black.png'
+            .description
+              .toolkit-title.medium
+                빠띠 시민작당
+              .toolkit-text.regular.mg-sm
+                디지털플랫폼 기반의 시민주도이슈해결 프로젝트
+              .download
+                %a{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
+                DOWNLOAD &nbsp;
+                %i.fa.fa-download{"aria-hidden":true}
         .col-sm-6
-          %a.box{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
-            블로그
+          .toolkit
+            .book{style:"background-color: #ffbc4e;"}
+              = image_tag 'parti_ci_black.png'
+            .description
+              .toolkit-title.medium
+                빠띠 타운홀
+              .toolkit-text.regular.mg-sm
+                빠띠 타운홀로 더 민주적이고 참여적인 행사 만들기
+              .download
+                %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
+                DOWNLOAD &nbsp;
+                %i.fa.fa-download{"aria-hidden":true}
   .movement
     .main-container
       .subtitle.medium
