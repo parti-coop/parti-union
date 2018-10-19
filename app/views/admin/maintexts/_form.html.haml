@@ -1,0 +1,21 @@
+= form_for [:admin, @maintext] do |f|
+  .form-group
+    = f.label :order
+    = f.number_field :order, class: 'form-control input-lg'
+    .help-block
+      슬라이드가 보여질 순서를 숫자로 입력해주세요. (순서가 같은 슬라이드의 경우, 먼저 만들어진 슬라이드부터 보여집니다)
+
+  .form-group
+    = f.label :slug
+    = f.text_field :slug, class: 'form-control input-lg'
+
+  .form-group
+    = f.label :body
+    = f.text_area :body, class: 'form-control input-lg'
+
+  .form-group
+    = f.label :lang
+    = f.text_field :lang, class: 'form-control input-lg', value: "kr"
+
+  .form-group
+    = f.submit class: 'btn btn-primary'

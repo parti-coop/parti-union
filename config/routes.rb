@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   post 'stibee', to: 'pages#stibee', as: :stibee
 
   namespace :admin do
+    root 'maintexts#index'
     resources :slides
+    resources :maintexts
   end
 
   resources :products

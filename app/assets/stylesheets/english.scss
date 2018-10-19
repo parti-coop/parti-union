@@ -10,6 +10,10 @@
   margin: 0 auto;
   letter-spacing: -0.04em;
 
+  h5, p {
+    font-family: $font_0, $font_sans;
+  }
+
   a {
     font-family: $font_3, $font_sans;
   }
@@ -48,6 +52,19 @@
       font-size: 52px;
     }
   }
+  .slogan-korean-text-small { // Slogan
+    font-family: $font_1, serif;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: rgba(51, 51, 51, 1);
+    @media (max-width: $screen-sm-max) {
+      font-size: 24px;
+    }
+    @media (min-width: $screen-sm-max) {
+      font-size: 36px;
+    }
+  }
+
   .title { // Title
     color: rgba(182, 182, 182, 1);
     letter-spacing: -0.04em;
@@ -56,8 +73,7 @@
       font-size: 36px;
     }
     @media (min-width: $screen-sm-max) {
-      line-height: 60px;
-      font-size: 50px;
+      font-size: 38px;
     }
   }
   .subtitle { // Subtitle 1
@@ -68,7 +84,7 @@
       line-height: 44px;
     }
     @media (min-width: $screen-sm-max) {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
   .subtitle2 { // Subtitle 2
@@ -80,7 +96,7 @@
     }
     @media (min-width: $screen-sm-max) {
       line-height: 40px;
-      font-size: 30px;
+      font-size: 28px;
     }
   }
   .maintext { // Main text
@@ -88,22 +104,19 @@
     font-weight: 400;
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      line-height: 24px;
       font-size: 16px;
     }
     @media (min-width: $screen-sm-max) {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
   .toolkit-title {
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      line-height: 20px;
       font-size: 22px;
     }
     @media (min-width: $screen-sm-max) {
-      line-height: 28px;
       font-size: 26px;
     }
   }
@@ -127,10 +140,10 @@
     bottom: 0;
     right: 0;
     @media (max-width: $screen-sm-max) {
-      font-size: 16px;
+      font-size: 15px;
     }
     @media (min-width: $screen-sm-max) {
-      font-size: 17px;
+      font-size: 16px;
     }
   }
   .platform-name {
@@ -141,12 +154,10 @@
     text-align: left;
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-        line-height: 40px;
         font-size: 40px;
       }
       @media (min-width: $screen-sm-max) {
-        line-height: 60px;
-        font-size: 60px;
+        font-size: 50px;
       }
   }
   .platform {
@@ -171,11 +182,11 @@
   }
   .main-container {
     @media (max-width: $screen-sm-max) {
-      padding: 20px 12px 10px 12px;
+      padding: 30px 12px 10px 12px;
     }
     @media (min-width: $screen-sm-max) {
       margin: 0 auto;
-      padding: 40px 15% 40px 15%;
+      padding: 50px 15% 40px 15%;
     }
   }
 
@@ -224,7 +235,16 @@
         margin-left: 5px;
       }
       @media (min-width: $screen-sm-max) {
-        margin: 0 0 0 13px;
+      }
+    }
+    .slogan-korean-text-small { // Slogan
+      text-align: left;
+      @media (max-width: $screen-sm-max) {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+      @media (min-width: $screen-sm-max) {
+        margin-top: 30px;
       }
     }
   }
@@ -846,6 +866,41 @@
         }
       }
 
+    }
+  }
+  .team {
+    color: #616161;
+    .blocs-team-avatar {
+      width: 150px;
+      height: 150px;
+    }
+    .team-container {
+      .team-member-container {
+        padding-bottom: 20px;
+        @media (max-width: $screen-sm-max) {
+          padding-bottom: 40px;
+        }
+      }
+      .team-member {
+        @media (max-width: $screen-sm-max) {
+          padding-bottom: 40px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+      .social-account {
+        a {
+          color: #616161;
+        }
+        @media (max-width: $screen-sm-max) {
+          text-align: center;
+        }
+      }
+    }
+    .steemit {
+      width: 15px;
+      padding-bottom: 5px;
     }
   }
 }

@@ -1,39 +1,66 @@
 #page-main
-  .slogan
+  .slogan{style:"height: 100%;"}
     .main-container
-      %img{ src: "#{asset_url('parti_ci_black.png')}"}
       .slogan-korean-text
-        민주적인 삶과 문화를 만듭니다
-  .mission
+        = raw Maintext.where(lang:"kr").find_by(slug: "slogan_big").body
+      .slogan-korean-text-small.mg-sm
+        = raw Maintext.where(lang:"kr").find_by(slug: "slogan_small").body
+  / .mission
+  /   .main-container
+  /     .title.light
+  /       빠띠는 디지털 기술을 이용해 세상을 더 민주적으로 만듭니다.
+  /     .subtitle2.regular.mg-sm
+  /       디지털 기술이 새로운 시대를 열고 있습니다. 빠띠는 작은 커뮤니티에서 시민들의 정치참여까지 민주주의의 확산을 위해 노력하고 있습니다.
+  .contents
     .main-container
-      .title.light
-        빠띠는 디지털 기술을 이용해 세상을 더 민주적으로 만듭니다.
-      .subtitle2.regular.mg-sm
-        디지털 기술이 새로운 시대를 열고 있습니다. 빠띠는 작은 커뮤니티에서 시민들의 정치참여까지 민주주의의 확산을 위해 노력하고 있습니다.
-  .who-we-are
-    .photo.hidden-sm
-    .description
-      .title.light
-        민주주의 활동가 그룹, 빠띠
-      .subtitle2.regular
-        빠띠는 시민들이 누구나 접근할 수 있는 가이드, 커뮤니티 그리고 IT 플랫폼을 만들어 민주주의를 확산시킵니다.
+      .subtitle.medium
+        = raw Maintext.where(lang:"kr").find_by(slug: "toolkit_title").body
+      .maintext.mg-sm
+        = raw Maintext.where(lang:"kr").find_by(slug: "toolkit_body").body
+      .row.line.mg-sm
+        .col-sm-6
+          .toolkit
+            .book
+              = image_tag 'parti_ci_black.png'
+            .description
+              .toolkit-title.medium
+                = raw Maintext.where(lang:"kr").find_by(slug: "toolkit1_title").body
+              .toolkit-text.regular.mg-sm
+                = raw Maintext.where(lang:"kr").find_by(slug: "toolkit1_body").body
+              .download
+                %a{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
+                DOWNLOAD &nbsp;
+                %i.fa.fa-download{"aria-hidden":true}
+        .col-sm-6
+          .toolkit
+            .book{style:"background-color: #ffbc4e;"}
+              = image_tag 'parti_ci_black.png'
+            .description
+              .toolkit-title.medium
+                = raw Maintext.where(lang:"kr").find_by(slug: "toolkit2_title").body
+              .toolkit-text.regular.mg-sm
+                = raw Maintext.where(lang:"kr").find_by(slug: "toolkit2_body").body
+              .download
+                %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
+                DOWNLOAD &nbsp;
+                %i.fa.fa-download{"aria-hidden":true}
 
   .platforms
     .main-container
       .subtitle.medium
-        플랫폼
+        = raw Maintext.where(lang:"kr").find_by(slug: "platform_title").body
       .platforms-text.maintext.mg-sm
-        빠띠는 당신의 삶을 더 민주적으로 만들기 위해 필요한 플랫폼과 사용 가이드를 만듭니다.
+        = raw Maintext.where(lang:"kr").find_by(slug: "platform_body").body
       .owl-carousel.owl-theme.slide
         .card
           .platform-name.medium
-            빠띠.xyz
+            = raw Maintext.where(lang:"kr").find_by(slug: "platform1_title").body
           .image
             %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
             %img.visible-xs{ src: "#{asset_url('platforms/parti-mobile.png')}"}
           .description
             .maintext
-              팀과 커뮤니티를 위한 민주주의 플랫폼
+              = raw Maintext.where(lang:"kr").find_by(slug: "platform1_body").body
           .download
             %button.box
               %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
@@ -50,39 +77,39 @@
                 Web
         .card
           .platform-name.bold.bold.bold.bold
-            빠띠 가브크래프트
+            = raw Maintext.where(lang:"kr").find_by(slug: "platform2_title").body
           .image
             %img.hidden-xs{ src: "#{asset_url('platforms/govcraft.png')}"}
             %img.visible-xs{ src: "#{asset_url('platforms/govcraft-mobile.png')}"}
           .description
             .maintext
-              시민들의 일상 정치 플랫폼
+              = raw Maintext.where(lang:"kr").find_by(slug: "platform2_body").body
           .download.fill
             %button.btn.fill
               %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
                 Web
         .card
           .platform-name.bold.bold.bold
-            빠띠 타운홀
+            = raw Maintext.where(lang:"kr").find_by(slug: "platform3_title").body
           .image
             %img.hidden-xs{ src: "#{asset_url('platforms/townhall.png')}"}
             %img.visible-xs{ src: "#{asset_url('platforms/townhall-mobile.png')}"}
           .description
             .maintext
-              쉽고 재미있는 민주적 의사결정 플랫폼
+              = raw Maintext.where(lang:"kr").find_by(slug: "platform3_body").body
           .download.fill
             %button.btn.fill
               %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
                 Web
         .card
           .platform-name.bold.bold
-            민주주의 서울
+            = raw Maintext.where(lang:"kr").find_by(slug: "platform4_title").body
           .image
             %img.hidden-xs{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
             %img.visible-xs{ src: "#{asset_url('platforms/democracy-seoul-mobile.png')}"}
           .description
             .maintext
-              ‘서울의 공론장’ 시민의 제안에 50명이 모이면 부서가 답변, 500명이 모이면, 5000명이 모이면 시장이 답변합니다. 민주주의 서울 공론장을 다른 지자체에서 쓸수 있게 오픈소스 프로젝트를 진행하고 있습니다.
+              = raw Maintext.where(lang:"kr").find_by(slug: "platform4_body").body
           .download.fill
             %button.btn.fill
               %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
@@ -90,45 +117,12 @@
         .card.visible-sm-card
           .platform-name.bold
 
-  .contents
-    .main-container
-      .subtitle.medium
-        빠띠 민주주의 툴킷
-      .maintext.mg-sm
-        빠띠의 플랫폼을 손쉽게 활용할 수 있도록 가이드를 공유합니다. 저희의 가이드는 오픈소스로 누구나 해당 조직, 커뮤니티에 적용할 수 있습니다. 더불어 빠띠의 민주주의 활동 내역을 살필 수 있습니다.
-      .row.line.mg-sm
-        .col-sm-6
-          .toolkit
-            .book
-              = image_tag 'parti_ci_black.png'
-            .description
-              .toolkit-title.medium
-                빠띠 시민작당
-              .toolkit-text.regular.mg-sm
-                디지털플랫폼 기반의 시민주도이슈해결 프로젝트
-              .download
-                %a{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
-                DOWNLOAD &nbsp;
-                %i.fa.fa-download{"aria-hidden":true}
-        .col-sm-6
-          .toolkit
-            .book{style:"background-color: #ffbc4e;"}
-              = image_tag 'parti_ci_black.png'
-            .description
-              .toolkit-title.medium
-                빠띠 타운홀
-              .toolkit-text.regular.mg-sm
-                빠띠 타운홀로 더 민주적이고 참여적인 행사 만들기
-              .download
-                %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
-                DOWNLOAD &nbsp;
-                %i.fa.fa-download{"aria-hidden":true}
   .movement
     .main-container
       .subtitle.medium
-        Our actions and aims
+        = raw Maintext.where(lang:"kr").find_by(slug: "actions_title").body
       .maintext.mg-sm
-        온오프라인에서 여론을 모으고, 제도 개선을 촉구, 새롭고 재밌는 정치 참여를 만듭니다.
+        = raw Maintext.where(lang:"kr").find_by(slug: "actions_body").body
         %br.visible-xs
         %a.span.bold{href: campaigns_path}
           더 보기 >
@@ -159,12 +153,56 @@
               .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
             .caption.regular
               사진 / 한겨레
+  .who-we-are
+    .photo.hidden-sm
+    .description
+      .title.light
+        민주주의 활동가 그룹, 빠띠
+      .subtitle2.regular
+        빠띠는 시민들이 누구나 접근할 수 있는 가이드, 커뮤니티 그리고 IT 플랫폼을 만들어 민주주의를 확산시킵니다.
+  .team
+    .main-container.team-container
+      .col-sm-12
+        .title.mg-md.tc-outer-space
+          = raw Maintext.where(lang:"kr").find_by(slug: "member_title").body
+        .subtitle2
+          = raw Maintext.where(lang:"kr").find_by(slug: "member_body").body
+      - @team.shuffle.each_slice(2) do |members|
+        .row.team-member-container.mg-sm
+          - members.each do |member|
+            .team-member
+              .col-sm-2
+                = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
+              .col-sm-4
+                %h5.blocs-team-header
+                  #{member.name}
+                %p.blocs-team-details
+                  #{member.description}
+                .social-account
+                  - if member.twitter
+                    %a{:href => "#{member.twitter}", :target => "_blank"}
+                      %i.fa.fa-twitter.icon-sm
+                  - if member.facebook
+                    %a{:href => "#{member.facebook}", :target => "_blank"}
+                      %i.fa.fa-facebook.icon-sm
+                  - if member.instagram
+                    %a{:href => "#{member.instagram}", :target => "_blank"}
+                      %i.fa.fa-instagram.icon-sm
+                  - if member.github
+                    %a{:href => "#{member.github}", :target => "_blank"}
+                      %i.fa.fa-github.icon-sm
+                  - if member.blog
+                    %a{:href => "#{member.blog}", :target => "_blank"}
+                      %i.fa.fa-home.icon-sm
+                  - if member.steemit
+                    %a{:href => "#{member.steemit}", :target => "_blank"}
+                      = image_tag "steemit.png", class: 'steemit'
   .be-with-us
     .main-container
       .title.light
-        친구에게 알리기
+        = raw Maintext.where(lang:"kr").find_by(slug: "support_title").body
       .maintext.mg-sm
-        빠띠의 활동을 지지한다면 친구들에게 빠띠의 활동을 소개해주세요.
+        = raw Maintext.where(lang:"kr").find_by(slug: "support_body").body
       %button.clap{'data-toggle': "modal", 'data-target': "#clap-modal"}
         .clap-image
     #clap-modal.modal.fade{:role => "dialog", :tabindex => "-1"}
@@ -174,7 +212,7 @@
             %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
               %span{"aria-hidden" => "true"} &#215;
             .subtitle.medium.email-guide
-              나는 빠띠를 응원해요!
+              = raw Maintext.where(lang:"kr").find_by(slug: "support_modal").body
             .sns
               .box
                 =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: request.original_url, desc: '더 민주적인 세상, 빠띠 !')
@@ -189,9 +227,7 @@
       .subtitle.medium
         연락하기
       .maintext
-        빠띠의 활동이 궁금하시거나 함께하고 싶으시면
-        %br.hidden-sm
-        언제든지 연락 주세요!
+        contact@parti.xyz
     .sns
       %a.box{href: "https://www.facebook.com/PartiUnion/", target: "_blank"}
         %img{ src: "#{asset_url('contact/facebook.png')}"}
@@ -203,6 +239,8 @@
         %img{ src: "#{asset_url('contact/email.png')}"}
     .newsletter
       뉴스레터
+    .maintext
+      = raw Maintext.where(lang:"kr").find_by(slug: "newsletter_body").body
     %button.subscribe{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#subscribe-email-modal"}
       구독하기
     #subscribe-email-modal.modal.fade{:role => "dialog", :tabindex => "-1"}

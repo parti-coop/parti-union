@@ -1,0 +1,33 @@
+%section.admin-maintexts
+  .container
+    .page-header
+      %h2
+        메인 텍스트 관리
+        .pull-right
+          %small
+            = link_to '새로운 텍스트 만들기', new_admin_maintext_path
+    %table.table.table-condensed
+      %thead
+        %tr
+          %th 텍스트 순서
+          %th 항목
+          %th 텍스트
+          %th 언어
+          %th 관리
+      %tbody
+        - @maintexts.each do |maintext|
+          %tr
+            %td
+              = maintext.order
+            %td
+              = maintext.slug
+            %td
+              = maintext.body
+            %td
+              = maintext.lang
+            %td
+              = link_to '수정', edit_admin_maintext_path(maintext)
+              %br
+              = link_to '삭제', admin_maintext_path(maintext), method: :delete, 'data-confirm': '정말로 삭제하시겠습니까?'
+
+
