@@ -1,10 +1,116 @@
-#page-main
-  .slogan{style:"height: 100%;"}
-    .main-container
+:scss
+  #page-main {
+    .slogan {
+      .slogan-korean-text {
+        color: white;
+        text-align: center;
+        font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+        font-weight: 400;
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
+      }
+      .slogan-korean-text-small {
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+
+        font-size: 30px;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .who-we-are {
+      margin-bottom: 25px;
+      .description {
+        margin-top: 0;
+        .subtitle2.regular {
+          font-weight: normal;
+          font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+          font-size: 24px;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .platforms .slide {
+      margin-left: 0;
+      width: initial;
+      .card {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        .description {
+          position: absolute;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.4);
+          width: 100%;
+        }
+        .image {
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .maintext {
+          color: white;
+          font-size: 18px;
+        }
+        .download {
+          position: static;
+        }
+      }
+
+      .owl-nav {
+        @media (max-width: 768px) {
+          margin-top: 0;
+        }
+        .owl-prev {
+          left: -30px;
+        }
+        .owl-next {
+          right: -30px;
+        }
+        .owl-prev,
+        .owl-next {
+          width: 20px;
+          color: #777;
+          @media (max-width: 768px) {
+            position: static;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+#page-main{ style: 'margin-top: -36px;'}
+  .slogan{ style: 'padding: 0; display: table; width: 100%; position: relative; height: 100vh; ' }
+    .main-container{ style: 'display: table-cell; vertical-align: middle; height: 700px;' }
       .slogan-korean-text
-        = raw Maintext.where(lang:"kr").find_by(slug: "slogan_big").body
+        %span
+          디지털 시대를 살아가는 우리에게
+          %br
+          %span{ style: 'border-bottom: 2px solid white; display: inline-block; margin-bottom: 3px;'}<> 새로운 민주주의
+          가 필요합니다
       .slogan-korean-text-small.mg-sm
-        = raw Maintext.where(lang:"kr").find_by(slug: "slogan_small").body
+        더 민주적인 세상, 빠띠
+
+      %span{ style: 'position: absolute; bottom: 70px; left: 0; width: 100%; text-align: center; font-size: 30px; color: white;' }
+        %i.fa.fa-chevron-down
+
+  .who-we-are
+    .photo.hidden-sm
+    .description
+      .title.light
+        민주주의 활동가 그룹, 빠띠
+      .subtitle2.regular
+        우리는 시민들 누구나 접근할 수 있는 가이드, 커뮤니티 그리고 디지털 플랫폼을 만들어
+        %span.subtitle2.regular{ style: 'white-space: nowrap;' } 민주주의를 확산시킵니다.
+
   / .mission
   /   .main-container
   /     .title.light
@@ -55,67 +161,61 @@
         .card
           .platform-name.medium
             = raw Maintext.where(lang:"kr").find_by(slug: "platform1_title").body
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/parti-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/parti.png')});" }
+          .image.visible-xs-block{ style: "background-image: url(#{asset_url('platforms/parti-mobile.png')});" }
           .description
             .maintext
               = raw Maintext.where(lang:"kr").find_by(slug: "platform1_body").body
-          .download
-            %button.box
-              %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
-                %img{ src: "#{asset_url('icon/apple.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  App Store
-            %button.box
-              %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
-                %img{ src: "#{asset_url('icon/google-play.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  Google Play
-            %button.btn
-              %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
-                Web
+            .download
+              %button.box
+                %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/apple.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    App Store
+              %button.box
+                %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/google-play.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    Google Play
+              %button.btn
+                %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold.bold.bold
             = raw Maintext.where(lang:"kr").find_by(slug: "platform2_title").body
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/govcraft.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/govcraft-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/govcraft.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/govcraft-mobile.png')});" }
           .description
             .maintext
               = raw Maintext.where(lang:"kr").find_by(slug: "platform2_body").body
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
-                Web
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold.bold
             = raw Maintext.where(lang:"kr").find_by(slug: "platform3_title").body
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/townhall.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/townhall-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/townhall.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/townhall-mobile.png')});" }
           .description
             .maintext
               = raw Maintext.where(lang:"kr").find_by(slug: "platform3_body").body
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
-                Web
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold
             = raw Maintext.where(lang:"kr").find_by(slug: "platform4_title").body
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/democracy-seoul-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul-mobile.png')});" }
           .description
             .maintext
               = raw Maintext.where(lang:"kr").find_by(slug: "platform4_body").body
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
-                Web
-        .card.visible-sm-card
-          .platform-name.bold
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+                  Web
 
   .movement
     .main-container
@@ -153,50 +253,42 @@
               .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
             .caption.regular
               사진 / 한겨레
-  .who-we-are
-    .photo.hidden-sm
-    .description
-      .title.light
-        민주주의 활동가 그룹, 빠띠
-      .subtitle2.regular
-        빠띠는 시민들이 누구나 접근할 수 있는 가이드, 커뮤니티 그리고 IT 플랫폼을 만들어 민주주의를 확산시킵니다.
+
   .team
     .main-container.team-container
-      .col-sm-12
-        .title.mg-md.tc-outer-space
-          = raw Maintext.where(lang:"kr").find_by(slug: "member_title").body
-        .subtitle2
-          = raw Maintext.where(lang:"kr").find_by(slug: "member_body").body
+      .subtitle.medium
+        = raw Maintext.where(lang:"kr").find_by(slug: "member_title").body
+      .maintext.mg-sm
+        = raw Maintext.where(lang:"kr").find_by(slug: "member_body").body
       - @team.shuffle.each_slice(2) do |members|
         .row.team-member-container.mg-sm
           - members.each do |member|
-            .team-member
-              .col-sm-2
-                = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd'
-              .col-sm-4
-                %h5.blocs-team-header
-                  #{member.name}
-                %p.blocs-team-details
-                  #{member.description}
-                .social-account
-                  - if member.twitter
-                    %a{:href => "#{member.twitter}", :target => "_blank"}
-                      %i.fa.fa-twitter.icon-sm
-                  - if member.facebook
-                    %a{:href => "#{member.facebook}", :target => "_blank"}
-                      %i.fa.fa-facebook.icon-sm
-                  - if member.instagram
-                    %a{:href => "#{member.instagram}", :target => "_blank"}
-                      %i.fa.fa-instagram.icon-sm
-                  - if member.github
-                    %a{:href => "#{member.github}", :target => "_blank"}
-                      %i.fa.fa-github.icon-sm
-                  - if member.blog
-                    %a{:href => "#{member.blog}", :target => "_blank"}
-                      %i.fa.fa-home.icon-sm
-                  - if member.steemit
-                    %a{:href => "#{member.steemit}", :target => "_blank"}
-                      = image_tag "steemit.png", class: 'steemit'
+            .col-sm-2.team-member
+              = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd', style: 'width: 100%; height: 100%; margin-top: 15px;'
+            .col-sm-4.team-member
+              %h5.blocs-team-header
+                #{member.name}
+              %p.blocs-team-details
+                #{member.description}
+              .social-account
+                - if member.twitter
+                  %a{:href => "#{member.twitter}", :target => "_blank"}
+                    %i.fa.fa-twitter.icon-sm
+                - if member.facebook
+                  %a{:href => "#{member.facebook}", :target => "_blank"}
+                    %i.fa.fa-facebook.icon-sm
+                - if member.instagram
+                  %a{:href => "#{member.instagram}", :target => "_blank"}
+                    %i.fa.fa-instagram.icon-sm
+                - if member.github
+                  %a{:href => "#{member.github}", :target => "_blank"}
+                    %i.fa.fa-github.icon-sm
+                - if member.blog
+                  %a{:href => "#{member.blog}", :target => "_blank"}
+                    %i.fa.fa-home.icon-sm
+                - if member.steemit
+                  %a{:href => "#{member.steemit}", :target => "_blank"}
+                    = image_tag "steemit.png", class: 'steemit'
   .be-with-us
     .main-container
       .title.light

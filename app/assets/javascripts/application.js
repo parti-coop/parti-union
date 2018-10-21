@@ -24,10 +24,9 @@ $(function(){
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
       navigation: true,
-      center: true,
       loop: false,
       margin: 18,
-      autoWidth: true,
+      items: 1,
       nav: true,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
   });
