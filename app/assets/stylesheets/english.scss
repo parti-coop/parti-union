@@ -254,14 +254,14 @@
   .who-we-are {
     background-color: rgba(51, 51, 51, 1);
     @media (max-width: $screen-sm-max) {
-      height: 240px;
+      height: 250px;
       background-image: asset_url('parti-member-mobile.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
     @media (min-width: $screen-sm-max) {
-      height: 400px;
+      height: 350px;
     }
     .photo {
       @media (min-width: $screen-sm-max) {
@@ -647,8 +647,7 @@
       .modal-body {
         width: 100%;
         background-color: rgba(179, 132, 255, 1);
-        padding: 5px;
-        height: 275px;
+        padding: 20px 5px 40px 5px;
         .email-guide {
           color: rgba(255, 255, 255, 1);
           font-size: 40px;
@@ -898,9 +897,19 @@
       }
       .team-member {
         @media (max-width: $screen-sm-max) {
-          padding-bottom: 40px;
+          padding-bottom: 20px;
           &:last-child {
             padding-bottom: 0;
+          }
+        }
+        .img-circle {
+          @media (max-width: $screen-sm-max) {
+            width: 80%;
+            height: 80%;
+          }
+          @media (min-width: $screen-sm-max) {
+            width: 100%;
+            height: 100%;
           }
         }
       }
