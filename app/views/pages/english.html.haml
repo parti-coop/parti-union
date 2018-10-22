@@ -1,3 +1,55 @@
+:scss
+  #page-english {
+    .platforms .slide {
+      margin-left: 0;
+      width: initial;
+      .card {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        .description {
+          position: absolute;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.4);
+          width: 100%;
+        }
+        .image {
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .maintext {
+          color: white;
+          font-size: 18px;
+        }
+        .download {
+          position: static;
+        }
+      }
+
+      .owl-nav {
+        @media (max-width: 768px) {
+          margin-top: 0;
+        }
+        .owl-prev {
+          left: -30px;
+        }
+        .owl-next {
+          right: -30px;
+        }
+        .owl-prev,
+        .owl-next {
+          width: 20px;
+          color: #777;
+          @media (max-width: 768px) {
+            position: static;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
 #page-english
   .slogan
     .main-container
@@ -17,6 +69,7 @@
         We are a group of democracy activists
       .subtitle2.regular
         who create IT platforms, contents, and communities to spread democracy in the world.
+
   .platforms
     .main-container
       .subtitle.medium
@@ -27,70 +80,63 @@
         .card
           .platform-name.medium
             Parti.xyz
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/parti.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/parti-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/parti.png')});" }
+          .image.visible-xs-block{ style: "background-image: url(#{asset_url('platforms/parti-mobile.png')});" }
           .description
             .maintext
               A useful platform designed to make companies and other organisations or communities more democratic.
-          .download
-            %button.box
-              %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
-                %img{ src: "#{asset_url('icon/apple.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  App Store
-            %button.box
-              %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
-                %img{ src: "#{asset_url('icon/google-play.png')}"}
-                .market-text.hidden-sm.hidden-xs
-                  Google Play
-            %button.btn
-              %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
-                Web
+            .download
+              %button.box
+                %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/apple.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    App Store
+              %button.box
+                %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/google-play.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    Google Play
+              %button.btn
+                %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold.bold.bold
             Parti Govcraft
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/govcraft.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/govcraft-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/govcraft.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/govcraft-mobile.png')});" }
           .description
             .maintext
               A platform to help citizens get involved with political campaigns which affect their lives.
               %br.visible-sm
               This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
-                Web
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold.bold
             Parti Townhall
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/townhall.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/townhall-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/townhall.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/townhall-mobile.png')});" }
           .description
             .maintext
               A fun and easy real-time decision-making platform, which is especially useful during live seminars, lectures and presentations, that can make such events more interactive and allow the audience to participate more actively.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
-                Web
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
+                  Web
         .card
           .platform-name.bold.bold
             Democracy Seoul
-          .image
-            %img.hidden-xs{ src: "#{asset_url('platforms/democracy-seoul.png')}"}
-            %img.visible-xs{ src: "#{asset_url('platforms/democracy-seoul-mobile.png')}"}
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul-mobile.png')});" }
           .description
             .maintext
               The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
-          .download.fill
-            %button.btn.fill
-              %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
-                Web
-        .card.visible-sm-card
-          .platform-name.bold
-
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+                  Web
   .contents
     .main-container
       .subtitle.medium
