@@ -43,6 +43,31 @@ $(document).ready(function(){
     e.clearSelection();
   });
 
+  $(document).on('click', '.js-parti-link', function(e) {
+    var href = $(e.target).closest('a').attr('href')
+    if (href && href != "#") {
+      return true;
+    }
 
+    var $no_parti_link = $(e.target).closest('[data-no-parti-link="no"]')
+    if ($no_parti_link.length) {
+      return true;
+    }
+
+    e.preventDefault();
+    var url = $(e.currentTarget).data("url");
+    if(!url) {
+      var $url_source = $($(e.currentTarget).data("url-source"));
+      if($url_source.length > 0) {
+        url = $url_source.data("url");
+      }
+    }
+
+    if(!url) {
+      return;
+    }
+
+    window.open(url, '_blank');
+  });
 });
 

@@ -23,6 +23,10 @@
         }
       }
     }
+    .toolkit .book {
+      background-size: cover;
+      background-position: center;
+    }
     .who-we-are {
       margin-bottom: 25px;
       .description {
@@ -125,31 +129,27 @@
         = raw Maintext.where(lang:"kr").find_by(slug: "toolkit_body").body
       .row.line.mg-sm
         .col-sm-6
-          .toolkit
-            .book
-              = image_tag 'parti_ci_black.png'
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LP-lfy3r2i0OL0AyoN4/' }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumnail_toolkit1.png')});" }
             .description
               .toolkit-title.medium
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit1_title").body
               .toolkit-text.regular.mg-sm
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit1_body").body
               .download
-                %a{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
-                DOWNLOAD &nbsp;
-                %i.fa.fa-download{"aria-hidden":true}
+                보기 &nbsp;
+                %i.fa.fa-external-link{"aria-hidden":true}
         .col-sm-6
-          .toolkit
-            .book{style:"background-color: #ffbc4e;"}
-              = image_tag 'parti_ci_black.png'
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LOGDznnYIQmwsDZf4wU/' }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumnail_toolkit2.png')});" }
             .description
               .toolkit-title.medium
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit2_title").body
               .toolkit-text.regular.mg-sm
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit2_body").body
               .download
-                %a{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
-                DOWNLOAD &nbsp;
-                %i.fa.fa-download{"aria-hidden":true}
+                보기 &nbsp;
+                %i.fa.fa-external-link{"aria-hidden":true}
 
   .platforms
     .main-container
