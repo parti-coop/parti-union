@@ -112,16 +112,8 @@
       .title.light
         민주주의 활동가 그룹, 빠띠
       .subtitle2.regular
-        우리는 더 나은 민주주의를 위한
-        %span.subtitle2.regular{ style: 'white-space: nowrap;' } 툴킷과 플랫폼, 커뮤니티를
-        만듭니다.
+        "우리는 더 나은 민주주의를 위한 툴킷과 플랫폼, 커뮤니티를 만듭니다."
 
-  / .mission
-  /   .main-container
-  /     .title.light
-  /       빠띠는 디지털 기술을 이용해 세상을 더 민주적으로 만듭니다.
-  /     .subtitle2.regular.mg-sm
-  /       디지털 기술이 새로운 시대를 열고 있습니다. 빠띠는 작은 커뮤니티에서 시민들의 정치참여까지 민주주의의 확산을 위해 노력하고 있습니다.
   .contents
     .main-container
       .subtitle.medium
@@ -131,7 +123,7 @@
       .row.line.mg-sm
         .col-sm-6
           .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LP-lfy3r2i0OL0AyoN4/' }
-            .book{ style: "background-image: url(#{asset_url('toolkits/thumnail_toolkit1.png')});" }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit1.png')});" }
             .description
               .toolkit-title.medium
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit1_title").body
@@ -142,7 +134,7 @@
                 %i.fa.fa-external-link{"aria-hidden":true}
         .col-sm-6
           .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LOGDznnYIQmwsDZf4wU/' }
-            .book{ style: "background-image: url(#{asset_url('toolkits/thumnail_toolkit2.png')});" }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit2.png')});" }
             .description
               .toolkit-title.medium
                 = raw Maintext.where(lang:"kr").find_by(slug: "toolkit2_title").body
@@ -265,7 +257,7 @@
         .row.team-member-container.mg-sm
           - members.each do |member|
             .col-sm-2.team-member
-              = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd', style: 'width: 100%; height: 100%; margin-top: 15px;'
+              = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd', style: 'width: 80%; height: 80%; margin-top: 15px;'
             .col-sm-4.team-member
               %h5.blocs-team-header
                 #{member.name}
@@ -328,8 +320,8 @@
         %img{ src: "#{asset_url('contact/twitter.png')}"}
       %a.box{href: "https://github.com/parti-xyz", target: "_blank"}
         %img{ src: "#{asset_url('contact/github.png')}"}
-      %a.box{href: "mailto:help@parti.xyz"}
-        %img{ src: "#{asset_url('contact/email.png')}"}
+      %a.box{href: "https://medium.com/parti-xyz-developers/"}
+        %img{ src: "#{asset_url('contact/medium.png')}", target: "_blank"}
     .newsletter
       뉴스레터
     .maintext

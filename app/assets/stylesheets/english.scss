@@ -114,7 +114,7 @@
     color: rgba(97, 97, 97, 1);
     letter-spacing: -0.04em;
     @media (max-width: $screen-sm-max) {
-      font-size: 22px;
+      font-size: 20px;
     }
     @media (min-width: $screen-sm-max) {
       font-size: 26px;
@@ -498,7 +498,12 @@
     }
     .toolkit {
       margin-top: 35px;
-      height: 240px;
+      @media (max-width: $screen-sm-max) {
+        height: 195px;
+      }
+      @media (min-width: $screen-sm-max) {
+        height: 240px;
+      }
       border-radius: 8px;
       box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.23), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
       background-color: #ffffff;
@@ -511,7 +516,12 @@
       .book {
         position: absolute;
         width: 33%;
-        height: 216px;
+        @media (max-width: $screen-sm-max) {
+          height: 180px;
+        }
+        @media (min-width: $screen-sm-max) {
+          height: 216px;
+        }
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
         background-color: #97a4d5;
         margin: -13% 0 0 5%;
