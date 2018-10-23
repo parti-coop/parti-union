@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
     title = view_context.strip_tags(options[:title]) || "Democracy More, Parti"
     image = options[:image] || view_context.image_url('seo.png')
     url = options[:url] || root_url
-    description = view_context.strip_tags(options[:description]) || "민주적인 삶과 문화를 만듭니다."
+    description = view_context.strip_tags(options[:description]) || " 더 민주적인 세상, 빠띠"
     {
       title:       title,
       reverse:     true,
