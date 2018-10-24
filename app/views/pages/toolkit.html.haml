@@ -1,0 +1,57 @@
+- content_for :header do
+  / empty header
+- content_for :footer do
+  / empty footer
+
+:scss
+  body.app-pages-toolkit {
+    background: #595D65;
+    background-size: cover;
+    margin: 0;
+
+    .page-container {
+      padding-top: 0;
+    }
+
+    section.main {
+      .deck-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        .deck-name {
+          color: white;
+        }
+
+        .deck-ci img {
+          height: 1em;
+          margin-left: 1em;
+        }
+      }
+      .container {
+        margin: 0 auto;
+        padding: 0 15% 40px 15%;
+
+        @media (max-width: 991px) {
+          padding: 0 50px 40px 50px;
+        }
+        @media (max-width: 800px) {
+          padding: 0 15px 40px 15px;
+        }
+      }
+    }
+  }
+
+%section.main
+  .container
+    .deck-info
+      .deck-name= @toolkit[:title]
+      .deck-ci
+        %a{ href: root_path }
+          = image_tag 'parti_ci_white.png'
+
+    %div( style="position:relative; width:100%; height:0; padding-bottom:calc(56.25% + 40px); z-index:2;" )
+      %iframe(allowfullscreen="" style="position:absolute; width: 100%; height: 100%;border: none;" src="#{@toolkit[:url]}Visual-Report-for-Website?autoPlay")

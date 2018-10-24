@@ -1,14 +1,28 @@
 :scss
   #page-main {
+    .title,
+    .subtitle {
+      @media (max-width: 991px) {
+        font-size: 24px;
+      }
+    }
     .slogan {
-      .slogan-korean-text {
+      .main-container {
+        display: table-cell;
+        vertical-align: middle;
+        @media (min-width: 992px) {
+          height: 700px;
+        }
+      }
+      .slogan-korean-text,
+      .slogan-korean-text span {
         color: white;
         text-align: center;
-        font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
-        font-weight: 400;
-
-        @media (max-width: 768px) {
-          font-size: 30px;
+        font-family: "NotoSans-Regular","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        @media (max-width: 991px) {
+          font-size: 24px;
         }
       }
       .slogan-korean-text-small {
@@ -16,10 +30,9 @@
         color: white;
         text-align: center;
         font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
-
-        font-size: 30px;
-        @media (max-width: 768px) {
-          font-size: 24px;
+        font-size: 24px;
+        @media (max-width: 991px) {
+          font-size: 18px;
         }
       }
     }
@@ -35,7 +48,7 @@
           font-weight: normal;
           font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
           font-size: 24px;
-          @media (max-width: 768px) {
+          @media (max-width: 991px) {
             font-size: 18px;
           }
         }
@@ -70,7 +83,7 @@
       }
 
       .owl-nav {
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
           margin-top: 0;
         }
         .owl-prev {
@@ -83,7 +96,7 @@
         .owl-next {
           width: 20px;
           color: #777;
-          @media (max-width: 768px) {
+          @media (max-width: 991px) {
             position: static;
             font-size: 24px;
           }
@@ -93,7 +106,7 @@
   }
 #page-main{ style: 'margin-top: -36px;'}
   .slogan{ style: 'padding: 0; display: table; width: 100%; position: relative; height: 100vh; ' }
-    .main-container{ style: 'display: table-cell; vertical-align: middle; height: 700px;' }
+    .main-container
       .slogan-korean-text
         %span
           디지털 시대를 살아가는 우리에게
@@ -109,7 +122,7 @@
   .who-we-are
     .photo.hidden-sm
     .description
-      .title.light
+      .title.medium
         민주주의 활동가 그룹, 빠띠
       .subtitle2.regular
         "우리는 더 나은 민주주의를 위한 툴킷과 플랫폼, 커뮤니티를 만듭니다."
@@ -122,7 +135,7 @@
         새로운 민주주의를 만드는 모두를 위한 안내서
       .row.line.mg-sm
         .col-sm-6
-          .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LP-lfy3r2i0OL0AyoN4/' }
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': toolkit_path(key: 1) }
             .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit1.png')});" }
             .description
               .toolkit-title.medium
@@ -133,7 +146,7 @@
                 보기 &nbsp;
                 %i.fa.fa-external-link{"aria-hidden":true}
         .col-sm-6
-          .toolkit.cursor-pointer.js-parti-link{ 'data-url': 'https://www.beautiful.ai/deck/-LOGDznnYIQmwsDZf4wU/' }
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': toolkit_path(key: 2) }
             .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit2.png')});" }
             .description
               .toolkit-title.medium
@@ -143,7 +156,20 @@
               .download
                 보기 &nbsp;
                 %i.fa.fa-external-link{"aria-hidden":true}
-
+          / { 'data-url': 'https://www.beautiful.ai/deck/-LOGDznnYIQmwsDZf4wU/' }
+          #modal-toolkit2.modal.fade{role: "dialog", tabindex: "-1"}
+            .modal-dialog
+              .modal-content
+                .modal-body{ style: 'padding: 0;' }
+                  %div( style="position:relative;width:100%;height:0;padding-bottom:calc(56.25% + 40px);z-index:2;" )
+                    %iframe(allowfullscreen="" style="position:absolute; width: 100%; height: 100%;border: none;" src="https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/Visual-Report-for-Website?autoPlay&amp;pullScreen")
+                    %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button", style: "position: absolute; color: #777; opacity: 0.9; right: -0.5em; top: -0.5em; background-color: white; border-radius: 50%; font-size: 12px; padding: 2px;" }
+                      %span{"aria-hidden" => "true"}
+                        &#215;
+                    %div.visible-xs-block(allowfullscreen="" style="position: absolute; width: 100%; text-align: center; bottom: 8px; color: white;")
+                      %i.fa.fa-hand-o-up
+                      로딩이 끝나면 화면을 터치하세요
+                      %a(href="https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU" target="_blank") 전체화면
   .platforms
     .main-container
       .subtitle.medium

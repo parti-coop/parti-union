@@ -7,6 +7,30 @@ class PagesController < ApplicationController
     @team = Team.all
     @campaigns = Campaign.all
   end
+
+  def toolkit
+    toolkit_map = {
+      "1" => {
+        title: "시민입법 프로젝트 툴킷",
+        url: "https://www.beautiful.ai/player/-LP-lfy3r2i0OL0AyoN4/"
+      },
+      "2" => {
+        title: "참여형 시민토론 툴킷",
+        url: "https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/"
+      }
+    }
+    url_map = {
+      "1" => "https://www.beautiful.ai/player/-LP-lfy3r2i0OL0AyoN4/",
+      "2" => "https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/"
+    }
+    @toolkit = toolkit_map[params[:key]]
+
+    if browser.device.mobile? or browser.device.tablet?
+      flash[:notice] = '다음 페이지로 넘기시려면 본문 내용을 터치해 주세요.'
+      prepare_unobtrusive_flash
+    end
+  end
+
   def subscribe
     @slides = Slide.priority.recent
     @products = Product.all
@@ -15,6 +39,7 @@ class PagesController < ApplicationController
     @campaigns = Campaign.all
     render "home"
   end
+
   def campaign_detail
     if params[:slug] == 'index'
       render_404 and return

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get 'subscribe', to: 'pages#subscribe', as: :subscribe
+  get 'toolkit', to: 'pages#toolkit'
+
   get 'campaigns/:slug', to: 'pages#campaign_detail', as: :campaign_detail
   get 'platforms/:slug', to: 'platforms#platform', as: :platform_detail
   get 'products/:slug', to: "products#product_detail", as: :product_detail

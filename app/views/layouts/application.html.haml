@@ -22,13 +22,21 @@
     %section(style='position: fixed; z-index: 1000; width: 100%; top: 64px;')
       .container
         .unobtrusive-flash-container
-    - if current_page?(english_path)
-      = render 'application/english_header'
+    - if content_for?(:header)
+      = yield :header
     - else
-      = render 'application/header'
+      - if current_page?(english_path)
+        = render 'application/english_header'
+      - else
+        = render 'application/header'
     .page-container
       = yield
-    = render 'application/footer'
+
+    - if content_for?(:footer)
+      = yield :footer
+    - else
+      = render 'application/footer'
+
     = javascript_include_tag 'application'
     = yield :script if content_for?(:script)
 
