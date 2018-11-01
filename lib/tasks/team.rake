@@ -40,6 +40,10 @@ namespace :team do
         profile: 'team-picture-jerry.jpg',
         facebook: 'https://www.facebook.com/jjerry88',)
 
+      team_seed(name: '장하은',
+        description: '사람은 같이 살 수 밖에 없는 존재라고 생각합니다. 그 한계가 우리를 더 풍요롭게 한다고 생각하구요. 같이 더 평화롭게 살기 위해 활동합니다. 사람의 따스함을 회복하는 것, 배려와 배려를 위해 필요한 것들에 대해 궁금해합니다.',
+        profile: 'team-picture-ire.jpg',)
+
     end
   end
 
