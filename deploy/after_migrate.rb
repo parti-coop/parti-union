@@ -3,5 +3,5 @@ on_app_servers do
   run "cd #{config.release_path}"
   if config[:team] == 'true'
     run "bundle exec rake team:seed"
-
+  end
 end
