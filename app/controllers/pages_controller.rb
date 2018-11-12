@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     @campaigns = Campaign.all
   end
 
-  def toolkit
+  def toolkits
     toolkit_map = {
       "1" => {
         title: "시민입법 프로젝트 툴킷",
@@ -17,11 +17,15 @@ class PagesController < ApplicationController
       "2" => {
         title: "참여형 시민토론 툴킷",
         url: "https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/"
+      },
+      "3" => {
+        title: "시민 아이데이션 툴킷",
+        url: "https://www.beautiful.ai/player/-LPdqpxgYf7cbdCpW2tN/"
+      },
+      "4" => {
+        title: "시민주도 서명운동 툴킷",
+        url: "https://www.beautiful.ai/player/-LR4_tJsM1cKTSrhewyL/"
       }
-    }
-    url_map = {
-      "1" => "https://www.beautiful.ai/player/-LP-lfy3r2i0OL0AyoN4/",
-      "2" => "https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/"
     }
     @toolkit = toolkit_map[params[:key]]
 
