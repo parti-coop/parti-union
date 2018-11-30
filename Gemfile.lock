@@ -246,7 +246,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.1)
     multi_json (1.12.1)
-    mysql2 (0.4.5)
+    mysql2 (0.4.10)
     nio4r (1.2.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -355,7 +355,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   meta-tags (~> 2.1.0)
   mini_magick
-  mysql2 (>= 0.3.13, < 0.5)
+  mysql2 (>= 0.4.10, < 0.5)
   nokogiri
   owlcarousel-rails
   puma
@@ -372,4 +372,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.16.1
+   1.16.4

@@ -4,7 +4,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'unicorn'
 
 # database
-gem 'mysql2', '>= 0.3.13', '< 0.5'
+gem 'mysql2', '>= 0.4.10', '< 0.5'
 
 # ui
 gem 'sass-rails', '~> 5.0'
