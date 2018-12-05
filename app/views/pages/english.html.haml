@@ -206,7 +206,7 @@
               .box
                 =social_share_button_tag("I support @PartiUnion", :allow_sites => %w(facebook), url: request.original_url, desc: 'Democracy More, Parti !')
               .box
-                =social_share_button_tag("I support @parti_xyz", :allow_sites => %w(twitter), url: request.original_url)
+                =social_share_button_tag("I support @parti_coop", :allow_sites => %w(twitter), url: request.original_url)
               .box
                 .btn.js-clipboard{ ' data-clipboard-text': request.original_url, 'data-toggle': 'tooltip', 'data-title': 'Copied!' }
                   %img{ src: "#{asset_url('contact/link.png')}"}
@@ -220,7 +220,7 @@
     .sns
       %a.box{href: "https://www.facebook.com/PartiUnion/", target: "_blank"}
         %img{ src: "#{asset_url('contact/facebook.png')}"}
-      %a.box{href: "https://twitter.com/parti_xyz", target: "_blank"}
+      %a.box{href: "https://twitter.com/parti_coop", target: "_blank"}
         %img{ src: "#{asset_url('contact/twitter.png')}"}
       %a.box{href: "https://github.com/parti-xyz", target: "_blank"}
         %img{ src: "#{asset_url('contact/github.png')}"}
