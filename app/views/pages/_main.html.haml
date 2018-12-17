@@ -109,12 +109,11 @@
     .main-container
       .slogan-korean-text
         %span
-          디지털 시대를 살아가는 우리에게
+          더 민주적인 세상, 빠띠
           %br
-          %span{ style: 'border-bottom: 2px solid white; display: inline-block; margin-bottom: 3px;'}<> 새로운 민주주의
-          가 필요합니다
+          %span{ style: 'border-bottom: 2px solid white; display: inline-block; margin-bottom: 3px;'}<> Democracy More
       .slogan-korean-text-small.mg-sm
-        더 민주적인 세상, 빠띠
+        일상의 민주주의를, 세상의 민주주의를 확대합니다
 
       %span{ style: 'position: absolute; bottom: 70px; left: 0; width: 100%; text-align: center; font-size: 30px; color: white;' }
         %i.fa.fa-chevron-down
@@ -123,9 +122,48 @@
     .photo.hidden-sm
     .description
       .title.medium
-        민주주의 활동가 그룹, 빠띠
+        민주주의 활동가 협동조합, 빠띠 쿱
       .subtitle2.regular
-        "우리는 더 나은 민주주의를 위한 툴킷과 플랫폼, 커뮤니티를 만듭니다."
+        "디지털 기술은 우리에게 민주주의를 혁신할 기회를 안겨 주었습니다.
+        %br
+        빠띠 쿱은 민주주의를 확대하는데 필요한 툴킷, 플랫폼, 커뮤니티를 만들고 보급하는 민주주의 활동가들의 협동조합입니다."
+
+  .movement
+    .main-container
+      .subtitle.medium
+        빠띠의 활동
+      .maintext.mg-sm
+        시민들과 함께 다양한 분야에서 변화를 만듭니다.
+        %br.visible-xs
+        %a.span.bold{href: campaigns_path}
+          더 보기 >
+      .photo
+        .row
+          .col-sm-4
+            %a{ href: root_url + "campaigns/toktok"}
+              .card{style: "background-image: url(#{asset_url('actions/1.png')})" }
+            .caption.regular
+              사진 / 한겨레
+          .col-sm-4
+            %a{ href: root_url + "campaigns/votefuture1"}
+              .card{style: "background-image: url(#{asset_url('actions/2.png')})" }
+          .col-sm-4
+            %a{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank"}
+              .card{style: "background-image: url(#{asset_url('actions/3.png')})" }
+        .row.hidden-xs
+          .col-sm-4
+            %a{ href: root_url + "campaigns/iknow"}
+              .card{ style: "background-image: url(#{asset_url('actions/4.png')})" }
+            .caption.regular
+              사진 / 한겨레
+          .col-sm-4
+            %a{ href: root_url + "campaigns/toktok"}
+              .card{ style: "background-image: url(#{asset_url('actions/5.png')})" }
+          .col-sm-4
+            %a{ href: root_url + "campaigns/issuebattle"}
+              .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
+            .caption.regular
+              사진 / 한겨레
 
   .contents
     .main-container
@@ -173,7 +211,7 @@
   .platforms
     .main-container
       .subtitle.medium
-        플랫폼
+        빠띠 서비스
       .platforms-text.maintext.mg-sm
         시민들이 주체가 되어 목소리를 내고 행동하는 플랫폼을 공공재로 만들고 운영합니다.
       .owl-carousel.owl-theme.slide
@@ -241,43 +279,6 @@
               %button.btn.fill
                 %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
                   Web
-
-  .movement
-    .main-container
-      .subtitle.medium
-        빠띠가 만드는 변화
-      .maintext.mg-sm
-        온오프라인을 넘나들며 시민들과 새롭고 재밌게 변화를 만듭니다.
-        %br.visible-xs
-        %a.span.bold{href: campaigns_path}
-          더 보기 >
-      .photo
-        .row
-          .col-sm-4
-            %a{ href: root_url + "campaigns/toktok"}
-              .card{style: "background-image: url(#{asset_url('actions/1.png')})" }
-            .caption.regular
-              사진 / 한겨레
-          .col-sm-4
-            %a{ href: root_url + "campaigns/votefuture1"}
-              .card{style: "background-image: url(#{asset_url('actions/2.png')})" }
-          .col-sm-4
-            %a{ href: "http://wouldyouparty.govcraft.org/petitions/54", target: "_blank"}
-              .card{style: "background-image: url(#{asset_url('actions/3.png')})" }
-        .row.hidden-xs
-          .col-sm-4
-            %a{ href: root_url + "campaigns/iknow"}
-              .card{ style: "background-image: url(#{asset_url('actions/4.png')})" }
-            .caption.regular
-              사진 / 한겨레
-          .col-sm-4
-            %a{ href: root_url + "campaigns/toktok"}
-              .card{ style: "background-image: url(#{asset_url('actions/5.png')})" }
-          .col-sm-4
-            %a{ href: root_url + "campaigns/issuebattle"}
-              .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
-            .caption.regular
-              사진 / 한겨레
 
   .team
     .main-container.team-container
