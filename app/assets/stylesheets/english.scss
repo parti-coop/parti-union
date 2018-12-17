@@ -289,10 +289,10 @@
         padding: 30px 16px 0 16px;
       }
       @media (max-width: $screen-md-max) and (min-width: $screen-sm-max) {
-        padding: 90px 60px 0 0;
+        padding: 30px 60px 0 0;
       }
       @media (min-width: $screen-md-max) {
-        padding: 125px 60px 0 0;
+        padding: 90px 60px 0 0;
       }
       .title {
         color: rgba(255, 255, 255, 1) !important;
