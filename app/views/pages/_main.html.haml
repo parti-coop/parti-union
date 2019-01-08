@@ -361,3 +361,17 @@
                 %label{:for => "email"} Email
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
                 %button.btn.btn-english{:type => "submit"} 구독하기
+
+    .newsletter
+      공지사항
+    %button.subscribe{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#notice-modal", style: 'height: auto'}
+      조직변경 채권자
+      %br
+      이의 제출 공고
+    #notice-modal.modal.fade{class: @subscribe, :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} &#215;
+            = image_tag('notice.png', style: 'width: 100%')
