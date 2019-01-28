@@ -8,10 +8,21 @@
 //= require owl.carousel
 //= require social-share-button
 //= require clipboard
+//= require scrollreveal
 
 
 // unobtrusive_flash
 UnobtrusiveFlash.flashOptions['timeout'] = 3000;
+
+$(function() {
+  ScrollReveal({ duration: 900 });
+  ScrollReveal().reveal('.mission', { delay: 120 });
+  ScrollReveal().reveal('.who-we-are', { delay: 120 });
+  ScrollReveal().reveal('.movement', { delay: 120 });
+  ScrollReveal().reveal('.contents', { delay: 120 });
+  ScrollReveal().reveal('.platforms', { delay: 120 });
+  ScrollReveal().reveal('.contact', { delay: 120 });
+});
 
 $(function(){
   $('.masonry-container').masonry();
