@@ -49,6 +49,10 @@
         }
       }
     }
+    .toolkit .book {
+      background-size: cover;
+      background-position: center;
+    }
   }
 #page-english
   .slogan
@@ -59,103 +63,24 @@
   .mission
     .main-container
       .title.light
-        We create a more democratic world with the digital technology.
+        We innovate democracy.
+        %br
+        We make your daily life and the world more democratic.
       .subtitle2.regular.mg-sm
-        Digital technology and a new generation are opening a new era. We promote better democracy from small communities to citizen participation in politics. 
+        Parti Coop is a social cooperative established by a group of democracy activists. We are based in South Korea also our work reaches out overseas. As a society, we now have the tools to innovate democracy through digital technology. We provide toolkits, platforms and communities to help to spread democracy throughout every aspect of our society.
   .who-we-are
     .photo.hidden-sm
     .description
       .title.light
         We are a group of democracy activists
       .subtitle2.regular
-        who create IT platforms, contents, and communities to spread democracy in the world.
-
-  .platforms
-    .main-container
-      .subtitle.medium
-        Platforms
-      .platforms-text.maintext.mg-sm
-        We create platforms, campaigns, and user guides in order to make your life more democratic.
-      .owl-carousel.owl-theme.slide
-        .card
-          .platform-name.medium
-            Parti.xyz
-          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/parti.png')});" }
-          .image.visible-xs-block{ style: "background-image: url(#{asset_url('platforms/parti-mobile.png')});" }
-          .description
-            .maintext
-              A useful platform designed to make companies and other organisations or communities more democratic.
-            .download
-              %button.box
-                %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
-                  %img{ src: "#{asset_url('icon/apple.png')}"}
-                  .market-text.hidden-sm.hidden-xs
-                    App Store
-              %button.box
-                %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
-                  %img{ src: "#{asset_url('icon/google-play.png')}"}
-                  .market-text.hidden-sm.hidden-xs
-                    Google Play
-              %button.btn
-                %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
-                  Web
-        .card
-          .platform-name.bold.bold.bold.bold
-            Parti Govcraft
-          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/govcraft.png')});" }
-          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/govcraft-mobile.png')});" }
-          .description
-            .maintext
-              A platform to help citizens get involved with political campaigns which affect their lives.
-              %br.visible-sm
-              This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards.
-            .download.fill
-              %button.btn.fill
-                %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
-                  Web
-        .card
-          .platform-name.bold.bold.bold
-            Parti Townhall
-          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/townhall.png')});" }
-          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/townhall-mobile.png')});" }
-          .description
-            .maintext
-              A fun and easy real-time decision-making platform, which is especially useful during live seminars, lectures and presentations, that can make such events more interactive and allow the audience to participate more actively.
-            .download.fill
-              %button.btn.fill
-                %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
-                  Web
-        .card
-          .platform-name.bold.bold
-            Democracy Seoul
-          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul.png')});" }
-          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul-mobile.png')});" }
-          .description
-            .maintext
-              The public sphere of Seoul. This platform provides the opportunity for regular citizens to propose ideas they have to improve society. If enough people agree with the idea, those in power will be notified and action may be taken.
-            .download.fill
-              %button.btn.fill
-                %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
-                  Web
-  .contents
-    .main-container
-      .subtitle.medium
-        Parti Democracy Toolkits
-      .maintext.mg-sm
-        We make democracy toolkits fit for today and tomorrow; they are free to use, spread and transform for you. They are especially adaptable to civic engagements, campaigns and platforms. Also, we help teams, communities which have their agenda to be democratic. We can innovate democracy using digital technology. 
-      .row.line
-        .col-sm-6
-          %a.box{href:"https://parti.xyz/p/demos-guide/wikis", target: "_blank" }
-            Guides for your Democratic Life
-        .col-sm-6
-          %a.box{href:"https://medium.com/parti-xyz-developers", target: "_blank" }
-            Blog
+        We are Parti. Our team is comprised of skilled and experienced democracy activists who bring their expertise from their respective fields.
   .movement
     .main-container
       .subtitle.medium
         Our actions and aims
       .maintext.mg-sm
-        Collect public opinion on/offline, call for institutional improvement, and increase political participation amongst citizens.
+        We aim to make a positive change in people’s lives. We promote and help to set up democratic communication within workplaces, teams and other organisations. We create platforms which help citizens to get involved with issues that they care about. We always want the technology that we use, to be honest and transparent, so all the platforms we create are open-source.
         %br.visible-xs
         %a.span.bold{href: campaigns_path}
           Read more >
@@ -186,6 +111,107 @@
               .card{style: "background-image: url(#{asset_url('actions/6.png')})" }
             .caption.regular
               사진 / 한겨레
+  .contents
+    .main-container
+      .subtitle.medium
+        Parti Democracy Toolkits
+      .maintext.mg-sm
+        Parti creates toolkits which help to empower citizens. The toolkits give you practical step-by-step guidance on how to get involved and make changes in your world. They are free to use, and you can share them with whomever you choose. Feel free to adapt them in any way you see fit. (provided in Korean, will be released in English soon)
+      .row.line.mg-sm
+        .col-sm-6
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': toolkits_path(key: 1) }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit1.png')});" }
+            .description
+              .toolkit-title.medium
+                Toolkit for Lawmaking
+              .toolkit-text.regular.mg-sm
+              .download
+                Link &nbsp;
+                %i.fa.fa-external-link{"aria-hidden":true}
+        .col-sm-6
+          .toolkit.cursor-pointer.js-parti-link{ 'data-url': toolkits_path(key: 2) }
+            .book{ style: "background-image: url(#{asset_url('toolkits/thumbnail_toolkit2.png')});" }
+            .description
+              .toolkit-title.medium
+                Toolkit for Participatory Discussion
+              .toolkit-text.regular.mg-sm
+              .download
+                Link &nbsp;
+                %i.fa.fa-external-link{"aria-hidden":true}
+  .platforms
+    .main-container
+      .subtitle.medium
+        Platforms
+      .platforms-text.maintext.mg-sm
+        Parti Democracy Platforms to make your life more democratic.
+      .owl-carousel.owl-theme.slide
+        .card
+          .platform-name.medium
+            Parti.xyz
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/parti.png')});" }
+          .image.visible-xs-block{ style: "background-image: url(#{asset_url('platforms/parti-mobile.png')});" }
+          .description
+            .maintext
+              Parti Democracy Platforms:
+              %br.visible-sm
+              We provide open-source platforms which make making changes in your world extremely simple.
+              Democracy Platform for Teams and Communities: A useful platform designed to make companies, organisations, and local communities more democratic. You can share your opinion, vote and discuss.
+            .download
+              %button.box
+                %a{href: "https://itunes.apple.com/kr/app/%EB%B9%A0%EB%9D%A0/id1362474504?mt=8", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/apple.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    App Store
+              %button.box
+                %a{href: "https://play.google.com/store/apps/details?id=xyz.parti.catan", target: "_blank"}
+                  %img{ src: "#{asset_url('icon/google-play.png')}"}
+                  .market-text.hidden-sm.hidden-xs
+                    Google Play
+              %button.btn
+                %a.link.btn-english{href:"https://parti.xyz", target: "_blank" }
+                  Web
+        .card
+          .platform-name.bold.bold.bold.bold
+            Parti Govcraft
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/govcraft.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/govcraft-mobile.png')});" }
+          .description
+            .maintext
+              The everyday political platform for citizens who want to change the world:
+              %br.visible-sm
+              A platform to help citizens get involved with political campaigns which affect their lives. This platform helps people speak about and act on issues which they feel passionate about. This is done using tools such as petitions, mailing, archives or bulletin boards. Anyone can easily open and participate in
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://govcraft.org", target: "_blank" }
+                  Web
+        .card
+          .platform-name.bold.bold.bold
+            Parti Townhall
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/townhall.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/townhall-mobile.png')});" }
+          .description
+            .maintext
+              The ultimate real-time discussion platform for events and meetings:
+              %br.visible-sm
+              This platform allows audiences to actively participate in events and meetings by enabling them to engage in decision-making, to vote and to express their feelings about the ideas being raised. This is especially useful during debates, live seminars, lectures and presentations, making such events more interactive by allowing the audience to participate more actively.
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"http://townhall.kr", target: "_blank" }
+                  Web
+        .card
+          .platform-name.bold.bold
+            Democracy Seoul
+          .image.hidden-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul.png')});" }
+          .image.visible-xs{ style: "background-image: url(#{asset_url('platforms/democracy-seoul-mobile.png')});" }
+          .description
+            .maintext
+              The public sphere of Seoul:
+              %br.visible-sm
+              Democracy Seoul is a citizen participation platform where Seoul citizens are encouraged to take part in making suggestions and making decisions about their city. If enough people agree with the suggestions made, those in power will be notified, and action may be taken.
+            .download.fill
+              %button.btn.fill
+                %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
+                  Web
   .be-with-us
     .main-container
       .title.light

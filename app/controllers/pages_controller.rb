@@ -57,6 +57,30 @@ class PagesController < ApplicationController
   end
 
   def english
+    toolkit_map = {
+      "1" => {
+        title: "Toolkit for Lawmaking",
+        url: "https://www.beautiful.ai/player/-LP-lfy3r2i0OL0AyoN4/"
+      },
+      "2" => {
+        title: "Toolkit for Participatory Discussion",
+        url: "https://www.beautiful.ai/player/-LOGDznnYIQmwsDZf4wU/"
+      },
+      "3" => {
+        title: "Toolkit for Ideation",
+        url: "https://www.beautiful.ai/player/-LPdqpxgYf7cbdCpW2tN/"
+      },
+      "4" => {
+        title: "Toolkit for Petition",
+        url: "https://www.beautiful.ai/player/-LR4_tJsM1cKTSrhewyL/"
+      }
+    }
+    @toolkit = toolkit_map[params[:key]]
+
+    if browser.device.mobile? or browser.device.tablet?
+      flash[:notice] = 'If you want to go next page, please touch maintext'
+      prepare_unobtrusive_flash
+    end
   end
 
   def stibee
