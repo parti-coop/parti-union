@@ -1,5 +1,59 @@
 :scss
-  #page-english {
+  #page-main {
+    .title,
+    .subtitle {
+      @media (max-width: 991px) {
+        font-size: 24px;
+      }
+    }
+    .slogan {
+      .main-container {
+        display: table-cell;
+        vertical-align: middle;
+        @media (min-width: 992px) {
+          height: 700px;
+        }
+      }
+      .slogan-korean-text,
+      .slogan-korean-text span {
+        color: white;
+        text-align: center;
+        font-family: "NotoSans-Regular","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        @media (max-width: 991px) {
+          font-size: 24px;
+        }
+      }
+      .slogan-korean-text-small {
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+        font-size: 24px;
+        @media (max-width: 991px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .toolkit .book {
+      background-size: cover;
+      background-position: center;
+    }
+    .who-we-are {
+      margin-bottom: 25px;
+      .description {
+        margin-top: 0;
+        .subtitle2.regular {
+          font-weight: normal;
+          font-family: "NotoSans-Light","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔고딕",nanumgothic,sans-serif;
+          font-size: 24px;
+          @media (max-width: 991px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
     .platforms .slide {
       margin-left: 0;
       width: initial;
@@ -29,7 +83,7 @@
       }
 
       .owl-nav {
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
           margin-top: 0;
         }
         .owl-prev {
@@ -42,37 +96,35 @@
         .owl-next {
           width: 20px;
           color: #777;
-          @media (max-width: 768px) {
+          @media (max-width: 991px) {
             position: static;
             font-size: 24px;
           }
         }
       }
     }
-    .toolkit .book {
-      background-size: cover;
-      background-position: center;
-    }
   }
-#page-english
-  .slogan
+#page-main{ style: 'margin-top: -36px;'}
+  .slogan{ style: 'padding: 0; display: table; width: 100%; position: relative; height: 100vh; ' }
     .main-container
-      %img{ src: "#{asset_url('parti_ci_black.png')}"}
-      .slogan-text
-        Democracy More
-  .mission
-    .main-container
-      .title.light
+      .slogan-korean-text
+        %span
+          더 민주적인 세상, 빠띠
+          %br
+          %span{ style: 'border-bottom: 2px solid white; display: inline-block; margin-bottom: 3px;'}<> Democracy More
+      .slogan-korean-text-small.mg-sm
         We innovate democracy.
-      .subtitle2.regular.mg-sm
-        Parti Coop is a social cooperative established by a group of democracy activists in S. Korea. We provide toolkits, platforms and communities to spread democracy throughout every aspect of our society.
+
+      %span{ style: 'position: absolute; bottom: 70px; left: 0; width: 100%; text-align: center; font-size: 30px; color: white;' }
+        %i.fa.fa-chevron-down
+        #page-english
   .who-we-are
     .photo.hidden-sm
     .description
       .title.light
-        We are Parti.
+        We innovate democracy.
       .subtitle2.regular
-        Our team is comprised of skilled and experienced democracy activists who bring their expertise from their respective fields.
+        Parti Coop is a social cooperative established by a group of democracy activists in S. Korea. We provide toolkits, platforms and communities to spread democracy throughout every aspect of our society.
 
   .movement
     .main-container
