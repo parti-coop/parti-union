@@ -20,13 +20,6 @@ namespace :team do
         profile: 'team-picture-ssinkj.jpg',
         blog: 'https://medium.com/@seungkujung')
 
-      team_seed(name: '조이성화',
-        description: '혐오와 차별이 없는 세상이 되었으면 좋겠습니다. 글을 쓰고 개발을 합니다. 페미니즘, 군인권, 학교에서의 민주주의에 관심이 있습니다.',
-        profile: 'team-picture-greenhair.jpg',
-        facebook: 'https://www.facebook.com/Martian.Lee',
-        github: 'https://github.com/martianlee',
-        blog: 'https://brunch.co.kr/@martian')
-
       team_seed(name: '김금진',
         description: '사람과 개를 좋아하는 빠띠의 활동가. 빠띠의 이모저모를 세상에 알립니다. 페미니즘, 조직, 먹고 사는 일, 세상을 바꾸는 기술, 데이터, 블록체인에 관심있습니다.',
         profile: 'team-picture-geumjin.jpg',
@@ -43,6 +36,17 @@ namespace :team do
       team_seed(name: '장하은',
         description: '사람은 같이 살 수 밖에 없는 존재라고 생각합니다. 그 한계가 우리를 더 풍요롭게 한다고 생각하구요. 같이 더 평화롭게 살기 위해 활동합니다. 사람의 따스함을 회복하는 것, 배려와 배려를 위해 필요한 것들에 대해 궁금해합니다.',
         profile: 'team-picture-ire.jpg',)
+
+      team_seed(name: '보리',
+        description: '사람들이 자기 자신으로 존재할 수 있는 안전한 공동체를 꿈꿉니다. 영상제작, 글쓰기, 행사기획을 좋아합니다. 젠더, 노동, 이주 문제에 관심을 가지고 있습니다.',
+        profile: 'team-picture-bori.jpg',
+        blog: 'https://medium.com/@jy6675',
+        youtube: 'https://www.youtube.com/channel/UCHS-O8-j_N9KH_IHKj-8dOQ')
+
+      team_seed(name: '소년',
+        description: '지속적으로 사회적 인격으로 살아가기 위한 최소한의 공동체, 네트워크, 커뮤니티를 형성하는 것에 관심이 있습니다. 공익적이고, 민주적인 방식의 커뮤니티 운영에 대해 고민합니다.',
+        profile: 'team-picture-boyhood.png',
+        blog: 'https://medium.com/@boyhood.kim')
 
     end
   end

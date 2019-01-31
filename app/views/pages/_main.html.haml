@@ -301,6 +301,9 @@
                 - if member.steemit
                   %a{:href => "#{member.steemit}", :target => "_blank"}
                     = image_tag "steemit.png", class: 'steemit'
+                - if member.youtube
+                  %a{:href => "#{member.youtube}", :target => "_blank"}
+                    %i.fa.fa-youtube.icon-sm
   .be-with-us
     .main-container
       .title.light
