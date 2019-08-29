@@ -266,44 +266,42 @@
                 %a.link.btn-english.fill{href:"https://democracy.seoul.go.kr/", target: "_blank" }
                   Web
 
-  .team
-    .main-container.team-container
-      .subtitle.medium
-        빠띠의 크루를 소개합니다
-      .maintext.mg-sm
-        빠띠는 다양한 영역의 민주주의 활동가들과 함께하고 있습니다.
-      - @team.shuffle.each_slice(2) do |members|
-        .row.team-member-container
-          - members.each do |member|
-            .col-sm-2.team-member
-              = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd', style: 'margin-top: 15px;'
-            .col-sm-4.team-member
-              %h5.blocs-team-header
-                #{member.name}
-              %p.blocs-team-details
-                #{member.description}
-              .social-account
-                - if member.twitter
-                  %a{:href => "#{member.twitter}", :target => "_blank"}
-                    %i.fa.fa-twitter.icon-sm
-                - if member.facebook
-                  %a{:href => "#{member.facebook}", :target => "_blank"}
-                    %i.fa.fa-facebook.icon-sm
-                - if member.instagram
-                  %a{:href => "#{member.instagram}", :target => "_blank"}
-                    %i.fa.fa-instagram.icon-sm
-                - if member.github
-                  %a{:href => "#{member.github}", :target => "_blank"}
-                    %i.fa.fa-github.icon-sm
-                - if member.blog
-                  %a{:href => "#{member.blog}", :target => "_blank"}
-                    %i.fa.fa-home.icon-sm
-                - if member.steemit
-                  %a{:href => "#{member.steemit}", :target => "_blank"}
-                    = image_tag "steemit.png", class: 'steemit'
-                - if member.youtube
-                  %a{:href => "#{member.youtube}", :target => "_blank"}
-                    %i.fa.fa-youtube.icon-sm
+  -# .team
+  -#   .main-container.team-container
+  -#     .subtitle.medium
+  -#       빠띠의 크루를 소개합니다
+  -#     .maintext.mg-sm
+  -#       빠띠는 다양한 영역의 민주주의 활동가들과 함께하고 있습니다.
+  -#     - @team.shuffle.each_slice(2) do |members|
+  -#       .row.team-member-container
+  -#         - members.each do |member|
+  -#           .col-sm-2.team-member
+  -#             = image_tag "#{member.profile}", class: 'img-circle center-block blocs-team-avatar img-frame-rd', style: 'margin-top: 15px;'
+  -#           .col-sm-4.team-member
+  -#             %h5.blocs-team-header
+  -#               #{member.name}
+  -#             %p.blocs-team-details
+  -#               #{member.description}
+  -#             .social-account
+  -#               - if member.twitter
+  -#                 %a{:href => "#{member.twitter}", :target => "_blank"}
+  -#                   %i.fa.fa-twitter.icon-sm
+  -#               - if member.facebook
+  -#                 %a{:href => "#{member.facebook}", :target => "_blank"}
+  -#                   %i.fa.fa-facebook.icon-sm
+  -#               - if member.instagram
+  -#                 %a{:href => "#{member.instagram}", :target => "_blank"}
+  -#                   %i.fa.fa-instagram.icon-sm
+  -#               - if member.github
+  -#                 %a{:href => "#{member.github}", :target => "_blank"}
+  -#                   %i.fa.fa-github.icon-sm
+  -#               - if member.blog
+  -#                 %a{:href => "#{member.blog}", :target => "_blank"}
+  -#                   %i.fa.fa-home.icon-sm
+  -#               - if member.steemit
+  -#                 %a{:href => "#{member.steemit}", :target => "_blank"}
+  -#                   = image_tag "steemit.png", class: 'steemit'
+
   .be-with-us
     .main-container
       .title.light
@@ -365,16 +363,16 @@
                 %input#email{:name => "email", :type => "email", class: 'form-control'}/
                 %button.btn.btn-english{:type => "submit"} 구독하기
 
-    .newsletter
-      공지사항
-    %button.subscribe{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#notice-modal", style: 'height: auto'}
-      조직변경 채권자
-      %br
-      이의 제출 공고
-    #notice-modal.modal.fade{class: @subscribe, :role => "dialog", :tabindex => "-1"}
-      .modal-dialog{:role => "document"}
-        .modal-content
-          .modal-body
-            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-              %span{"aria-hidden" => "true"} &#215;
-            = image_tag('notice.png', style: 'width: 100%')
+    -# .newsletter
+    -#   공지사항
+    -# %button.subscribe{class: 'newsletter', 'data-toggle': "modal", 'data-target': "#notice-modal", style: 'height: auto'}
+    -#   조직변경 채권자
+    -#   %br
+    -#   이의 제출 공고
+    -# #notice-modal.modal.fade{class: @subscribe, :role => "dialog", :tabindex => "-1"}
+    -#   .modal-dialog{:role => "document"}
+    -#     .modal-content
+    -#       .modal-body
+    -#         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+    -#           %span{"aria-hidden" => "true"} &#215;
+    -#         = image_tag('notice.png', style: 'width: 100%')
