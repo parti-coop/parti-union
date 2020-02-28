@@ -251,7 +251,7 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     owlcarousel-rails (2.2.3.5)
-    puma (3.6.2)
+    puma (3.12.3)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
